@@ -1,0 +1,30 @@
+*****************************************************************
+Pin Report - Date: Fri Mar 04 12:33:11 2016 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: geiger_integration
+Family: ProASIC3L
+Die: A3PE3000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port            |Pin |Fixed |Function         |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------------|----|------|-----------------|---------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+BUF2_PBRST_N_T9  L8   Yes    GFC0/IO275NPB7V0  LVCMOS33  ---                ---   None           No               Off          ---   ---               No           Yes
+CLK_48MHZ        M15  Yes    GCB2/IO116PPB3V0  LVCMOS33  ---                ---   None           No               Off          ---   ---               No           Yes
+D0_OUT           E2   Yes    IO299PPB7V3       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D1_OUT           G1   Yes    IO289NDB7V1       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D2_OUT           F2   Yes    IO301NDB7V3       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D3_OUT           G6   Yes    GAC2/IO307PDB7V4  LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D4_OUT           G4   Yes    IO295PDB7V2       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D5_OUT           H5   Yes    IO297NDB7V2       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D6_OUT           H4   Yes    IO295NDB7V2       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+D7_OUT           J4   Yes    IO279PDB7V0       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+G_STREAM         F3   Yes    IO301PDB7V3       LVCMOS33  ---                ---   None           No               Off          ---   ---               No           Yes

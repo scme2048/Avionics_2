@@ -1,0 +1,33 @@
+*****************************************************************
+Pin Report - Date: Sun Feb 28 20:20:32 2016 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: transceiver_integration
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port          |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+--------------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+BUF2_PBRST_T9  T9   Yes    GEA2/IO187RSB2  LVCMOS33  ---                ---   None           ---   ---               No           No
+CLK_48MHZ      E4   Yes    GAB2/IO224PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+ds0            G11  Yes    IO33RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds1            E11  Yes    IO34RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds2            D11  Yes    IO35RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds3            F11  Yes    IO36RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds4            H11  Yes    IO38RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds5            F12  Yes    IO42RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds6            E12  Yes    IO44RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+ds7            D12  Yes    IO45RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+MISO           D5   Yes    GAA0/IO00RSB0   LVCMOS33  ---                ---   None           ---   ---               No           No
+MOSI           D6   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+SCLK           G10  Yes    IO29RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+SS             D10  Yes    IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No

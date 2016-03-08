@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synlog\transceiver_integration_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>CLK_26MHZ|GLA_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>114.5 MHz</data>
+<data>1.269</data>
+</row>
+<row>
+<data>clock_div_1MHZ_10HZ|clk_out_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>88.3 MHz</data>
+<data>-1.329</data>
+</row>
+<row>
+<data>clock_div_26MHZ_1MHZ|clk_out_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>128.8 MHz</data>
+<data>2.237</data>
+</row>
+<row>
+<data>reset_pulse|CLK_OUT_48MHZ_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>131.3 MHz</data>
+<data>2.382</data>
+</row>
+<row>
+<data>spi_master|state_q_inferred_clock[0]</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>spi_mode_config|next_b_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>309.5 MHz</data>
+<data>6.769</data>
+</row>
+</report_table>
