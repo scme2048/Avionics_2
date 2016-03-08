@@ -1,0 +1,25 @@
+FlashPro
+Version: 11.6.0.34
+Release: v11.6
+
+Software Version: 11.6.0.34
+PDB file
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\geiger_i\
+ntegration.pdb' has been loaded successfully.
+DESIGN : geiger_integration;  CHECKSUM : A961;  PDB_VERSION : 1.9
+programmer '01Z7CPEJ' : FlashPro5
+Warning: The programmer with id '98250' in the project file cannot be detected and connected.
+Opened
+'C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/geiger_i\
+ntegration_fp/geiger_integration.pro'
+The 'open_project' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '01Z7CPEJ' : Scan Chain...
+Error: Vjtag is disconnected or shorted. Please check the FPGA's Vjtag pin is properly
+       connected. Please check that the target board is powered.
+Error: programmer '01Z7CPEJ' : Scan Chain FAILED.
+Error: Failed to run Action.
+Error: The command 'run_selected_actions' failed.
+Error: Failure when executing Tcl script. [ Line 3 ]
+Error: The Execute Script command failed.
+Project closed.

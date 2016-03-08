@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Fri Mar 04 12:08:52 2016 ***************************************************************************
+                          Mon Mar 07 22:13:41 2016 ***************************************************************************
 
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
-File Name: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger_integration.adb
+File Name: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\geiger_integration.adb
 Design Name: geiger_integration  Design State: compile
-Last Saved: Fri Mar 04 12:08:40 2016
+Last Saved: Mon Mar 07 21:52:29 2016
 
 ***** Device Data **************************************************
 
@@ -22,8 +22,8 @@ Voltage Range:   IND
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Fri Mar 04 12:08:36 2016:
-        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.edn
+Source File(s) Imported on Mon Mar 07 22:13:32 2016:
+        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\geiger_integration.edn
 
 
 ***** CAE Variables ************************************************
@@ -34,7 +34,7 @@ Back Annotation File: N/A
 ***** Bitstream Variables ******************************************
 
 Bitstream File: N/A
-     Lock Mode: OFF
+     Lock Mode: off
 
 
 ***** Compile Variables ********************************************
@@ -50,15 +50,15 @@ Family      : ProASIC3L
 Device      : A3PE3000L
 Package     : 484 FBGA
 Source      :
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_inte\
-gration.edn
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\geiger_integra\
+tion.edn
 Format      : EDIF
 Topcell     : geiger_integration
 Speed grade : STD
 Temp        : -40:25:85
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : No
+Keep Existing Physical Constraints : Yes
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -100,6 +100,13 @@ Warning: CMP503: Remapped 64 enable flip-flop(s) to a 2-tile implementation beca
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
 =====================================================================
 Compile report:
 ===============
@@ -152,9 +159,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :  11 ( 100.00% )
     Placed  :   0
-    UnPlaced:  11 ( 100.00% )
+    UnPlaced:   0
 
 Net information report:
 =======================

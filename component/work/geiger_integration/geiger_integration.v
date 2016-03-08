@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Feb 29 21:01:56 2016
+// Created by SmartDesign Mon Mar 07 22:12:45 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -132,8 +132,8 @@ geig_data_handling geig_data_handling_0(
         .CLK_100KHZ   ( clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT ),
         .CLK_10HZ     ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
         .RESET        ( reset_pulse_0_RESET ),
-        .TIMESTAMP    ( timestamp_0_TIMESTAMP ),
         .GSTREAM      ( G_STREAM ),
+        .TIMESTAMP    ( timestamp_0_TIMESTAMP ),
         // Outputs
         .G_DATA_STACK ( geig_data_handling_0_G_DATA_STACK_0 ) 
         );
