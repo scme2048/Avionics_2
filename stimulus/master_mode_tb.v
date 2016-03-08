@@ -19,7 +19,7 @@
 `timescale 1ns/100ps
 
 module master_mode_tb(
-input mosi,sck,ss,start,busy
+input mosi,sck,ss/*,start*/,busy
 );
 
 parameter SYSCLK26_PERIOD = 38.46154;// 26MHZ
@@ -93,7 +93,7 @@ master_mode master_mode_0 (
     .SCK( sck ),
     .MOSI( mosi ),
     .SS( ss ),
-    .START (start),
+    //.START (start),
     .BUSY(busy)
 
     // Inouts

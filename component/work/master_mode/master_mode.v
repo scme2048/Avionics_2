@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Mar 07 19:57:25 2016
+// Created by SmartDesign Mon Mar 07 21:22:56 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -13,6 +13,7 @@ module master_mode(
     MISO,
     RST,
     // Outputs
+    BUSY,
     MOSI,
     SCK,
     SS
@@ -28,12 +29,14 @@ input  RST;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output BUSY;
 output MOSI;
 output SCK;
 output SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire         BUSY_net_0;
 wire         CLK_10;
 wire         CLK_26;
 wire   [7:0] dummy_mem_0_data;
@@ -42,7 +45,6 @@ wire         MOSI_net_0;
 wire         orbit_control_0_tx_enable;
 wire         RST;
 wire         SCK_net_0;
-wire         spi_master_0_busy;
 wire         spi_master_0_chip_rdy;
 wire   [7:0] spi_master_0_data_out;
 wire         spi_mode_config_0_begin_pass;
@@ -53,6 +55,7 @@ wire         SS_net_0;
 wire         SCK_net_1;
 wire         MOSI_net_1;
 wire         SS_net_1;
+wire         BUSY_net_1;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
@@ -62,6 +65,8 @@ assign MOSI_net_1 = MOSI_net_0;
 assign MOSI       = MOSI_net_1;
 assign SS_net_1   = SS_net_0;
 assign SS         = SS_net_1;
+assign BUSY_net_1 = BUSY_net_0;
+assign BUSY       = BUSY_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -96,29 +101,29 @@ spi_master spi_master_0(
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SCK_net_0 ),
-        .data_out ( spi_master_0_data_out ),
-        .busy     ( spi_master_0_busy ),
+        .busy     ( BUSY_net_0 ),
         .chip_rdy ( spi_master_0_chip_rdy ),
-        .new_data (  ) 
+        .new_data (  ),
+        .data_out ( spi_master_0_data_out ) 
         );
 
 //--------spi_mode_config2
 spi_mode_config2 spi_mode_config_0(
         // Inputs
-        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
-        .DATA_FROM_MEM ( dummy_mem_0_data ),
         .TX_ENABLE     ( orbit_control_0_tx_enable ),
         .rst           ( RST ),
         .clk           ( CLK_26 ),
-        .busy          ( spi_master_0_busy ),
+        .busy          ( BUSY_net_0 ),
         .chip_rdy      ( spi_master_0_chip_rdy ),
+        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
+        .DATA_FROM_MEM ( dummy_mem_0_data ),
         // Outputs
-        .byte_out      ( spi_mode_config_0_byte_out ),
         .mem_enable    (  ),
         .begin_pass    ( spi_mode_config_0_begin_pass ),
         .ss            ( SS_net_0 ),
         .next_cmd      ( spi_mode_config_0_next_cmd ),
-        .start         ( spi_mode_config_0_start ) 
+        .start         ( spi_mode_config_0_start ),
+        .byte_out      ( spi_mode_config_0_byte_out ) 
         );
 
 

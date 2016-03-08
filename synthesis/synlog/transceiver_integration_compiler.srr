@@ -11,28 +11,19 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
 @I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
 @I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v"
+@I::"F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v"
+@I::"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v"
+@I::"F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v"
+@I::"F:\Avionics_2\hdl\orbit_control.v"
+@I::"F:\Avionics_2\hdl\read_buffer.v"
+@I::"F:\Avionics_2\hdl\reset_pulse.v"
+@I::"F:\Avionics_2\hdl\spi_data_out.v"
+@I::"F:\Avionics_2\hdl\SPI_Master.v"
+@I::"F:\Avionics_2\hdl\spi_mode_config2.v"
+@I::"F:\Avionics_2\hdl\test_constants_spi.v"
+@I::"F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v"
 Verilog syntax check successful!
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v changed - recompiling
+Options changed - recompiling
 Selecting top level module transceiver_integration
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -42,59 +33,55 @@ Selecting top level module transceiver_integration
 
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
+@N: CG364 :"F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+@N: CG364 :"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v":13:7:13:26|Synthesizing module clock_div_26MHZ_1MHZ
+@N: CG364 :"F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v":13:7:13:26|Synthesizing module clock_div_26MHZ_1MHZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
+@N: CG364 :"F:\Avionics_2\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+@N: CG364 :"F:\Avionics_2\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
 
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_b[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_a[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+@N: CG364 :"F:\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v":21:7:21:18|Synthesizing module spi_data_out
+@N: CG364 :"F:\Avionics_2\hdl\spi_data_out.v":21:7:21:18|Synthesizing module spi_data_out
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
+@N: CG364 :"F:\Avionics_2\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
 
-@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":26:6:26:10|No assignment to count
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":22:7:22:21|Synthesizing module spi_mode_config
+@W: CL118 :"F:\Avionics_2\hdl\SPI_Master.v":97:4:97:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+@N: CG364 :"F:\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
 
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":832:4:832:9|Pruning register chip_rdy 
+@W: CL169 :"F:\Avionics_2\hdl\spi_mode_config2.v":95:4:95:9|Pruning register chip_state[2:0] 
 
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":103:4:103:9|Pruning register chip_rdy 
+@N: CG364 :"F:\Avionics_2\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
 
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":103:4:103:9|Pruning register chip_state[2:0] 
+@N: CG364 :"F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
+@W: CL247 :"F:\Avionics_2\hdl\spi_mode_config2.v":23:16:23:27|Input port bit 7 of SLAVE_OUTPUT[7:0] is unused
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
+@W: CL246 :"F:\Avionics_2\hdl\spi_mode_config2.v":23:16:23:27|Input port bits 3 to 0 of SLAVE_OUTPUT[7:0] are unused
 
-@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":23:16:23:27|Input port bits 3 to 0 of SLAVE_OUTPUT[7:0] are unused
-
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":90:2:90:7|Trying to extract state machine for register state_q
+@N: CL201 :"F:\Avionics_2\hdl\SPI_Master.v":189:4:189:9|Trying to extract state machine for register state_q
 Extracted state machine for register state_q
 State machine has 3 reachable states with original encodings of:
    00
    01
    10
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+@N: CL201 :"F:\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
 Extracted state machine for register init_stage
 State machine has 3 reachable states with original encodings of:
    00
    01
    10
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Optimizing register bit cntr[13] to a constant 0
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Pruning register bit 13 of cntr[13:0] 
+@W: CL190 :"F:\Avionics_2\hdl\orbit_control.v":32:0:32:5|Optimizing register bit cntr[13] to a constant 0
+@W: CL260 :"F:\Avionics_2\hdl\orbit_control.v":32:0:32:5|Pruning register bit 13 of cntr[13:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 81MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 79MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Feb 28 20:19:03 2016
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Mon Mar 07 21:35:27 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -103,14 +90,14 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Feb 28 20:19:03 2016
+# Mon Mar 07 21:35:27 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Feb 28 20:19:03 2016
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Mon Mar 07 21:35:28 2016
 
 ###########################################################]

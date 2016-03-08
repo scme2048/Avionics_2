@@ -31,111 +31,111 @@ Z9 !s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School
 Z10 o-work postsynth -O0
 n@c@l@k_1@m@h@z
 vCLK_26MHZ
-Z11 !s110 1456715645
+Z11 !s110 1457411776
 !i10b 1
-!s100 jJ_02A4[l9cAbEW0=@@Q=3
-IR`5<JcUO[:DJ9W]j<7h[Z2
+!s100 K>J>lBiHeh9;ceHkL=fm52
+Ie1L[UWO10@5mO2^ScEj?20
 R2
-R0
-Z12 w1456715639
-Z13 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v
-Z14 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v
-L0 2073
+Z12 dF:/Avionics_2/simulation
+Z13 w1457411764
+Z14 8F:/Avionics_2/synthesis/transceiver_integration.v
+Z15 FF:/Avionics_2/synthesis/transceiver_integration.v
+L0 2118
 R6
 r1
 !s85 0
 31
-Z15 !s108 1456715645.253000
-Z16 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v|
-Z17 !s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v|
+Z16 !s108 1457411769.069000
+Z17 !s107 F:/Avionics_2/synthesis/transceiver_integration.v|
+Z18 !s90 -reportprogress|300|-work|postsynth|F:/Avionics_2/synthesis/transceiver_integration.v|
 !s101 -O0
 !i113 1
 R10
 n@c@l@k_26@m@h@z
 vclock_div_1MHZ_100KHZ
-Z18 !s110 1456805028
+Z19 !s110 1456805028
 !i10b 1
 !s100 ^>D16PoOToD<Ggb;T<m8]2
 InMU3_AgKQKa3?3T8z9<FE3
 R2
 R0
-Z19 w1456805018
-Z20 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v
-Z21 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v
+Z20 w1456805018
+Z21 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v
+Z22 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v
 L0 5
 R6
 r1
 !s85 0
 31
-Z22 !s108 1456805028.577000
-Z23 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v|
-Z24 !s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v|
+Z23 !s108 1456805028.577000
+Z24 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v|
+Z25 !s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/geiger_integration.v|
 !s101 -O0
 !i113 1
 R10
 nclock_div_1@m@h@z_100@k@h@z
 vclock_div_1MHZ_10HZ
-R1
+!s110 1457411775
 !i10b 1
-!s100 gBcfL16fJe4;eFchgGh]B1
-I8WYLm:zE[Kd`YWh`@YdA71
+!s100 3[<_>K@f;WT[]14_1=n_S1
+IX?EadbDVMGRX?:W7BOZ_f0
 R2
-R0
-R3
-R4
-R5
-L0 631
+R12
+R13
+R14
+R15
+L0 1716
 R6
 r1
 !s85 0
 31
-R7
-R8
-R9
+R16
+R17
+R18
 !s101 -O0
 !i113 1
 R10
 nclock_div_1@m@h@z_10@h@z
 vclock_div_1MHZ_1KHZ
-Z25 !s110 1454612371
+Z26 !s110 1454612371
 !i10b 1
 !s100 ?[R_3=MbnbNUe=me5ZRaG3
 Ia@YlDi`Q_5UzA7]GK@o?;3
 R2
 R0
-Z26 w1454612363
-Z27 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v
-Z28 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v
+Z27 w1454612363
+Z28 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v
+Z29 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v
 L0 259
 R6
 r1
 !s85 0
 31
-Z29 !s108 1454612371.212000
-Z30 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v|
-Z31 !s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v|
+Z30 !s108 1454612371.212000
+Z31 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v|
+Z32 !s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.v|
 !s101 -O0
 !i113 1
 R10
 nclock_div_1@m@h@z_1@k@h@z
 vclock_div_26MHZ_1MHZ
-R11
+Z33 !s110 1457411769
 !i10b 1
-!s100 R^6Z`6m<Y:77RlIRdg4FQ2
-I@:`e6A]cm::baXOA2@cSB0
+!s100 KmhI_N0HLkdHKI4C`N?211
+Id=m1F^R0VWG;NRW?0dD>A0
 R2
-R0
 R12
 R13
 R14
-L0 1267
+R15
+L0 1171
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !s101 -O0
 !i113 1
 R10
@@ -162,44 +162,44 @@ R9
 !i113 1
 R10
 vgeig_data_handling
-R18
+R19
 !i10b 1
 !s100 mU[;Rg__aJA8fA?dEPLi01
 InQ^JO]o3_D91L9UYEieiG3
 R2
 R0
-R19
 R20
 R21
+R22
 L0 1691
 R6
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !s101 -O0
 !i113 1
 R10
 vgeiger_integration
-R18
+R19
 !i10b 1
 !s100 mG[oVNf^WEWRn2nQC[1He0
 IG0H=hi:?CB`WTbz;PBmVO2
 R2
 R0
-R19
 R20
 R21
+R22
 L0 2266
 R6
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !s101 -O0
 !i113 1
 R10
@@ -246,23 +246,23 @@ R9
 !i113 1
 R10
 vorbit_control
-R11
+R33
 !i10b 1
-!s100 dFlHcGONAd5U@XAJEgD@m0
-IP4oTEkVb=HU4]FG[iS@WN0
+!s100 `c5D`l`0kDlWfWTSSMiJ[3
+IBk_k:XHNXiXj9nz9:=Ie10
 R2
-R0
 R12
 R13
 R14
-L0 1135
+R15
+L0 1041
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !s101 -O0
 !i113 1
 R10
@@ -288,44 +288,44 @@ R9
 !i113 1
 R10
 vread_buffer
-R1
+Z34 !s110 1457411774
 !i10b 1
-!s100 1alTnV=BWQ8zDILnFeg0n2
-IW9jmg2<PWoJ8izIFCB4IO1
+!s100 b:0OEmjOOFFJe7GaAU=]_2
+I@?knR3b@RIFE[faF[i8i41
 R2
-R0
-R3
-R4
-R5
-L0 8213
+R12
+R13
+R14
+R15
+L0 1362
 R6
 r1
 !s85 0
 31
-R7
-R8
-R9
+R16
+R17
+R18
 !s101 -O0
 !i113 1
 R10
 vreset_pulse
-R1
+R34
 !i10b 1
-!s100 2T2zZ8fKKF;PmWVzIQUMX2
-IU@OED<<idbh9gNNUbWPRR3
+!s100 :X`YUdV;N5d3i]Q=_D9oD0
+I>cDH`iaOA=k9[3>FzCER@2
 R2
-R0
-R3
-R4
-R5
-L0 7890
+R12
+R13
+R14
+R15
+L0 1667
 R6
 r1
 !s85 0
 31
-R7
-R8
-R9
+R16
+R17
+R18
 !s101 -O0
 !i113 1
 R10
@@ -353,63 +353,84 @@ R10
 vspi_master
 R11
 !i10b 1
-!s100 6889OJZ?N[com4Jb]]k=X1
-IbmG19R86O86JjCadOQ>ma3
+!s100 ]_2hm]fV_=JY=?Bj4KIOJ3
+IIf=W38HKLFRch]HIUND]^0
 R2
-R0
 R12
 R13
 R14
-L0 1884
+R15
+L0 1916
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !s101 -O0
 !i113 1
 R10
 vspi_mode_config
-R11
+!s110 1456715645
 !i10b 1
 !s100 MZU6dW80FeGW^k^1`8UUb1
 I425BfXGe0Y?eiKFVkNS@>3
 R2
 R0
-R12
-R13
-R14
+w1456715639
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v
 L0 5
 R6
 r1
 !s85 0
 31
+!s108 1456715645.253000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v|
+!s90 -reportprogress|300|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.v|
+!s101 -O0
+!i113 1
+R10
+vspi_mode_config2
+R33
+!i10b 1
+!s100 4VO=G7TnT>G87SA`9HV[D2
+I86?n=X?1j@8h1ljIa>a4Y3
+R2
+R12
+R13
+R14
 R15
+L0 5
+R6
+r1
+!s85 0
+31
 R16
 R17
+R18
 !s101 -O0
 !i113 1
 R10
 vspi_test
-R25
+R26
 !i10b 1
 !s100 hS8;m2bJDA1<NBnEm[cWf1
 IQ^YHEC<h81?;bT8eXGO[V1
 R2
 R0
-R26
 R27
 R28
+R29
 L0 702
 R6
 r1
 !s85 0
 31
-R29
 R30
 R31
+R32
 !s101 -O0
 !i113 1
 R10
@@ -434,10 +455,10 @@ r1
 !s101 -O0
 !i113 1
 R10
-Z32 !s92 +incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus -work postsynth -O0
+Z35 !s92 +incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus -work postsynth -O0
 ntb_clk_div_26@m_1@m
 vtb_geiger_integration
-R18
+R19
 !i10b 1
 !s100 e0]WzQi1>PPQUVT;BS0gS3
 Iz095F8?Xh1]Sd;hSzH=V21
@@ -446,7 +467,7 @@ R0
 w1456195814
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_geiger_integration.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_geiger_integration.v
-Z33 L0 21
+Z36 L0 21
 R6
 r1
 !s85 0
@@ -457,7 +478,7 @@ r1
 !s101 -O0
 !i113 1
 R10
-R32
+R35
 vtb_memory_test
 R1
 !i10b 1
@@ -468,7 +489,7 @@ R0
 w1457079499
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_memory_test.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_memory_test.v
-R33
+R36
 R6
 r1
 !s85 0
@@ -479,9 +500,9 @@ r1
 !s101 -O0
 !i113 1
 R10
-R32
+R35
 vtb_spi_test
-R25
+R26
 !i10b 1
 !s100 5286ZEJ=dIlTFOjS`[aX>3
 IAUl3?m=`RhBgEPY^0G6mX3
@@ -490,7 +511,7 @@ R0
 w1454611880
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v
-R33
+R36
 R6
 r1
 !s85 0
@@ -501,68 +522,68 @@ r1
 !s101 -O0
 !i113 1
 R10
-R32
+R35
 vtb_tranceiver_integration
-R11
+!s110 1457411777
 !i10b 1
 !s100 FnnJ53zc07C0AH=6JaQXk1
-IinZAfac;daHR_=ERW@BhH2
+IDRGCjlN=dGP`I8McdNb]83
 R2
-R0
-w1456713278
-8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_tranceiver_integration.v
-FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_tranceiver_integration.v
-R33
+R12
+w1457409870
+8F:/Avionics_2/stimulus/tb_tranceiver_integration.v
+FF:/Avionics_2/stimulus/tb_tranceiver_integration.v
+R36
 R6
 r1
 !s85 0
 31
-!s108 1456715645.628000
-!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_tranceiver_integration.v|
-!s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus|-work|postsynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_tranceiver_integration.v|
+!s108 1457411777.423000
+!s107 F:/Avionics_2/stimulus/tb_tranceiver_integration.v|
+!s90 -reportprogress|300|+incdir+F:/Avionics_2/stimulus|-work|postsynth|F:/Avionics_2/stimulus/tb_tranceiver_integration.v|
 !s101 -O0
 !i113 1
 R10
-R32
+!s92 +incdir+F:/Avionics_2/stimulus -work postsynth -O0
 vtest_constants_spi
-R25
+R26
 !i10b 1
 !s100 TzUmmJ5:5Rjc1jNO]WTiO0
 In6?Ad215IAfoPjf8OdJeK2
 R2
 R0
-R26
 R27
 R28
+R29
 L0 5
 R6
 r1
 !s85 0
 31
-R29
 R30
 R31
+R32
 !s101 -O0
 !i113 1
 R10
 vtest_harness_geiger_stack
-R18
+R19
 !i10b 1
 !s100 =6871?Bmd7:TienBlgea02
 IVfk<5X;Fk>S^Cg4I<gLA03
 R2
 R0
-R19
 R20
 R21
+R22
 L0 246
 R6
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !s101 -O0
 !i113 1
 R10
@@ -590,21 +611,21 @@ R10
 vtransceiver_integration
 R11
 !i10b 1
-!s100 >FOzHcEl[LCPH=BY^2Q;31
-I6o71;EiIeZZ_eNCh1e9>g2
+!s100 IefV[4jReonKYS6RTHiX<0
+IiBEc8i^f7@n2S]O;c75[R1
 R2
-R0
 R12
 R13
 R14
-L0 2125
+R15
+L0 2170
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !s101 -O0
 !i113 1
 R10

@@ -120,19 +120,19 @@ module spi_mode_config2 (
                 mem_enable_a = 1'b0;
                 start_a = 1'b1;
 
-                    if ((~byte_tracker_b)&&(~chip_rdy)) begin
-                            byte_out_a = SIDLE;
-                            byte_tracker_a = 1'b1;
-                    end
-                    else if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b)) begin 
+                    //if ((~byte_tracker_b)&&(~chip_rdy)) begin
+                    //        byte_out_a = SIDLE;
+                    //        byte_tracker_a = 1'b1;
+                    //end
+                    if ((~chip_rdy)&&(~TX_ENABLE)/*&&(~byte_tracker_b)*/) begin 
                         state_a = RX_MODE; //If idle and slave is ready, go to receive mode
                             byte_out_a = SRX;
-                            byte_tracker_a = 1'b0;
+                            //byte_tracker_a = 1'b0;
                     end
-                    else if ((~chip_rdy)&&(TX_ENABLE)&&(byte_tracker_b)) begin
+                    else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
                             state_a = TX_MODE;
                             byte_out_a = STX;
-                            byte_tracker_a = 1'b0;
+                            //byte_tracker_a = 1'b0;
                     end
             end
         
@@ -160,6 +160,7 @@ module spi_mode_config2 (
                     byte_tracker_a = 1'b0;
                     
                 end
+                else byte_out_a = 8'b0;
             end
             
             TX_MODE: begin
@@ -740,6 +741,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 83)) begin
                     config_cntr_a = 0;
                     //tart_a = 1'b0;
+                    byte_out_a = SIDLE;
                     byte_tracker_a = 1'b0;
                     state_a = IDLE;
                 end

@@ -1,6 +1,6 @@
 <project name="geiger_integration" version="1.1">
     <ProjectDirectory>
-        F:\Ball_Avionics - Copy\designer\impl1\geiger_integration_fp
+        F:\Avionics_2\designer\impl1\geiger_integration_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        F:\Ball_Avionics - Copy\designer\impl1\geiger_integration_fp\geiger_integration.log
+        F:\Avionics_2\designer\impl1\geiger_integration_fp\geiger_integration.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                F:\Ball_Avionics - Copy\designer\impl1\geiger_integration.pdb
+                F:\Avionics_2\designer\impl1\geiger_integration.pdb
             </filename>
             <local>
                 projectData\geiger_integration.pdb
