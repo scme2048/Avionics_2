@@ -70,7 +70,7 @@ module spi_mode_config2 (
     reg [6:0] config_cntr_a, config_cntr_b;
     reg [10:0] rst_cntr;
     reg [7:0] byte_out_a;
-    reg mem_enable_a,ss_a,begin_pass_a;
+    reg mem_enable_a/*,ss_a*/,begin_pass_a;
     reg [2:0] state_a;
     reg byte_tracker_a, next_a; // if 0, then send address, if 1, send data, chip_rdy-->CC1101 ready
     reg [2:0] chip_state;
@@ -94,21 +94,21 @@ module spi_mode_config2 (
 // Start up config
     always @(negedge busy or negedge rst) begin
     if (rst==1'b0) begin
-        byte_out_a = 8'b0;
+        byte_out_a = SRES;
         mem_enable_a = 1'b0;
-        state_a = 3'h01;
+        state_a = CONFIG_MODE;
         byte_tracker_a = 1'b0;
         next_a = 1'b0;
-        ss_a = 1'b1;
+        //ss_a = 1'b1;
         begin_pass_a = 0;
         config_cntr_a = 1;
-        start_a = 1'b0;
+        start_a = 1'b1;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
         state_a = state_b;
         next_a = next_b;
-        ss_a = ss_b;
+        //ss_a = ss_b;
         byte_tracker_a = byte_tracker_b;
         begin_pass_a = begin_pass_b;
         config_cntr_a = config_cntr_b;
@@ -757,10 +757,10 @@ module spi_mode_config2 (
 //            if (~rst_mode) begin //power on sequence
             byte_out_b <= 8'b0;
             mem_enable_b <= 1'b0;
-            state_b <= 3'h01;
+            state_b <= PWR_RST;
             byte_tracker_b <= 1'b0;
             next_b <= 1'b0;
-            ss_b <= 1'b1;
+            ss_b <= 1'b0;
             rst_cntr <= 0;
             begin_pass_b <= 0;
             config_cntr_b <= 1;
@@ -768,12 +768,12 @@ module spi_mode_config2 (
 
         end
         else begin
-            if (ss_a == 1'b0) begin
+            if (ss_b == 1'b0 && state_b != PWR_RST) begin
                 byte_out_b <= byte_out_a;
                 mem_enable_b <= mem_enable_a;
                 state_b<=state_a;
                 next_b <= next_a;
-                ss_b <= ss_a;
+                //ss_b <= ss_a;
                 begin_pass_b <= begin_pass_a; 
                 config_cntr_b <= config_cntr_a;
                 start_b <= start_a;
@@ -781,15 +781,15 @@ module spi_mode_config2 (
             end
             if (state_b == PWR_RST) begin
                 if (rst_cntr <= microsec) begin  
-                    ss_b <= 1'b0;
+                    //ss_b <= 1'b0;
                     rst_cntr <= rst_cntr + 1;
                 end
                 else if ((rst_cntr > microsec)&&(rst_cntr <= 42*microsec)) begin
-                    ss_b <= 1'b1;
+                    //ss_b <= 1'b1;
                     rst_cntr <= rst_cntr + 1;
                 end
                 else if (rst_cntr > 42*microsec) begin
-                    ss_b <= 1'b0;
+                    //ss_b <= 1'b0;
                     if (~chip_rdy) begin
                         start_b <= 1'b1;
                         byte_out_b <= SRES;

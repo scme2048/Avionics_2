@@ -1,7 +1,7 @@
-C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe  -link  -top  geiger_integration  -multisrs  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\geiger_integration_comp.srs  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\geiger_integration_mult.srs  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\geiger_integration_multi_srs_gen.srr 
+C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe  -link  -top  transceiver_integration  -multisrs  F:\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs  -osyn  F:\Avionics_2\synthesis\synwork\transceiver_integration_mult.srs  -log  F:\Avionics_2\synthesis\synlog\transceiver_integration_multi_srs_gen.srr 
 rc:0 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\geiger_integration_comp.srs|i|1457413994|16221
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\geiger_integration_mult.srs|o|1457413995|6344
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\geiger_integration_multi_srs_gen.srr|o|1457413995|522
+F:\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs|i|1457489952|30859
+F:\Avionics_2\synthesis\synwork\transceiver_integration_mult.srs|o|1457489954|7307
+F:\Avionics_2\synthesis\synlog\transceiver_integration_multi_srs_gen.srr|o|1457489954|467
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\syn_nfilter.exe|i|1431625058|3001344
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe|i|1431625246|3968000

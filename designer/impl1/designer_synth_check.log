@@ -30,9 +30,9 @@ The Import command succeeded ( 00:00:03 )
 Warning: Overwriting the existing file: ../../synthesis/transceiver_integration.v.
 Wrote to the file: ..\..\synthesis\transceiver_integration.v
 
-The Export command succeeded ( 00:00:01 )
+The Export command succeeded ( 00:00:02 )
 
-The Execute Script command succeeded ( 00:00:07 )
+The Execute Script command succeeded ( 00:00:06 )
 Warning: The database was closed without a save, modifications are lost
 Design closed.
 

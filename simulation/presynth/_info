@@ -74,13 +74,13 @@ r1
 R5
 n@c@l@k_1@m@h@z
 vCLK_26MHZ
-Z6 !s110 1457411528
+!s110 1457489852
 !i10b 1
 !s100 @cTHA:JZe?Xdfz>Wg0IJU0
 IEa@?H15A[GLHFJaj^CHib0
 R2
-Z7 dF:/Avionics_2/simulation
-w1457409868
+Z6 dF:/Avionics_2/simulation
+Z7 w1457479416
 8F:/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v
 FF:/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v
 L0 5
@@ -88,7 +88,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411528.002000
+!s108 1457489852.148000
 !s107 F:/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s101 -O0
@@ -163,13 +163,13 @@ r1
 R5
 nclock_div_1@m@h@z_100@k@h@z
 vclock_div_1MHZ_10HZ
-R6
+!s110 1457489853
 !i10b 1
 !s100 W4^MLJN4AUPQO3Q6Fcoac3
 I@=jmo4OEJj73O9>cJ:fRG0
 R2
-R7
-Z12 w1457409860
+R6
+Z12 w1457479410
 8F:/Avionics_2/hdl/clock_div_1MHZ_10HZ.v
 FF:/Avionics_2/hdl/clock_div_1MHZ_10HZ.v
 R11
@@ -177,7 +177,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411528.698000
+!s108 1457489853.199000
 !s107 F:/Avionics_2/hdl/clock_div_1MHZ_10HZ.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/clock_div_1MHZ_10HZ.v|
 !s101 -O0
@@ -207,12 +207,12 @@ r1
 R5
 nclock_div_1@m@h@z_1@k@h@z
 vclock_div_26MHZ_1MHZ
-!s110 1457411529
+!s110 1457489854
 !i10b 1
 !s100 z0bY?0=IBPKSWnzkeYIhc2
 I1dWk:YIm5MFeQ>10o:cJY1
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v
 FF:/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v
@@ -221,7 +221,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411529.836000
+!s108 1457489854.192000
 !s107 F:/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v|
 !s101 -O0
@@ -250,12 +250,12 @@ r1
 !i113 1
 R5
 vdummy_mem
-!s110 1457410987
+!s110 1457489699
 !i10b 1
 !s100 ^E?B_C;X219Az9?4^C>JA2
 IXIka@^ZPNOeWgXb>n>laN2
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/dummy_mem.v
 FF:/Avionics_2/hdl/dummy_mem.v
@@ -264,7 +264,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457410987.563000
+!s108 1457489699.163000
 !s107 F:/Avionics_2/hdl/dummy_mem.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/dummy_mem.v|
 !s101 -O0
@@ -356,13 +356,13 @@ r1
 !i113 1
 R5
 vmaster_mode
-!s110 1457410993
+!s110 1457489715
 !i10b 1
 !s100 T]iC`95UJ39jPUe=8aMm12
 Ib[2NmPCX_<XCFP5Ala:YV1
 R2
-R7
-w1457410978
+R6
+w1457479400
 8F:/Avionics_2/component/work/master_mode/master_mode.v
 FF:/Avionics_2/component/work/master_mode/master_mode.v
 L0 9
@@ -370,20 +370,20 @@ R4
 r1
 !s85 0
 31
-!s108 1457410993.628000
+!s108 1457489715.817000
 !s107 F:/Avionics_2/component/work/master_mode/master_mode.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/component/work/master_mode/master_mode.v|
 !s101 -O0
 !i113 1
 R5
 vmaster_mode_tb
-!s110 1457410994
+!s110 1457489720
 !i10b 1
 !s100 Rm;N0F?aenSAUKaoO^CTn2
 I][OYX3<;YkAioU<aR?<[h1
 R2
+R6
 R7
-w1457410966
 8F:/Avionics_2/stimulus/master_mode_tb.v
 FF:/Avionics_2/stimulus/master_mode_tb.v
 R3
@@ -391,7 +391,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457410994.645000
+!s108 1457489720.109000
 !s107 F:/Avionics_2/stimulus/master_mode_tb.v|
 !s90 -reportprogress|300|+incdir+F:/Avionics_2/stimulus|-work|presynth|F:/Avionics_2/stimulus/master_mode_tb.v|
 !s101 -O0
@@ -441,12 +441,12 @@ r1
 !i113 1
 R5
 vorbit_control
-!s110 1457411531
+!s110 1457489855
 !i10b 1
 !s100 [aKYf7Rk>VkA@S8Ii6@[63
 IcD35TFeeUF2m7G8oCHc@F0
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/orbit_control.v
 FF:/Avionics_2/hdl/orbit_control.v
@@ -455,7 +455,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411531.009000
+!s108 1457489855.500000
 !s107 F:/Avionics_2/hdl/orbit_control.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/orbit_control.v|
 !s101 -O0
@@ -483,12 +483,12 @@ r1
 !i113 1
 R5
 vread_buffer
-!s110 1457411532
+!s110 1457489856
 !i10b 1
 !s100 [gA41`GOj5:hUkSNT8GI=2
 Ia]jaU;PSV^Y6]Z5>m]ETZ0
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/read_buffer.v
 FF:/Avionics_2/hdl/read_buffer.v
@@ -497,19 +497,19 @@ R4
 r1
 !s85 0
 31
-!s108 1457411532.191000
+!s108 1457489856.558000
 !s107 F:/Avionics_2/hdl/read_buffer.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/read_buffer.v|
 !s101 -O0
 !i113 1
 R5
 vreset_pulse
-!s110 1457411533
+!s110 1457489858
 !i10b 1
 !s100 6ZRE7<mk_3D2o@7DL?BS>3
 I`IjGOkCY_[IAFheeDCfSY1
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/reset_pulse.v
 FF:/Avionics_2/hdl/reset_pulse.v
@@ -518,7 +518,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411533.399000
+!s108 1457489858.357000
 !s107 F:/Avionics_2/hdl/reset_pulse.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/reset_pulse.v|
 !s101 -O0
@@ -546,12 +546,12 @@ r1
 !i113 1
 R5
 vspi_data_out
-!s110 1457411534
+!s110 1457489859
 !i10b 1
 !s100 h;B;F]FzRDI2C_4la`JeL1
 Ib3?1mldGU2M_TVCSFdL=Y1
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/spi_data_out.v
 FF:/Avionics_2/hdl/spi_data_out.v
@@ -560,19 +560,19 @@ R4
 r1
 !s85 0
 31
-!s108 1457411534.613000
+!s108 1457489859.297000
 !s107 F:/Avionics_2/hdl/spi_data_out.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/spi_data_out.v|
 !s101 -O0
 !i113 1
 R5
 vspi_master
-!s110 1457411536
+!s110 1457489860
 !i10b 1
 !s100 DTBNlE_AI_VTc=R]MbYmH0
 I`2h_>b`okV4^YMn[]j6W71
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/SPI_Master.v
 FF:/Avionics_2/hdl/SPI_Master.v
@@ -581,7 +581,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411535.815000
+!s108 1457489860.333000
 !s107 F:/Avionics_2/hdl/SPI_Master.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/SPI_Master.v|
 !s101 -O0
@@ -631,13 +631,13 @@ r1
 !i113 1
 R5
 vspi_mode_config2
-!s110 1457411539
+!s110 1457489863
 !i10b 1
-!s100 GRi0BL]`@:YT5obVahFhi0
-INYVaiJVX14EeS=f<6W6h`2
+!s100 Od5A`2J^n?[CnV37YbzS51
+In@J2fLlWUmcSW<cAhdDVR2
 R2
-R7
-w1457411512
+R6
+w1457489676
 8F:/Avionics_2/hdl/spi_mode_config2.v
 FF:/Avionics_2/hdl/spi_mode_config2.v
 R17
@@ -645,7 +645,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411538.319000
+!s108 1457489862.749000
 !s107 F:/Avionics_2/hdl/spi_mode_config2.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/spi_mode_config2.v|
 !s101 -O0
@@ -961,13 +961,13 @@ r1
 R5
 R9
 vtb_tranceiver_integration
-!s110 1457411543
+!s110 1457489874
 !i10b 1
 !s100 FnnJ53zc07C0AH=6JaQXk1
 IXiSK8ih:lLWYMJSHB`=nb0
 R2
-R7
-w1457409870
+R6
+w1457479418
 8F:/Avionics_2/stimulus/tb_tranceiver_integration.v
 FF:/Avionics_2/stimulus/tb_tranceiver_integration.v
 R3
@@ -975,7 +975,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411543.009000
+!s108 1457489866.286000
 !s107 F:/Avionics_2/stimulus/tb_tranceiver_integration.v|
 !s90 -reportprogress|300|+incdir+F:/Avionics_2/stimulus|-work|presynth|F:/Avionics_2/stimulus/tb_tranceiver_integration.v|
 !s101 -O0
@@ -983,12 +983,12 @@ r1
 R5
 R16
 vtest_constants_spi
-!s110 1457411537
+!s110 1457489861
 !i10b 1
 !s100 WnblOzb0=bO92ON1om5Lo1
 IUE_lYWPJ;YQi8gU9B`1VQ0
 R2
-R7
+R6
 R12
 8F:/Avionics_2/hdl/test_constants_spi.v
 FF:/Avionics_2/hdl/test_constants_spi.v
@@ -997,7 +997,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411537.218000
+!s108 1457489861.400000
 !s107 F:/Avionics_2/hdl/test_constants_spi.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/hdl/test_constants_spi.v|
 !s101 -O0
@@ -1090,13 +1090,13 @@ r1
 R5
 R9
 vtransceiver_integration
-!s110 1457411541
+!s110 1457489864
 !i10b 1
-!s100 RRc0g;68TVlXg53VTJ[k_3
-IL^fk=g?NC?jdBT74A=B7R3
+!s100 BY>V29diF715;IH6MUhY90
+Ij]]nh1e@2z7gz0GG0mX2;2
 R2
-R7
-w1457410242
+R6
+w1457481758
 8F:/Avionics_2/component/work/transceiver_integration/transceiver_integration.v
 FF:/Avionics_2/component/work/transceiver_integration/transceiver_integration.v
 L0 9
@@ -1104,7 +1104,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457411540.864000
+!s108 1457489864.804000
 !s107 F:/Avionics_2/component/work/transceiver_integration/transceiver_integration.v|
 !s90 -reportprogress|300|-work|presynth|F:/Avionics_2/component/work/transceiver_integration/transceiver_integration.v|
 !s101 -O0

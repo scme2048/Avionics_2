@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Mar 07 21:34:36 2016
+// Created by SmartDesign Tue Mar 08 17:02:37 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -212,29 +212,29 @@ spi_master spi_master_0(
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SCLK_net_0 ),
-        .data_out ( spi_master_0_data_out ),
         .busy     ( spi_master_0_busy ),
         .chip_rdy ( spi_master_0_chip_rdy ),
-        .new_data (  ) 
+        .new_data (  ),
+        .data_out ( spi_master_0_data_out ) 
         );
 
 //--------spi_mode_config2
 spi_mode_config2 spi_mode_config_0(
         // Inputs
-        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
-        .DATA_FROM_MEM ( read_buffer_0_BYTE_OUT ),
         .TX_ENABLE     ( orbit_control_0_tx_enable ),
         .rst           ( reset_pulse_0_RESET ),
         .clk           ( CLK_26MHZ_0_GLA ),
         .busy          ( spi_master_0_busy ),
         .chip_rdy      ( spi_master_0_chip_rdy ),
+        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
+        .DATA_FROM_MEM ( read_buffer_0_BYTE_OUT ),
         // Outputs
-        .byte_out      ( spi_mode_config_0_byte_out ),
         .mem_enable    (  ),
         .begin_pass    ( spi_mode_config_0_begin_pass ),
         .ss            ( SS_net_0 ),
         .next_cmd      ( spi_mode_config_0_next_cmd ),
-        .start         ( spi_mode_config_0_start ) 
+        .start         ( spi_mode_config_0_start ),
+        .byte_out      ( spi_mode_config_0_byte_out ) 
         );
 
 //--------test_constants_spi
