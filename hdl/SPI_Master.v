@@ -25,12 +25,12 @@ module spi_master #(parameter CLK_DIV = 2)(
   reg [7:0] data_out_d, data_out_q;
   //reg count;
   reg [3:0] test;
-  reg chip_rdy_a/*, wait_q, wait_d*/;
+  reg chip_rdy_a, busy_enable/*, wait_q, wait_d*/;
    
   assign mosi = mosi_q;
   //assign sck = (~sck_q) & (state_q == TRANSFER);
   assign sck = (sck_q[1]) & (state_q == TRANSFER) & (~chip_rdy); //(start == 1'b1);
-  assign busy = (state_q == TRANSFER) & (start == 1'b1) & (~chip_rdy);
+  assign busy = /*(state_q == TRANSFER)*/(busy_enable == 1'b1) & (start == 1'b1) & (~chip_rdy);
   assign data_out = data_out_q;
   assign new_data = new_data_q;
   assign chip_rdy = chip_rdy_a;
@@ -104,6 +104,7 @@ module spi_master #(parameter CLK_DIV = 2)(
       new_data_d = 1'b0;
       test = 4'd0;
       chip_rdy_a = miso;
+      busy_enable = 1'b0;
       //wait_d = 1'b1;
     end
 
@@ -123,6 +124,7 @@ module spi_master #(parameter CLK_DIV = 2)(
         //if (start == 1'b1) begin
         case (state_q)
           IDLE: begin
+            busy_enable = 1'b0;
             sck_d = 4'b0;              // reset clock counter
             test = 0;
             ctr_d = 3'b0;              // reset bit counter
@@ -133,6 +135,7 @@ module spi_master #(parameter CLK_DIV = 2)(
             end
           end
           WAIT_HALF: begin
+            busy_enable = 1'b0;
             test = 2;
             sck_d = sck_q + 1'b1;                  // increment clock counter
             if (sck_q == {CLK_DIV-1{1'b1}}) begin  // if clock is half full (about to fall)
@@ -146,8 +149,8 @@ module spi_master #(parameter CLK_DIV = 2)(
           end
           TRANSFER: begin
             test = 4;
-            if (ctr_q == 3'b0)
-                chip_rdy_a = miso;
+            //if (ctr_q == 3'b0)
+                //chip_rdy_a = miso;
             if (sck_q == 2'b11) begin
                 test = 5;
                 sck_d = 2'b0;
@@ -158,13 +161,16 @@ module spi_master #(parameter CLK_DIV = 2)(
                 sck_d = sck_q + 1'b1;                       // increment clock counter
             if (sck_q == 4'b0000) begin                     // if clock counter is 0
                 test = 7;
-                //chip_rdy = miso;
+                if (ctr_q == 3'b0)
+                    chip_rdy_a = miso;
                 //if (miso == 1'b0)
-                    mosi_d = data_q[7];                           // output the MSB of data
+                mosi_d = data_q[7];                           // output the MSB of data
                 //else begin
                     //state_d = IDLE;
                 //    mosi_d = 1'b0;
             end else if (sck_q == {CLK_DIV-1{1'b1}}) begin  // else if it's half full (about to fall)
+              if (ctr_q == 3'b0)
+                  busy_enable = 1'b1;
               test = 8;
               data_d = {data_q[6:0], miso};                 // read in data (shift in)
             end else if (sck_q == {CLK_DIV{1'b1}}) begin    // else if it's full (about to rise)

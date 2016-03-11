@@ -44,11 +44,18 @@ begin
 end
 
 
+initial begin
+    #(SYSCLK_PERIOD * 2078.2) miso = 1'b1;
+    #(SYSCLK_PERIOD * 204.5) miso = 1'b0;
+end
+    
+
 //////////////////////////////////////////////////////////////////////
 // Clock Driver
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
+
 
 wire ss,mosi,sclk;
 
