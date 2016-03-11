@@ -24,36 +24,44 @@
 
 //`timescale <time_units> / <precision>
 
-module read_address_traversal( RESET,NEXT, R_CHIP_SELECT,R_ADDRESS_OUT );
+module sdram_read_address_traversal( NEXT,RESET, BA_READ_OUT, ROW_READ_OUT,COL_READ_OUT );
 
-//CLK is not used
-input NEXT, RESET;
-output R_CHIP_SELECT;
-output [17:0] R_ADDRESS_OUT;
+// Possibly add write addresses for tracking position
+input NEXT,RESET;
+//input [4:0] REPLAY;
+output [1:0] BA_READ_OUT;
+output [8:0] COL_READ_OUT;
+output [12:0] ROW_READ_OUT;
+
+
+// Data Replay
+// THIS STILL NEEDS SOME WORK
+//parameter first_pass = 540360;
+//parameter typical_pass = 576384;
 
 // Statements
-reg [17:0] address;
-reg chip_select;
+reg [23:0] current_count;
 
-assign R_ADDRESS_OUT=address;
-assign R_CHIP_SELECT=chip_select;
+assign BA_READ_OUT = current_count[23:22];
+assign COL_READ_OUT = current_count[21:13];
+assign ROW_READ_OUT = current_count[12:0];
 
 always @(posedge NEXT or negedge RESET)
 begin
+
 if (RESET==1'b0) begin
-    address=18'b0;
-    chip_select=1'b0;
+    current_count=24'b0;
 end else begin
 
     // Counter equal to 16777216
-    if (address == 18'b111111111111111111) begin
-        address = 18'b0;
-        chip_select=!chip_select;
+    if (current_count == 24'b111111111111111111111111) begin
+        current_count = 24'b0;
     end else begin
-        address = address+1;
+        current_count = current_count+1;
+    end
+
     end
 
 end
-
-end
 endmodule
+
