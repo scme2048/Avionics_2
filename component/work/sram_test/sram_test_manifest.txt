@@ -1,11 +1,11 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
 
-Date      :  Fri Mar 11 00:35:16 2016
+Date      :  Fri Mar 11 01:48:22 2016
 Project   :  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2
-Component :  full_sys
+Component :  sram_test
 Family    :  ProASIC3L
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_sys/full_sys.v
+    C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test/sram_test.v
 

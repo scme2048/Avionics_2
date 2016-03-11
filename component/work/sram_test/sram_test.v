@@ -1,20 +1,24 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Mar 11 00:35:15 2016
+// Created by SmartDesign Fri Mar 11 01:48:21 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
 
-// full_sys
-module full_sys(
+// sram_test
+module sram_test(
     // Inputs
     CLK_48MHZ,
-    GEIG_DATA,
-    MISO,
     RESET_IN_L8,
     // Outputs
-    MOSI,
-    SCK,
+    D0,
+    D1,
+    D2,
+    D3,
+    D4,
+    D5,
+    D6,
+    D7,
     SRAM_A0,
     SRAM_A1,
     SRAM_A10,
@@ -40,7 +44,6 @@ module full_sys(
     SRAM_SRBS2,
     SRAM_SRBS3,
     SRAM_WE,
-    SS,
     // Inouts
     SRAM_D0,
     SRAM_D1,
@@ -64,14 +67,18 @@ module full_sys(
 // Input
 //--------------------------------------------------------------------
 input  CLK_48MHZ;
-input  GEIG_DATA;
-input  MISO;
 input  RESET_IN_L8;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output MOSI;
-output SCK;
+output D0;
+output D1;
+output D2;
+output D3;
+output D4;
+output D5;
+output D6;
+output D7;
 output SRAM_A0;
 output SRAM_A1;
 output SRAM_A10;
@@ -97,7 +104,6 @@ output SRAM_SRBS1;
 output SRAM_SRBS2;
 output SRAM_SRBS3;
 output SRAM_WE;
-output SS;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
@@ -121,12 +127,18 @@ inout  SRAM_D9;
 // Nets
 //--------------------------------------------------------------------
 wire          CLK_1MHZ_0_GLA;
-wire          CLK_26MHZ_0_GLA;
 wire          CLK_48MHZ;
 wire          clock_div_1MHZ_1KHZ_0_CLK_1KHZ_OUT;
 wire          clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT;
 wire          clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT;
-wire          GEIG_DATA;
+wire          D0_net_0;
+wire          D1_net_0;
+wire          D2_net_0;
+wire          D3_net_0;
+wire          D4_net_0;
+wire          D5_net_0;
+wire          D6_net_0;
+wire          D7_net_0;
 wire   [79:0] geig_data_handling_0_G_DATA_STACK_1;
 wire   [17:0] memory_controller_0_ADDRESS_OUT;
 wire          memory_controller_0_CHIP_SELECT;
@@ -134,9 +146,6 @@ wire   [1:0]  memory_controller_0_CMD_OUT_0;
 wire   [15:0] memory_controller_0_DATA_OUT;
 wire          memory_controller_0_NEXT_READ;
 wire          memory_controller_0_NEXT_WRITE;
-wire          MISO;
-wire          MOSI_net_0;
-wire          orbit_control_0_tx_enable;
 wire   [17:0] read_address_traversal_0_R_ADDRESS_OUT;
 wire          read_address_traversal_0_R_CHIP_SELECT;
 wire   [7:0]  read_buffer_0_BYTE_OUT;
@@ -144,13 +153,6 @@ wire          read_buffer_0_READ_CMD;
 wire          RESET_IN_L8;
 wire          reset_pulse_0_CLK_OUT_48MHZ;
 wire          reset_pulse_0_RESET;
-wire          SCK_net_0;
-wire          spi_master_0_busy;
-wire   [7:0]  spi_master_0_data_out;
-wire          spi_mode_config_0_begin_pass;
-wire   [7:0]  spi_mode_config_0_byte_out;
-wire          spi_mode_config_0_next_cmd;
-wire          spi_mode_config_0_start;
 wire          SRAM_A0_net_0;
 wire          SRAM_A1_net_0;
 wire          SRAM_A2_net_0;
@@ -193,14 +195,13 @@ wire          SRAM_SRBS0_net_0;
 wire          SRAM_SRBS1_net_0;
 wire          SRAM_SRBS2_net_0;
 wire          SRAM_SRBS3_net_0;
+wire          sram_test_sim_0_GEIG_COUNTS;
+wire   [79:0] sram_test_sim_0_MAG_DATA;
+wire          sram_test_sim_0_NEXT_BYTE;
 wire          SRAM_WE_net_0;
-wire          SS_net_0;
 wire   [23:0] timestamp_0_TIMESTAMP;
 wire   [17:0] write_address_traversal_0_W_ADDRESS_OUT;
 wire          write_address_traversal_0_W_CHIP_SELECT;
-wire          MOSI_net_1;
-wire          SS_net_1;
-wire          SCK_net_1;
 wire          SRAM_A0_net_1;
 wire          SRAM_A1_net_1;
 wire          SRAM_A2_net_1;
@@ -226,25 +227,25 @@ wire          SRAM_SRBS3_net_1;
 wire          SRAM_CE_net_1;
 wire          SRAM_WE_net_1;
 wire          SRAM_OE_net_1;
+wire          D0_net_1;
+wire          D1_net_1;
+wire          D2_net_1;
+wire          D3_net_1;
+wire          D4_net_1;
+wire          D5_net_1;
+wire          D6_net_1;
+wire          D7_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
 wire          VCC_net;
-wire   [79:0] MAG_DATA_const_net_0;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
-assign VCC_net              = 1'b1;
-assign MAG_DATA_const_net_0 = 80'h00000000000000000000;
+assign VCC_net = 1'b1;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign MOSI_net_1       = MOSI_net_0;
-assign MOSI             = MOSI_net_1;
-assign SS_net_1         = SS_net_0;
-assign SS               = SS_net_1;
-assign SCK_net_1        = SCK_net_0;
-assign SCK              = SCK_net_1;
 assign SRAM_A0_net_1    = SRAM_A0_net_0;
 assign SRAM_A0          = SRAM_A0_net_1;
 assign SRAM_A1_net_1    = SRAM_A1_net_0;
@@ -295,6 +296,22 @@ assign SRAM_WE_net_1    = SRAM_WE_net_0;
 assign SRAM_WE          = SRAM_WE_net_1;
 assign SRAM_OE_net_1    = SRAM_OE_net_0;
 assign SRAM_OE          = SRAM_OE_net_1;
+assign D0_net_1         = D0_net_0;
+assign D0               = D0_net_1;
+assign D1_net_1         = D1_net_0;
+assign D1               = D1_net_1;
+assign D2_net_1         = D2_net_0;
+assign D2               = D2_net_1;
+assign D3_net_1         = D3_net_0;
+assign D3               = D3_net_1;
+assign D4_net_1         = D4_net_0;
+assign D4               = D4_net_1;
+assign D5_net_1         = D5_net_0;
+assign D5               = D5_net_1;
+assign D6_net_1         = D6_net_0;
+assign D6               = D6_net_1;
+assign D7_net_1         = D7_net_0;
+assign D7               = D7_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -306,16 +323,6 @@ CLK_1MHZ CLK_1MHZ_0(
         // Outputs
         .LOCK      (  ),
         .GLA       ( CLK_1MHZ_0_GLA ) 
-        );
-
-//--------CLK_26MHZ
-CLK_26MHZ CLK_26MHZ_0(
-        // Inputs
-        .POWERDOWN ( VCC_net ),
-        .CLKA      ( reset_pulse_0_CLK_OUT_48MHZ ),
-        // Outputs
-        .LOCK      (  ),
-        .GLA       ( CLK_26MHZ_0_GLA ) 
         );
 
 //--------clock_div_1MHZ_1KHZ
@@ -351,7 +358,7 @@ geig_data_handling geig_data_handling_0(
         .CLK_100KHZ   ( clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT ),
         .CLK_10HZ     ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
         .RESET        ( reset_pulse_0_RESET ),
-        .GSTREAM      ( GEIG_DATA ),
+        .GSTREAM      ( sram_test_sim_0_GEIG_COUNTS ),
         .TIMESTAMP    ( timestamp_0_TIMESTAMP ),
         // Outputs
         .G_DATA_STACK ( geig_data_handling_0_G_DATA_STACK_1 ) 
@@ -364,29 +371,19 @@ memory_controller memory_controller_0(
         .RESET             ( reset_pulse_0_RESET ),
         .SRAM_STATUS       ( sram_interface_0_STATUS ),
         .READ_CMD          ( read_buffer_0_READ_CMD ),
-        .GEIG_DATA         ( geig_data_handling_0_G_DATA_STACK_1 ),
-        .MAG_DATA          ( MAG_DATA_const_net_0 ),
-        .READ_ADDRESS      ( read_address_traversal_0_R_ADDRESS_OUT ),
         .READ_CHIP_SELECT  ( read_address_traversal_0_R_CHIP_SELECT ),
-        .WRITE_ADDRESS     ( write_address_traversal_0_W_ADDRESS_OUT ),
         .WRITE_CHIP_SELECT ( write_address_traversal_0_W_CHIP_SELECT ),
+        .GEIG_DATA         ( geig_data_handling_0_G_DATA_STACK_1 ),
+        .MAG_DATA          ( sram_test_sim_0_MAG_DATA ),
+        .READ_ADDRESS      ( read_address_traversal_0_R_ADDRESS_OUT ),
+        .WRITE_ADDRESS     ( write_address_traversal_0_W_ADDRESS_OUT ),
         // Outputs
         .NEXT_READ         ( memory_controller_0_NEXT_READ ),
         .NEXT_WRITE        ( memory_controller_0_NEXT_WRITE ),
+        .CHIP_SELECT       ( memory_controller_0_CHIP_SELECT ),
         .DATA_OUT          ( memory_controller_0_DATA_OUT ),
         .ADDRESS_OUT       ( memory_controller_0_ADDRESS_OUT ),
-        .CHIP_SELECT       ( memory_controller_0_CHIP_SELECT ),
         .CMD_OUT           ( memory_controller_0_CMD_OUT_0 ) 
-        );
-
-//--------orbit_control
-orbit_control orbit_control_0(
-        // Inputs
-        .cntr_enable ( spi_mode_config_0_begin_pass ),
-        .clk         ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
-        .reset       ( reset_pulse_0_RESET ),
-        // Outputs
-        .tx_enable   ( orbit_control_0_tx_enable ) 
         );
 
 //--------read_address_traversal
@@ -404,7 +401,7 @@ read_buffer read_buffer_0(
         // Inputs
         .CLK_48MHZ     ( reset_pulse_0_CLK_OUT_48MHZ ),
         .RESET         ( reset_pulse_0_RESET ),
-        .NEXT_BYTE     ( spi_mode_config_0_next_cmd ),
+        .NEXT_BYTE     ( sram_test_sim_0_NEXT_BYTE ),
         .DATA_READ     ( sram_interface_0_DATA_READ ),
         .WRITE_ADDRESS ( write_address_traversal_0_W_ADDRESS_OUT ),
         // Outputs
@@ -422,50 +419,15 @@ reset_pulse reset_pulse_0(
         .CLK_OUT_48MHZ ( reset_pulse_0_CLK_OUT_48MHZ ) 
         );
 
-//--------spi_master
-spi_master spi_master_0(
-        // Inputs
-        .clk      ( CLK_26MHZ_0_GLA ),
-        .rst      ( reset_pulse_0_RESET ),
-        .miso     ( MISO ),
-        .start    ( spi_mode_config_0_start ),
-        .data_in  ( spi_mode_config_0_byte_out ),
-        // Outputs
-        .mosi     ( MOSI_net_0 ),
-        .sck      ( SCK_net_0 ),
-        .data_out ( spi_master_0_data_out ),
-        .busy     ( spi_master_0_busy ),
-        .chip_rdy (  ),
-        .new_data (  ) 
-        );
-
-//--------spi_mode_config
-spi_mode_config spi_mode_config_0(
-        // Inputs
-        .TX_ENABLE     ( orbit_control_0_tx_enable ),
-        .rst           ( reset_pulse_0_RESET ),
-        .clk           ( CLK_26MHZ_0_GLA ),
-        .busy          ( spi_master_0_busy ),
-        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
-        .DATA_FROM_MEM ( read_buffer_0_BYTE_OUT ),
-        // Outputs
-        .mem_enable    (  ),
-        .begin_pass    ( spi_mode_config_0_begin_pass ),
-        .ss            ( SS_net_0 ),
-        .next_cmd      ( spi_mode_config_0_next_cmd ),
-        .start         ( spi_mode_config_0_start ),
-        .byte_out      ( spi_mode_config_0_byte_out ) 
-        );
-
 //--------sram_interface
 sram_interface sram_interface_0(
         // Inputs
         .CLK_48MHZ   ( reset_pulse_0_CLK_OUT_48MHZ ),
         .RESET       ( reset_pulse_0_RESET ),
+        .CHIP_SELECT ( memory_controller_0_CHIP_SELECT ),
         .ADDRESS_IN  ( memory_controller_0_ADDRESS_OUT ),
         .DATA_IN     ( memory_controller_0_DATA_OUT ),
         .CMD_IN      ( memory_controller_0_CMD_OUT_0 ),
-        .CHIP_SELECT ( memory_controller_0_CHIP_SELECT ),
         // Outputs
         .SRAM_A0     ( SRAM_A0_net_0 ),
         .SRAM_A1     ( SRAM_A1_net_0 ),
@@ -511,6 +473,27 @@ sram_interface sram_interface_0(
         .SRAM_D13    ( SRAM_D13 ),
         .SRAM_D14    ( SRAM_D14 ),
         .SRAM_D15    ( SRAM_D15 ) 
+        );
+
+//--------sram_test_sim
+sram_test_sim sram_test_sim_0(
+        // Inputs
+        .CLK_10HZ    ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
+        .RESET       ( reset_pulse_0_RESET ),
+        .TIMESTAMP   ( timestamp_0_TIMESTAMP ),
+        .D_READ      ( read_buffer_0_BYTE_OUT ),
+        // Outputs
+        .MAG_DATA    ( sram_test_sim_0_MAG_DATA ),
+        .GEIG_COUNTS ( sram_test_sim_0_GEIG_COUNTS ),
+        .NEXT_BYTE   ( sram_test_sim_0_NEXT_BYTE ),
+        .D0          ( D0_net_0 ),
+        .D1          ( D1_net_0 ),
+        .D2          ( D2_net_0 ),
+        .D3          ( D3_net_0 ),
+        .D4          ( D4_net_0 ),
+        .D5          ( D5_net_0 ),
+        .D6          ( D6_net_0 ),
+        .D7          ( D7_net_0 ) 
         );
 
 //--------test_harness_geiger_stack

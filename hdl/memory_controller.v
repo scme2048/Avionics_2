@@ -37,7 +37,7 @@ output NEXT_READ, NEXT_WRITE;
 output [15:0] DATA_OUT;
 output [17:0] ADDRESS_OUT;
 output CHIP_SELECT;
-output CMD_OUT;
+output [1:0] CMD_OUT;
 
 /////Statements
 
@@ -46,12 +46,12 @@ output CMD_OUT;
 reg [79:0] geig_prev;
 reg [79:0] geig_buffer;
 parameter new_geig_cmd =2'b01;
-parameter num_geig_cycles = 5;
+parameter num_geig_cycles = 4;
 
 reg [79:0] mag_prev;
 reg [79:0] mag_buffer;
 parameter new_mag_cmd =2'b10;
-parameter num_mag_cycles = 5;
+parameter num_mag_cycles = 4;
 
 reg [79:0] data_buffer;
 reg read_prev;
@@ -101,17 +101,21 @@ if (RESET==1'b0) begin
     data_out<=0;
     mag_prev=80'b0;
     geig_prev=80'b0;
+    geig_buffer=80'b0;
+    mag_buffer=80'b0;
+    data_buffer=80'b0;
+    read_prev=1'b0;
     
 end else begin
 // Set read_address and write_address for check later to ensure overlaps don't occur
 
 // Shift schedule if needed
-if ((schedule[1:0] ==2'b00) && (RESET==1'b1)) begin
+if (schedule[1:0] ==2'b00) begin
     schedule=schedule>>2;
 end
 // Check for unique or new data for both sources and order in schedule by open slots
-if ((geig_prev!=GEIG_DATA) && (RESET==1'b1)) begin
-    geig_buffer[79:0] = GEIG_DATA;
+if (geig_prev!=GEIG_DATA) begin
+    geig_buffer = GEIG_DATA;
     geig_prev = GEIG_DATA;
     if (schedule[1:0] == 2'b00) begin
         schedule[1:0] = new_geig_cmd;
@@ -126,8 +130,8 @@ end else begin
     geig_prev= GEIG_DATA;
 end
 
-if ((mag_prev!=MAG_DATA) && (RESET==1'b1)) begin
-    mag_buffer[79:0] = MAG_DATA;
+if (mag_prev!=MAG_DATA) begin
+    mag_buffer = MAG_DATA;
     mag_prev = MAG_DATA;
     if (schedule[1:0] == 2'b00) begin
         schedule[1:0] = new_mag_cmd;

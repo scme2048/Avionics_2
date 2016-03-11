@@ -18,12 +18,12 @@
 
 //`timescale <time_units> / <precision>
 
-module read_buffer( CLK_48MHZ,RESET,NEXT_BYTE,DATA_READ,ROW_WRITE,READ_CMD,BYTE_OUT);
+module read_buffer( CLK_48MHZ,RESET,NEXT_BYTE,DATA_READ,WRITE_ADDRESS,READ_CMD,BYTE_OUT);
 
 // Inputs and Outputs
 input CLK_48MHZ, RESET, NEXT_BYTE;
 input [15:0] DATA_READ;
-input [12:0] ROW_WRITE;
+input [17:0] WRITE_ADDRESS;
 
 output READ_CMD;
 output [7:0] BYTE_OUT;
@@ -71,7 +71,7 @@ always @(posedge CLK_48MHZ or negedge RESET) begin
         buffer_a<=0;
         buffer_b<=0;
     end else begin
-        if ((init_stage==1) && (ROW_WRITE>=13'b0000000000011)) begin
+        if ((init_stage==1) && (WRITE_ADDRESS>=18'b000000000000000011)) begin
             read_cmd<=1'b1;
             init_stage=2;
             // HERE NEED TO GET FIRST 2 WORDS OF DATA FROM MEMORY TO FILL THE CACHE!!!!

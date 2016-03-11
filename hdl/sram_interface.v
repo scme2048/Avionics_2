@@ -18,11 +18,11 @@
 
 //`timescale <time_units> / <precision>
 
-module sram_interface(CLK_48MHZ,RESET,ADDRESS_IN,DATA_IN,CMD_IN,
+module sram_interface(CLK_48MHZ,RESET,ADDRESS_IN,DATA_IN,CMD_IN, CHIP_SELECT,
 SRAM_D0,SRAM_D1,SRAM_D2,SRAM_D3,SRAM_D4,SRAM_D5,SRAM_D6,SRAM_D7,SRAM_D8,SRAM_D9,SRAM_D10,SRAM_D11,
 SRAM_D12,SRAM_D13,SRAM_D14,SRAM_D15,
 SRAM_A0,SRAM_A1,SRAM_A2,SRAM_A3,SRAM_A4,SRAM_A5,SRAM_A6,SRAM_A7,SRAM_A8,SRAM_A9,SRAM_A10,SRAM_A11,
-SRAM_A12,SRAM_A13, SRAM_A14, SRAM_A15, SRAM_A16, SRAM_A17, CHIP_SELECT,
+SRAM_A12,SRAM_A13, SRAM_A14, SRAM_A15, SRAM_A16, SRAM_A17,
 SRAM_SRBS0,SRAM_SRBS1,SRAM_SRBS2,SRAM_SRBS3,SRAM_CE,SRAM_WE,SRAM_OE,
 STATUS,DATA_READ);
 
@@ -59,11 +59,11 @@ reg [17:0] address; // Address to read/write to
 
 // Control Registers
 reg ce,we,oe,srbs0,srbs1,srbs2,srbs3;   // SRAM control registers
-reg status;                             // Status to mem controller. 1 if busy, 0 if ready.
+
 
 // Internal Function Regs
 reg weVAL;                  // Inout switch. Drives data out when 1, Z when 0. Set high during write cycle.
-reg busy;                   // Locks other operations during commanded cycle.
+reg busy;                   // Locks other operations during commanded cycle. Also assign to status output
 reg write_cycle;            // Enters write cycle 
 reg [3:0] write_counter;    // Tracks position in write cycle
 reg read_cycle;             // Enters read cycle
@@ -137,6 +137,8 @@ assign SRAM_SRBS1 = srbs1;
 assign SRAM_SRBS2 = srbs2;
 assign SRAM_SRBS3 = srbs3;
 
+assign STATUS=busy;
+
 always @(posedge CLK_48MHZ or negedge RESET)
 begin
 
@@ -155,8 +157,10 @@ if (RESET==1'b0) begin
     srbs3 = 1'b1;
     // Internal Functions
     weVAL = 1'b0;
+    write_cycle =1'b0;
     write_counter = 4'b0;
     read_counter = 4'b0;
+    read_cycle = 1'b0;
     busy = 1'b0;
 end else begin
     if (busy==0) begin
@@ -191,8 +195,8 @@ end else begin
         end else if (write_counter==1) begin
             srbs0=1'b1;
             srbs1=1'b1;
-            srbs2=1'b0;
-            srbs3=1'b0;
+            srbs2=1'b1;
+            srbs3=1'b1;
             oe=1'b1;
             we=1'b1;
             ce=1'b1;
