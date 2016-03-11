@@ -1,0 +1,92 @@
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":47:0:47:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
+@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Feedback mux created for signal ID_GEIG[7:0].
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[6] assign 1, register removed by optimization
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[5:3] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[2:0] assign 1, register removed by optimization
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[48] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[50] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[52] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[54] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[56] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[58] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[60] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[62] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[64] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[66] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[68] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[70] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[72] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[74] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[76] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[78] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 78 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 76 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 74 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 72 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 70 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 68 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 66 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 64 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 62 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 60 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 58 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 56 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 54 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 52 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 50 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 48 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 7 of G_DATA_STACK[79:0] 
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 5 to 3 of G_DATA_STACK[79:0] 
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":87:0:87:5|Optimizing register bit num_cycles[1] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":87:0:87:5|Pruning register bit 1 of num_cycles[2:0] 
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 1 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 4 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 5 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 7 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 32 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 34 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 35 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 36 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 38 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 40 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 42 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 44 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 46 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 48 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 50 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 52 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 54 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 56 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 58 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 60 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 62 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 64 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 66 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 68 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 70 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 72 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 74 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 76 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 78 of mag_data[79:0] assign 0, register removed by optimization.
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register bits 79 to 57 of mag_data[79:29] 
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register bits 32 to 30 of mag_data[79:29] 
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
+@W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":564:26:564:52|Pruning instance test_harness_geiger_stack_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":377:20:377:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL138 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Removing register 'next_byte' because it is only assigned 0 or its original value.
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register next_count[4:0] 
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[1] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[2] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[3] to a constant 0
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register bits 3 to 1 of write_counter[3:0] 
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register bits 3 to 2 of read_counter[3:0] 
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
+

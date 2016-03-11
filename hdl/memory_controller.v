@@ -46,12 +46,12 @@ output [1:0] CMD_OUT;
 reg [79:0] geig_prev;
 reg [79:0] geig_buffer;
 parameter new_geig_cmd =2'b01;
-parameter num_geig_cycles = 4;
+parameter num_geig_cycles = 5;
 
 reg [79:0] mag_prev;
 reg [79:0] mag_buffer;
 parameter new_mag_cmd =2'b10;
-parameter num_mag_cycles = 4;
+parameter num_mag_cycles = 5;
 
 reg [79:0] data_buffer;
 reg read_prev;
@@ -175,7 +175,7 @@ if (((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) && (RESE
 
     if (write_count<num_cycles) begin
         // Write to data to address
-        if ((SRAM_STATUS==1'b1) && (busy_hold==1)) begin
+        if ((busy_hold==1) && (SRAM_STATUS==1)) begin
             cmd_out<=2'b00;
         end
         if ((busy_hold==1'b1)&&(SRAM_STATUS==1'b0)) begin

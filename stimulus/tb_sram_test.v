@@ -51,7 +51,8 @@ always @(SYSCLK)
 wire a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17;
 wire srbs0,srbs1,srbs2,srbs3,we,oe,ce;
 wire dr0,dr1,dr2,dr3,dr4,dr5,dr6,dr7;
-wire d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15;
+wire d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29
+,d30,d31;
 //////////////////////////////////////////////////////////////////////
 // Instantiate Unit Under Test:  sram_test
 //////////////////////////////////////////////////////////////////////
@@ -111,7 +112,25 @@ sram_test sram_test_0 (
     .SRAM_D12(d12 ),
     .SRAM_D13(d13 ),
     .SRAM_D14( d14),
-    .SRAM_D15(d15 )
+    .SRAM_D15(d15 ),
+    .SRAM_D16( d16),
+    .SRAM_D17( d17),
+    .SRAM_D18( d18),
+    .SRAM_D19( d19),
+    .SRAM_D20( d20),
+    .SRAM_D21( d21),
+    .SRAM_D22( d22),
+    .SRAM_D23( d23),
+    .SRAM_D24( d24),
+    .SRAM_D25( d25),
+    .SRAM_D26( d26),
+    .SRAM_D27( d27),
+    .SRAM_D28( d28),
+    .SRAM_D29( d29),
+    .SRAM_D30( d30),
+    .SRAM_D31( d31)
+
+
 
 );
 

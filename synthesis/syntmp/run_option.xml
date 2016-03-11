@@ -2,15 +2,15 @@
 <!-- 
   Synopsys, Inc.
   Version J-2015.03M-3
-  Project file F:\Avionics_2\synthesis\syntmp\run_option.xml
-  Written on Tue Mar 08 19:19:09 2016
+  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\run_option.xml
+  Written on Fri Mar 11 12:38:46 2016
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
-     <option name="project_name" display_name="Project Name">transceiver_integration_syn</option>
+     <option name="project_name" display_name="Project Name">sram_test_syn</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module">transceiver_integration</option>
+     <option name="top_module" display_name="Top Module">sram_test</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">24</option>

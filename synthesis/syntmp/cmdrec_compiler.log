@@ -1,18 +1,22 @@
-C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe  -osyn  F:\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs  -top  transceiver_integration  -hdllog  F:\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I F:\Avionics_2\synthesis\  -I C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib   -v2001  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -encrypt  -pro  -dmgen  F:\Avionics_2\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v -lib work F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v -lib work F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v -lib work F:\Avionics_2\hdl\orbit_control.v -lib work F:\Avionics_2\hdl\read_buffer.v -lib work F:\Avionics_2\hdl\reset_pulse.v -lib work F:\Avionics_2\hdl\spi_data_out.v -lib work F:\Avionics_2\hdl\SPI_Master.v -lib work F:\Avionics_2\hdl\test_constants_spi.v -lib work F:\Avionics_2\hdl\spi_mode_config2.v -lib work F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v 
+C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_comp.srs  -top  sram_test  -hdllog  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\  -I C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib   -v2001  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -encrypt  -pro  -dmgen  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_address_traversal.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v 
 rc:0 success:1
-F:\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs|o|1457489952|30859
-F:\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr|o|1457489952|5962
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_comp.srs|o|1457725129|38880
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_compiler.srr|o|1457725129|24935
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431615982|57101
-F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v|i|1457479416|2764
-F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v|i|1457479410|970
-F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v|i|1457479410|967
-F:\Avionics_2\hdl\orbit_control.v|i|1457479410|1652
-F:\Avionics_2\hdl\read_buffer.v|i|1457479410|3233
-F:\Avionics_2\hdl\reset_pulse.v|i|1457479410|866
-F:\Avionics_2\hdl\spi_data_out.v|i|1457479410|1025
-F:\Avionics_2\hdl\SPI_Master.v|i|1457479410|7540
-F:\Avionics_2\hdl\test_constants_spi.v|i|1457479410|839
-F:\Avionics_2\hdl\spi_mode_config2.v|i|1457489676|35869
-F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v|i|1457481758|7814
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v|i|1457712578|2760
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v|i|1457712578|1024
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v|i|1457712578|970
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v|i|1457712578|967
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v|i|1457712578|2439
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v|i|1457719280|6692
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_address_traversal.v|i|1457712578|1583
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v|i|1457712578|3250
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v|i|1457712578|866
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v|i|1457723583|9908
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v|i|1457712578|1761
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v|i|1457712578|1742
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v|i|1457712578|712
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v|i|1457712578|1315
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v|i|1457724085|19026
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\c_hdl.exe|i|1431624966|1299456
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe|i|1431625156|1903104

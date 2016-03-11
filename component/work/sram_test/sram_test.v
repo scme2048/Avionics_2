@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Mar 11 01:48:21 2016
+// Created by SmartDesign Fri Mar 11 12:21:25 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -53,8 +53,24 @@ module sram_test(
     SRAM_D13,
     SRAM_D14,
     SRAM_D15,
+    SRAM_D16,
+    SRAM_D17,
+    SRAM_D18,
+    SRAM_D19,
     SRAM_D2,
+    SRAM_D20,
+    SRAM_D21,
+    SRAM_D22,
+    SRAM_D23,
+    SRAM_D24,
+    SRAM_D25,
+    SRAM_D26,
+    SRAM_D27,
+    SRAM_D28,
+    SRAM_D29,
     SRAM_D3,
+    SRAM_D30,
+    SRAM_D31,
     SRAM_D4,
     SRAM_D5,
     SRAM_D6,
@@ -115,8 +131,24 @@ inout  SRAM_D12;
 inout  SRAM_D13;
 inout  SRAM_D14;
 inout  SRAM_D15;
+inout  SRAM_D16;
+inout  SRAM_D17;
+inout  SRAM_D18;
+inout  SRAM_D19;
 inout  SRAM_D2;
+inout  SRAM_D20;
+inout  SRAM_D21;
+inout  SRAM_D22;
+inout  SRAM_D23;
+inout  SRAM_D24;
+inout  SRAM_D25;
+inout  SRAM_D26;
+inout  SRAM_D27;
+inout  SRAM_D28;
+inout  SRAM_D29;
 inout  SRAM_D3;
+inout  SRAM_D30;
+inout  SRAM_D31;
 inout  SRAM_D4;
 inout  SRAM_D5;
 inout  SRAM_D6;
@@ -188,6 +220,22 @@ wire          SRAM_D12;
 wire          SRAM_D13;
 wire          SRAM_D14;
 wire          SRAM_D15;
+wire          SRAM_D16;
+wire          SRAM_D17;
+wire          SRAM_D18;
+wire          SRAM_D19;
+wire          SRAM_D20;
+wire          SRAM_D21;
+wire          SRAM_D22;
+wire          SRAM_D23;
+wire          SRAM_D24;
+wire          SRAM_D25;
+wire          SRAM_D26;
+wire          SRAM_D27;
+wire          SRAM_D28;
+wire          SRAM_D29;
+wire          SRAM_D30;
+wire          SRAM_D31;
 wire   [15:0] sram_interface_0_DATA_READ;
 wire          sram_interface_0_STATUS;
 wire          SRAM_OE_net_0;
@@ -424,10 +472,10 @@ sram_interface sram_interface_0(
         // Inputs
         .CLK_48MHZ   ( reset_pulse_0_CLK_OUT_48MHZ ),
         .RESET       ( reset_pulse_0_RESET ),
-        .CHIP_SELECT ( memory_controller_0_CHIP_SELECT ),
         .ADDRESS_IN  ( memory_controller_0_ADDRESS_OUT ),
         .DATA_IN     ( memory_controller_0_DATA_OUT ),
         .CMD_IN      ( memory_controller_0_CMD_OUT_0 ),
+        .CHIP_SELECT ( memory_controller_0_CHIP_SELECT ),
         // Outputs
         .SRAM_A0     ( SRAM_A0_net_0 ),
         .SRAM_A1     ( SRAM_A1_net_0 ),
@@ -472,7 +520,23 @@ sram_interface sram_interface_0(
         .SRAM_D12    ( SRAM_D12 ),
         .SRAM_D13    ( SRAM_D13 ),
         .SRAM_D14    ( SRAM_D14 ),
-        .SRAM_D15    ( SRAM_D15 ) 
+        .SRAM_D15    ( SRAM_D15 ),
+        .SRAM_D16    ( SRAM_D16 ),
+        .SRAM_D17    ( SRAM_D17 ),
+        .SRAM_D18    ( SRAM_D18 ),
+        .SRAM_D19    ( SRAM_D19 ),
+        .SRAM_D20    ( SRAM_D20 ),
+        .SRAM_D21    ( SRAM_D21 ),
+        .SRAM_D22    ( SRAM_D22 ),
+        .SRAM_D23    ( SRAM_D23 ),
+        .SRAM_D24    ( SRAM_D24 ),
+        .SRAM_D25    ( SRAM_D25 ),
+        .SRAM_D26    ( SRAM_D26 ),
+        .SRAM_D27    ( SRAM_D27 ),
+        .SRAM_D28    ( SRAM_D28 ),
+        .SRAM_D29    ( SRAM_D29 ),
+        .SRAM_D30    ( SRAM_D30 ),
+        .SRAM_D31    ( SRAM_D31 ) 
         );
 
 //--------sram_test_sim
@@ -483,7 +547,6 @@ sram_test_sim sram_test_sim_0(
         .TIMESTAMP   ( timestamp_0_TIMESTAMP ),
         .D_READ      ( read_buffer_0_BYTE_OUT ),
         // Outputs
-        .MAG_DATA    ( sram_test_sim_0_MAG_DATA ),
         .GEIG_COUNTS ( sram_test_sim_0_GEIG_COUNTS ),
         .NEXT_BYTE   ( sram_test_sim_0_NEXT_BYTE ),
         .D0          ( D0_net_0 ),
@@ -493,7 +556,8 @@ sram_test_sim sram_test_sim_0(
         .D4          ( D4_net_0 ),
         .D5          ( D5_net_0 ),
         .D6          ( D6_net_0 ),
-        .D7          ( D7_net_0 ) 
+        .D7          ( D7_net_0 ),
+        .MAG_DATA    ( sram_test_sim_0_MAG_DATA ) 
         );
 
 //--------test_harness_geiger_stack

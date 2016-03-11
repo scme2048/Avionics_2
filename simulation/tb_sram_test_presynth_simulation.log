@@ -8,151 +8,151 @@
 # vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:24 on Mar 11,2016
+# Start time: 12:21:38 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_1MHZ/CLK_1MHZ.v 
 # -- Compiling module CLK_1MHZ
 # 
 # Top level modules:
 # 	CLK_1MHZ
-# End time: 01:17:24 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v 
 # -- Compiling module clock_div_1MHZ_100KHZ
 # 
 # Top level modules:
 # 	clock_div_1MHZ_100KHZ
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v 
 # -- Compiling module clock_div_1MHZ_10HZ
 # 
 # Top level modules:
 # 	clock_div_1MHZ_10HZ
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v 
 # -- Compiling module clock_div_1MHZ_1KHZ
 # 
 # Top level modules:
 # 	clock_div_1MHZ_1KHZ
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v 
 # -- Compiling module geig_data_handling
 # 
 # Top level modules:
 # 	geig_data_handling
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v 
 # -- Compiling module memory_controller
 # 
 # Top level modules:
 # 	memory_controller
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v 
 # -- Compiling module read_address_traversal
 # 
 # Top level modules:
 # 	read_address_traversal
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v 
 # -- Compiling module read_buffer
 # 
 # Top level modules:
 # 	read_buffer
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:39 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v 
 # -- Compiling module reset_pulse
 # 
 # Top level modules:
 # 	reset_pulse
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:39 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v 
 # -- Compiling module sram_interface
 # 
 # Top level modules:
 # 	sram_interface
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_test_sim.v 
 # -- Compiling module sram_test_sim
 # 
 # Top level modules:
 # 	sram_test_sim
-# End time: 01:17:25 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:25 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_harness_geiger_stack.v 
 # -- Compiling module test_harness_geiger_stack
 # 
 # Top level modules:
 # 	test_harness_geiger_stack
-# End time: 01:17:26 on Mar 11,2016, Elapsed time: 0:00:01
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:26 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v 
 # -- Compiling module timestamp
 # 
 # Top level modules:
 # 	timestamp
-# End time: 01:17:26 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:26 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v 
 # -- Compiling module write_address_traversal
 # 
 # Top level modules:
 # 	write_address_traversal
-# End time: 01:17:26 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:26 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test/sram_test.v 
 # -- Compiling module sram_test
 # 
 # Top level modules:
 # 	sram_test
-# End time: 01:17:26 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:26 on Mar 11,2016
+# Start time: 12:21:40 on Mar 11,2016
 # vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_sram_test.v 
 # -- Compiling module tb_sram_test
 # 
 # Top level modules:
 # 	tb_sram_test
-# End time: 01:17:26 on Mar 11,2016, Elapsed time: 0:00:00
+# End time: 12:21:40 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -do "do run.do" -l tb_sram_test_presynth_simulation.log 
-# Start time: 01:17:26 on Mar 11,2016
+# Start time: 12:21:41 on Mar 11,2016
 # //  ModelSim Microsemi 10.3c Jul 19 2014 
 # //
 # //  Copyright 1991-2014 Mentor Graphics Corporation
@@ -187,781 +187,13 @@
 # 
 #           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
 # 
-#           Attempting to use alternate WLF file "./wlftxe2bnc".
+#           Attempting to use alternate WLF file "./wlftdvqgji".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftxe2bnc
+#           Using alternate file: ./wlftdvqgji
 # 
 #  ** Warning: FBSEL is unknown.
 #  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
 run -all
-add wave sim:/tb_sram_test/sram_test_0/*
-restart
-run -all
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-run -all
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:42 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_1MHZ/CLK_1MHZ.v 
-# -- Compiling module CLK_1MHZ
-# 
-# Top level modules:
-# 	CLK_1MHZ
-# End time: 01:26:42 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:42 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v 
-# -- Compiling module clock_div_1MHZ_100KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_100KHZ
-# End time: 01:26:42 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v 
-# -- Compiling module clock_div_1MHZ_10HZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_10HZ
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v 
-# -- Compiling module clock_div_1MHZ_1KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_1KHZ
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v 
-# -- Compiling module geig_data_handling
-# 
-# Top level modules:
-# 	geig_data_handling
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v 
-# -- Compiling module memory_controller
-# 
-# Top level modules:
-# 	memory_controller
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v 
-# -- Compiling module read_address_traversal
-# 
-# Top level modules:
-# 	read_address_traversal
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v 
-# -- Compiling module read_buffer
-# 
-# Top level modules:
-# 	read_buffer
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v 
-# -- Compiling module reset_pulse
-# 
-# Top level modules:
-# 	reset_pulse
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v 
-# -- Compiling module sram_interface
-# 
-# Top level modules:
-# 	sram_interface
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_test_sim.v 
-# -- Compiling module sram_test_sim
-# 
-# Top level modules:
-# 	sram_test_sim
-# End time: 01:26:43 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:43 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_harness_geiger_stack.v 
-# -- Compiling module test_harness_geiger_stack
-# 
-# Top level modules:
-# 	test_harness_geiger_stack
-# End time: 01:26:44 on Mar 11,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:44 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v 
-# -- Compiling module timestamp
-# 
-# Top level modules:
-# 	timestamp
-# End time: 01:26:44 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:44 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v 
-# -- Compiling module write_address_traversal
-# 
-# Top level modules:
-# 	write_address_traversal
-# End time: 01:26:44 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:44 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test/sram_test.v 
-# -- Compiling module sram_test
-# 
-# Top level modules:
-# 	sram_test
-# End time: 01:26:44 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:26:44 on Mar 11,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_sram_test.v 
-# -- Compiling module tb_sram_test
-# 
-# Top level modules:
-# 	tb_sram_test
-# End time: 01:26:44 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 01:26:46 on Mar 11,2016
-# Loading presynth.tb_sram_test
-# Loading presynth.sram_test
-# Loading presynth.CLK_1MHZ
-# Loading proasic3l.PLL
-# Loading proasic3l.PLLPRIM
-# Loading proasic3l.PLLINT
-# Loading proasic3l.GND
-# Loading proasic3l.VCC
-# Loading presynth.clock_div_1MHZ_1KHZ
-# Loading presynth.clock_div_1MHZ_10HZ
-# Loading presynth.clock_div_1MHZ_100KHZ
-# Loading presynth.geig_data_handling
-# Loading presynth.memory_controller
-# Loading presynth.read_address_traversal
-# Loading presynth.read_buffer
-# Loading presynth.reset_pulse
-# Loading presynth.sram_interface
-# Loading presynth.sram_test_sim
-# Loading presynth.test_harness_geiger_stack
-# Loading presynth.timestamp
-# Loading presynth.write_address_traversal
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
-# 
-#           Attempting to use alternate WLF file "./wlftj53h0s".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftj53h0s
-# 
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-add wave sim:/tb_sram_test/sram_test_0/*
-restart
-run -all
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-run -all
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:20 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_1MHZ/CLK_1MHZ.v 
-# -- Compiling module CLK_1MHZ
-# 
-# Top level modules:
-# 	CLK_1MHZ
-# End time: 01:44:20 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v 
-# -- Compiling module clock_div_1MHZ_100KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_100KHZ
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v 
-# -- Compiling module clock_div_1MHZ_10HZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_10HZ
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v 
-# -- Compiling module clock_div_1MHZ_1KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_1KHZ
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v 
-# -- Compiling module geig_data_handling
-# 
-# Top level modules:
-# 	geig_data_handling
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v 
-# -- Compiling module memory_controller
-# 
-# Top level modules:
-# 	memory_controller
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v 
-# -- Compiling module read_address_traversal
-# 
-# Top level modules:
-# 	read_address_traversal
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v 
-# -- Compiling module read_buffer
-# 
-# Top level modules:
-# 	read_buffer
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v 
-# -- Compiling module reset_pulse
-# 
-# Top level modules:
-# 	reset_pulse
-# End time: 01:44:21 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:21 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v 
-# -- Compiling module sram_interface
-# 
-# Top level modules:
-# 	sram_interface
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:22 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_test_sim.v 
-# -- Compiling module sram_test_sim
-# 
-# Top level modules:
-# 	sram_test_sim
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:22 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_harness_geiger_stack.v 
-# -- Compiling module test_harness_geiger_stack
-# 
-# Top level modules:
-# 	test_harness_geiger_stack
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:22 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v 
-# -- Compiling module timestamp
-# 
-# Top level modules:
-# 	timestamp
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:22 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v 
-# -- Compiling module write_address_traversal
-# 
-# Top level modules:
-# 	write_address_traversal
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:22 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test/sram_test.v 
-# -- Compiling module sram_test
-# 
-# Top level modules:
-# 	sram_test
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:44:22 on Mar 11,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_sram_test.v 
-# -- Compiling module tb_sram_test
-# 
-# Top level modules:
-# 	tb_sram_test
-# End time: 01:44:22 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 01:44:23 on Mar 11,2016
-# Loading presynth.tb_sram_test
-# Loading presynth.sram_test
-# Loading presynth.CLK_1MHZ
-# Loading proasic3l.PLL
-# Loading proasic3l.PLLPRIM
-# Loading proasic3l.PLLINT
-# Loading proasic3l.GND
-# Loading proasic3l.VCC
-# Loading presynth.clock_div_1MHZ_1KHZ
-# Loading presynth.clock_div_1MHZ_10HZ
-# Loading presynth.clock_div_1MHZ_100KHZ
-# Loading presynth.geig_data_handling
-# Loading presynth.memory_controller
-# Loading presynth.read_address_traversal
-# Loading presynth.read_buffer
-# Loading presynth.reset_pulse
-# Loading presynth.sram_interface
-# Loading presynth.sram_test_sim
-# Loading presynth.test_harness_geiger_stack
-# Loading presynth.timestamp
-# Loading presynth.write_address_traversal
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
-# 
-#           Attempting to use alternate WLF file "./wlftv1htth".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftv1htth
-# 
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-add wave -r sim:/tb_sram_test/sram_test_0/*
-restart
-run -all
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_1MHZ/CLK_1MHZ.v 
-# -- Compiling module CLK_1MHZ
-# 
-# Top level modules:
-# 	CLK_1MHZ
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v 
-# -- Compiling module clock_div_1MHZ_100KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_100KHZ
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v 
-# -- Compiling module clock_div_1MHZ_10HZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_10HZ
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v 
-# -- Compiling module clock_div_1MHZ_1KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_1KHZ
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v 
-# -- Compiling module geig_data_handling
-# 
-# Top level modules:
-# 	geig_data_handling
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v 
-# -- Compiling module memory_controller
-# 
-# Top level modules:
-# 	memory_controller
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v 
-# -- Compiling module read_address_traversal
-# 
-# Top level modules:
-# 	read_address_traversal
-# End time: 01:48:12 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:12 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v 
-# -- Compiling module read_buffer
-# 
-# Top level modules:
-# 	read_buffer
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v 
-# -- Compiling module reset_pulse
-# 
-# Top level modules:
-# 	reset_pulse
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v 
-# -- Compiling module sram_interface
-# 
-# Top level modules:
-# 	sram_interface
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_test_sim.v 
-# -- Compiling module sram_test_sim
-# 
-# Top level modules:
-# 	sram_test_sim
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_harness_geiger_stack.v 
-# -- Compiling module test_harness_geiger_stack
-# 
-# Top level modules:
-# 	test_harness_geiger_stack
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v 
-# -- Compiling module timestamp
-# 
-# Top level modules:
-# 	timestamp
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v 
-# -- Compiling module write_address_traversal
-# 
-# Top level modules:
-# 	write_address_traversal
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test/sram_test.v 
-# -- Compiling module sram_test
-# 
-# Top level modules:
-# 	sram_test
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:13 on Mar 11,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_sram_test.v 
-# -- Compiling module tb_sram_test
-# 
-# Top level modules:
-# 	tb_sram_test
-# End time: 01:48:13 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 01:48:15 on Mar 11,2016
-# Loading presynth.tb_sram_test
-# Loading presynth.sram_test
-# Loading presynth.CLK_1MHZ
-# Loading proasic3l.PLL
-# Loading proasic3l.PLLPRIM
-# Loading proasic3l.PLLINT
-# Loading proasic3l.GND
-# Loading proasic3l.VCC
-# Loading presynth.clock_div_1MHZ_1KHZ
-# Loading presynth.clock_div_1MHZ_10HZ
-# Loading presynth.clock_div_1MHZ_100KHZ
-# Loading presynth.geig_data_handling
-# Loading presynth.memory_controller
-# Loading presynth.read_address_traversal
-# Loading presynth.read_buffer
-# Loading presynth.reset_pulse
-# Loading presynth.sram_interface
-# Loading presynth.sram_test_sim
-# Loading presynth.test_harness_geiger_stack
-# Loading presynth.timestamp
-# Loading presynth.write_address_traversal
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
-# 
-#           Attempting to use alternate WLF file "./wlftt5bt5k".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftt5bt5k
-# 
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:29 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_1MHZ/CLK_1MHZ.v 
-# -- Compiling module CLK_1MHZ
-# 
-# Top level modules:
-# 	CLK_1MHZ
-# End time: 01:48:29 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v 
-# -- Compiling module clock_div_1MHZ_100KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_100KHZ
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v 
-# -- Compiling module clock_div_1MHZ_10HZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_10HZ
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v 
-# -- Compiling module clock_div_1MHZ_1KHZ
-# 
-# Top level modules:
-# 	clock_div_1MHZ_1KHZ
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v 
-# -- Compiling module geig_data_handling
-# 
-# Top level modules:
-# 	geig_data_handling
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v 
-# -- Compiling module memory_controller
-# 
-# Top level modules:
-# 	memory_controller
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v 
-# -- Compiling module read_address_traversal
-# 
-# Top level modules:
-# 	read_address_traversal
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v 
-# -- Compiling module read_buffer
-# 
-# Top level modules:
-# 	read_buffer
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v 
-# -- Compiling module reset_pulse
-# 
-# Top level modules:
-# 	reset_pulse
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:30 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v 
-# -- Compiling module sram_interface
-# 
-# Top level modules:
-# 	sram_interface
-# End time: 01:48:30 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:31 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_test_sim.v 
-# -- Compiling module sram_test_sim
-# 
-# Top level modules:
-# 	sram_test_sim
-# End time: 01:48:31 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:31 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_harness_geiger_stack.v 
-# -- Compiling module test_harness_geiger_stack
-# 
-# Top level modules:
-# 	test_harness_geiger_stack
-# End time: 01:48:31 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:31 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v 
-# -- Compiling module timestamp
-# 
-# Top level modules:
-# 	timestamp
-# End time: 01:48:31 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:31 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v 
-# -- Compiling module write_address_traversal
-# 
-# Top level modules:
-# 	write_address_traversal
-# End time: 01:48:31 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:31 on Mar 11,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test/sram_test.v 
-# -- Compiling module sram_test
-# 
-# Top level modules:
-# 	sram_test
-# End time: 01:48:31 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:48:31 on Mar 11,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_sram_test.v 
-# -- Compiling module tb_sram_test
-# 
-# Top level modules:
-# 	tb_sram_test
-# End time: 01:48:31 on Mar 11,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 01:48:32 on Mar 11,2016
-# Loading presynth.tb_sram_test
-# Loading presynth.sram_test
-# Loading presynth.CLK_1MHZ
-# Loading proasic3l.PLL
-# Loading proasic3l.PLLPRIM
-# Loading proasic3l.PLLINT
-# Loading proasic3l.GND
-# Loading proasic3l.VCC
-# Loading presynth.clock_div_1MHZ_1KHZ
-# Loading presynth.clock_div_1MHZ_10HZ
-# Loading presynth.clock_div_1MHZ_100KHZ
-# Loading presynth.geig_data_handling
-# Loading presynth.memory_controller
-# Loading presynth.read_address_traversal
-# Loading presynth.read_buffer
-# Loading presynth.reset_pulse
-# Loading presynth.sram_interface
-# Loading presynth.sram_test_sim
-# Loading presynth.test_harness_geiger_stack
-# Loading presynth.timestamp
-# Loading presynth.write_address_traversal
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
-# 
-#           Attempting to use alternate WLF file "./wlft8f8iwf".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlft8f8iwf
-# 
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-restart
-add wave -r sim:/tb_sram_test/sram_test_0/*
-restart
-run -all
-#  ** Warning: FBSEL is unknown.
-#  Time: 0.0 Instance: tb_sram_test.sram_test_0.CLK_1MHZ_0.Core.P1 
-run -all
-# End time: 02:03:28 on Mar 11,2016, Elapsed time: 0:14:56
+# End time: 12:38:36 on Mar 11,2016, Elapsed time: 0:16:55
 # Errors: 0, Warnings: 2
