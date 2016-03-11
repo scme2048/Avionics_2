@@ -1,15 +1,15 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis   -part M1A3P1000L  -package FBGA484  -grade STD    -globalthreshold 5000 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\report\sram_test_fpga_mapper.xml  -top_level_module  sram_test  -licensetype  synplifypro_actel  -flow mapping  -mp  1  -prjfile  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.edn   -freq 100.000   C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_prem.srd  -sap  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.sap  -otap  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.tap  -omap  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.map  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -sap  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.sap  -ologparam  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\sram_test.plg  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.srm  -prjdir  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\  -prjname  sram_test_syn  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_fpga_mapper.srr 
 rc:1 success:1
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs|o|1457721629|3399
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.edn|o|1457725144|902020
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_prem.srd|i|1457725131|58027
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.sap|o|1457725131|27709
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.edn|o|1457732175|900352
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_prem.srd|i|1457732166|57285
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.sap|o|1457732166|27362
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.tap|o|0|0
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.map|o|1457725144|28
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.map|o|1457732175|28
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431615982|57101
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.sap|o|1457725131|27709
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\sram_test.plg|o|1457725144|5329
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.srm|o|1457725143|84201
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_fpga_mapper.srr|o|1457725144|202929
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.sap|o|1457732166|27362
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\sram_test.plg|o|1457732175|5329
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.srm|o|1457732174|84161
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_fpga_mapper.srr|o|1457732175|202470
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\m_proasic.exe|i|1433439386|9280512
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe|i|1433441158|11753984

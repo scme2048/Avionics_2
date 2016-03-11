@@ -60,10 +60,10 @@ end else begin
     mag_data={48'b101010101010101010101010101010101010101010100010,TIMESTAMP,8'b01001101};
     
     if (next_count==5'b11111) begin
-        next_byte=1'b0;
         next_count=0;
     end else begin
         next_count= next_count+1;
+        next_byte=!next_byte;
     end
 
 

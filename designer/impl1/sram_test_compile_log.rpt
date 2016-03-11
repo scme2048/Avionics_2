@@ -2,7 +2,8 @@ Microsemi Libero Software
 Version: 11.6.0.34
 Release: v11.6
 
-Created a new design.
+Info: The design sram_test.adb was last modified by software version 11.6.0.34.
+Opened an existing Libero design sram_test.adb.
 'BA_NAME' set to 'sram_test_ba'
 'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
 'IDE_DESIGNERVIEW_COUNT' set to '1'
@@ -11,27 +12,13 @@ Created a new design.
 'IDE_DESIGNERVIEW_ROOTDIR' set to
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
-'DESDIR' set to
-'C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1'
-'BA_DIR' set to
-'C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1'
-'BA_NETLIST_ALSO' set to '1'
-'EDNINFLAVOR' set to 'GENERIC'
-'NETLIST_NAMING_STYLE' set to 'VERILOG'
-'EXPORT_STATUS_REPORT' set to '1'
-'EXPORT_STATUS_REPORT_FILENAME' set to 'sram_test.rpt'
-'AUDIT_NETLIST_FILE' set to '1'
-'AUDIT_DCF_FILE' set to '1'
-'AUDIT_PIN_FILE' set to '1'
-'AUDIT_ADL_FILE' set to '1'
 
  Netlist Reading Time = 0.0 seconds
 Imported the file:
 
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.edn
 
-The Import command succeeded ( 00:00:04 )
-Design saved to file sram_test.adb.
+The Import command succeeded ( 00:00:03 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -47,7 +34,7 @@ Speed grade : STD
 Temp        : 0:25:70
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : No
+Keep Existing Physical Constraints : Yes
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -82,19 +69,26 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        23
+  - Logic combining:        30
 
-    Total macros optimized  24
+    Total macros optimized  31
 
-Warning: CMP503: Remapped 324 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 347 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
 =====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
 Compile report:
 ===============
 
-    CORE                       Used:   1912  Total:  24576   (7.78%)
+    CORE                       Used:   1921  Total:  24576   (7.82%)
     IO (W/ clocks)             Used:     67  Total:    300   (22.33%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -119,8 +113,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1348         | 1348
-    SEQ     | 564          | 564
+    COMB    | 1358         | 1358
+    SEQ     | 563          | 563
 
 I/O Function:
 
@@ -142,9 +136,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :  67 ( 100.00% )
     Placed  :   0
-    UnPlaced:  67 ( 100.00% )
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -176,7 +170,7 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    370     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
+    369     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
     104     CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
@@ -250,7 +244,7 @@ The design does not use the Flash*Freeze feature.
 
 ====================
 
-The Compile command succeeded ( 00:00:07 )
+The Compile command succeeded ( 00:00:05 )
 Wrote status report to file: sram_test_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -259,11 +253,11 @@ Wrote pin report to file: sram_test_report_pin_byname.txt
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: sram_test_report_pin_bynumber.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\sram_test\
 .adb.
 
-The Execute Script command succeeded ( 00:00:30 )
+The Execute Script command succeeded ( 00:00:12 )
 Design closed.
 

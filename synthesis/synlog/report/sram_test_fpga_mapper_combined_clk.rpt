@@ -4,8 +4,8 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-6 gated/generated clock tree(s) driving 564 clock pin(s) of sequential element(s)
-0 instances converted, 564 sequential instances remain driven by gated/generated clocks
+6 gated/generated clock tree(s) driving 563 clock pin(s) of sequential element(s)
+0 instances converted, 563 sequential instances remain driven by gated/generated clocks
 
 ==================================================================================================================== Gated/Generated Clocks ====================================================================================================================
 Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                           Explanation                                                                                                                   
@@ -15,7 +15,7 @@ Clock Tree ID     Driving Element                     Drive Element Type     Fan
 @K:CKID0003       memory_controller_0.next_read       DFN1E1C0               19         read_address_traversal_0.chip_select      No generated or derived clock directive on output of sequential instance                                                      
 @K:CKID0004       memory_controller_0.next_write      DFN1E1C0               19         write_address_traversal_0.chip_select     No generated or derived clock directive on output of sequential instance                                                      
 @K:CKID0005       clock_div_1MHZ_100KHZ_0.clk_out     DFN1P0                 17         geig_data_handling_0.geig_counts[15]      No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0006       reset_pulse_0.CLK_OUT_48MHZ         NOR2B                  369        sram_interface_0.read_counter[1]          No clocks found on inputs                                                                                                     
+@K:CKID0006       reset_pulse_0.CLK_OUT_48MHZ         NOR2B                  368        sram_interface_0.read_counter[1]          No clocks found on inputs                                                                                                     
 ================================================================================================================================================================================================================================================================
 
 

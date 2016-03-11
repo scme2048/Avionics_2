@@ -124,6 +124,9 @@ Selecting top level module sram_test
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":21:7:21:20|Synthesizing module sram_interface
 
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit ce to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register ce 
+
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":21:7:21:19|Synthesizing module sram_test_sim
 
 @W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 1 of mag_data[79:0] assign 0, register removed by optimization.
@@ -200,7 +203,7 @@ State machine has 3 reachable states with original encodings of:
 At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 83MB peak: 169MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Fri Mar 11 12:38:49 2016
+# Fri Mar 11 14:36:02 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -209,14 +212,14 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Mar 11 12:38:49 2016
+# Fri Mar 11 14:36:03 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Fri Mar 11 12:38:49 2016
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Fri Mar 11 14:36:03 2016
 
 ###########################################################]

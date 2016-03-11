@@ -218,7 +218,7 @@ end else begin
             srbs3=1'b1;
             oe=1'b1;
             we=1'b1;
-            ce=1'b1;
+            ce=1'b0;
             weVAL=1'b0;
             write_counter=0;
             write_cycle=1'b0;
@@ -289,8 +289,9 @@ end else begin
             srbs1=1'b1;
             srbs2=1'b1;
             srbs3=1'b1;
-            ce=1'b1;
+            ce=1'b0;
             read_cycle=1'b0;
+            read_counter=0;
             busy=1'b0;
         end
     end // read cycle

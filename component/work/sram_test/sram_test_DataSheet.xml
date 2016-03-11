@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/sram_test</location>
-    <state>GENERATED ( Fri Mar 11 12:21:25 2016 )</state>
+    <state>GENERATED ( Fri Mar 11 15:48:22 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -525,12 +525,6 @@
     <core-exttype>sram_test_sim</core-exttype>
     <core-location>hdl\sram_test_sim.v</core-location>
     <core-name>sram_test_sim_0</core-name>
-  </core>
-  <core type="HdlModule">
-    <core-type>HdlModule</core-type>
-    <core-exttype>test_harness_geiger_stack</core-exttype>
-    <core-location>hdl\test_harness_geiger_stack.v</core-location>
-    <core-name>test_harness_geiger_stack_0</core-name>
   </core>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>
