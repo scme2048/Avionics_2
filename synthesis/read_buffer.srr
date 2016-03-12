@@ -1,0 +1,703 @@
+#Build: Synplify Pro J-2015.03M-3, Build 048R, May 14 2015
+#install: C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
+#OS: Windows 8 6.2
+#Hostname: SCOTT-PC
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module read_buffer
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+Extracted state machine for register init_stage
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:55 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:56 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:56 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:57 2016
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\read_buffer_scck.rpt 
+Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\read_buffer_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                     Requested     Requested     Clock        Clock              
+Clock                     Frequency     Period        Type         Group              
+--------------------------------------------------------------------------------------
+read_buffer|CLK_48MHZ     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+read_buffer|NEXT_BYTE     100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+======================================================================================
+
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Found inferred clock read_buffer|NEXT_BYTE which controls 10 sequential elements including byte_out[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":66:0:66:5|Found inferred clock read_buffer|CLK_48MHZ which controls 45 sequential elements including read_cmd. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\read_buffer.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 45MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:57 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":66:0:66:5|Found counter in view:work.read_buffer(verilog) inst init_wait[8:0]
+Encoding state machine init_stage[2:0] (view:work.read_buffer(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                 
+-------------------------------------------------------------
+RESET_pad / Y                  54 : 54 asynchronous set/reset
+=============================================================
+
+@N: FP130 |Promoting Net CLK_48MHZ_c on CLKBUF  CLK_48MHZ_pad 
+@N: FP130 |Promoting Net NEXT_BYTE_c on CLKBUF  NEXT_BYTE_pad 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+Buffering RESET_c, fanout 54 segments 3
+
+Added 2 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+2 non-gated/non-generated clock tree(s) driving 54 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       CLK_48MHZ           port                   44         init_wait[0]   
+@K:CKID0002       NEXT_BYTE           port                   10         byte_out[0]    
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+Writing Analyst data base C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\read_buffer_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-3
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+@W: MT420 |Found inferred clock read_buffer|CLK_48MHZ with period 10.00ns. Please declare a user-defined clock on object "p:CLK_48MHZ"
+
+@W: MT420 |Found inferred clock read_buffer|NEXT_BYTE with period 10.00ns. Please declare a user-defined clock on object "p:NEXT_BYTE"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Mar 12 15:00:59 2016
+#
+
+
+Top view:               read_buffer
+Library name:           pa3l
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.14, P = 1.26, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        pa3l
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.588
+
+                          Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock            Frequency     Frequency     Period        Period        Slack      Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------
+read_buffer|CLK_48MHZ     100.0 MHz     94.4 MHz      10.000        10.588        -0.588     inferred     Inferred_clkgroup_1
+read_buffer|NEXT_BYTE     100.0 MHz     204.4 MHz     10.000        4.892         5.108      inferred     Inferred_clkgroup_0
+=============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------
+read_buffer|NEXT_BYTE  read_buffer|NEXT_BYTE  |  10.000      5.108   |  No paths    -      |  No paths    -      |  No paths    -    
+read_buffer|NEXT_BYTE  read_buffer|CLK_48MHZ  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+read_buffer|CLK_48MHZ  read_buffer|NEXT_BYTE  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+read_buffer|CLK_48MHZ  read_buffer|CLK_48MHZ  |  10.000      -0.588  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: read_buffer|CLK_48MHZ
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                  Starting                                                         Arrival           
+Instance          Reference                 Type         Pin     Net               Time        Slack 
+                  Clock                                                                              
+-----------------------------------------------------------------------------------------------------
+init_wait[5]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[5]      0.797       -0.588
+init_wait[4]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[4]      0.797       -0.438
+init_wait[6]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[6]      0.797       0.403 
+init_wait[7]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[7]      0.797       0.447 
+init_wait[8]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[8]      0.797       0.569 
+init_stage[0]     read_buffer|CLK_48MHZ     DFN1P0       Q       init_stage[0]     0.797       0.679 
+init_stage[1]     read_buffer|CLK_48MHZ     DFN1C0       Q       init_stage[1]     0.797       1.414 
+init_wait[0]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[0]      0.797       1.971 
+init_wait[2]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[2]      0.797       2.053 
+init_wait[1]      read_buffer|CLK_48MHZ     DFN1E1C0     Q       init_wait[1]      0.797       2.090 
+=====================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                                             Required           
+Instance        Reference                 Type         Pin     Net                   Time         Slack 
+                Clock                                                                                   
+--------------------------------------------------------------------------------------------------------
+buffer_a[0]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[1]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[2]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[3]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[4]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[5]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[6]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[7]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[8]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+buffer_a[9]     read_buffer|CLK_48MHZ     DFN1E0C0     E       buffer_a_1_sqmuxa     9.530        -0.588
+========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.118
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.588
+
+    Number of logic level(s):                5
+    Starting point:                          init_wait[5] / Q
+    Ending point:                            buffer_a[0] / E
+    The start point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+    The end   point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+init_wait[5]               DFN1E1C0     Q        Out     0.797     0.797       -         
+init_wait[5]               Net          -        -       0.858     -           4         
+init_wait_RNI9GV6[4]       NOR2         B        In      -         1.655       -         
+init_wait_RNI9GV6[4]       NOR2         Y        Out     0.699     2.354       -         
+N_309_2                    Net          -        -       0.585     -           3         
+init_wait_RNIV9FA[6]       OR2A         A        In      -         2.939       -         
+init_wait_RNIV9FA[6]       OR2A         Y        Out     0.581     3.520       -         
+N_21                       Net          -        -       0.585     -           3         
+init_wait_RNIE0FH[6]       OR2B         B        In      -         4.104       -         
+init_wait_RNIE0FH[6]       OR2B         Y        Out     0.679     4.783       -         
+un1_init_wait              Net          -        -       1.239     -           10        
+init_stage_RNIE8NK5[0]     AOI1         A        In      -         6.022       -         
+init_stage_RNIE8NK5[0]     AOI1         Y        Out     0.656     6.678       -         
+un1_init_stage_1           Net          -        -       0.858     -           4         
+init_wait_RNI4I3H9[8]      AOI1         B        In      -         7.536       -         
+init_wait_RNI4I3H9[8]      AOI1         Y        Out     1.008     8.543       -         
+buffer_a_1_sqmuxa          Net          -        -       1.575     -           16        
+buffer_a[0]                DFN1E0C0     E        In      -         10.118      -         
+=========================================================================================
+Total path delay (propagation time + setup) of 10.588 is 4.889(46.2%) logic and 5.699(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.118
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.588
+
+    Number of logic level(s):                5
+    Starting point:                          init_wait[5] / Q
+    Ending point:                            buffer_a[15] / E
+    The start point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+    The end   point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+init_wait[5]               DFN1E1C0     Q        Out     0.797     0.797       -         
+init_wait[5]               Net          -        -       0.858     -           4         
+init_wait_RNI9GV6[4]       NOR2         B        In      -         1.655       -         
+init_wait_RNI9GV6[4]       NOR2         Y        Out     0.699     2.354       -         
+N_309_2                    Net          -        -       0.585     -           3         
+init_wait_RNIV9FA[6]       OR2A         A        In      -         2.939       -         
+init_wait_RNIV9FA[6]       OR2A         Y        Out     0.581     3.520       -         
+N_21                       Net          -        -       0.585     -           3         
+init_wait_RNIE0FH[6]       OR2B         B        In      -         4.104       -         
+init_wait_RNIE0FH[6]       OR2B         Y        Out     0.679     4.783       -         
+un1_init_wait              Net          -        -       1.239     -           10        
+init_stage_RNIE8NK5[0]     AOI1         A        In      -         6.022       -         
+init_stage_RNIE8NK5[0]     AOI1         Y        Out     0.656     6.678       -         
+un1_init_stage_1           Net          -        -       0.858     -           4         
+init_wait_RNI4I3H9[8]      AOI1         B        In      -         7.536       -         
+init_wait_RNI4I3H9[8]      AOI1         Y        Out     1.008     8.543       -         
+buffer_a_1_sqmuxa          Net          -        -       1.575     -           16        
+buffer_a[15]               DFN1E0C0     E        In      -         10.118      -         
+=========================================================================================
+Total path delay (propagation time + setup) of 10.588 is 4.889(46.2%) logic and 5.699(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.118
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.588
+
+    Number of logic level(s):                5
+    Starting point:                          init_wait[5] / Q
+    Ending point:                            buffer_a[14] / E
+    The start point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+    The end   point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+init_wait[5]               DFN1E1C0     Q        Out     0.797     0.797       -         
+init_wait[5]               Net          -        -       0.858     -           4         
+init_wait_RNI9GV6[4]       NOR2         B        In      -         1.655       -         
+init_wait_RNI9GV6[4]       NOR2         Y        Out     0.699     2.354       -         
+N_309_2                    Net          -        -       0.585     -           3         
+init_wait_RNIV9FA[6]       OR2A         A        In      -         2.939       -         
+init_wait_RNIV9FA[6]       OR2A         Y        Out     0.581     3.520       -         
+N_21                       Net          -        -       0.585     -           3         
+init_wait_RNIE0FH[6]       OR2B         B        In      -         4.104       -         
+init_wait_RNIE0FH[6]       OR2B         Y        Out     0.679     4.783       -         
+un1_init_wait              Net          -        -       1.239     -           10        
+init_stage_RNIE8NK5[0]     AOI1         A        In      -         6.022       -         
+init_stage_RNIE8NK5[0]     AOI1         Y        Out     0.656     6.678       -         
+un1_init_stage_1           Net          -        -       0.858     -           4         
+init_wait_RNI4I3H9[8]      AOI1         B        In      -         7.536       -         
+init_wait_RNI4I3H9[8]      AOI1         Y        Out     1.008     8.543       -         
+buffer_a_1_sqmuxa          Net          -        -       1.575     -           16        
+buffer_a[14]               DFN1E0C0     E        In      -         10.118      -         
+=========================================================================================
+Total path delay (propagation time + setup) of 10.588 is 4.889(46.2%) logic and 5.699(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.118
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.588
+
+    Number of logic level(s):                5
+    Starting point:                          init_wait[5] / Q
+    Ending point:                            buffer_a[13] / E
+    The start point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+    The end   point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+init_wait[5]               DFN1E1C0     Q        Out     0.797     0.797       -         
+init_wait[5]               Net          -        -       0.858     -           4         
+init_wait_RNI9GV6[4]       NOR2         B        In      -         1.655       -         
+init_wait_RNI9GV6[4]       NOR2         Y        Out     0.699     2.354       -         
+N_309_2                    Net          -        -       0.585     -           3         
+init_wait_RNIV9FA[6]       OR2A         A        In      -         2.939       -         
+init_wait_RNIV9FA[6]       OR2A         Y        Out     0.581     3.520       -         
+N_21                       Net          -        -       0.585     -           3         
+init_wait_RNIE0FH[6]       OR2B         B        In      -         4.104       -         
+init_wait_RNIE0FH[6]       OR2B         Y        Out     0.679     4.783       -         
+un1_init_wait              Net          -        -       1.239     -           10        
+init_stage_RNIE8NK5[0]     AOI1         A        In      -         6.022       -         
+init_stage_RNIE8NK5[0]     AOI1         Y        Out     0.656     6.678       -         
+un1_init_stage_1           Net          -        -       0.858     -           4         
+init_wait_RNI4I3H9[8]      AOI1         B        In      -         7.536       -         
+init_wait_RNI4I3H9[8]      AOI1         Y        Out     1.008     8.543       -         
+buffer_a_1_sqmuxa          Net          -        -       1.575     -           16        
+buffer_a[13]               DFN1E0C0     E        In      -         10.118      -         
+=========================================================================================
+Total path delay (propagation time + setup) of 10.588 is 4.889(46.2%) logic and 5.699(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.118
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.588
+
+    Number of logic level(s):                5
+    Starting point:                          init_wait[5] / Q
+    Ending point:                            buffer_a[12] / E
+    The start point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+    The end   point is clocked by            read_buffer|CLK_48MHZ [rising] on pin CLK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+init_wait[5]               DFN1E1C0     Q        Out     0.797     0.797       -         
+init_wait[5]               Net          -        -       0.858     -           4         
+init_wait_RNI9GV6[4]       NOR2         B        In      -         1.655       -         
+init_wait_RNI9GV6[4]       NOR2         Y        Out     0.699     2.354       -         
+N_309_2                    Net          -        -       0.585     -           3         
+init_wait_RNIV9FA[6]       OR2A         A        In      -         2.939       -         
+init_wait_RNIV9FA[6]       OR2A         Y        Out     0.581     3.520       -         
+N_21                       Net          -        -       0.585     -           3         
+init_wait_RNIE0FH[6]       OR2B         B        In      -         4.104       -         
+init_wait_RNIE0FH[6]       OR2B         Y        Out     0.679     4.783       -         
+un1_init_wait              Net          -        -       1.239     -           10        
+init_stage_RNIE8NK5[0]     AOI1         A        In      -         6.022       -         
+init_stage_RNIE8NK5[0]     AOI1         Y        Out     0.656     6.678       -         
+un1_init_stage_1           Net          -        -       0.858     -           4         
+init_wait_RNI4I3H9[8]      AOI1         B        In      -         7.536       -         
+init_wait_RNI4I3H9[8]      AOI1         Y        Out     1.008     8.543       -         
+buffer_a_1_sqmuxa          Net          -        -       1.575     -           16        
+buffer_a[12]               DFN1E0C0     E        In      -         10.118      -         
+=========================================================================================
+Total path delay (propagation time + setup) of 10.588 is 4.889(46.2%) logic and 5.699(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: read_buffer|NEXT_BYTE
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                Starting                                                     Arrival          
+Instance        Reference                 Type       Pin     Net             Time        Slack
+                Clock                                                                         
+----------------------------------------------------------------------------------------------
+position[0]     read_buffer|NEXT_BYTE     DFN1C0     Q       position[0]     0.797       5.108
+position[1]     read_buffer|NEXT_BYTE     DFN1C0     Q       position[1]     0.797       5.329
+==============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                                                                        Required          
+Instance        Reference                 Type         Pin     Net                                              Time         Slack
+                Clock                                                                                                             
+----------------------------------------------------------------------------------------------------------------------------------
+position[1]     read_buffer|NEXT_BYTE     DFN1C0       D       I_10                                             9.417        5.108
+byte_out[0]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[0]                                    9.417        5.329
+byte_out[1]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[1]                                    9.417        5.329
+byte_out[2]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[2]                                    9.417        5.329
+byte_out[3]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[3]                                    9.417        5.329
+byte_out[4]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[4]                                    9.417        5.329
+byte_out[5]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[5]                                    9.417        5.329
+byte_out[6]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[6]                                    9.417        5.329
+byte_out[7]     read_buffer|NEXT_BYTE     DFN1E1C0     D       byte_out_6[7]                                    9.417        5.329
+position[0]     read_buffer|NEXT_BYTE     DFN1C0       D       un1_position_2.DWACT_ADD_CI_0_partial_sum[0]     9.417        6.382
+==================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      4.309
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 5.108
+
+    Number of logic level(s):                2
+    Starting point:                          position[0] / Q
+    Ending point:                            position[1] / D
+    The start point is clocked by            read_buffer|NEXT_BYTE [rising] on pin CLK
+    The end   point is clocked by            read_buffer|NEXT_BYTE [rising] on pin CLK
+
+Instance / Net                                      Pin      Pin               Arrival     No. of    
+Name                                     Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+position[0]                              DFN1C0     Q        Out     0.797     0.797       -         
+position[0]                              Net        -        -       1.477     -           13        
+un1_position_2.I_1                       AND2       A        In      -         2.274       -         
+un1_position_2.I_1                       AND2       Y        Out     0.556     2.830       -         
+un1_position_2.DWACT_ADD_CI_0_TMP[0]     Net        -        -       0.233     -           1         
+un1_position_2.I_10                      XOR2       B        In      -         3.063       -         
+un1_position_2.I_10                      XOR2       Y        Out     1.013     4.076       -         
+I_10                                     Net        -        -       0.233     -           1         
+position[1]                              DFN1C0     D        In      -         4.309       -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 4.892 is 2.949(60.3%) logic and 1.943(39.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+--------------------------------------------------------------------------------
+Target Part: M1A3P1000L_FBGA484_STD
+Report for cell read_buffer.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     1      1.0        1.0
+               AO1     2      1.0        2.0
+              AO1B     1      1.0        1.0
+              AOI1     3      1.0        3.0
+              AX1C     1      1.0        1.0
+              BUFF     2      1.0        2.0
+               GND     1      0.0        0.0
+               MX2    24      1.0       24.0
+              MX2B     1      1.0        1.0
+              NOR2    16      1.0       16.0
+             NOR2A     5      1.0        5.0
+             NOR2B    12      1.0       12.0
+             NOR3A     5      1.0        5.0
+             NOR3B     3      1.0        3.0
+             NOR3C     8      1.0        8.0
+               OA1     2      1.0        2.0
+              OA1A     2      1.0        2.0
+              OAI1     1      1.0        1.0
+               OR2     1      1.0        1.0
+              OR2A     5      1.0        5.0
+              OR2B     2      1.0        2.0
+              OR3B     1      1.0        1.0
+              OR3C     1      1.0        1.0
+               VCC     1      0.0        0.0
+               XA1     7      1.0        7.0
+              XOR2     2      1.0        2.0
+
+
+            DFN1C0     3      1.0        3.0
+          DFN1E0C0    17      1.0       17.0
+          DFN1E1C0    33      1.0       33.0
+            DFN1P0     1      1.0        1.0
+                   -----          ----------
+             TOTAL   164               162.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF    35
+            OUTBUF     9
+                   -----
+             TOTAL    46
+
+
+Core Cells         : 162 of 24576 (1%)
+IO Cells           : 46
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 32 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 47MB peak: 114MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:59 2016
+
+###########################################################]

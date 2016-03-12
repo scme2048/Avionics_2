@@ -3,10 +3,17 @@
 <drcreport>
   <header>sram_test</header>
   <drc>
+    <status>C:\Microsemi\Libero_v11.6\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>clock_div_1MHZ_1KHZ_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sram_test/instances/clock_div_1MHZ_1KHZ_0</crossprobe>
+  </drc>
+  <drc>
     <status>C:\Microsemi\Libero_v11.6\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
-    <detail>Floating output pin read_buffer_0:BYTE_OUT</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/sram_test/pins/read_buffer_0:BYTE_OUT</crossprobe>
+    <detail>Floating output pin clock_div_1MHZ_1KHZ_0:CLK_1KHZ_OUT</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/sram_test/pins/clock_div_1MHZ_1KHZ_0:CLK_1KHZ_OUT</crossprobe>
   </drc>
 </drcreport>

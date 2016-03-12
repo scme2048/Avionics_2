@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Mar 11 16:15:52 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Sat Mar 12 15:25:01 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -23,9 +23,9 @@ D1           D6   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None
 D2           D10  Yes    IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 D3           G10  Yes    IO29RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 D4           G11  Yes    IO33RSB0        LVCMOS33  12                 High  None           No    5                 No           No
-D5           D11  Yes    IO35RSB0        LVCMOS33  12                 High  None           No    5                 No           No
-D6           F11  Yes    IO36RSB0        LVCMOS33  12                 High  None           No    5                 No           No
-D7           H11  Yes    IO38RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D5           E11  Yes    IO34RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D6           D11  Yes    IO35RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D7           F11  Yes    IO36RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 RESET_IN_L8  T9   Yes    GEA2/IO187RSB2  LVCMOS33  ---                ---   None           ---   ---               No           No
 SRAM_A0      T6   Yes    GEC1/IO190PPB3  LVCMOS33  12                 High  None           No    5                 No           No
 SRAM_A1      R7   Yes    GEC0/IO190NPB3  LVCMOS33  12                 High  None           No    5                 No           No

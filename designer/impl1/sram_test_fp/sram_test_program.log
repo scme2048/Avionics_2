@@ -6,7 +6,7 @@ Software Version: 11.6.0.34
 PDB file
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\sram_tes\
 t.pdb' has been loaded successfully.
-DESIGN : sram_test;  CHECKSUM : 5ED4;  PDB_VERSION : 1.9
+DESIGN : sram_test;  CHECKSUM : 5256;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '98250' : FlashPro3
 Opened
@@ -23,11 +23,11 @@ programmer '98250' : EXPORT FSN[48] = 014eaf603098
 programmer '98250' : Data Authentication
 programmer '98250' : Erase ...
 programmer '98250' : Completed erase
-programmer '98250' : EXPORT CHECKSUM: [16] = 5ed4
+programmer '98250' : EXPORT CHECKSUM: [16] = 5256
 programmer '98250' : Programming FPGA Array
 programmer '98250' : Verifying FPGA Array
 programmer '98250' :             Verifying FPGA Array -- PASS
-programmer '98250' : Finished: Fri Mar 11 14:46:11 2016 (Elapsed time 00:01:56)
+programmer '98250' : Finished: Sat Mar 12 15:28:19 2016 (Elapsed time 00:02:00)
 programmer '98250' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

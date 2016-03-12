@@ -77,12 +77,8 @@
 @W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|All reachable assignments to bit 78 of mag_data[79:0] assign 0, register removed by optimization.
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register bits 79 to 57 of mag_data[79:29] 
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register bits 32 to 30 of mag_data[79:29] 
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
 @W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":564:26:564:52|Pruning instance test_harness_geiger_stack_0 -- not in use ...
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":377:20:377:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
-@W: CL138 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Removing register 'next_byte' because it is only assigned 0 or its original value.
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register next_count[4:0] 
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":376:20:376:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[1] to a constant 0

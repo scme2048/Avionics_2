@@ -1,0 +1,25 @@
+@P:  Worst Slack : -0.588
+@P:  read_buffer|CLK_48MHZ - Estimated Frequency : 94.4 MHz
+@P:  read_buffer|CLK_48MHZ - Requested Frequency : 100.0 MHz
+@P:  read_buffer|CLK_48MHZ - Estimated Period : 10.588
+@P:  read_buffer|CLK_48MHZ - Requested Period : 10.000
+@P:  read_buffer|CLK_48MHZ - Slack : -0.588
+@P:  read_buffer|NEXT_BYTE - Estimated Frequency : 204.4 MHz
+@P:  read_buffer|NEXT_BYTE - Requested Frequency : 100.0 MHz
+@P:  read_buffer|NEXT_BYTE - Estimated Period : 4.892
+@P:  read_buffer|NEXT_BYTE - Requested Period : 10.000
+@P:  read_buffer|NEXT_BYTE - Slack : 5.108
+@P:  Worst Slack(min analysis) : NA
+@P:  read_buffer|CLK_48MHZ - Estimated Frequency(min analysis) : 94.4 MHz
+@P:  read_buffer|CLK_48MHZ - Requested Frequency(min analysis) : 100.0 MHz
+@P:  read_buffer|CLK_48MHZ - Estimated Period(min analysis) : 10.588
+@P:  read_buffer|CLK_48MHZ - Requested Period(min analysis) : 10.000
+@P:  read_buffer|CLK_48MHZ - Slack(min analysis) : -0.588
+@P:  read_buffer|NEXT_BYTE - Estimated Frequency(min analysis) : 204.4 MHz
+@P:  read_buffer|NEXT_BYTE - Requested Frequency(min analysis) : 100.0 MHz
+@P:  read_buffer|NEXT_BYTE - Estimated Period(min analysis) : 4.892
+@P:  read_buffer|NEXT_BYTE - Requested Period(min analysis) : 10.000
+@P:  read_buffer|NEXT_BYTE - Slack(min analysis) : 5.108
+@P:  Total Area : 162.0
+@P:  Total Area : 162.0
+@P:  CPU Time : 0h:00m:01s

@@ -22,13 +22,11 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v"
 Verilog syntax check successful!
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v changed - recompiling
+Options changed - recompiling
 Selecting top level module sram_test
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -162,12 +160,6 @@ Selecting top level module sram_test
 
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register bits 32 to 30 of mag_data[79:29] 
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":16:7:16:31|Synthesizing module test_harness_geiger_stack
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
-
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_prev[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
 
 @W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
@@ -175,12 +167,7 @@ Selecting top level module sram_test
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":9:7:9:15|Synthesizing module sram_test
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":564:26:564:52|Pruning instance test_harness_geiger_stack_0 -- not in use ...
-
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":377:20:377:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
-
-@W: CL138 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Removing register 'next_byte' because it is only assigned 0 or its original value.
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":51:0:51:5|Pruning register next_count[4:0] 
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":376:20:376:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
@@ -200,10 +187,10 @@ State machine has 3 reachable states with original encodings of:
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 83MB peak: 169MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 79MB peak: 169MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Fri Mar 11 14:36:02 2016
+# Sat Mar 12 15:15:14 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -212,14 +199,14 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Mar 11 14:36:03 2016
+# Sat Mar 12 15:15:14 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
-# Fri Mar 11 14:36:03 2016
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sat Mar 12 15:15:14 2016
 
 ###########################################################]

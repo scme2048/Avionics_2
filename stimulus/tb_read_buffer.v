@@ -80,7 +80,7 @@ read_buffer read_buffer_0 (
     .RESET(NSYSRESET),
     .NEXT_BYTE(next_byte),
     .DATA_READ(16'b1111111100000000),
-    .ROW_WRITE(13'b000000001111),
+    .WRITE_ADDRESS(18'b000000001111),
 
     // Outputs
     .READ_CMD(read_cmd ),

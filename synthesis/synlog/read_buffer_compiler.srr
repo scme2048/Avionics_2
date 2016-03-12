@@ -1,0 +1,49 @@
+Synopsys HDL Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module read_buffer
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+Extracted state machine for register init_stage
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:55 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:56 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:56 2016
+
+###########################################################]

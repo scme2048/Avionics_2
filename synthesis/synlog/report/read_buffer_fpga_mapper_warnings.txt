@@ -1,0 +1,2 @@
+@W: MT420 |Found inferred clock read_buffer|CLK_48MHZ with period 10.00ns. Please declare a user-defined clock on object "p:CLK_48MHZ"
+@W: MT420 |Found inferred clock read_buffer|NEXT_BYTE with period 10.00ns. Please declare a user-defined clock on object "p:NEXT_BYTE"

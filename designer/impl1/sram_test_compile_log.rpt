@@ -18,7 +18,7 @@ Imported the file:
 
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\sram_test.edn
 
-The Import command succeeded ( 00:00:03 )
+The Import command succeeded ( 00:00:07 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -69,11 +69,11 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        30
+  - Logic combining:        25
 
-    Total macros optimized  31
+    Total macros optimized  26
 
-Warning: CMP503: Remapped 347 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 396 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
@@ -88,7 +88,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   1921  Total:  24576   (7.82%)
+    CORE                       Used:   2108  Total:  24576   (8.58%)
     IO (W/ clocks)             Used:     67  Total:    300   (22.33%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -113,16 +113,16 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1358         | 1358
-    SEQ     | 563          | 563
+    COMB    | 1481         | 1481
+    SEQ     | 627          | 627
 
 I/O Function:
 
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 2             | 0            | 0
-    Output I/O                            | 65            | 0            | 0
-    Bidirectional I/O                     | 0             | 0            | 0
+    Output I/O                            | 33            | 0            | 0
+    Bidirectional I/O                     | 32            | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
 
@@ -132,7 +132,7 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVCMOS33                        | 3.30v | N/A   | 2     | 65     | 0
+    LVCMOS33                        | 3.30v | N/A   | 2     | 33     | 32
 
 I/O Placement:
 
@@ -170,10 +170,10 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    369     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
+    417     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
-    104     CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+    110     CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                           Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
                           Source: NETLIST
     36      CLK_NET       Net   : GLA
@@ -216,9 +216,9 @@ High fanout nets in the post compile netlist:
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    25      INT_NET       Net   : CLK_48MHZ_c
+    28      INT_NET       Net   : CLK_48MHZ_c
                           Driver: CLK_48MHZ_pad
-    25      INT_NET       Net   : RESET_IN_L8_c
+    28      INT_NET       Net   : RESET_IN_L8_c
                           Driver: RESET_IN_L8_pad
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
@@ -244,7 +244,7 @@ The design does not use the Flash*Freeze feature.
 
 ====================
 
-The Compile command succeeded ( 00:00:05 )
+The Compile command succeeded ( 00:00:04 )
 Wrote status report to file: sram_test_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -258,6 +258,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\sram_test\
 .adb.
 
-The Execute Script command succeeded ( 00:00:12 )
+The Execute Script command succeeded ( 00:00:17 )
 Design closed.
 

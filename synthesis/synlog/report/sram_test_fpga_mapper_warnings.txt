@@ -106,16 +106,7 @@
 @W: MO160 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\memory_controller.v":87:0:87:5|Register bit geig_buffer[5] is always 0, optimizing ...
 @W: MO160 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\memory_controller.v":87:0:87:5|Register bit geig_buffer[4] is always 0, optimizing ...
 @W: MO160 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\memory_controller.v":87:0:87:5|Register bit geig_buffer[3] is always 0, optimizing ...
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[0] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[1] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[2] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[3] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[4] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[5] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[6] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.byte_out[7] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.position[0] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Sequential instance read_buffer_0.position[1] reduced to a combinational gate by constant propagation
+@W: MT420 |Found inferred clock sram_test_sim|next_byte_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:sram_test_sim_0.next_byte"
 @W: MT420 |Found inferred clock reset_pulse|CLK_OUT_48MHZ_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:reset_pulse_0.CLK_OUT_48MHZ"
 @W: MT420 |Found inferred clock memory_controller|next_read_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:memory_controller_0.next_read"
 @W: MT420 |Found inferred clock memory_controller|next_write_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:memory_controller_0.next_write"

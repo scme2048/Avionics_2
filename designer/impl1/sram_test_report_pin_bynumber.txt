@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Mar 11 16:15:53 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Sat Mar 12 15:25:02 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -137,7 +137,7 @@ D7      SRAM_A5      GAB0/IO02RSB0      Special      LVCMOS33  12               
 D8      SRAM_D28     IO16RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 D9                   IO22RSB0           Unassigned
 D10     D2           IO28RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-D11     D5           IO35RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+D11     D6           IO35RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 D12                  IO45RSB0           Unassigned
 D13                  IO50RSB0           Unassigned
 D14                  IO55RSB0           Unassigned
@@ -159,7 +159,7 @@ E7      SRAM_A4      GAB1/IO03RSB0      Special      LVCMOS33  12               
 E8      SRAM_D13     IO17RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 E9      SRAM_D15     IO21RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 E10                  IO27RSB0           Unassigned
-E11                  IO34RSB0           Unassigned
+E11     D5           IO34RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 E12                  IO44RSB0           Unassigned
 E13                  IO51RSB0           Unassigned
 E14                  IO57RSB0           Unassigned
@@ -181,7 +181,7 @@ F7      SRAM_D29     IO11RSB0           Fixed        LVCMOS33  12               
 F8      SRAM_A2      GAC0/IO04RSB0      Special      LVCMOS33  12                 High  None           No    5                 No           No
 F9      SRAM_A3      GAC1/IO05RSB0      Special      LVCMOS33  12                 High  None           No    5                 No           No
 F10                  IO25RSB0           Unassigned
-F11     D6           IO36RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+F11     D7           IO36RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 F12                  IO42RSB0           Unassigned
 F13                  IO49RSB0           Unassigned
 F14                  IO56RSB0           Unassigned
@@ -225,7 +225,7 @@ H7      SRAM_A11     IO221PDB3          Fixed        LVCMOS33  12               
 H8                   VMV0               Reserved
 H9                   VCCIB0             Reserved
 H10                  VCCIB0             Reserved
-H11     D7           IO38RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+H11                  IO38RSB0           Unassigned
 H12                  IO47RSB0           Unassigned
 H13                  VCCIB0             Reserved
 H14                  VCCIB0             Reserved

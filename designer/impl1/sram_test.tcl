@@ -1,5 +1,5 @@
 # Created by Microsemi Libero Software 11.6.0.34
-# Fri Mar 11 14:42:55 2016
+# Sat Mar 12 15:15:31 2016
 
 # (OPEN DESIGN)
 
@@ -14,9 +14,13 @@ set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
 set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
-report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {sram_test_maxdelay_timing_report.txt}
-report -type "timing" -format "TEXT" -analysis "min" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {sram_test_mindelay_timing_report.txt}
-report -type "timing_violations" -format "TEXT" -analysis "max" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {sram_test_maxdelay_timingviolations_report.txt}
-report -type "timing_violations" -format "TEXT" -analysis "min" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {sram_test_mindelay_timingviolations_report.txt}
+
+# import of input files
+import_source  \
+-format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/sram_test.edn} -merge_physical "yes" -merge_timing "yes"
+compile
+report -type "status" {sram_test_compile_report.txt}
+report -type "pin" -listby "name" {sram_test_report_pin_byname.txt}
+report -type "pin" -listby "number" {sram_test_report_pin_bynumber.txt}
 
 save_design

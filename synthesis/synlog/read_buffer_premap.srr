@@ -1,0 +1,44 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\read_buffer_scck.rpt 
+Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\read_buffer_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                     Requested     Requested     Clock        Clock              
+Clock                     Frequency     Period        Type         Group              
+--------------------------------------------------------------------------------------
+read_buffer|CLK_48MHZ     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+read_buffer|NEXT_BYTE     100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+======================================================================================
+
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Found inferred clock read_buffer|NEXT_BYTE which controls 10 sequential elements including byte_out[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":66:0:66:5|Found inferred clock read_buffer|CLK_48MHZ which controls 45 sequential elements including read_cmd. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\read_buffer.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 45MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Mar 12 15:00:57 2016
+
+###########################################################]

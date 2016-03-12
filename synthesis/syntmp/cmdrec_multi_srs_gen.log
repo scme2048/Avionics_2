@@ -1,7 +1,7 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe  -link  -top  sram_test  -multisrs  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_comp.srs  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_mult.srs  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_multi_srs_gen.srr 
 rc:0 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_comp.srs|i|1457732163|38812
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_mult.srs|o|1457732164|13241
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_multi_srs_gen.srr|o|1457732164|510
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_comp.srs|i|1457820914|39201
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\sram_test_mult.srs|o|1457820916|13258
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\sram_test_multi_srs_gen.srr|o|1457820916|510
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\syn_nfilter.exe|i|1431625058|3001344
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe|i|1431625246|3968000

@@ -1,0 +1,334 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "read_buffer")
+(DATE "123")
+(VENDOR "ProASIC3L")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1522R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "read_buffer")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[13\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[12\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[11\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[10\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[9\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[8\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[7\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[6\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[5\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[4\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[3\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[1\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[0\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[13\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[12\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[11\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[10\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[9\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[8\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[7\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[6\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[5\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[4\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[3\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[1\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  position_RNI9DK06\[0\]/B  position_RNI9DK06\[0\]/Y  buffer_b\[0\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[4\]/CLK  init_wait\[4\]/Q  init_wait_RNI9GV6\[4\]/A  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[6\]/CLK  init_wait\[6\]/Q  init_wait_RNIV9FA\[6\]/B  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNIFMV6\[7\]/B  init_wait_RNIFMV6\[7\]/Y  init_wait_RNIE0FH\[6\]/A  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[8\]/CLK  init_wait\[8\]/Q  init_wait_RNIFMV6\[7\]/A  init_wait_RNIFMV6\[7\]/Y  init_wait_RNIE0FH\[6\]/A  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_stage_RNIE8NK5\[0\]/B  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  read_cmd_RNO/S  read_cmd_RNO/Y  read_cmd/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_stage_RNIE8NK5\[0\]/A  init_stage_RNIE8NK5\[0\]/Y  read_cmd_RNO_0/C  read_cmd_RNO_0/Y  read_cmd/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[1\]/CLK  init_stage\[1\]/Q  init_stage_RNI8O0O2\[1\]/B  init_stage_RNI8O0O2\[1\]/Y  init_stage_RNIE8NK5\[0\]/B  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNIJTEA\[1\]/A  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[2\]/CLK  init_wait\[2\]/Q  init_wait_RNIJTEA\[1\]/C  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[1\]/CLK  init_wait\[1\]/Q  init_wait_RNIJTEA\[1\]/B  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait_RNIR4FG3_0\[8\]/C  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait_RNIR4FG3_0\[8\]/C  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[14\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[2\]/CLK  init_wait\[2\]/Q  init_wait_RNIP3FA\[2\]/B  init_wait_RNIP3FA\[2\]/Y  init_wait_RNIRGUK\[5\]/B  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3_0\[8\]/B  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[3\]/CLK  init_wait\[3\]/Q  init_wait_RNIP3FA\[2\]/A  init_wait_RNIP3FA\[2\]/Y  init_wait_RNIRGUK\[5\]/B  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3_0\[8\]/B  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[4\]/CLK  init_wait\[4\]/Q  init_wait_RNIP3FA\[2\]/C  init_wait_RNIP3FA\[2\]/Y  init_wait_RNIRGUK\[5\]/B  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3_0\[8\]/B  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP\[1\]/A  init_stage_RNIVFIP\[1\]/Y  init_stage_RNO_11\[1\]/C  init_stage_RNO_11\[1\]/Y  init_stage_RNO_4\[1\]/C  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP\[1\]/A  init_stage_RNIVFIP\[1\]/Y  init_wait_RNIE6I01\[7\]/A  init_wait_RNIE6I01\[7\]/Y  init_stage_RNO_8\[1\]/C  init_stage_RNO_8\[1\]/Y  init_stage_RNO_2\[1\]/C  init_stage_RNO_2\[1\]/Y  init_stage_RNO\[1\]/C  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNIFMV6\[7\]/B  init_wait_RNIFMV6\[7\]/Y  init_wait_RNIE6I01\[7\]/B  init_wait_RNIE6I01\[7\]/Y  init_stage_RNO_8\[1\]/C  init_stage_RNO_8\[1\]/Y  init_stage_RNO_2\[1\]/C  init_stage_RNO_2\[1\]/Y  init_stage_RNO\[1\]/C  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_stage_RNO_6\[1\]/B  init_stage_RNO_6\[1\]/Y  init_stage_RNO_2\[1\]/A  init_stage_RNO_2\[1\]/Y  init_stage_RNO\[1\]/C  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[8\]/C  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[7\]/C  init_wait_RNO\[7\]/Y  init_wait\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[6\]/C  init_wait_RNO\[6\]/Y  init_wait\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[5\]/C  init_wait_RNO\[5\]/Y  init_wait\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[4\]/C  init_wait_RNO\[4\]/Y  init_wait\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[3\]/C  init_wait_RNO\[3\]/Y  init_wait\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[1\]/C  init_wait_RNO\[1\]/Y  init_wait\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNIFMV6\[7\]/B  init_wait_RNIFMV6\[7\]/Y  WRITE_ADDRESS_pad_RNI8AE7\[0\]/B  WRITE_ADDRESS_pad_RNI8AE7\[0\]/Y  init_stage_RNO_7\[1\]/B  init_stage_RNO_7\[1\]/Y  init_stage_RNO_2\[1\]/B  init_stage_RNO_2\[1\]/Y  init_stage_RNO\[1\]/C  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNIFMV6\[7\]/B  init_wait_RNIFMV6\[7\]/Y  WRITE_ADDRESS_pad_RNI8AE7\[0\]/B  WRITE_ADDRESS_pad_RNI8AE7\[0\]/Y  init_stage_RNO_6\[1\]/A  init_stage_RNO_6\[1\]/Y  init_stage_RNO_2\[1\]/A  init_stage_RNO_2\[1\]/Y  init_stage_RNO\[1\]/C  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[6\]/CLK  init_wait\[6\]/Q  init_wait_RNIDKV6\[7\]/B  init_wait_RNIDKV6\[7\]/Y  init_wait_RNIRGUK\[5\]/C  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3_0\[8\]/B  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[0\]/A  init_wait_RNO\[0\]/Y  init_wait\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_wait_RNIE0FH\[6\]/B  init_wait_RNIE0FH\[6\]/Y  init_wait_RNO\[2\]/A  init_wait_RNO\[2\]/Y  init_wait\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNIFMV6\[7\]/B  init_wait_RNIFMV6\[7\]/Y  init_stage_RNO_9\[1\]/B  init_stage_RNO_9\[1\]/Y  init_stage_RNO_4\[1\]/A  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[1\]/CLK  init_stage\[1\]/Q  init_stage_RNIVFIP\[1\]/B  init_stage_RNIVFIP\[1\]/Y  init_stage_RNO_11\[1\]/C  init_stage_RNO_11\[1\]/Y  init_stage_RNO_4\[1\]/C  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNIJTEA\[1\]/A  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO\[7\]/A  init_wait_RNO\[7\]/Y  init_wait\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait_RNIR4FG3\[8\]/B  init_wait_RNIR4FG3\[8\]/Y  read_cmd_RNO_0/A  read_cmd_RNO_0/Y  read_cmd/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNIDKV6\[7\]/A  init_wait_RNIDKV6\[7\]/Y  init_wait_RNIRGUK\[5\]/C  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3_0\[8\]/B  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[3\]/CLK  init_wait\[3\]/Q  init_wait_RNI6KUD\[3\]/B  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP\[1\]/A  init_stage_RNIVFIP\[1\]/Y  init_stage_RNO_7\[1\]/C  init_stage_RNO_7\[1\]/Y  init_stage_RNO_2\[1\]/B  init_stage_RNO_2\[1\]/Y  init_stage_RNO\[1\]/C  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait_RNIR4FG3\[8\]/B  init_wait_RNIR4FG3\[8\]/Y  read_cmd_RNO/A  read_cmd_RNO/Y  read_cmd/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2_0\[0\]/B  init_stage_RNIOF7B2_0\[0\]/Y  init_stage_RNIE8NK5\[0\]/C  init_stage_RNIE8NK5\[0\]/Y  init_wait_RNI4I3H9\[8\]/B  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_stage_RNO_11\[1\]/A  init_stage_RNO_11\[1\]/Y  init_stage_RNO_4\[1\]/C  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNIRGUK\[5\]/A  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3_0\[8\]/B  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP\[1\]/A  init_stage_RNIVFIP\[1\]/Y  init_stage_RNO_3\[1\]/C  init_stage_RNO_3\[1\]/Y  init_stage_RNO_0\[1\]/B  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[6\]/CLK  init_wait\[6\]/Q  init_stage_RNO_14\[1\]/B  init_stage_RNO_14\[1\]/Y  init_stage_RNO_11\[1\]/B  init_stage_RNO_11\[1\]/Y  init_stage_RNO_4\[1\]/C  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_stage_RNO_10\[1\]/B  init_stage_RNO_10\[1\]/Y  init_stage_RNO_4\[1\]/B  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[1\]/CLK  init_stage\[1\]/Q  init_stage_RNIVFIP_0\[1\]/A  init_stage_RNIVFIP_0\[1\]/Y  init_stage_RNO_9\[1\]/A  init_stage_RNO_9\[1\]/Y  init_stage_RNO_4\[1\]/A  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[1\]/CLK  init_stage\[1\]/Q  init_stage_RNIVFIP_0\[1\]/A  init_stage_RNIVFIP_0\[1\]/Y  init_stage_RNO_10\[1\]/A  init_stage_RNO_10\[1\]/Y  init_stage_RNO_4\[1\]/B  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP\[1\]/A  init_stage_RNIVFIP\[1\]/Y  init_wait_RNIE6I01\[7\]/A  init_wait_RNIE6I01\[7\]/Y  init_stage_RNO_1\[1\]/C  init_stage_RNO_1\[1\]/Y  init_stage_RNO\[1\]/B  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[4\]/CLK  init_wait\[4\]/Q  init_wait_RNIQBEH\[4\]/B  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_0\[1\]/B  init_stage_RNIVFIP_0\[1\]/Y  init_stage_RNO_9\[1\]/A  init_stage_RNO_9\[1\]/Y  init_stage_RNO_4\[1\]/A  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNI9GV6\[4\]/B  init_wait_RNI9GV6\[4\]/Y  init_wait_RNIV9FA\[6\]/A  init_wait_RNIV9FA\[6\]/Y  init_stage_RNO_0\[1\]/A  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNIJTEA\[1\]/A  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNIF4UK\[5\]/A  init_wait_RNIF4UK\[5\]/Y  init_wait_RNO\[6\]/A  init_wait_RNO\[6\]/Y  init_wait\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[2\]/CLK  init_wait\[2\]/Q  init_wait_RNIP3FA\[2\]/B  init_wait_RNIP3FA\[2\]/Y  init_wait_RNIRGUK\[5\]/B  init_wait_RNIRGUK\[5\]/Y  init_wait_RNIR4FG3\[8\]/C  init_wait_RNIR4FG3\[8\]/Y  read_cmd_RNO_0/A  read_cmd_RNO_0/Y  read_cmd/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNIF4UK\[5\]/B  init_wait_RNIF4UK\[5\]/Y  init_wait_RNI5UDO\[6\]/A  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[8\]/CLK  init_wait\[8\]/Q  init_wait_RNIR4FG3_0\[8\]/A  init_wait_RNIR4FG3_0\[8\]/Y  init_wait_RNI4I3H9\[8\]/C  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNIJTEA\[1\]/A  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNIQBEH\[4\]/A  init_wait_RNIQBEH\[4\]/Y  init_wait_RNO\[5\]/A  init_wait_RNO\[5\]/Y  init_wait\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[6\]/CLK  init_wait\[6\]/Q  init_stage_RNO_10\[1\]/C  init_stage_RNO_10\[1\]/Y  init_stage_RNO_4\[1\]/B  init_stage_RNO_4\[1\]/Y  init_stage_RNO_0\[1\]/C  init_stage_RNO_0\[1\]/Y  init_stage_RNO\[1\]/A  init_stage_RNO\[1\]/Y  init_stage\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[7\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[6\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[5\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[4\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[3\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[1\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[0\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  init_stage_RNI8O0O2\[1\]/A  init_stage_RNI8O0O2\[1\]/Y  init_wait\[8\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[6\]/CLK  init_wait\[6\]/Q  init_wait_RNI5UDO\[6\]/B  init_wait_RNI5UDO\[6\]/Y  init_wait_RNO_0\[8\]/B  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  un1_position_2_I_1/A  un1_position_2_I_1/Y  un1_position_2_I_10/B  un1_position_2_I_10/Y  position\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP\[1\]/A  init_stage_RNIVFIP\[1\]/Y  init_stage_RNO\[0\]/B  init_stage_RNO\[0\]/Y  init_stage\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNIJTEA\[1\]/A  init_wait_RNIJTEA\[1\]/Y  init_wait_RNI6KUD\[3\]/A  init_wait_RNI6KUD\[3\]/Y  init_wait_RNO\[4\]/A  init_wait_RNO\[4\]/Y  init_wait\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[7\]/S  byte_out_RNO_1\[7\]/Y  byte_out_RNO\[7\]/B  byte_out_RNO\[7\]/Y  byte_out\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[6\]/S  byte_out_RNO_1\[6\]/Y  byte_out_RNO\[6\]/B  byte_out_RNO\[6\]/Y  byte_out\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[5\]/S  byte_out_RNO_1\[5\]/Y  byte_out_RNO\[5\]/B  byte_out_RNO\[5\]/Y  byte_out\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[4\]/S  byte_out_RNO_1\[4\]/Y  byte_out_RNO\[4\]/B  byte_out_RNO\[4\]/Y  byte_out\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[3\]/S  byte_out_RNO_1\[3\]/Y  byte_out_RNO\[3\]/B  byte_out_RNO\[3\]/Y  byte_out\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[2\]/S  byte_out_RNO_1\[2\]/Y  byte_out_RNO\[2\]/B  byte_out_RNO\[2\]/Y  byte_out\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[1\]/S  byte_out_RNO_1\[1\]/Y  byte_out_RNO\[1\]/B  byte_out_RNO\[1\]/Y  byte_out\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_1\[0\]/S  byte_out_RNO_1\[0\]/Y  byte_out_RNO\[0\]/B  byte_out_RNO\[0\]/Y  byte_out\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[7\]/S  byte_out_RNO_0\[7\]/Y  byte_out_RNO\[7\]/A  byte_out_RNO\[7\]/Y  byte_out\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[6\]/S  byte_out_RNO_0\[6\]/Y  byte_out_RNO\[6\]/A  byte_out_RNO\[6\]/Y  byte_out\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[5\]/S  byte_out_RNO_0\[5\]/Y  byte_out_RNO\[5\]/A  byte_out_RNO\[5\]/Y  byte_out\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[4\]/S  byte_out_RNO_0\[4\]/Y  byte_out_RNO\[4\]/A  byte_out_RNO\[4\]/Y  byte_out\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[3\]/S  byte_out_RNO_0\[3\]/Y  byte_out_RNO\[3\]/A  byte_out_RNO\[3\]/Y  byte_out\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[2\]/S  byte_out_RNO_0\[2\]/Y  byte_out_RNO\[2\]/A  byte_out_RNO\[2\]/Y  byte_out\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[1\]/S  byte_out_RNO_0\[1\]/Y  byte_out_RNO\[1\]/A  byte_out_RNO\[1\]/Y  byte_out\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  byte_out_RNO_0\[0\]/S  byte_out_RNO_0\[0\]/Y  byte_out_RNO\[0\]/A  byte_out_RNO\[0\]/Y  byte_out\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNO_0\[2\]/A  init_wait_RNO_0\[2\]/Y  init_wait_RNO\[2\]/B  init_wait_RNO\[2\]/Y  init_wait\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIOF7B2\[0\]/A  init_stage_RNIOF7B2\[0\]/Y  read_cmd_RNO_0/B  read_cmd_RNO_0/Y  read_cmd/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[8\]/CLK  init_wait\[8\]/Q  init_wait_RNIR4FG3\[8\]/A  init_wait_RNIR4FG3\[8\]/Y  read_cmd_RNO_0/A  read_cmd_RNO_0/Y  read_cmd/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT init_wait\[1\]/CLK  init_wait\[1\]/Q  init_wait_RNO_0\[2\]/B  init_wait_RNO_0\[2\]/Y  init_wait_RNO\[2\]/B  init_wait_RNO\[2\]/Y  init_wait\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNIJTEA\[1\]/A  init_wait_RNIJTEA\[1\]/Y  init_wait_RNO\[3\]/A  init_wait_RNO\[3\]/Y  init_wait\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  un1_position_2_I_10/A  un1_position_2_I_10/Y  position\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNO_0\[8\]/A  init_wait_RNO_0\[8\]/Y  init_wait_RNO\[8\]/A  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[6\]/CLK  init_wait\[6\]/Q  init_wait_RNO\[6\]/B  init_wait_RNO\[6\]/Y  init_wait\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  un1_position_2_I_8/A  un1_position_2_I_8/Y  position\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[7\]/S  byte_out_RNO\[7\]/Y  byte_out\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[6\]/S  byte_out_RNO\[6\]/Y  byte_out\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[5\]/S  byte_out_RNO\[5\]/Y  byte_out\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[4\]/S  byte_out_RNO\[4\]/Y  byte_out\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[3\]/S  byte_out_RNO\[3\]/Y  byte_out\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[2\]/S  byte_out_RNO\[2\]/Y  byte_out\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[1\]/S  byte_out_RNO\[1\]/Y  byte_out\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  byte_out_RNO\[0\]/S  byte_out_RNO\[0\]/Y  byte_out\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[2\]/CLK  init_wait\[2\]/Q  init_wait_RNO_0\[2\]/C  init_wait_RNO_0\[2\]/Y  init_wait_RNO\[2\]/B  init_wait_RNO\[2\]/Y  init_wait\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[5\]/CLK  init_wait\[5\]/Q  init_wait_RNO\[5\]/B  init_wait_RNO\[5\]/Y  init_wait\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[4\]/CLK  init_wait\[4\]/Q  init_wait_RNO\[4\]/B  init_wait_RNO\[4\]/Y  init_wait\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[7\]/CLK  init_wait\[7\]/Q  init_wait_RNO\[7\]/B  init_wait_RNO\[7\]/Y  init_wait\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[8\]/CLK  init_wait\[8\]/Q  init_wait_RNO\[8\]/B  init_wait_RNO\[8\]/Y  init_wait\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNO\[1\]/B  init_wait_RNO\[1\]/Y  init_wait\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[3\]/CLK  init_wait\[3\]/Q  init_wait_RNO\[3\]/B  init_wait_RNO\[3\]/Y  init_wait\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[0\]/CLK  init_wait\[0\]/Q  init_wait_RNO\[0\]/B  init_wait_RNO\[0\]/Y  init_wait\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT init_wait\[1\]/CLK  init_wait\[1\]/Q  init_wait_RNO\[1\]/A  init_wait_RNO\[1\]/Y  init_wait\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  position_RNIR4TB\[0\]/B  position_RNIR4TB\[0\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  position_RNI9DK06\[0\]/C  position_RNI9DK06\[0\]/Y  buffer_b\[15\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  read_cmd_RNO/B  read_cmd_RNO/Y  read_cmd/D  	(99999.4:99999.4:99999.4) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  position_RNIR4TB\[0\]/A  position_RNIR4TB\[0\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT position\[0\]/CLK  position\[0\]/Q  position_RNI9DK06\[0\]/A  position_RNI9DK06\[0\]/Y  buffer_b\[15\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  byte_out\[5\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  byte_out\[4\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  byte_out\[3\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  byte_out\[2\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  byte_out\[1\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[0\]/CLK  init_stage\[0\]/Q  init_stage_RNIVFIP_1\[1\]/A  init_stage_RNIVFIP_1\[1\]/Y  byte_out\[0\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT position\[1\]/CLK  position\[1\]/Q  position_RNIR4TB\[0\]/B  position_RNIR4TB\[0\]/Y  init_wait_RNI4I3H9\[8\]/A  init_wait_RNI4I3H9\[8\]/Y  buffer_a\[15\]/E  	(99999.5:99999.5:99999.5) )
+
+    (PATHCONSTRAINT init_stage\[1\]/CLK  init_stage\[1\]/Q  init_stage_RNIVFIP_1\[1\]/B  init_stage_RNIVFIP_1\[1\]/Y  	(10.0:10.0:10.0) )
+
+  )
+)
+)

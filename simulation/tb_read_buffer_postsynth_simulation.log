@@ -1,0 +1,91 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library postsynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet postsynth postsynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 15:01:17 on Mar 12,2016
+# vlog -reportprogress 300 -work postsynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/synthesis/read_buffer.v 
+# -- Compiling module read_buffer
+# 
+# Top level modules:
+# 	read_buffer
+# End time: 15:01:17 on Mar 12,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 15:01:17 on Mar 12,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work postsynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_read_buffer.v 
+# -- Compiling module tb_read_buffer
+# 
+# Top level modules:
+# 	tb_read_buffer
+# End time: 15:01:17 on Mar 12,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_read_buffer_postsynth_simulation.log 
+# Start time: 15:01:17 on Mar 12,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading postsynth.tb_read_buffer
+# Loading postsynth.read_buffer
+# Loading proasic3l.NOR2B
+# Loading proasic3l.AO1
+# Loading proasic3l.DFN1E1C0
+# Loading proasic3l.OR2B
+# Loading proasic3l.MX2
+# Loading proasic3l.INBUF
+# Loading proasic3l.OUTBUF
+# Loading proasic3l.XA1
+# Loading proasic3l.DFN1E0C0
+# Loading proasic3l.NOR2A
+# Loading proasic3l.NOR2
+# Loading proasic3l.AOI1
+# Loading proasic3l.DFN1C0
+# Loading proasic3l.CLKBUF
+# Loading proasic3l.OR2A
+# Loading proasic3l.OR3B
+# Loading proasic3l.NOR3C
+# Loading proasic3l.NOR3A
+# Loading proasic3l.NOR3B
+# Loading proasic3l.BUFF
+# Loading proasic3l.GND
+# Loading proasic3l.OA1A
+# Loading proasic3l.OR3C
+# Loading proasic3l.AO1B
+# Loading proasic3l.VCC
+# Loading proasic3l.XOR2
+# Loading proasic3l.OAI1
+# Loading proasic3l.DFN1P0
+# Loading proasic3l.OR2
+# Loading proasic3l.OA1
+# Loading proasic3l.MX2B
+# Loading proasic3l.AND2
+# Loading proasic3l.AX1C
+# Loading proasic3l.Dffpr
+# Loading proasic3l.UDP_MUX2
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlfte0szew".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfte0szew
+# 
+run -all
+run -all
+add wave -r sim:/tb_read_buffer/read_buffer_0/*
+restart
+run -all
+# End time: 15:04:27 on Mar 12,2016, Elapsed time: 0:03:10
+# Errors: 0, Warnings: 2

@@ -15,7 +15,6 @@
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":21:7:21:20|Synthesizing module sram_interface
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_test_sim.v":21:7:21:19|Synthesizing module sram_test_sim
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_harness_geiger_stack.v":16:7:16:31|Synthesizing module test_harness_geiger_stack
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v":22:7:22:29|Synthesizing module write_address_traversal
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\sram_test\sram_test.v":9:7:9:15|Synthesizing module sram_test
