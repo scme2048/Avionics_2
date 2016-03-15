@@ -4,72 +4,25 @@ Release: v11.6
 
 'IDE_DESIGNERVIEW_ROOTDIR' set to
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer'
-Info: The design sram_test.adb was last modified by software version 11.6.0.34.
-Opened an existing Libero design sram_test.adb.
+Info: The design transceiver_integration.adb was last modified by software version 11.6.0.34.
+Opened an existing Libero design transceiver_integration.adb.
 
-The Execute Script command succeeded ( 00:00:30 )
+The Execute Script command succeeded ( 00:00:43 )
 Checking for software updates...
-***** Layout Variables *********************************************
-
-Mode: TIMING_DRIVEN
-Power-driven Layout: OFF
-Incremental Placement: OFF
-Incremental Route: OFF
-
-
-
-Running I/O Bank Assigner.
-
-I/O Bank Assigner completed successfully.
- 
-
-Planning global net placement...
-
-
-Global net placement completed successfully.
-
-                        o - o - o - o - o - o
-
-Timing-driven Placer Started: Sat Mar 12 15:22:59 2016
-
-Placer Finished: Sat Mar 12 15:23:39 2016
-Total Placer CPU Time:     00:00:40
-
-                        o - o - o - o - o - o
-
-
-Timing-driven Router 
-Design: sram_test                       Started: Sat Mar 12 15:23:45 2016
-
- 
-Iterative improvement...
-
-Timing-driven Router completed successfully.
-
-Design: sram_test                       
-Finished: Sat Mar 12 15:24:48 2016
-Total CPU Time:     00:01:00            Total Elapsed Time: 00:01:03
-Total Memory Usage: 393.2 Mbytes
-                        o - o - o - o - o - o
-
-Loading the Timing data for the design.
-Finished loading the Timing data.
-
-The Layout command succeeded ( 00:02:01 )
 Design saved to file
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\sram_test\
-.adb.
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration.adb.
 Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\sram_test\
-_report_pin_byname.txt
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\sram_test\
-_report_pin_bynumber.txt
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 
-The Execute Script command succeeded ( 00:00:01 )
+The Execute Script command succeeded ( 00:00:02 )
 Design closed.
 

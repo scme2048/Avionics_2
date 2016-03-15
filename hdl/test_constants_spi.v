@@ -18,14 +18,14 @@
 
 //`timescale <time_units> / <precision>
 
-module test_constants_spi(DATA,ROW_WRITE);
+module test_constants_spi(DATA,WRITE_ADDRESS);
 output [15:0] DATA;
-output [12:0] ROW_WRITE;
+output [17:0] WRITE_ADDRESS;
 parameter dat= 15'b0100110101000111;
-parameter row = 12'b000000011101;
+parameter address = 18'b000000000000011101;
 
 assign DATA=dat;
-assign ROW_WRITE=row;
+assign WRITE_ADDRESS=address;
 
 endmodule
 

@@ -30,7 +30,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "sram_test::work"
+KEY ActiveRoot "transceiver_integration::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -112,13 +112,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1457712577"
+TIME="1458004093"
 SIZE="4540"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.v,hdl"
 STATE="utd"
-TIME="1457712577"
-SIZE="7814"
+TIME="1458004092"
+SIZE="7862"
 PARENT="<project>\component\work\transceiver_integration\transceiver_integration.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -209,7 +209,7 @@ SIZE="176"
 ENDFILE
 VALUE "<project>\designer\impl1\read_buffer.ide_des,ide_des"
 STATE="utd"
-TIME="1457819760"
+TIME="1457820060"
 SIZE="233"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.adb,adb"
@@ -264,17 +264,17 @@ SIZE="465"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test.adb,adb"
 STATE="utd"
-TIME="1457738151"
-SIZE="1798656"
+TIME="1457821552"
+SIZE="1860608"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test.ide_des,ide_des"
 STATE="utd"
-TIME="1457738151"
-SIZE="1044"
+TIME="1457821552"
+SIZE="1045"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test.pdb,pdb"
 STATE="utd"
-TIME="1457821551"
+TIME="1457821704"
 SIZE="1506527"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test_ba.sdf,ba_sdf"
@@ -299,12 +299,12 @@ SIZE="11029"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test_fp\projectData\sram_test.pdb,pdb"
 STATE="utd"
-TIME="1457732774"
-SIZE="1506452"
+TIME="1457821702"
+SIZE="1506527"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test_fp\sram_test.pro,pro"
 STATE="utd"
-TIME="1457732774"
+TIME="1457821702"
 SIZE="2485"
 ENDFILE
 VALUE "<project>\designer\impl1\sram_test_prgdata_log.rpt,log"
@@ -313,7 +313,7 @@ TIME="1457821553"
 SIZE="838"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.adb,adb"
-STATE="ood"
+STATE="utd"
 TIME="1457712578"
 SIZE="802816"
 ENDFILE
@@ -323,9 +323,9 @@ TIME="1457712578"
 SIZE="972"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.pdb,pdb"
-STATE="ood"
-TIME="1457712578"
-SIZE="1506136"
+STATE="utd"
+TIME="1458005071"
+SIZE="1505937"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_1_fp\projectData\transceiver_integration.pdb,pdb"
 STATE="utd"
@@ -369,13 +369,33 @@ SIZE="832"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_compile_log.rpt,log"
 STATE="utd"
-TIME="1457712578"
-SIZE="10307"
+TIME="1458004363"
+SIZE="10547"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp\projectData\transceiver_integration.pdb,pdb"
+STATE="utd"
+TIME="1458007847"
+SIZE="1505937"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp\transceiver_integration_fp.pro,pro"
+STATE="utd"
+TIME="1458005335"
+SIZE="2351"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1458005022"
+SIZE="2663"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1457712578"
-SIZE="645"
+TIME="1458005072"
+SIZE="894"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1458005028"
+SIZE="1343"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
 STATE="ood"
@@ -509,8 +529,8 @@ SIZE="1767"
 ENDFILE
 VALUE "<project>\hdl\test_constants_spi.v,hdl"
 STATE="utd"
-TIME="1457712578"
-SIZE="839"
+TIME="1458003979"
+SIZE="865"
 ENDFILE
 VALUE "<project>\hdl\test_harness.v,hdl"
 STATE="utd"
@@ -554,8 +574,8 @@ SIZE="4581"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1457737111"
-SIZE="1507"
+TIME="1457820072"
+SIZE="693"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -609,13 +629,13 @@ SIZE="15931"
 ENDFILE
 VALUE "<project>\simulation\tb_read_buffer_postsynth_simulation.log,log"
 STATE="utd"
-TIME="1457820077"
-SIZE="1882"
+TIME="1457820268"
+SIZE="3390"
 ENDFILE
 VALUE "<project>\simulation\tb_read_buffer_presynth_simulation.log,log"
 STATE="utd"
-TIME="1457712578"
-SIZE="8627"
+TIME="1457820037"
+SIZE="2576"
 ENDFILE
 VALUE "<project>\simulation\tb_reset_pulse_presynth_simulation.log,log"
 STATE="utd"
@@ -646,6 +666,11 @@ VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
 TIME="1457712578"
 SIZE="15335"
+ENDFILE
+VALUE "<project>\simulation\tb_tranceiver_integration_presynth_simulation.log,log"
+STATE="utd"
+TIME="1458004111"
+SIZE="126"
 ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
@@ -964,28 +989,28 @@ SIZE="0"
 ENDFILE
 VALUE "<project>\synthesis\sram_test.edn,syn_edn"
 STATE="utd"
-TIME="1457732175"
-SIZE="900352"
+TIME="1457820924"
+SIZE="977570"
 ENDFILE
 VALUE "<project>\synthesis\sram_test.so,so"
 STATE="utd"
-TIME="1457732175"
+TIME="1457820924"
 SIZE="258"
 ENDFILE
 VALUE "<project>\synthesis\sram_test.v,syn_hdl"
 STATE="ood"
-TIME="1457721662"
-SIZE="353607"
+TIME="1457817876"
+SIZE="400227"
 ENDFILE
 VALUE "<project>\synthesis\sram_test_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1457732175"
+TIME="1457820924"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\sram_test_syn.prj,prj"
 STATE="utd"
-TIME="1457732175"
-SIZE="3248"
+TIME="1457820924"
+SIZE="3124"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
@@ -993,7 +1018,7 @@ TIME="1457712579"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.edn,syn_edn"
-STATE="ood"
+STATE="utd"
 TIME="1457712579"
 SIZE="361837"
 ENDFILE
@@ -1008,7 +1033,7 @@ TIME="1457712579"
 SIZE="118654"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_sdc.sdc,syn_sdc"
-STATE="ood"
+STATE="utd"
 TIME="1457712579"
 SIZE="310"
 ENDFILE
@@ -1148,7 +1173,10 @@ VALUE "<project>\stimulus\tb_tranceiver_integration.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\transceiver_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1156,6 +1184,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\transceiver_integration_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\transceiver_integration_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -1188,7 +1220,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_read_buffer
+EntityName=tb_tranceiver_integration
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -1250,7 +1282,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_read_buffer_postsynth_simulation.log "
+PARAM=" -l tb_tranceiver_integration_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -1339,7 +1371,10 @@ ENDLIST
 ENDLIST
 LIST "transceiver_integration::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\transceiver_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1362,14 +1397,9 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:sram_test_prgdata_log.rpt
-HDL;stimulus\tb_read_buffer.v;0
-HDL;hdl\sram_test_sim.v;0
-HDL;stimulus\tb_sram_test.v;0
-HDL;hdl\memory_controller.v;0
-SmartDesign;sram_test;0
-HDL;hdl\sram_interface.v;0
-HDL;hdl\read_buffer.v;0
+ReportsCurrentItem;Generate Programming Data:transceiver_integration_prgdata_log.rpt
+SmartDesign;transceiver_integration;0
+HDL;hdl\test_constants_spi.v;0
 ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
@@ -1407,6 +1437,7 @@ SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
@@ -1414,7 +1445,6 @@ SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -1446,11 +1476,11 @@ SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "constant_sensor_data::work","","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 ENDLIST
 LIST "nor_flash_interface::work","hdl\nor_flash_interface.v","FALSE","FALSE"
 ENDLIST
@@ -1520,12 +1550,12 @@ SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
-SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST

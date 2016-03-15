@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Mar 08 17:02:37 2016
+// Created by SmartDesign Mon Mar 14 19:08:12 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -77,7 +77,7 @@ wire          spi_mode_config_0_next_cmd;
 wire          spi_mode_config_0_start;
 wire          SS_net_0;
 wire   [15:0] test_constants_spi_0_DATA;
-wire   [12:0] test_constants_spi_0_ROW_WRITE;
+wire   [17:0] test_constants_spi_0_WRITE_ADDRESS;
 wire          SS_net_1;
 wire          MOSI_net_1;
 wire          SCLK_net_1;
@@ -166,14 +166,14 @@ orbit_control orbit_control_0(
 //--------read_buffer
 read_buffer read_buffer_0(
         // Inputs
-        .CLK_48MHZ ( reset_pulse_0_CLK_OUT_48MHZ ),
-        .RESET     ( reset_pulse_0_RESET ),
-        .NEXT_BYTE ( spi_mode_config_0_next_cmd ),
-        .DATA_READ ( test_constants_spi_0_DATA ),
-        .ROW_WRITE ( test_constants_spi_0_ROW_WRITE ),
+        .CLK_48MHZ     ( reset_pulse_0_CLK_OUT_48MHZ ),
+        .RESET         ( reset_pulse_0_RESET ),
+        .NEXT_BYTE     ( spi_mode_config_0_next_cmd ),
+        .DATA_READ     ( test_constants_spi_0_DATA ),
+        .WRITE_ADDRESS ( test_constants_spi_0_WRITE_ADDRESS ),
         // Outputs
-        .READ_CMD  (  ),
-        .BYTE_OUT  ( read_buffer_0_BYTE_OUT ) 
+        .READ_CMD      (  ),
+        .BYTE_OUT      ( read_buffer_0_BYTE_OUT ) 
         );
 
 //--------reset_pulse
@@ -240,8 +240,8 @@ spi_mode_config2 spi_mode_config_0(
 //--------test_constants_spi
 test_constants_spi test_constants_spi_0(
         // Outputs
-        .DATA      ( test_constants_spi_0_DATA ),
-        .ROW_WRITE ( test_constants_spi_0_ROW_WRITE ) 
+        .DATA          ( test_constants_spi_0_DATA ),
+        .WRITE_ADDRESS ( test_constants_spi_0_WRITE_ADDRESS ) 
         );
 
 
