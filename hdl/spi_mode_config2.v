@@ -172,17 +172,17 @@ module spi_mode_config2 (
                         begin_pass_a = 1'b0;
                     end
                     else if ((~byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
-                        next_a = 1'b0;
+                        next_a = 1'b1;
                         mem_enable_a = 1'b0;
                         byte_out_a = TXFIFO;
                         byte_tracker_a = 1'b1;
                     end
                     else if ((byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
                         mem_enable_a = 1'b1;
-                        next_a = 1'b0;
+                        //next_a = 1'b0;
                         start_a = 1'b1;
                         byte_out_a = DATA_FROM_MEM; //not sure about timing w/ this
-                        next_a = 1'b1;
+                        next_a = 1'b0;
                         byte_tracker_a = 1'b0;
                     end
                // end
