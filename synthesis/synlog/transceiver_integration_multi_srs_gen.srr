@@ -1,11 +1,10 @@
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 @N|Running in 64-bit mode
-File C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe changed - recompiling
 File F:\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Mar 14 19:11:59 2016
+# Wed Mar 16 21:47:36 2016
 
 ###########################################################]

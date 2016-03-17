@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
-Date: Mon Mar 14 19:23:40 2016
+Date: Wed Mar 16 21:49:33 2016
 Design Name: transceiver_integration  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
 Design State: Post-Layout
 
@@ -15,7 +15,7 @@ The following nets have been routed to a chip global resource:
     ----------------------
     28                Net   : reset_pulse_0_CLK_OUT_48MHZ
                       Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock/U_GL
-    77                Net   : GLA
+    75                Net   : GLA
                       Driver: CLK_26MHZ_0/Core/U_PLL
     18                Net   : clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
                       Driver: clock_div_26MHZ_1MHZ_0/clk_out_RNIH497/U_GL

@@ -1,34 +1,34 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\synthesis\\synwork\\transceiver_integration_comp.srs|-top|transceiver_integration|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|F:\\Avionics_2\\synthesis\\synwork\\transceiver_integration_comp.srs|-top|transceiver_integration|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|F:\\Avionics_2\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\bin64\\c_ver.exe":1431628788
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v":1431619582
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\hypermods.v":1431628442
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\umr_capim.v":1431628442
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_objects.v":1431628442
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_pipes.svh":1431628442
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\smartgen\\CLK_26MHZ\\CLK_26MHZ.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\clock_div_1MHZ_10HZ.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\clock_div_26MHZ_1MHZ.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\orbit_control.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\read_buffer.v":1457820702
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\reset_pulse.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_data_out.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\SPI_Master.v":1457741778
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_mode_config2.v":1457716178
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\test_constants_spi.v":1458003979
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\component\\work\\transceiver_integration\\transceiver_integration.v":1458004092
+#CUR:"F:\\Avionics_2\\smartgen\\CLK_26MHZ\\CLK_26MHZ.v":1458094914
+#CUR:"F:\\Avionics_2\\hdl\\clock_div_1MHZ_10HZ.v":1458094898
+#CUR:"F:\\Avionics_2\\hdl\\clock_div_26MHZ_1MHZ.v":1458094898
+#CUR:"F:\\Avionics_2\\hdl\\orbit_control.v":1458094900
+#CUR:"F:\\Avionics_2\\hdl\\read_buffer.v":1458094900
+#CUR:"F:\\Avionics_2\\hdl\\reset_pulse.v":1458094900
+#CUR:"F:\\Avionics_2\\hdl\\spi_data_out.v":1458094900
+#CUR:"F:\\Avionics_2\\hdl\\SPI_Master.v":1458094898
+#CUR:"F:\\Avionics_2\\hdl\\spi_mode_config2.v":1458186406
+#CUR:"F:\\Avionics_2\\hdl\\test_constants_spi.v":1458094900
+#CUR:"F:\\Avionics_2\\component\\work\\transceiver_integration\\transceiver_integration.v":1458186444
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v" verilog
-1			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v" verilog
-2			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v" verilog
-3			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v" verilog
-4			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v" verilog
-5			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v" verilog
-6			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v" verilog
-7			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v" verilog
-8			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v" verilog
-9			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v" verilog
-10			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v" verilog
+0			"F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v" verilog
+1			"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v" verilog
+2			"F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v" verilog
+3			"F:\Avionics_2\hdl\orbit_control.v" verilog
+4			"F:\Avionics_2\hdl\read_buffer.v" verilog
+5			"F:\Avionics_2\hdl\reset_pulse.v" verilog
+6			"F:\Avionics_2\hdl\spi_data_out.v" verilog
+7			"F:\Avionics_2\hdl\SPI_Master.v" verilog
+8			"F:\Avionics_2\hdl\spi_mode_config2.v" verilog
+9			"F:\Avionics_2\hdl\test_constants_spi.v" verilog
+10			"F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

@@ -2,24 +2,17 @@ Microsemi Libero Software
 Version: 11.6.0.34
 Release: v11.6
 
-Info: The design
-      C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/tra\
-      nsceiver_integration.adb was last modified by software version 11.6.0.34.
-Opened an existing Libero design
-C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/transceiv\
-er_integration.adb.
+Info: The design F:/Avionics_2/designer/impl1/transceiver_integration.adb was last modified by
+      software version 11.6.0.34.
+Opened an existing Libero design F:/Avionics_2/designer/impl1/transceiver_integration.adb.
 
-The Export-map command succeeded ( 00:00:28 )
-Wrote to the file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
-er_integration.pdb
-CHECKSUM: 3C89
+The Export-map command succeeded ( 00:00:30 )
+Wrote to the file: F:\Avionics_2\designer\impl1\transceiver_integration.pdb
+CHECKSUM: F245
 
-The Generate programming file command succeeded ( 00:00:33 )
-Design saved to file
-C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/transceiv\
-er_integration.adb.
+The Generate programming file command succeeded ( 00:00:35 )
+Design saved to file F:/Avionics_2/designer/impl1/transceiver_integration.adb.
 
-The Execute Script command succeeded ( 00:00:42 )
+The Execute Script command succeeded ( 00:00:39 )
 Design closed.
 

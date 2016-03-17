@@ -138,7 +138,9 @@ module spi_mode_config2 (
         
             RX_MODE: begin
                 //chip_state = SLAVE_OUTPUT[6:4];
-
+                //begin_pass_a=1'b1; //TESTING ONLY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                //state_a = TX_MODE;
+                //byte_out_a = STX;
                 if ((TX_ENABLE) && (begin_pass_b)) begin
                     //start_a = 1'b1;
                         state_a = TX_MODE;
@@ -281,7 +283,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 14)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'hff; //infinite
+                    byte_out_a = 8'h32; //50
                     byte_tracker_a = 1'b0;
                 end
                 //Packet Automation Control 1 ***************
@@ -307,7 +309,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 18)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h5; //*****
+                    byte_out_a = 8'h4; //*****
                     byte_tracker_a = 1'b0;
                 end
                 //Device Address
@@ -507,7 +509,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 48)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h30; //
+                    byte_out_a = 8'h3E; //
                     byte_tracker_a = 1'b0;
                 end
                   //Radio cntrl state config 0
