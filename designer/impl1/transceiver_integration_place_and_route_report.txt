@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Wed Mar 16 21:49:32 2016 ***************************************************************************
+                          Thu Mar 17 18:18:17 2016 ***************************************************************************
 
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
-File Name: F:\Avionics_2\designer\impl1\transceiver_integration.adb
+File Name: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiver_integration.adb
 Design Name: transceiver_integration  Design State: layout
-Last Saved: Wed Mar 16 21:48:38 2016
+Last Saved: Thu Mar 17 18:17:22 2016
 
 ***** Device Data **************************************************
 
@@ -22,8 +22,8 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Wed Mar 16 21:48:00 2016:
-        F:\Avionics_2\synthesis\transceiver_integration.edn
+Source File(s) Imported on Thu Mar 17 18:17:06 2016:
+        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.edn
 
 
 ***** CAE Variables ************************************************
@@ -49,7 +49,9 @@ Parameters used to run compile:
 Family      : ProASIC3L
 Device      : M1A3P1000L
 Package     : 484 FBGA
-Source      : F:\Avionics_2\synthesis\transceiver_integration.edn
+Source      :
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_in\
+tegration.edn
 Format      : EDIF
 Topcell     : transceiver_integration
 Speed grade : STD
@@ -91,9 +93,9 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        30
+  - Logic combining:        29
 
-    Total macros optimized  31
+    Total macros optimized  30
 
 Warning: CMP503: Remapped 64 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -110,7 +112,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:    788  Total:  24576   (3.21%)
+    CORE                       Used:    815  Total:  24576   (3.32%)
     IO (W/ clocks)             Used:     14  Total:    300   (4.67%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -135,8 +137,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 622          | 622
-    SEQ     | 165          | 166
+    COMB    | 648          | 648
+    SEQ     | 166          | 167
 
 I/O Function:
 
@@ -178,7 +180,7 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    75      CLK_NET       Net   : GLA
+    76      CLK_NET       Net   : GLA
                           Driver: CLK_26MHZ_0/Core
                           Source: ESSENTIAL
     28      CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
@@ -200,6 +202,8 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    25      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
+                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -212,18 +216,18 @@ High fanout nets in the post compile netlist:
                           Driver: reset_pulse_0/RESET_4
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    24      INT_NET       Net   : spi_mode_config_0/config_cntr_b[2]
-                          Driver: spi_mode_config_0/config_cntr_b[2]/U1
-    22      SET/RESET_NET Net   : reset_pulse_0_RESET
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET
                           Driver: reset_pulse_0/RESET
-    22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
-                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
+    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[6]
+                          Driver: spi_mode_config_0/config_cntr_b[6]/U1
     22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[3]
                           Driver: spi_mode_config_0/config_cntr_b[3]/U1
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
+    25      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
+                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -236,12 +240,10 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: reset_pulse_0/RESET_4
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    24      INT_NET       Net   : spi_mode_config_0/config_cntr_b[2]
-                          Driver: spi_mode_config_0/config_cntr_b[2]/U1
-    22      SET/RESET_NET Net   : reset_pulse_0_RESET
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET
                           Driver: reset_pulse_0/RESET
-    22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
-                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
+    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[6]
+                          Driver: spi_mode_config_0/config_cntr_b[6]/U1
     22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[3]
                           Driver: spi_mode_config_0/config_cntr_b[3]/U1
 ====================
@@ -275,16 +277,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Wed Mar 16 21:48:47 2016
+Timing-driven Placer Started: Thu Mar 17 18:17:30 2016
 
-Placer Finished: Wed Mar 16 21:48:52 2016
-Total Placer CPU Time:     00:00:05
+Placer Finished: Thu Mar 17 18:17:39 2016
+Total Placer CPU Time:     00:00:09
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: transceiver_integration         Started: Wed Mar 16 21:49:06 2016
+Design: transceiver_integration         Started: Thu Mar 17 18:17:44 2016
 
  
 Iterative improvement...
@@ -292,9 +294,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: transceiver_integration         
-Finished: Wed Mar 16 21:49:27 2016
-Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:21
-Total Memory Usage: 379.1 Mbytes
+Finished: Thu Mar 17 18:18:12 2016
+Total CPU Time:     00:00:27            Total Elapsed Time: 00:00:28
+Total Memory Usage: 372.7 Mbytes
                         o - o - o - o - o - o
 
 

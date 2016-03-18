@@ -1,19 +1,19 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
-#--  Project file F:\Avionics_2\synthesis\transceiver_integration_syn.prj
+#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration_syn.prj
 
 #project files
-add_file -verilog "F:/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v"
-add_file -verilog "F:/Avionics_2/hdl/clock_div_1MHZ_10HZ.v"
-add_file -verilog "F:/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v"
-add_file -verilog "F:/Avionics_2/hdl/orbit_control.v"
-add_file -verilog "F:/Avionics_2/hdl/read_buffer.v"
-add_file -verilog "F:/Avionics_2/hdl/reset_pulse.v"
-add_file -verilog "F:/Avionics_2/hdl/spi_data_out.v"
-add_file -verilog "F:/Avionics_2/hdl/SPI_Master.v"
-add_file -verilog "F:/Avionics_2/hdl/spi_mode_config2.v"
-add_file -verilog "F:/Avionics_2/hdl/test_constants_spi.v"
-add_file -verilog "F:/Avionics_2/component/work/transceiver_integration/transceiver_integration.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/orbit_control.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_data_out.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_constants_spi.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/transceiver_integration/transceiver_integration.v"
 
 
 

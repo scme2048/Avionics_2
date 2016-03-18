@@ -216,7 +216,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 4)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h41; //chip_rdy pin *******
+                    byte_out_a = 8'h41; //chip_rdy pin ******* // I DONT THINK THIS IS RIGHT???
                     byte_tracker_a = 1'b0;
                 end
                 //GDO0 Config

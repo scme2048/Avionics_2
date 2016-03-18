@@ -1,9 +1,9 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
-@N: BN362 :"f:\avionics_2\hdl\spi_mode_config2.v":757:4:757:9|Removing sequential instance mem_enable_b of view:PrimLib.dffre(prim) in hierarchy view:work.spi_mode_config2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\avionics_2\hdl\spi_mode_config2.v":95:4:95:9|Removing sequential instance mem_enable_a of view:PrimLib.dffr(prim) in hierarchy view:work.spi_mode_config2(verilog) because there are no references to its outputs 
-@N: MF238 :"f:\avionics_2\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
-@N: MF238 :"f:\avionics_2\hdl\clock_div_26mhz_1mhz.v":32:19:32:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\spi_mode_config2.v":757:4:757:9|Removing sequential instance mem_enable_b of view:PrimLib.dffre(prim) in hierarchy view:work.spi_mode_config2(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\spi_mode_config2.v":95:4:95:9|Removing sequential instance mem_enable_a of view:PrimLib.dffr(prim) in hierarchy view:work.spi_mode_config2(verilog) because there are no references to its outputs 
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\clock_div_26mhz_1mhz.v":32:19:32:28|Found 17-bit incrementor, 'un5_counter[16:0]'
 @N: FP130 |Promoting Net reset_pulse_0_CLK_OUT_48MHZ on CLKINT  reset_pulse_0.CLK_OUT_48MHZ_inferred_clock 
 @N: FP130 |Promoting Net spi_master_0_busy on CLKINT  spi_master_0.busy_inferred_clock 
 @N: FP130 |Promoting Net clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT on CLKINT  clock_div_26MHZ_1MHZ_0.clk_out_inferred_clock 

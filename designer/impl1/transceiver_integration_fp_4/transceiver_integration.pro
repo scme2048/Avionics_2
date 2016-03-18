@@ -1,6 +1,6 @@
-<project name="geiger_integration" version="1.1">
+<project name="transceiver_integration" version="1.1">
     <ProjectDirectory>
-        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\geiger_integration_fp
+        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiver_integration_fp_4
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\geiger_integration_fp\geiger_integration.log
+        C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiver_integration_fp_4\transceiver_integration.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -72,16 +72,13 @@
                 </ProgrammingMode>
             </FlashPro5>
         </Hardware>
-        <Algo type="PDB">
-            <filename>
-                C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\geiger_integration.pdb
-            </filename>
-            <local>
-                projectData\geiger_integration.pdb
-            </local>
-            <SelectedAction>
-                PROGRAM
-            </SelectedAction>
+        <Algo type="unknown">
+            <irlength>
+                0
+            </irlength>
+            <MaxTCK>
+                4000000
+            </MaxTCK>
         </Algo>
     </configuration>
 </project>
