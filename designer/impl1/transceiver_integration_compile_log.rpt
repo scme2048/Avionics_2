@@ -19,7 +19,7 @@ Imported the file:
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_in\
 tegration.edn
 
-The Import command succeeded ( 00:00:08 )
+The Import command succeeded ( 00:00:07 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -75,7 +75,7 @@ Optimized macros:
 
     Total macros optimized  30
 
-Warning: CMP503: Remapped 64 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 63 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
@@ -90,7 +90,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:    815  Total:  24576   (3.32%)
+    CORE                       Used:    826  Total:  24576   (3.36%)
     IO (W/ clocks)             Used:     14  Total:    300   (4.67%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -115,8 +115,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 648          | 648
-    SEQ     | 166          | 167
+    COMB    | 658          | 658
+    SEQ     | 167          | 168
 
 I/O Function:
 
@@ -152,19 +152,19 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
-    16      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+    15      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
 
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    76      CLK_NET       Net   : GLA
+    75      CLK_NET       Net   : GLA
                           Driver: CLK_26MHZ_0/Core
                           Source: ESSENTIAL
     28      CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
-    22      CLK_NET       Net   : spi_master_0_busy
+    24      CLK_NET       Net   : spi_master_0_busy
                           Driver: spi_master_0/busy_enable_RNIKMP21_0
                           Source: NETLIST
     18      CLK_NET       Net   : clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
@@ -180,8 +180,8 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    25      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
-                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET
+                          Driver: reset_pulse_0/RESET
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -194,18 +194,18 @@ High fanout nets in the post compile netlist:
                           Driver: reset_pulse_0/RESET_4
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    23      SET/RESET_NET Net   : reset_pulse_0_RESET
-                          Driver: reset_pulse_0/RESET
-    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[6]
-                          Driver: spi_mode_config_0/config_cntr_b[6]/U1
-    22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[3]
-                          Driver: spi_mode_config_0/config_cntr_b[3]/U1
+    24      INT_NET       Net   : spi_mode_config_0/byte_tracker_b
+                          Driver: spi_mode_config_0/byte_tracker_b/U1
+    22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[2]
+                          Driver: spi_mode_config_0/config_cntr_b[2]/U1
+    21      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
+                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    25      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
-                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET
+                          Driver: reset_pulse_0/RESET
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -218,12 +218,12 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: reset_pulse_0/RESET_4
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    23      SET/RESET_NET Net   : reset_pulse_0_RESET
-                          Driver: reset_pulse_0/RESET
-    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[6]
-                          Driver: spi_mode_config_0/config_cntr_b[6]/U1
-    22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[3]
-                          Driver: spi_mode_config_0/config_cntr_b[3]/U1
+    24      INT_NET       Net   : spi_mode_config_0/byte_tracker_b
+                          Driver: spi_mode_config_0/byte_tracker_b/U1
+    22      INT_NET       Net   : spi_mode_config_0/config_cntr_b[2]
+                          Driver: spi_mode_config_0/config_cntr_b[2]/U1
+    21      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
+                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
 ====================
 Flash*Freeze report:
 ====================
@@ -246,6 +246,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
 er_integration.adb.
 
-The Execute Script command succeeded ( 00:00:17 )
+The Execute Script command succeeded ( 00:00:15 )
 Design closed.
 

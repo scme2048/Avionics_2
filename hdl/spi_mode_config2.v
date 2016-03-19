@@ -54,7 +54,7 @@ module spi_mode_config2 (
     localparam SFRX = {WRITE,SINGLE_MODE,6'h3a};
     localparam SFTX = {WRITE,SINGLE_MODE,6'h3b};
     
-    localparam RXFIFO = {READ,SINGLE_MODE,6'h3f};
+    localparam RXFIFO = {READ,1'b1,6'h3f};
     localparam TXFIFO = {WRITE,SINGLE_MODE,6'h3f};
 
     // Chip status
@@ -103,6 +103,7 @@ module spi_mode_config2 (
         begin_pass_a = 0;
         config_cntr_a = 1;
         start_a = 1'b1;
+        chip_state = 3'b0;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
@@ -113,26 +114,29 @@ module spi_mode_config2 (
         begin_pass_a = begin_pass_b;
         config_cntr_a = config_cntr_b;
         start_a = start_b;
-        chip_state = SLAVE_OUTPUT[6:4];
+        //chip_state = SLAVE_OUTPUT[6:4];
 
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
-                start_a = 1'b1;
+                start_a = 1'b0;
 
                     //if ((~byte_tracker_b)&&(~chip_rdy)) begin
                     //        byte_out_a = SIDLE;
                     //        byte_tracker_a = 1'b1;
                     //end
                     if ((~chip_rdy)&&(~TX_ENABLE)/*&&(~byte_tracker_b)*/) begin 
+                        start_a=1'b1;
                         state_a = RX_MODE; //If idle and slave is ready, go to receive mode
                             byte_out_a = SRX;
                             //byte_tracker_a = 1'b0;
                     end
                     else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
+                            start_a=1'b1;
                             state_a = TX_MODE;
                             byte_out_a = STX;
                             //byte_tracker_a = 1'b0;
+                            chip_state = SLAVE_OUTPUT[6:4];
                     end
             end
         
@@ -149,8 +153,9 @@ module spi_mode_config2 (
                 else if ((chip_state == chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
                     start_a = 1'b1;
-                        byte_out_a = RXFIFO;
+                        byte_out_a = 8'hFB;//RXFIFO;
                         byte_tracker_a = 1'b1;
+                    chip_state = SLAVE_OUTPUT[6:4];
                 end
                 else if ((chip_state == chip_RX)&&(byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
@@ -162,7 +167,18 @@ module spi_mode_config2 (
                     byte_tracker_a = 1'b0;
                     
                 end
-                else byte_out_a = 8'b0;
+                else if ((chip_state != chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&&(~begin_pass_b)) begin
+                    chip_state = SLAVE_OUTPUT[6:4];
+                    mem_enable_a = 1'b0;
+                    start_a = 1'b1;
+                    byte_out_a = 8'hFB;
+                    byte_tracker_a=1'b1;
+               end else if ((chip_state != chip_RX)&&(byte_tracker_b)&&(~chip_rdy)&&(~begin_pass_b)) begin
+                    mem_enable_a=1'b0;
+                    start_a = 1'b1;
+                    byte_out_a=8'hFB;//
+                    byte_tracker_a=1'b0;
+               end
             end
             
             TX_MODE: begin
@@ -742,7 +758,7 @@ module spi_mode_config2 (
                 end
                 else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 83)) begin
                     config_cntr_a = 0;
-                    //tart_a = 1'b0;
+                    //start_a = 1'b0;
                     byte_out_a = SIDLE;
                     byte_tracker_a = 1'b0;
                     state_a = IDLE;

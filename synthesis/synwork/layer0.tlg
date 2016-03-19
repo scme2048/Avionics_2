@@ -27,18 +27,23 @@ Selecting top level module transceiver_integration
 @W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":97:4:97:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
 
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":95:4:95:9|Pruning register chip_state[2:0] 
-
-@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":757:4:757:9|Feedback mux created for signal ss_b.
-@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":757:4:757:9|All reachable assignments to ss_b assign 0, register removed by optimization
+@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":773:4:773:9|Feedback mux created for signal ss_b.
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":773:4:773:9|All reachable assignments to ss_b assign 0, register removed by optimization
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
 
-@W: CL247 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":23:16:23:27|Input port bit 7 of SLAVE_OUTPUT[7:0] is unused
-
-@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":23:16:23:27|Input port bits 3 to 0 of SLAVE_OUTPUT[7:0] are unused
-
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":95:4:95:9|Trying to extract state machine for register chip_state
+Extracted state machine for register chip_state
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
 @N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":195:4:195:9|Trying to extract state machine for register state_q
 Extracted state machine for register state_q
 State machine has 3 reachable states with original encodings of:

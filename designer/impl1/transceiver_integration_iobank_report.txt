@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
-Date: Thu Mar 17 18:18:18 2016
+Date: Fri Mar 18 18:06:16 2016
 Design Name: transceiver_integration  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
 
 

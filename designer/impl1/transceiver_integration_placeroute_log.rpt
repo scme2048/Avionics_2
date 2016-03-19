@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Mar 17 18:17:30 2016
+Timing-driven Placer Started: Fri Mar 18 18:05:33 2016
 
-Placer Finished: Thu Mar 17 18:17:39 2016
+Placer Finished: Fri Mar 18 18:05:42 2016
 Total Placer CPU Time:     00:00:09
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: transceiver_integration         Started: Thu Mar 17 18:17:44 2016
+Design: transceiver_integration         Started: Fri Mar 18 18:05:46 2016
 
  
 Iterative improvement...
@@ -50,15 +50,15 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: transceiver_integration         
-Finished: Thu Mar 17 18:18:12 2016
-Total CPU Time:     00:00:27            Total Elapsed Time: 00:00:28
-Total Memory Usage: 372.7 Mbytes
+Finished: Fri Mar 18 18:06:10 2016
+Total CPU Time:     00:00:23            Total Elapsed Time: 00:00:24
+Total Memory Usage: 372.5 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
 Finished loading the Timing data.
 
-The Layout command succeeded ( 00:00:51 )
+The Layout command succeeded ( 00:00:45 )
 Wrote status report to file: transceiver_integration_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -81,6 +81,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
 er_integration.adb.
 
-The Execute Script command succeeded ( 00:00:56 )
+The Execute Script command succeeded ( 00:00:49 )
 Design closed.
 
