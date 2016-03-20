@@ -70,7 +70,7 @@ module spi_mode_config2 (
     reg [6:0] config_cntr_a, config_cntr_b;
     reg [10:0] rst_cntr;
     reg [7:0] byte_out_a;
-    reg mem_enable_a/*,ss_a*/,begin_pass_a;
+    reg mem_enable_a,ss_a,begin_pass_a;
     reg [2:0] state_a;
     reg byte_tracker_a, next_a; // if 0, then send address, if 1, send data, chip_rdy-->CC1101 ready
     reg [2:0] chip_state;
@@ -79,6 +79,7 @@ module spi_mode_config2 (
     reg [2:0] state_b;
     reg byte_tracker_b, next_b; // if 0, then send address, if 1, send data, chip_rdy-->CC1101 ready
     reg start_a,start_b;
+    reg [1:0] ss_counter;
 
     // mem_pull high if in TX mode, low if in RX mode
     assign mem_enable = mem_enable_b;
@@ -99,7 +100,7 @@ module spi_mode_config2 (
         state_a = CONFIG_MODE;
         byte_tracker_a = 1'b0;
         next_a = 1'b0;
-        //ss_a = 1'b1;
+        ss_a = 1'b0;
         begin_pass_a = 0;
         config_cntr_a = 1;
         start_a = 1'b1;
@@ -109,7 +110,7 @@ module spi_mode_config2 (
         mem_enable_a = mem_enable_b;
         state_a = state_b;
         next_a = next_b;
-        //ss_a = ss_b;
+        ss_a = ss_b;
         byte_tracker_a = byte_tracker_b;
         begin_pass_a = begin_pass_b;
         config_cntr_a = config_cntr_b;
@@ -119,19 +120,25 @@ module spi_mode_config2 (
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
-                start_a = 1'b0;
+                //start_a = 1'b0;
 
                     //if ((~byte_tracker_b)&&(~chip_rdy)) begin
                     //        byte_out_a = SIDLE;
                     //        byte_tracker_a = 1'b1;
                     //end
-                    if ((~chip_rdy)&&(~TX_ENABLE)/*&&(~byte_tracker_b)*/) begin 
+                    if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b==1'b0)) begin 
                         start_a=1'b1;
-                        state_a = RX_MODE; //If idle and slave is ready, go to receive mode
+                        //ss_a=1'b1;
+                        //state_a = RX_MODE; //If idle and slave is ready, go to receive mode
                             byte_out_a = SRX;
-                            //byte_tracker_a = 1'b0;
-                    end
-                    else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
+                            byte_tracker_a = 1'b1;
+                    end else if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b==1'b1)) begin
+                        start_a=1'b1;
+                        byte_out_a = 8'hFB; // Read RXBYTES Register
+                        byte_tracker_a = 1'b1;
+                        state_a = RX_MODE;
+                        
+                    end else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
                             start_a=1'b1;
                             state_a = TX_MODE;
                             byte_out_a = STX;
@@ -168,6 +175,7 @@ module spi_mode_config2 (
                     
                 end
                 else if ((chip_state != chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&&(~begin_pass_b)) begin
+                    ss_a=1'b0;
                     chip_state = SLAVE_OUTPUT[6:4];
                     mem_enable_a = 1'b0;
                     start_a = 1'b1;
@@ -176,7 +184,7 @@ module spi_mode_config2 (
                end else if ((chip_state != chip_RX)&&(byte_tracker_b)&&(~chip_rdy)&&(~begin_pass_b)) begin
                     mem_enable_a=1'b0;
                     start_a = 1'b1;
-                    byte_out_a=8'hFB;//
+                    byte_out_a=8'h00;//
                     byte_tracker_a=1'b0;
                end
             end
@@ -783,19 +791,30 @@ module spi_mode_config2 (
             begin_pass_b <= 0;
             config_cntr_b <= 1;
             start_b <= 1'b0;
+            ss_counter=2'b00;
 
         end
         else begin
-            if (ss_b == 1'b0 && state_b != PWR_RST) begin
+            if (/*ss_b == 1'b0 &&*/ state_b != PWR_RST) begin
                 byte_out_b <= byte_out_a;
                 mem_enable_b <= mem_enable_a;
                 state_b<=state_a;
                 next_b <= next_a;
-                //ss_b <= ss_a;
+                ss_b <= ss_a;
                 begin_pass_b <= begin_pass_a; 
                 config_cntr_b <= config_cntr_a;
                 start_b <= start_a;
                 byte_tracker_b <= byte_tracker_a;
+            end
+            if (state_b ==RX_MODE) begin
+                if (ss_counter ==2'b11) begin
+                    ss_b<=1'b0;
+                end else begin
+                    ss_b<=1'b1;
+                    ss_counter=ss_counter+1;
+                end
+            end else begin
+                ss_counter=2'b00;
             end
             if (state_b == PWR_RST) begin
                 if (rst_cntr <= microsec) begin  

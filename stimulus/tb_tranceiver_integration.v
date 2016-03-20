@@ -56,8 +56,14 @@ end
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
 
-
 wire ss,mosi,sclk;
+
+always @(SYSCLK)
+begin
+    miso=ss;
+end
+
+
 
 
 //////////////////////////////////////////////////////////////////////

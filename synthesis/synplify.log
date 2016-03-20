@@ -4,7 +4,7 @@ sourcing C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\message_overri
 Starting:    C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
 Hostname:    SCOTT-PC
-Date:        Fri Mar 18 18:05:00 2016
+Date:        Sat Mar 19 17:47:18 2016
 Version:     J-2015.03M-3
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log transceiver_integration_syn.tcl
@@ -83,7 +83,7 @@ Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\sy
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:03s
+Run Time:0h:00m:04s
 
 Complete: Map on transceiver_integration_syn|synthesis
 

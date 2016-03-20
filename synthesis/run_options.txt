@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
 #--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\run_options.txt
-#--  Written on Fri Mar 18 18:05:00 2016
+#--  Written on Sat Mar 19 17:47:18 2016
 
 
 #project files
@@ -13,8 +13,8 @@ add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/A
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_data_out.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v"
-add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/test_constants_spi.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/transceiver_integration/transceiver_integration.v"
 
 
