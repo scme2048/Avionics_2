@@ -1,40 +1,52 @@
 
-fsm_encoding {9660663} sequential
+fsm_encoding {9660664} sequential
 
-fsm_state_encoding {9660663} 00 {00}
+fsm_state_encoding {9660664} 00 {00}
 
-fsm_state_encoding {9660663} 01 {01}
+fsm_state_encoding {9660664} 01 {01}
 
-fsm_state_encoding {9660663} 10 {10}
+fsm_state_encoding {9660664} 10 {10}
 
-fsm_registers {9660663} {init_stage[1]}  {init_stage[0]} 
+fsm_registers {9660664} {init_stage[1]}  {init_stage[0]} 
 
-fsm_encoding {1219541952} sequential
+fsm_encoding {1219541953} sequential
 
-fsm_state_encoding {1219541952} IDLE {00}
+fsm_state_encoding {1219541953} IDLE {00}
 
-fsm_state_encoding {1219541952} WAIT_HALF {01}
+fsm_state_encoding {1219541953} WAIT_HALF {01}
 
-fsm_state_encoding {1219541952} TRANSFER {10}
+fsm_state_encoding {1219541953} TRANSFER {10}
 
-fsm_registers {1219541952} {state_q[1]}  {state_q[0]} 
+fsm_registers {1219541953} {state_q[1]}  {state_q[0]} 
 
-fsm_encoding {14964961} onehot
+fsm_encoding {1410441042} onehot
 
-fsm_state_encoding {14964961} 000 {00000001}
+fsm_state_encoding {1410441042} 000 {00000001}
 
-fsm_state_encoding {14964961} 001 {00000010}
+fsm_state_encoding {1410441042} 001 {00000010}
 
-fsm_state_encoding {14964961} 010 {00000100}
+fsm_state_encoding {1410441042} 010 {00000100}
 
-fsm_state_encoding {14964961} 011 {00001000}
+fsm_state_encoding {1410441042} 011 {00001000}
 
-fsm_state_encoding {14964961} 100 {00010000}
+fsm_state_encoding {1410441042} 100 {00010000}
 
-fsm_state_encoding {14964961} 101 {00100000}
+fsm_state_encoding {1410441042} 101 {00100000}
 
-fsm_state_encoding {14964961} 110 {01000000}
+fsm_state_encoding {1410441042} 110 {01000000}
 
-fsm_state_encoding {14964961} 111 {10000000}
+fsm_state_encoding {1410441042} 111 {10000000}
 
-fsm_registers {14964961} {chip_state[7]}  {chip_state[6]}  {chip_state[5]}  {chip_state[4]}  {chip_state[3]}  {chip_state[2]}  {chip_state[1]}  {chip_state[0]} 
+fsm_registers {1410441042} {chip_state[7]}  {chip_state[6]}  {chip_state[5]}  {chip_state[4]}  {chip_state[3]}  {chip_state[2]}  {chip_state[1]}  {chip_state[0]} 
+
+fsm_encoding {1410441041} sequential
+
+fsm_state_encoding {1410441041} 000 {00}
+
+fsm_state_encoding {1410441041} 011 {01}
+
+fsm_state_encoding {1410441041} 100 {10}
+
+fsm_state_encoding {1410441041} 111 {11}
+
+fsm_registers {1410441041} {tx_state[1]}  {tx_state[0]} 

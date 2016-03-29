@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.6
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
-Date: Sat Mar 19 17:49:04 2016
+Date: Mon Mar 28 22:09:09 2016
 
 
 Design: transceiver_integration
@@ -24,18 +24,18 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               CLK_26MHZ_0/Core:GLA
-Period (ns):                8.790
-Frequency (MHz):            113.766
+Period (ns):                9.284
+Frequency (MHz):            107.712
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
-External Setup (ns):        5.608
+External Setup (ns):        7.536
 External Hold (ns):         -1.858
-Min Clock-To-Out (ns):      1.722
-Max Clock-To-Out (ns):      7.096
+Min Clock-To-Out (ns):      1.794
+Max Clock-To-Out (ns):      7.819
 
 Clock Domain:               clock_div_1MHZ_10HZ_0/clk_out:Q
-Period (ns):                10.554
-Frequency (MHz):            94.751
+Period (ns):                10.344
+Frequency (MHz):            96.674
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -44,8 +44,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               clock_div_26MHZ_1MHZ_0/clk_out:Q
-Period (ns):                7.485
-Frequency (MHz):            133.601
+Period (ns):                7.178
+Frequency (MHz):            139.315
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -54,8 +54,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               spi_mode_config_0/next_b/U1:Q
-Period (ns):                4.542
-Frequency (MHz):            220.167
+Period (ns):                4.725
+Frequency (MHz):            211.640
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -75,96 +75,108 @@ Clock Domain CLK_26MHZ_0/Core:GLA
 SET Register to Register
 
 Path 1
-  From:                        spi_mode_config_0/state_b[2]:CLK
-  To:                          spi_mode_config_0/config_cntr_b[0]/U1:D
-  Delay (ns):                  8.281
+  From:                        spi_mode_config_0/rst_cntr[1]/U1:CLK
+  To:                          spi_mode_config_0/byte_out_b[0]/U1:D
+  Delay (ns):                  8.745
   Slack (ns):
-  Arrival (ns):                9.125
+  Arrival (ns):                9.617
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         8.790
+  Minimum Period (ns):         9.284
 
 Path 2
-  From:                        spi_mode_config_0/state_b[2]:CLK
-  To:                          spi_mode_config_0/begin_pass_b/U1:D
-  Delay (ns):                  8.164
+  From:                        spi_mode_config_0/rst_cntr[0]:CLK
+  To:                          spi_mode_config_0/byte_out_b[0]/U1:D
+  Delay (ns):                  8.752
   Slack (ns):
-  Arrival (ns):                9.008
+  Arrival (ns):                9.617
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         8.658
+  Minimum Period (ns):         9.284
 
 Path 3
-  From:                        spi_mode_config_0/state_b[2]:CLK
-  To:                          spi_mode_config_0/config_cntr_b[4]/U1:D
-  Delay (ns):                  8.017
+  From:                        spi_mode_config_0/rst_cntr[1]/U1:CLK
+  To:                          spi_mode_config_0/byte_out_b[7]/U1:D
+  Delay (ns):                  8.552
   Slack (ns):
-  Arrival (ns):                8.861
+  Arrival (ns):                9.424
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         8.511
+  Minimum Period (ns):         9.068
 
 Path 4
-  From:                        spi_mode_config_0/state_b[0]:CLK
-  To:                          spi_mode_config_0/config_cntr_b[0]/U1:D
-  Delay (ns):                  7.929
+  From:                        spi_mode_config_0/rst_cntr[0]:CLK
+  To:                          spi_mode_config_0/byte_out_b[7]/U1:D
+  Delay (ns):                  8.559
   Slack (ns):
-  Arrival (ns):                8.785
+  Arrival (ns):                9.424
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         8.450
+  Minimum Period (ns):         9.068
 
 Path 5
-  From:                        spi_mode_config_0/state_b[2]:CLK
-  To:                          spi_mode_config_0/config_cntr_b_0[4]/U1:D
-  Delay (ns):                  7.920
+  From:                        spi_mode_config_0/rst_cntr[3]/U1:CLK
+  To:                          spi_mode_config_0/byte_out_b[0]/U1:D
+  Delay (ns):                  8.398
   Slack (ns):
-  Arrival (ns):                8.764
+  Arrival (ns):                9.265
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         8.414
+  Minimum Period (ns):         8.932
 
 
 Expanded Path 1
-  From: spi_mode_config_0/state_b[2]:CLK
-  To: spi_mode_config_0/config_cntr_b[0]/U1:D
+  From: spi_mode_config_0/rst_cntr[1]/U1:CLK
+  To: spi_mode_config_0/byte_out_b[0]/U1:D
   data required time                             N/C
-  data arrival time                          -   9.125
+  data arrival time                          -   9.617
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   0.000                        CLK_26MHZ_0/Core:GLA (r)
-               +     0.844          net: GLA
-  0.844                        spi_mode_config_0/state_b[2]:CLK (r)
-               +     0.657          cell: ADLIB:DFN1C0
-  1.501                        spi_mode_config_0/state_b[2]:Q (f)
-               +     0.765          net: spi_mode_config_0/state_b[2]
-  2.266                        spi_mode_config_0/state_b_RNIQQJ4_0[0]:B (f)
-               +     0.576          cell: ADLIB:OR2A
-  2.842                        spi_mode_config_0/state_b_RNIQQJ4_0[0]:Y (f)
-               +     1.133          net: spi_mode_config_0/N_341
-  3.975                        spi_mode_config_0/state_b_RNI7OT6_0[1]:A (f)
-               +     0.479          cell: ADLIB:OR2
-  4.454                        spi_mode_config_0/state_b_RNI7OT6_0[1]:Y (f)
-               +     3.903          net: spi_mode_config_0/N_1333_0
-  8.357                        spi_mode_config_0/config_cntr_b[0]/U0:S (f)
+               +     0.872          net: GLA
+  0.872                        spi_mode_config_0/rst_cntr[1]/U1:CLK (r)
+               +     0.518          cell: ADLIB:DFN1C0
+  1.390                        spi_mode_config_0/rst_cntr[1]/U1:Q (r)
+               +     0.387          net: spi_mode_config_0/rst_cntr[1]
+  1.777                        spi_mode_config_0/rst_cntr_RNIEU24[2]:B (r)
+               +     0.804          cell: ADLIB:OA1
+  2.581                        spi_mode_config_0/rst_cntr_RNIEU24[2]:Y (r)
+               +     0.313          net: spi_mode_config_0/rst_cntr18lt5
+  2.894                        spi_mode_config_0/rst_cntr_RNI40I9[6]:A (r)
+               +     0.877          cell: ADLIB:OA1
+  3.771                        spi_mode_config_0/rst_cntr_RNI40I9[6]:Y (r)
+               +     0.313          net: spi_mode_config_0/rst_cntr18lt9
+  4.084                        spi_mode_config_0/rst_cntr_RNIHNKQ[10]:A (r)
+               +     0.877          cell: ADLIB:OA1
+  4.961                        spi_mode_config_0/rst_cntr_RNIHNKQ[10]:Y (r)
+               +     1.497          net: spi_mode_config_0/rst_cntr18
+  6.458                        spi_mode_config_0/rst_cntr_RNINII61[10]:A (r)
+               +     0.460          cell: ADLIB:NOR2A
+  6.918                        spi_mode_config_0/rst_cntr_RNINII61[10]:Y (r)
+               +     0.286          net: spi_mode_config_0/byte_out_b_1_sqmuxa_0
+  7.204                        spi_mode_config_0/state_b_RNIUAGD1[1]:B (r)
+               +     0.459          cell: ADLIB:NOR2A
+  7.663                        spi_mode_config_0/state_b_RNIUAGD1[1]:Y (f)
+               +     1.177          net: spi_mode_config_0/byte_out_b_1_sqmuxa_1
+  8.840                        spi_mode_config_0/byte_out_b[0]/U0:S (f)
                +     0.463          cell: ADLIB:MX2
-  8.820                        spi_mode_config_0/config_cntr_b[0]/U0:Y (f)
-               +     0.305          net: spi_mode_config_0/config_cntr_b[0]/Y
-  9.125                        spi_mode_config_0/config_cntr_b[0]/U1:D (f)
+  9.303                        spi_mode_config_0/byte_out_b[0]/U0:Y (f)
+               +     0.314          net: spi_mode_config_0/byte_out_b[0]/Y
+  9.617                        spi_mode_config_0/byte_out_b[0]/U1:D (f)
                                     
-  9.125                        data arrival time
+  9.617                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   N/C                          CLK_26MHZ_0/Core:GLA (r)
-               +     0.846          net: GLA
-  N/C                          spi_mode_config_0/config_cntr_b[0]/U1:CLK (r)
-               -     0.511          Library setup time: ADLIB:DFN1P0
-  N/C                          spi_mode_config_0/config_cntr_b[0]/U1:D
+               +     0.844          net: GLA
+  N/C                          spi_mode_config_0/byte_out_b[0]/U1:CLK (r)
+               -     0.511          Library setup time: ADLIB:DFN1C0
+  N/C                          spi_mode_config_0/byte_out_b[0]/U1:D
 
 
 END SET Register to Register
@@ -174,54 +186,90 @@ END SET Register to Register
 SET External Setup
 
 Path 1
-  From:                        MISO
-  To:                          spi_master_0/data_q[0]/U1:D
-  Delay (ns):                  6.007
+  From:                        BUF2_PBRST_T9
+  To:                          spi_mode_config_0/tx_ss_counter[2]:E
+  Delay (ns):                  7.844
   Slack (ns):
-  Arrival (ns):                6.007
+  Arrival (ns):                7.844
   Required (ns):
-  Setup (ns):                  0.480
-  External Setup (ns):         5.608
+  Setup (ns):                  0.542
+  External Setup (ns):         7.536
+
+Path 2
+  From:                        BUF2_PBRST_T9
+  To:                          spi_mode_config_0/tx_ss_counter[0]:E
+  Delay (ns):                  7.065
+  Slack (ns):
+  Arrival (ns):                7.065
+  Required (ns):
+  Setup (ns):                  0.542
+  External Setup (ns):         6.740
+
+Path 3
+  From:                        BUF2_PBRST_T9
+  To:                          spi_mode_config_0/tx_ss_counter[1]:E
+  Delay (ns):                  7.065
+  Slack (ns):
+  Arrival (ns):                7.065
+  Required (ns):
+  Setup (ns):                  0.542
+  External Setup (ns):         6.740
+
+Path 4
+  From:                        CLK_48MHZ
+  To:                          spi_mode_config_0/tx_ss_counter[0]:E
+  Delay (ns):                  6.554
+  Slack (ns):
+  Arrival (ns):                6.554
+  Required (ns):
+  Setup (ns):                  0.542
+  External Setup (ns):         6.229
+
+Path 5
+  From:                        CLK_48MHZ
+  To:                          spi_mode_config_0/tx_ss_counter[1]:E
+  Delay (ns):                  6.554
+  Slack (ns):
+  Arrival (ns):                6.554
+  Required (ns):
+  Setup (ns):                  0.542
+  External Setup (ns):         6.229
 
 
 Expanded Path 1
-  From: MISO
-  To: spi_master_0/data_q[0]/U1:D
+  From: BUF2_PBRST_T9
+  To: spi_mode_config_0/tx_ss_counter[2]:E
   data required time                             N/C
-  data arrival time                          -   6.007
+  data arrival time                          -   7.844
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        MISO (r)
-               +     0.000          net: MISO
-  0.000                        MISO_pad/U0/U0:PAD (r)
+  0.000                        BUF2_PBRST_T9 (r)
+               +     0.000          net: BUF2_PBRST_T9
+  0.000                        BUF2_PBRST_T9_pad/U0/U0:PAD (r)
                +     0.857          cell: ADLIB:IOPAD_IN
-  0.857                        MISO_pad/U0/U0:Y (r)
-               +     0.000          net: MISO_pad/U0/NET1
-  0.857                        MISO_pad/U0/U1:YIN (r)
+  0.857                        BUF2_PBRST_T9_pad/U0/U0:Y (r)
+               +     0.000          net: BUF2_PBRST_T9_pad/U0/NET1
+  0.857                        BUF2_PBRST_T9_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
-  0.896                        MISO_pad/U0/U1:Y (r)
-               +     3.385          net: MISO_c
-  4.281                        spi_master_0/data_q_RNO[0]:A (r)
-               +     0.593          cell: ADLIB:MX2
-  4.874                        spi_master_0/data_q_RNO[0]:Y (r)
-               +     0.313          net: spi_master_0/data_d[0]
-  5.187                        spi_master_0/data_q[0]/U0:A (r)
-               +     0.507          cell: ADLIB:MX2
-  5.694                        spi_master_0/data_q[0]/U0:Y (r)
-               +     0.313          net: spi_master_0/data_q[0]/Y
-  6.007                        spi_master_0/data_q[0]/U1:D (r)
+  0.896                        BUF2_PBRST_T9_pad/U0/U1:Y (r)
+               +     4.680          net: BUF2_PBRST_T9_c
+  5.576                        reset_pulse_0/RESET_4:B (r)
+               +     0.527          cell: ADLIB:OR2
+  6.103                        reset_pulse_0/RESET_4:Y (r)
+               +     1.741          net: reset_pulse_0_RESET_4
+  7.844                        spi_mode_config_0/tx_ss_counter[2]:E (r)
                                     
-  6.007                        data arrival time
+  7.844                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   N/C                          CLK_26MHZ_0/Core:GLA (r)
-               +     0.879          net: GLA
-  N/C                          spi_master_0/data_q[0]/U1:CLK (r)
-               -     0.480          Library setup time: ADLIB:DFN1C0
-  N/C                          spi_master_0/data_q[0]/U1:D
+               +     0.850          net: GLA
+  N/C                          spi_mode_config_0/tx_ss_counter[2]:CLK (r)
+               -     0.542          Library setup time: ADLIB:DFN1E1
+  N/C                          spi_mode_config_0/tx_ss_counter[2]:E
 
 
 END SET External Setup
@@ -233,80 +281,80 @@ SET Clock to Output
 Path 1
   From:                        spi_master_0/sck_q[1]:CLK
   To:                          SCLK
-  Delay (ns):                  6.241
+  Delay (ns):                  6.975
   Slack (ns):
-  Arrival (ns):                7.096
+  Arrival (ns):                7.819
   Required (ns):
-  Clock to Out (ns):           7.096
+  Clock to Out (ns):           7.819
 
 Path 2
   From:                        spi_master_0/state_q[1]:CLK
   To:                          SCLK
-  Delay (ns):                  5.784
+  Delay (ns):                  5.988
   Slack (ns):
-  Arrival (ns):                6.662
+  Arrival (ns):                6.884
   Required (ns):
-  Clock to Out (ns):           6.662
+  Clock to Out (ns):           6.884
 
 Path 3
-  From:                        spi_master_0/mosi_q/U1:CLK
-  To:                          MOSI
-  Delay (ns):                  5.623
-  Slack (ns):
-  Arrival (ns):                6.494
-  Required (ns):
-  Clock to Out (ns):           6.494
-
-Path 4
-  From:                        spi_master_0/data_out_q[3]/U1:CLK
-  To:                          ds3
-  Delay (ns):                  5.257
-  Slack (ns):
-  Arrival (ns):                6.136
-  Required (ns):
-  Clock to Out (ns):           6.136
-
-Path 5
   From:                        spi_master_0/data_out_q[6]/U1:CLK
   To:                          ds6
-  Delay (ns):                  5.230
+  Delay (ns):                  5.763
   Slack (ns):
-  Arrival (ns):                6.108
+  Arrival (ns):                6.659
   Required (ns):
-  Clock to Out (ns):           6.108
+  Clock to Out (ns):           6.659
+
+Path 4
+  From:                        spi_master_0/data_out_q[5]/U1:CLK
+  To:                          ds5
+  Delay (ns):                  5.538
+  Slack (ns):
+  Arrival (ns):                6.434
+  Required (ns):
+  Clock to Out (ns):           6.434
+
+Path 5
+  From:                        spi_master_0/mosi_q/U1:CLK
+  To:                          MOSI
+  Delay (ns):                  5.485
+  Slack (ns):
+  Arrival (ns):                6.353
+  Required (ns):
+  Clock to Out (ns):           6.353
 
 
 Expanded Path 1
   From: spi_master_0/sck_q[1]:CLK
   To: SCLK
   data required time                             N/C
-  data arrival time                          -   7.096
+  data arrival time                          -   7.819
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   0.000                        CLK_26MHZ_0/Core:GLA (r)
-               +     0.855          net: GLA
-  0.855                        spi_master_0/sck_q[1]:CLK (r)
+               +     0.844          net: GLA
+  0.844                        spi_master_0/sck_q[1]:CLK (r)
                +     0.657          cell: ADLIB:DFN1C0
-  1.512                        spi_master_0/sck_q[1]:Q (f)
-               +     1.638          net: spi_master_0/sck_q[1]
-  3.150                        spi_master_0/sck_q_RNI2A4S[1]:B (f)
+  1.501                        spi_master_0/sck_q[1]:Q (f)
+               +     2.237          net: spi_master_0/sck_q[1]
+  3.738                        spi_master_0/sck_q_RNI2A4S[1]:B (f)
                +     0.541          cell: ADLIB:NOR3B
-  3.691                        spi_master_0/sck_q_RNI2A4S[1]:Y (f)
-               +     1.094          net: spi_master_0_N_28
-  4.785                        SCLK_pad/U0/U1:D (f)
+  4.279                        spi_master_0/sck_q_RNI2A4S[1]:Y (f)
+               +     1.229          net: spi_master_0_N_28
+  5.508                        SCLK_pad/U0/U1:D (f)
                +     0.587          cell: ADLIB:IOTRI_OB_EB
-  5.372                        SCLK_pad/U0/U1:DOUT (f)
+  6.095                        SCLK_pad/U0/U1:DOUT (f)
                +     0.000          net: SCLK_pad/U0/NET1
-  5.372                        SCLK_pad/U0/U0:D (f)
+  6.095                        SCLK_pad/U0/U0:D (f)
                +     1.724          cell: ADLIB:IOPAD_TRI
-  7.096                        SCLK_pad/U0/U0:PAD (f)
+  7.819                        SCLK_pad/U0/U0:PAD (f)
                +     0.000          net: SCLK
-  7.096                        SCLK (f)
+  7.819                        SCLK (f)
                                     
-  7.096                        data arrival time
+  7.819                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
@@ -332,60 +380,60 @@ SET External Recovery
 
 Path 1
   From:                        BUF2_PBRST_T9
-  To:                          spi_mode_config_0/config_cntr_b[0]/U1:PRE
-  Delay (ns):                  12.909
+  To:                          spi_mode_config_0/byte_out_b[7]/U1:CLR
+  Delay (ns):                  10.068
   Slack (ns):
-  Arrival (ns):                12.909
+  Arrival (ns):                10.068
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      12.328
+  External Recovery (ns):      9.466
 
 Path 2
   From:                        BUF2_PBRST_T9
-  To:                          spi_mode_config_0/ss_counter[1]:CLR
-  Delay (ns):                  12.886
+  To:                          spi_mode_config_0/byte_out_b[1]/U1:CLR
+  Delay (ns):                  9.813
   Slack (ns):
-  Arrival (ns):                12.886
+  Arrival (ns):                9.813
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      12.272
+  External Recovery (ns):      9.211
 
 Path 3
   From:                        BUF2_PBRST_T9
-  To:                          spi_mode_config_0/byte_tracker_b/U1:CLR
-  Delay (ns):                  12.131
+  To:                          spi_mode_config_0/rst_cntr[8]/U1:CLR
+  Delay (ns):                  9.402
   Slack (ns):
-  Arrival (ns):                12.131
+  Arrival (ns):                9.402
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      11.540
+  External Recovery (ns):      8.800
 
 Path 4
   From:                        BUF2_PBRST_T9
-  To:                          spi_mode_config_0/ss_counter[0]:CLR
-  Delay (ns):                  12.058
+  To:                          spi_mode_config_0/rst_cntr[3]/U1:CLR
+  Delay (ns):                  9.402
   Slack (ns):
-  Arrival (ns):                12.058
+  Arrival (ns):                9.402
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      11.444
+  External Recovery (ns):      8.800
 
 Path 5
-  From:                        BUF2_PBRST_T9
-  To:                          spi_mode_config_0/config_cntr_b[4]/U1:CLR
-  Delay (ns):                  11.706
+  From:                        CLK_48MHZ
+  To:                          spi_mode_config_0/byte_out_b[7]/U1:CLR
+  Delay (ns):                  9.391
   Slack (ns):
-  Arrival (ns):                11.706
+  Arrival (ns):                9.391
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      11.110
+  External Recovery (ns):      8.789
 
 
 Expanded Path 1
   From: BUF2_PBRST_T9
-  To: spi_mode_config_0/config_cntr_b[0]/U1:PRE
+  To: spi_mode_config_0/byte_out_b[7]/U1:CLR
   data required time                             N/C
-  data arrival time                          -   12.909
+  data arrival time                          -   10.068
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -398,23 +446,23 @@ Expanded Path 1
   0.857                        BUF2_PBRST_T9_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   0.896                        BUF2_PBRST_T9_pad/U0/U1:Y (r)
-               +     5.592          net: BUF2_PBRST_T9_c
-  6.488                        reset_pulse_0/RESET_1:A (r)
-               +     0.415          cell: ADLIB:OR2
-  6.903                        reset_pulse_0/RESET_1:Y (r)
-               +     6.006          net: reset_pulse_0_RESET_1
-  12.909                       spi_mode_config_0/config_cntr_b[0]/U1:PRE (r)
+               +     5.191          net: BUF2_PBRST_T9_c
+  6.087                        reset_pulse_0/RESET_1:B (r)
+               +     0.527          cell: ADLIB:OR2
+  6.614                        reset_pulse_0/RESET_1:Y (r)
+               +     3.454          net: reset_pulse_0_RESET_1
+  10.068                       spi_mode_config_0/byte_out_b[7]/U1:CLR (r)
                                     
-  12.909                       data arrival time
+  10.068                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   N/C                          CLK_26MHZ_0/Core:GLA (r)
-               +     0.846          net: GLA
-  N/C                          spi_mode_config_0/config_cntr_b[0]/U1:CLK (r)
-               -     0.265          Library recovery time: ADLIB:DFN1P0
-  N/C                          spi_mode_config_0/config_cntr_b[0]/U1:PRE
+               +     0.867          net: GLA
+  N/C                          spi_mode_config_0/byte_out_b[7]/U1:CLK (r)
+               -     0.265          Library recovery time: ADLIB:DFN1C0
+  N/C                          spi_mode_config_0/byte_out_b[7]/U1:CLR
 
 
 END SET External Recovery
@@ -434,133 +482,129 @@ Clock Domain clock_div_1MHZ_10HZ_0/clk_out:Q
 SET Register to Register
 
 Path 1
-  From:                        orbit_control_0/cntr[0]:CLK
+  From:                        orbit_control_0/cntr[2]:CLK
   To:                          orbit_control_0/cntr[12]:D
-  Delay (ns):                  10.038
+  Delay (ns):                  9.838
   Slack (ns):
-  Arrival (ns):                15.511
+  Arrival (ns):                14.906
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         10.554
+  Minimum Period (ns):         10.344
 
 Path 2
   From:                        orbit_control_0/cntr[1]:CLK
   To:                          orbit_control_0/cntr[12]:D
-  Delay (ns):                  9.866
+  Delay (ns):                  9.810
   Slack (ns):
-  Arrival (ns):                15.339
+  Arrival (ns):                14.871
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         10.382
+  Minimum Period (ns):         10.309
 
 Path 3
   From:                        orbit_control_0/cntr[0]:CLK
-  To:                          orbit_control_0/cntr[11]:D
-  Delay (ns):                  9.870
-  Slack (ns):
-  Arrival (ns):                15.343
-  Required (ns):
-  Setup (ns):                  0.480
-  Minimum Period (ns):         10.355
-
-Path 4
-  From:                        orbit_control_0/cntr[1]:CLK
-  To:                          orbit_control_0/cntr[11]:D
-  Delay (ns):                  9.698
-  Slack (ns):
-  Arrival (ns):                15.171
-  Required (ns):
-  Setup (ns):                  0.480
-  Minimum Period (ns):         10.183
-
-Path 5
-  From:                        orbit_control_0/cntr[2]:CLK
   To:                          orbit_control_0/cntr[12]:D
-  Delay (ns):                  8.991
+  Delay (ns):                  9.782
   Slack (ns):
-  Arrival (ns):                14.464
+  Arrival (ns):                14.843
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         9.507
+  Minimum Period (ns):         10.281
+
+Path 4
+  From:                        orbit_control_0/cntr[2]:CLK
+  To:                          orbit_control_0/cntr[11]:D
+  Delay (ns):                  9.413
+  Slack (ns):
+  Arrival (ns):                14.481
+  Required (ns):
+  Setup (ns):                  0.480
+  Minimum Period (ns):         9.888
+
+Path 5
+  From:                        orbit_control_0/cntr[1]:CLK
+  To:                          orbit_control_0/cntr[11]:D
+  Delay (ns):                  9.385
+  Slack (ns):
+  Arrival (ns):                14.446
+  Required (ns):
+  Setup (ns):                  0.480
+  Minimum Period (ns):         9.853
 
 
 Expanded Path 1
-  From: orbit_control_0/cntr[0]:CLK
+  From: orbit_control_0/cntr[2]:CLK
   To: orbit_control_0/cntr[12]:D
   data required time                             N/C
-  data arrival time                          -   15.511
+  data arrival time                          -   14.906
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        clock_div_1MHZ_10HZ_0/clk_out:Q
                +     0.000          Clock source
   0.000                        clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     3.946          net: clock_div_1MHZ_10HZ_0/clk_out_i
-  3.946                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
+               +     3.533          net: clock_div_1MHZ_10HZ_0/clk_out_i
+  3.533                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
                +     0.666          cell: ADLIB:CLKINT
-  4.612                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
-               +     0.861          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
-  5.473                        orbit_control_0/cntr[0]:CLK (r)
+  4.199                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
+               +     0.869          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  5.068                        orbit_control_0/cntr[2]:CLK (r)
                +     0.657          cell: ADLIB:DFN1C0
-  6.130                        orbit_control_0/cntr[0]:Q (f)
-               +     0.358          net: orbit_control_0/cntr[0]
-  6.488                        orbit_control_0/cntr_RNIP0MA[1]:B (f)
+  5.725                        orbit_control_0/cntr[2]:Q (f)
+               +     0.300          net: orbit_control_0/cntr[2]
+  6.025                        orbit_control_0/cntr_RNIN21G[2]:C (f)
+               +     0.572          cell: ADLIB:NOR3C
+  6.597                        orbit_control_0/cntr_RNIN21G[2]:Y (f)
+               +     0.362          net: orbit_control_0/cntr_c2
+  6.959                        orbit_control_0/cntr_RNIM5CL[3]:B (f)
                +     0.559          cell: ADLIB:NOR2B
-  7.047                        orbit_control_0/cntr_RNIP0MA[1]:Y (f)
-               +     0.321          net: orbit_control_0/cntr_c1
-  7.368                        orbit_control_0/cntr_RNIN21G[2]:B (f)
+  7.518                        orbit_control_0/cntr_RNIM5CL[3]:Y (f)
+               +     0.382          net: orbit_control_0/cntr_c3
+  7.900                        orbit_control_0/cntr_RNIM9NQ[4]:B (f)
                +     0.562          cell: ADLIB:NOR2B
-  7.930                        orbit_control_0/cntr_RNIN21G[2]:Y (f)
-               +     0.393          net: orbit_control_0/cntr_c2
-  8.323                        orbit_control_0/cntr_RNIM5CL[3]:B (f)
-               +     0.562          cell: ADLIB:NOR2B
-  8.885                        orbit_control_0/cntr_RNIM5CL[3]:Y (f)
-               +     0.321          net: orbit_control_0/cntr_c3
-  9.206                        orbit_control_0/cntr_RNIM9NQ[4]:B (f)
-               +     0.562          cell: ADLIB:NOR2B
-  9.768                        orbit_control_0/cntr_RNIM9NQ[4]:Y (f)
+  8.462                        orbit_control_0/cntr_RNIM9NQ[4]:Y (f)
                +     0.382          net: orbit_control_0/cntr_c4
-  10.150                       orbit_control_0/cntr_RNINE201[5]:B (f)
+  8.844                        orbit_control_0/cntr_RNINE201[5]:B (f)
                +     0.562          cell: ADLIB:NOR2B
-  10.712                       orbit_control_0/cntr_RNINE201[5]:Y (f)
-               +     0.311          net: orbit_control_0/cntr_c5
-  11.023                       orbit_control_0/cntr_RNIPKD51[6]:A (f)
+  9.406                        orbit_control_0/cntr_RNINE201[5]:Y (f)
+               +     0.299          net: orbit_control_0/cntr_c5
+  9.705                        orbit_control_0/cntr_RNIPKD51[6]:A (f)
                +     0.344          cell: ADLIB:NOR2B
-  11.367                       orbit_control_0/cntr_RNIPKD51[6]:Y (f)
-               +     0.314          net: orbit_control_0/cntr_c6
-  11.681                       orbit_control_0/cntr_RNISROA1[7]:A (f)
+  10.049                       orbit_control_0/cntr_RNIPKD51[6]:Y (f)
+               +     0.296          net: orbit_control_0/cntr_c6
+  10.345                       orbit_control_0/cntr_RNISROA1[7]:A (f)
                +     0.344          cell: ADLIB:NOR2B
-  12.025                       orbit_control_0/cntr_RNISROA1[7]:Y (f)
-               +     0.296          net: orbit_control_0/cntr_c7
-  12.321                       orbit_control_0/cntr_RNI044G1[8]:A (f)
+  10.689                       orbit_control_0/cntr_RNISROA1[7]:Y (f)
+               +     0.904          net: orbit_control_0/cntr_c7
+  11.593                       orbit_control_0/cntr_RNI044G1[8]:A (f)
                +     0.344          cell: ADLIB:NOR2B
-  12.665                       orbit_control_0/cntr_RNI044G1[8]:Y (f)
-               +     0.299          net: orbit_control_0/cntr_c8
-  12.964                       orbit_control_0/cntr_RNI5DFL1[9]:A (f)
+  11.937                       orbit_control_0/cntr_RNI044G1[8]:Y (f)
+               +     0.359          net: orbit_control_0/cntr_c8
+  12.296                       orbit_control_0/cntr_RNI5DFL1[9]:A (f)
                +     0.344          cell: ADLIB:NOR2B
-  13.308                       orbit_control_0/cntr_RNI5DFL1[9]:Y (f)
-               +     0.361          net: orbit_control_0/cntr_c9
-  13.669                       orbit_control_0/cntr_RNIIVPL1[10]:A (f)
+  12.640                       orbit_control_0/cntr_RNI5DFL1[9]:Y (f)
+               +     0.359          net: orbit_control_0/cntr_c9
+  12.999                       orbit_control_0/cntr_RNIIVPL1[10]:A (f)
                +     0.344          cell: ADLIB:NOR2B
-  14.013                       orbit_control_0/cntr_RNIIVPL1[10]:Y (f)
-               +     0.313          net: orbit_control_0/cntr_c10
-  14.326                       orbit_control_0/cntr_RNO[12]:A (f)
+  13.343                       orbit_control_0/cntr_RNIIVPL1[10]:Y (f)
+               +     0.378          net: orbit_control_0/cntr_c10
+  13.721                       orbit_control_0/cntr_RNO[12]:A (f)
                +     0.885          cell: ADLIB:AX1C
-  15.211                       orbit_control_0/cntr_RNO[12]:Y (f)
+  14.606                       orbit_control_0/cntr_RNO[12]:Y (f)
                +     0.300          net: orbit_control_0/cntr_n12
-  15.511                       orbit_control_0/cntr[12]:D (f)
+  14.906                       orbit_control_0/cntr[12]:D (f)
                                     
-  15.511                       data arrival time
+  14.906                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     3.946          net: clock_div_1MHZ_10HZ_0/clk_out_i
+               +     3.533          net: clock_div_1MHZ_10HZ_0/clk_out_i
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
                +     0.666          cell: ADLIB:CLKINT
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
-               +     0.856          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+               +     0.874          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
   N/C                          orbit_control_0/cntr[12]:CLK (r)
                -     0.511          Library setup time: ADLIB:DFN1C0
   N/C                          orbit_control_0/cntr[12]:D
@@ -598,60 +642,60 @@ SET External Recovery
 
 Path 1
   From:                        BUF2_PBRST_T9
-  To:                          orbit_control_0/cntr[1]:CLR
-  Delay (ns):                  10.352
+  To:                          orbit_control_0/cntr[3]:CLR
+  Delay (ns):                  9.435
   Slack (ns):
-  Arrival (ns):                10.352
+  Arrival (ns):                9.435
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      5.144
+  External Recovery (ns):      4.639
 
 Path 2
   From:                        BUF2_PBRST_T9
-  To:                          orbit_control_0/cntr[3]:CLR
-  Delay (ns):                  10.142
+  To:                          orbit_control_0/cntr[1]:CLR
+  Delay (ns):                  9.118
   Slack (ns):
-  Arrival (ns):                10.142
+  Arrival (ns):                9.118
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      4.939
+  External Recovery (ns):      4.322
 
 Path 3
   From:                        BUF2_PBRST_T9
   To:                          orbit_control_0/cntr[2]:CLR
-  Delay (ns):                  10.136
+  Delay (ns):                  9.123
   Slack (ns):
-  Arrival (ns):                10.136
+  Arrival (ns):                9.123
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      4.928
+  External Recovery (ns):      4.320
 
 Path 4
   From:                        BUF2_PBRST_T9
-  To:                          orbit_control_0/cntr[6]:CLR
-  Delay (ns):                  9.669
+  To:                          orbit_control_0/cntr[7]:CLR
+  Delay (ns):                  9.039
   Slack (ns):
-  Arrival (ns):                9.669
+  Arrival (ns):                9.039
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      4.476
+  External Recovery (ns):      4.231
 
 Path 5
   From:                        BUF2_PBRST_T9
   To:                          orbit_control_0/cntr[8]:CLR
-  Delay (ns):                  9.661
+  Delay (ns):                  8.833
   Slack (ns):
-  Arrival (ns):                9.661
+  Arrival (ns):                8.833
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      4.464
+  External Recovery (ns):      4.025
 
 
 Expanded Path 1
   From: BUF2_PBRST_T9
-  To: orbit_control_0/cntr[1]:CLR
+  To: orbit_control_0/cntr[3]:CLR
   data required time                             N/C
-  data arrival time                          -   10.352
+  data arrival time                          -   9.435
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -664,27 +708,27 @@ Expanded Path 1
   0.857                        BUF2_PBRST_T9_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   0.896                        BUF2_PBRST_T9_pad/U0/U1:Y (r)
-               +     6.171          net: BUF2_PBRST_T9_c
-  7.067                        reset_pulse_0/RESET_5:A (r)
-               +     0.415          cell: ADLIB:OR2
-  7.482                        reset_pulse_0/RESET_5:Y (r)
-               +     2.870          net: reset_pulse_0_RESET_5
-  10.352                       orbit_control_0/cntr[1]:CLR (r)
+               +     4.406          net: BUF2_PBRST_T9_c
+  5.302                        reset_pulse_0/RESET_6:B (r)
+               +     0.527          cell: ADLIB:OR2
+  5.829                        reset_pulse_0/RESET_6:Y (r)
+               +     3.606          net: reset_pulse_0_RESET_6
+  9.435                        orbit_control_0/cntr[3]:CLR (r)
                                     
-  10.352                       data arrival time
+  9.435                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     3.946          net: clock_div_1MHZ_10HZ_0/clk_out_i
+               +     3.533          net: clock_div_1MHZ_10HZ_0/clk_out_i
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
                +     0.666          cell: ADLIB:CLKINT
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
-               +     0.861          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
-  N/C                          orbit_control_0/cntr[1]:CLK (r)
+               +     0.862          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  N/C                          orbit_control_0/cntr[3]:CLK (r)
                -     0.265          Library recovery time: ADLIB:DFN1C0
-  N/C                          orbit_control_0/cntr[1]:CLR
+  N/C                          orbit_control_0/cntr[3]:CLR
 
 
 END SET External Recovery
@@ -705,107 +749,107 @@ SET Register to Register
 
 Path 1
   From:                        clock_div_1MHZ_10HZ_0/counter[3]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/clk_out:D
-  Delay (ns):                  6.974
+  To:                          clock_div_1MHZ_10HZ_0/counter[8]:D
+  Delay (ns):                  6.672
   Slack (ns):
-  Arrival (ns):                11.370
+  Arrival (ns):                10.403
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         7.485
+  Minimum Period (ns):         7.178
 
 Path 2
-  From:                        clock_div_1MHZ_10HZ_0/counter[6]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/clk_out:D
-  Delay (ns):                  6.743
+  From:                        clock_div_1MHZ_10HZ_0/counter[3]:CLK
+  To:                          clock_div_1MHZ_10HZ_0/counter[9]:D
+  Delay (ns):                  6.525
   Slack (ns):
-  Arrival (ns):                11.098
+  Arrival (ns):                10.256
   Required (ns):
-  Setup (ns):                  0.480
-  Minimum Period (ns):         7.182
+  Setup (ns):                  0.511
+  Minimum Period (ns):         7.047
 
 Path 3
-  From:                        clock_div_1MHZ_10HZ_0/counter[4]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/clk_out:D
-  Delay (ns):                  6.674
+  From:                        clock_div_1MHZ_10HZ_0/counter[3]:CLK
+  To:                          clock_div_1MHZ_10HZ_0/counter[6]:D
+  Delay (ns):                  6.427
   Slack (ns):
-  Arrival (ns):                11.070
+  Arrival (ns):                10.158
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         7.154
+  Minimum Period (ns):         6.907
 
 Path 4
   From:                        clock_div_1MHZ_10HZ_0/counter[3]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/counter[9]:D
-  Delay (ns):                  6.627
+  To:                          clock_div_1MHZ_10HZ_0/counter[11]:D
+  Delay (ns):                  6.278
   Slack (ns):
-  Arrival (ns):                11.023
+  Arrival (ns):                10.009
   Required (ns):
   Setup (ns):                  0.511
-  Minimum Period (ns):         7.138
+  Minimum Period (ns):         6.806
 
 Path 5
   From:                        clock_div_1MHZ_10HZ_0/counter[6]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/counter[9]:D
-  Delay (ns):                  6.422
+  To:                          clock_div_1MHZ_10HZ_0/counter[8]:D
+  Delay (ns):                  6.274
   Slack (ns):
-  Arrival (ns):                10.777
+  Arrival (ns):                10.005
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         6.861
+  Minimum Period (ns):         6.749
 
 
 Expanded Path 1
   From: clock_div_1MHZ_10HZ_0/counter[3]:CLK
-  To: clock_div_1MHZ_10HZ_0/clk_out:D
+  To: clock_div_1MHZ_10HZ_0/counter[8]:D
   data required time                             N/C
-  data arrival time                          -   11.370
+  data arrival time                          -   10.403
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        clock_div_26MHZ_1MHZ_0/clk_out:Q
                +     0.000          Clock source
   0.000                        clock_div_26MHZ_1MHZ_0/clk_out:Q (r)
-               +     2.837          net: clock_div_26MHZ_1MHZ_0/clk_out_i
-  2.837                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
+               +     2.202          net: clock_div_26MHZ_1MHZ_0/clk_out_i
+  2.202                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
                +     0.666          cell: ADLIB:CLKINT
-  3.503                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
-               +     0.893          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
-  4.396                        clock_div_1MHZ_10HZ_0/counter[3]:CLK (r)
+  2.868                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
+               +     0.863          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
+  3.731                        clock_div_1MHZ_10HZ_0/counter[3]:CLK (r)
                +     0.657          cell: ADLIB:DFN1C0
-  5.053                        clock_div_1MHZ_10HZ_0/counter[3]:Q (f)
-               +     0.965          net: clock_div_1MHZ_10HZ_0/counter[3]
-  6.018                        clock_div_1MHZ_10HZ_0/counter_RNIFOFF[4]:B (f)
+  4.388                        clock_div_1MHZ_10HZ_0/counter[3]:Q (f)
+               +     1.364          net: clock_div_1MHZ_10HZ_0/counter[3]
+  5.752                        clock_div_1MHZ_10HZ_0/counter_RNIFOFF[4]:B (f)
                +     0.363          cell: ADLIB:NOR2A
-  6.381                        clock_div_1MHZ_10HZ_0/counter_RNIFOFF[4]:Y (r)
+  6.115                        clock_div_1MHZ_10HZ_0/counter_RNIFOFF[4]:Y (r)
                +     0.300          net: clock_div_1MHZ_10HZ_0/clk_out5_7
-  6.681                        clock_div_1MHZ_10HZ_0/counter_RNI5OVU[6]:C (r)
+  6.415                        clock_div_1MHZ_10HZ_0/counter_RNI5OVU[6]:C (r)
                +     0.669          cell: ADLIB:NOR3C
-  7.350                        clock_div_1MHZ_10HZ_0/counter_RNI5OVU[6]:Y (r)
-               +     0.310          net: clock_div_1MHZ_10HZ_0/clk_out5_11
-  7.660                        clock_div_1MHZ_10HZ_0/counter_RNI3SFD2[1]:C (r)
+  7.084                        clock_div_1MHZ_10HZ_0/counter_RNI5OVU[6]:Y (r)
+               +     0.313          net: clock_div_1MHZ_10HZ_0/clk_out5_11
+  7.397                        clock_div_1MHZ_10HZ_0/counter_RNI3SFD2[1]:C (r)
                +     0.593          cell: ADLIB:NOR3C
-  8.253                        clock_div_1MHZ_10HZ_0/counter_RNI3SFD2[1]:Y (r)
-               +     2.222          net: clock_div_1MHZ_10HZ_0/clk_out5_13
-  10.475                       clock_div_1MHZ_10HZ_0/clk_out_RNO:B (r)
-               +     0.595          cell: ADLIB:AX1C
-  11.070                       clock_div_1MHZ_10HZ_0/clk_out_RNO:Y (f)
-               +     0.300          net: clock_div_1MHZ_10HZ_0/clk_out_RNO
-  11.370                       clock_div_1MHZ_10HZ_0/clk_out:D (f)
+  7.990                        clock_div_1MHZ_10HZ_0/counter_RNI3SFD2[1]:Y (r)
+               +     1.546          net: clock_div_1MHZ_10HZ_0/clk_out5_13
+  9.536                        clock_div_1MHZ_10HZ_0/counter_RNO[8]:A (r)
+               +     0.567          cell: ADLIB:AOI1B
+  10.103                       clock_div_1MHZ_10HZ_0/counter_RNO[8]:Y (f)
+               +     0.300          net: clock_div_1MHZ_10HZ_0/counter_3[8]
+  10.403                       clock_div_1MHZ_10HZ_0/counter[8]:D (f)
                                     
-  11.370                       data arrival time
+  10.403                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q (r)
-               +     2.837          net: clock_div_26MHZ_1MHZ_0/clk_out_i
+               +     2.202          net: clock_div_26MHZ_1MHZ_0/clk_out_i
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
                +     0.666          cell: ADLIB:CLKINT
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
-               +     0.893          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
-  N/C                          clock_div_1MHZ_10HZ_0/clk_out:CLK (r)
-               -     0.511          Library setup time: ADLIB:DFN1P0
-  N/C                          clock_div_1MHZ_10HZ_0/clk_out:D
+               +     0.868          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
+  N/C                          clock_div_1MHZ_10HZ_0/counter[8]:CLK (r)
+               -     0.511          Library setup time: ADLIB:DFN1C0
+  N/C                          clock_div_1MHZ_10HZ_0/counter[8]:D
 
 
 END SET Register to Register
@@ -840,60 +884,60 @@ SET External Recovery
 
 Path 1
   From:                        BUF2_PBRST_T9
-  To:                          clock_div_1MHZ_10HZ_0/counter[9]:CLR
-  Delay (ns):                  12.157
+  To:                          clock_div_1MHZ_10HZ_0/counter[13]:CLR
+  Delay (ns):                  10.010
   Slack (ns):
-  Arrival (ns):                12.157
+  Arrival (ns):                10.010
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      8.026
+  External Recovery (ns):      6.544
 
 Path 2
   From:                        BUF2_PBRST_T9
-  To:                          clock_div_1MHZ_10HZ_0/counter[5]:CLR
-  Delay (ns):                  11.768
+  To:                          clock_div_1MHZ_10HZ_0/counter[11]:CLR
+  Delay (ns):                  9.358
   Slack (ns):
-  Arrival (ns):                11.768
+  Arrival (ns):                9.358
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      7.637
+  External Recovery (ns):      5.909
 
 Path 3
   From:                        BUF2_PBRST_T9
-  To:                          clock_div_1MHZ_10HZ_0/clk_out:PRE
-  Delay (ns):                  11.620
+  To:                          clock_div_1MHZ_10HZ_0/counter[16]:CLR
+  Delay (ns):                  9.073
   Slack (ns):
-  Arrival (ns):                11.620
+  Arrival (ns):                9.073
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      7.489
+  External Recovery (ns):      5.624
 
 Path 4
   From:                        BUF2_PBRST_T9
-  To:                          clock_div_1MHZ_10HZ_0/counter[2]:CLR
-  Delay (ns):                  10.354
+  To:                          clock_div_1MHZ_10HZ_0/counter[12]:CLR
+  Delay (ns):                  8.256
   Slack (ns):
-  Arrival (ns):                10.354
+  Arrival (ns):                8.256
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      6.223
+  External Recovery (ns):      4.805
 
 Path 5
   From:                        BUF2_PBRST_T9
-  To:                          clock_div_1MHZ_10HZ_0/counter[4]:CLR
-  Delay (ns):                  10.128
+  To:                          clock_div_1MHZ_10HZ_0/counter[15]:CLR
+  Delay (ns):                  8.252
   Slack (ns):
-  Arrival (ns):                10.128
+  Arrival (ns):                8.252
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      5.997
+  External Recovery (ns):      4.803
 
 
 Expanded Path 1
   From: BUF2_PBRST_T9
-  To: clock_div_1MHZ_10HZ_0/counter[9]:CLR
+  To: clock_div_1MHZ_10HZ_0/counter[13]:CLR
   data required time                             N/C
-  data arrival time                          -   12.157
+  data arrival time                          -   10.010
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -906,27 +950,27 @@ Expanded Path 1
   0.857                        BUF2_PBRST_T9_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   0.896                        BUF2_PBRST_T9_pad/U0/U1:Y (r)
-               +     6.030          net: BUF2_PBRST_T9_c
-  6.926                        reset_pulse_0/RESET_6:A (r)
-               +     0.415          cell: ADLIB:OR2
-  7.341                        reset_pulse_0/RESET_6:Y (r)
-               +     4.816          net: reset_pulse_0_RESET_6
-  12.157                       clock_div_1MHZ_10HZ_0/counter[9]:CLR (r)
+               +     5.181          net: BUF2_PBRST_T9_c
+  6.077                        reset_pulse_0/RESET:B (r)
+               +     0.527          cell: ADLIB:OR2
+  6.604                        reset_pulse_0/RESET:Y (r)
+               +     3.406          net: reset_pulse_0_RESET
+  10.010                       clock_div_1MHZ_10HZ_0/counter[13]:CLR (r)
                                     
-  12.157                       data arrival time
+  10.010                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q (r)
-               +     2.837          net: clock_div_26MHZ_1MHZ_0/clk_out_i
+               +     2.202          net: clock_div_26MHZ_1MHZ_0/clk_out_i
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
                +     0.666          cell: ADLIB:CLKINT
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
-               +     0.893          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
-  N/C                          clock_div_1MHZ_10HZ_0/counter[9]:CLK (r)
+               +     0.863          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
+  N/C                          clock_div_1MHZ_10HZ_0/counter[13]:CLK (r)
                -     0.265          Library recovery time: ADLIB:DFN1C0
-  N/C                          clock_div_1MHZ_10HZ_0/counter[9]:CLR
+  N/C                          clock_div_1MHZ_10HZ_0/counter[13]:CLR
 
 
 END SET External Recovery
@@ -947,103 +991,103 @@ SET Register to Register
 
 Path 1
   From:                        read_buffer_0/position[1]:CLK
-  To:                          read_buffer_0/byte_out[6]/U1:D
-  Delay (ns):                  4.052
+  To:                          read_buffer_0/byte_out[1]/U1:D
+  Delay (ns):                  4.233
   Slack (ns):
-  Arrival (ns):                9.155
+  Arrival (ns):                8.780
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         4.542
+  Minimum Period (ns):         4.725
 
 Path 2
   From:                        read_buffer_0/position[1]:CLK
-  To:                          read_buffer_0/byte_out[3]/U1:D
-  Delay (ns):                  4.058
+  To:                          read_buffer_0/byte_out[2]/U1:D
+  Delay (ns):                  4.139
   Slack (ns):
-  Arrival (ns):                9.161
+  Arrival (ns):                8.686
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         4.525
+  Minimum Period (ns):         4.622
 
 Path 3
   From:                        read_buffer_0/position[1]:CLK
-  To:                          read_buffer_0/byte_out[1]/U1:D
-  Delay (ns):                  3.693
+  To:                          read_buffer_0/byte_out[0]/U1:D
+  Delay (ns):                  3.859
   Slack (ns):
-  Arrival (ns):                8.796
+  Arrival (ns):                8.406
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         4.173
+  Minimum Period (ns):         4.342
 
 Path 4
   From:                        read_buffer_0/position[1]:CLK
-  To:                          read_buffer_0/byte_out[0]/U1:D
-  Delay (ns):                  3.683
+  To:                          read_buffer_0/byte_out[6]/U1:D
+  Delay (ns):                  3.574
   Slack (ns):
-  Arrival (ns):                8.786
+  Arrival (ns):                8.121
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         4.172
+  Minimum Period (ns):         4.057
 
 Path 5
   From:                        read_buffer_0/position[1]:CLK
-  To:                          read_buffer_0/byte_out[2]/U1:D
-  Delay (ns):                  3.683
+  To:                          read_buffer_0/byte_out[3]/U1:D
+  Delay (ns):                  3.559
   Slack (ns):
-  Arrival (ns):                8.786
+  Arrival (ns):                8.106
   Required (ns):
   Setup (ns):                  0.480
-  Minimum Period (ns):         4.169
+  Minimum Period (ns):         4.039
 
 
 Expanded Path 1
   From: read_buffer_0/position[1]:CLK
-  To: read_buffer_0/byte_out[6]/U1:D
+  To: read_buffer_0/byte_out[1]/U1:D
   data required time                             N/C
-  data arrival time                          -   9.155
+  data arrival time                          -   8.780
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        spi_mode_config_0/next_b/U1:Q
                +     0.000          Clock source
   0.000                        spi_mode_config_0/next_b/U1:Q (r)
-               +     3.609          net: spi_mode_config_0/next_b_i
-  3.609                        spi_mode_config_0/next_b_RNI28CE:A (r)
+               +     3.052          net: spi_mode_config_0/next_b_i
+  3.052                        spi_mode_config_0/next_b_RNI28CE:A (r)
                +     0.640          cell: ADLIB:CLKINT
-  4.249                        spi_mode_config_0/next_b_RNI28CE:Y (r)
-               +     0.854          net: spi_mode_config_0_next_cmd
-  5.103                        read_buffer_0/position[1]:CLK (r)
+  3.692                        spi_mode_config_0/next_b_RNI28CE:Y (r)
+               +     0.855          net: spi_mode_config_0_next_cmd
+  4.547                        read_buffer_0/position[1]:CLK (r)
                +     0.657          cell: ADLIB:DFN1C0
-  5.760                        read_buffer_0/position[1]:Q (f)
-               +     0.999          net: read_buffer_0/position[1]
-  6.759                        read_buffer_0/byte_out_RNO_0[6]:S (f)
+  5.204                        read_buffer_0/position[1]:Q (f)
+               +     1.161          net: read_buffer_0/position[1]
+  6.365                        read_buffer_0/byte_out_RNO_0[1]:S (f)
                +     0.428          cell: ADLIB:MX2
-  7.187                        read_buffer_0/byte_out_RNO_0[6]:Y (r)
-               +     0.313          net: read_buffer_0/N_112
-  7.500                        read_buffer_0/byte_out_RNO[6]:A (r)
-               +     0.507          cell: ADLIB:MX2
-  8.007                        read_buffer_0/byte_out_RNO[6]:Y (r)
-               +     0.313          net: read_buffer_0/byte_out_6[6]
-  8.320                        read_buffer_0/byte_out[6]/U0:B (r)
-               +     0.522          cell: ADLIB:MX2
-  8.842                        read_buffer_0/byte_out[6]/U0:Y (r)
-               +     0.313          net: read_buffer_0/byte_out[6]/Y
-  9.155                        read_buffer_0/byte_out[6]/U1:D (r)
+  6.793                        read_buffer_0/byte_out_RNO_0[1]:Y (r)
+               +     0.313          net: read_buffer_0/N_107
+  7.106                        read_buffer_0/byte_out_RNO[1]:A (r)
+               +     0.460          cell: ADLIB:NOR2A
+  7.566                        read_buffer_0/byte_out_RNO[1]:Y (r)
+               +     0.300          net: read_buffer_0/byte_out_6[1]
+  7.866                        read_buffer_0/byte_out[1]/U0:B (r)
+               +     0.604          cell: ADLIB:MX2
+  8.470                        read_buffer_0/byte_out[1]/U0:Y (r)
+               +     0.310          net: read_buffer_0/byte_out[1]/Y
+  8.780                        read_buffer_0/byte_out[1]/U1:D (r)
                                     
-  9.155                        data arrival time
+  8.780                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          spi_mode_config_0/next_b/U1:Q
                +     0.000          Clock source
   N/C                          spi_mode_config_0/next_b/U1:Q (r)
-               +     3.609          net: spi_mode_config_0/next_b_i
+               +     3.052          net: spi_mode_config_0/next_b_i
   N/C                          spi_mode_config_0/next_b_RNI28CE:A (r)
                +     0.640          cell: ADLIB:CLKINT
   N/C                          spi_mode_config_0/next_b_RNI28CE:Y (r)
-               +     0.844          net: spi_mode_config_0_next_cmd
-  N/C                          read_buffer_0/byte_out[6]/U1:CLK (r)
+               +     0.843          net: spi_mode_config_0_next_cmd
+  N/C                          read_buffer_0/byte_out[1]/U1:CLK (r)
                -     0.480          Library setup time: ADLIB:DFN1C0
-  N/C                          read_buffer_0/byte_out[6]/U1:D
+  N/C                          read_buffer_0/byte_out[1]/U1:D
 
 
 END SET Register to Register
@@ -1078,60 +1122,60 @@ SET External Recovery
 
 Path 1
   From:                        BUF2_PBRST_T9
-  To:                          read_buffer_0/byte_out[3]/U1:CLR
-  Delay (ns):                  8.857
+  To:                          read_buffer_0/byte_out[0]/U1:CLR
+  Delay (ns):                  11.999
   Slack (ns):
-  Arrival (ns):                8.857
+  Arrival (ns):                11.999
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      4.006
+  External Recovery (ns):      7.720
 
 Path 2
   From:                        BUF2_PBRST_T9
-  To:                          read_buffer_0/byte_out[6]/U1:CLR
-  Delay (ns):                  8.740
+  To:                          read_buffer_0/byte_out[1]/U1:CLR
+  Delay (ns):                  11.520
   Slack (ns):
-  Arrival (ns):                8.740
+  Arrival (ns):                11.520
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      3.912
+  External Recovery (ns):      7.250
 
 Path 3
-  From:                        BUF2_PBRST_T9
+  From:                        CLK_48MHZ
   To:                          read_buffer_0/byte_out[0]/U1:CLR
-  Delay (ns):                  8.438
+  Delay (ns):                  11.322
   Slack (ns):
-  Arrival (ns):                8.438
+  Arrival (ns):                11.322
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      3.609
+  External Recovery (ns):      7.043
 
 Path 4
-  From:                        BUF2_PBRST_T9
+  From:                        CLK_48MHZ
   To:                          read_buffer_0/byte_out[1]/U1:CLR
-  Delay (ns):                  8.272
+  Delay (ns):                  10.843
   Slack (ns):
-  Arrival (ns):                8.272
+  Arrival (ns):                10.843
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      3.434
+  External Recovery (ns):      6.573
 
 Path 5
   From:                        BUF2_PBRST_T9
-  To:                          read_buffer_0/byte_out[2]/U1:CLR
-  Delay (ns):                  8.170
+  To:                          read_buffer_0/position[1]:CLR
+  Delay (ns):                  9.121
   Slack (ns):
-  Arrival (ns):                8.170
+  Arrival (ns):                9.121
   Required (ns):
   Recovery (ns):               0.265
-  External Recovery (ns):      3.338
+  External Recovery (ns):      4.839
 
 
 Expanded Path 1
   From: BUF2_PBRST_T9
-  To: read_buffer_0/byte_out[3]/U1:CLR
+  To: read_buffer_0/byte_out[0]/U1:CLR
   data required time                             N/C
-  data arrival time                          -   8.857
+  data arrival time                          -   11.999
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -1144,27 +1188,27 @@ Expanded Path 1
   0.857                        BUF2_PBRST_T9_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   0.896                        BUF2_PBRST_T9_pad/U0/U1:Y (r)
-               +     5.592          net: BUF2_PBRST_T9_c
-  6.488                        reset_pulse_0/RESET_1:A (r)
-               +     0.415          cell: ADLIB:OR2
-  6.903                        reset_pulse_0/RESET_1:Y (r)
-               +     1.954          net: reset_pulse_0_RESET_1
-  8.857                        read_buffer_0/byte_out[3]/U1:CLR (r)
+               +     5.191          net: BUF2_PBRST_T9_c
+  6.087                        reset_pulse_0/RESET_1:B (r)
+               +     0.527          cell: ADLIB:OR2
+  6.614                        reset_pulse_0/RESET_1:Y (r)
+               +     5.385          net: reset_pulse_0_RESET_1
+  11.999                       read_buffer_0/byte_out[0]/U1:CLR (r)
                                     
-  8.857                        data arrival time
+  11.999                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          spi_mode_config_0/next_b/U1:Q
                +     0.000          Clock source
   N/C                          spi_mode_config_0/next_b/U1:Q (r)
-               +     3.609          net: spi_mode_config_0/next_b_i
+               +     3.052          net: spi_mode_config_0/next_b_i
   N/C                          spi_mode_config_0/next_b_RNI28CE:A (r)
                +     0.640          cell: ADLIB:CLKINT
   N/C                          spi_mode_config_0/next_b_RNI28CE:Y (r)
-               +     0.867          net: spi_mode_config_0_next_cmd
-  N/C                          read_buffer_0/byte_out[3]/U1:CLK (r)
+               +     0.852          net: spi_mode_config_0_next_cmd
+  N/C                          read_buffer_0/byte_out[0]/U1:CLK (r)
                -     0.265          Library recovery time: ADLIB:DFN1C0
-  N/C                          read_buffer_0/byte_out[3]/U1:CLR
+  N/C                          read_buffer_0/byte_out[0]/U1:CLR
 
 
 END SET External Recovery

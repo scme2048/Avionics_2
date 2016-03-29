@@ -14,7 +14,7 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>21</data>
+  <data>22</data>
   <report_link name="more"><data>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\report\transceiver_integration_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
@@ -35,7 +35,7 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1458431239</data>
+  <data type="timestamp">1459224457</data>
   </info>
 			</job_info>
 </job_run_status>

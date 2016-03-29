@@ -7,7 +7,22 @@ Release: v11.6
 Info: The design transceiver_integration.adb was last modified by software version 11.6.0.34.
 Opened an existing Libero design transceiver_integration.adb.
 
-The Execute Script command succeeded ( 00:00:37 )
+The Execute Script command succeeded ( 00:00:46 )
 Checking for software updates...
+Design saved to file
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration.adb.
+Wrote pin report to file:
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration_report_pin_byname.txt
+
+The Report command succeeded ( 00:00:01 )
+Wrote pin report to file:
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration_report_pin_bynumber.txt
+
+The Report command succeeded ( 00:00:00 )
+
+The Execute Script command succeeded ( 00:00:01 )
 Design closed.
 

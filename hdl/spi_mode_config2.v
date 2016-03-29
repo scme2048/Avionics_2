@@ -53,9 +53,11 @@ module spi_mode_config2 (
     localparam SIDLE = {WRITE,SINGLE_MODE,6'h36};
     localparam SFRX = {WRITE,SINGLE_MODE,6'h3a};
     localparam SFTX = {WRITE,SINGLE_MODE,6'h3b};
+    localparam SNOP = {WRITE,SINGLE_MODE,6'h3d};
+
+    localparam RXFIFO = {READ,1'b0,6'h3f};
+    localparam TXFIFO = {WRITE,1'b0,6'h3f};
     
-    localparam RXFIFO = {READ,1'b1,6'h3f};
-    localparam TXFIFO = {WRITE,SINGLE_MODE,6'h3f};
 
     // Chip status
     localparam chip_IDLE = 3'b0;
@@ -79,10 +81,13 @@ module spi_mode_config2 (
     reg [2:0] state_b;
     reg byte_tracker_b, next_b; // if 0, then send address, if 1, send data, chip_rdy-->CC1101 ready
     reg start_a,start_b;
-    reg [1:0] ss_counter;
+    reg [2:0] rx_ss_counter;
     reg [6:0] rxbytes_numbytes;
     reg [7:0] read_data;
     reg read_tracker;
+    reg [2:0] tx_state;
+    reg [2:0] tx_ss_counter;
+    reg [3:0] tx_free_bytes;
 
     // mem_pull high if in TX mode, low if in RX mode
     assign mem_enable = mem_enable_b;
@@ -111,6 +116,8 @@ module spi_mode_config2 (
         rxbytes_numbytes=7'b0;
         read_data=8'b0;
         read_tracker=1'b0;
+        tx_state=3'b000;
+        tx_free_bytes=4'b1111;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
@@ -147,7 +154,7 @@ module spi_mode_config2 (
                     end else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
                             start_a=1'b1;
                             state_a = TX_MODE;
-                            byte_out_a = STX;
+                            byte_out_a = SIDLE;
                             //byte_tracker_a = 1'b0;
                             chip_state = SLAVE_OUTPUT[6:4];
                     end
@@ -161,7 +168,7 @@ module spi_mode_config2 (
                 if ((TX_ENABLE) && (begin_pass_b)) begin
                     //start_a = 1'b1;
                         state_a = TX_MODE;
-                        byte_out_a = STX;
+                        byte_out_a = SIDLE;
                 end
                 else if ((chip_state == chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
@@ -183,6 +190,7 @@ module spi_mode_config2 (
                         byte_out_a=SIDLE;
                         state_a=TX_MODE;
                         begin_pass_a=1'b1;
+                        tx_state=3'b000;
                     end
                     
                 end
@@ -215,25 +223,58 @@ module spi_mode_config2 (
             
             TX_MODE: begin
                 start_a = 1'b1;
-                    if ((~TX_ENABLE)&&(~chip_rdy)) begin
+                    if ((~TX_ENABLE)&&(~chip_rdy)&&(tx_state==3'b111)) begin
+                        mem_enable_a = 1'b0;
+                        byte_out_a = SIDLE;
+                        state_a = IDLE;
+                        begin_pass_a = 1'b0;
+                    end else if ((~chip_rdy)&&(tx_state==3'b000)) begin
+                        byte_out_a = STX;
+                        start_a = 1'b1;
+                        tx_state=3'b011;
+                    end
+                    //else if ((~chip_rdy)&&(tx_state==3'b001)) begin
+                        //byte_out_a=SNOP;
+                        //chip_state=SLAVE_OUTPUT[6:4];
+                        //if ((chip_state== chip_TX)&&(TX_ENABLE)) begin
+                            //byte_out_a=TXFIFO;
+                            //tx_state=3'b100;
+                        //end
+                    //end
+                    else if ((tx_state==3'b011)&&(~chip_rdy)) begin
+                        next_a = 1'b1;
+                        mem_enable_a = 1'b0;
+                        if ((byte_out_a==STX) || (tx_free_bytes>4'b0001)) begin
+                            byte_out_a = TXFIFO;
+                        end else begin
+                            byte_out_a=SNOP;
+
+                        end
+                        tx_state=3'b100;
+                    end
+                    else if ((tx_state==3'b100)&&(~chip_rdy)) begin
+                        //mem_enable_a = 1'b1;
+                        
+                        start_a = 1'b1;
+                        next_a = 1'b0;
+                        if (byte_out_a==SNOP) begin
+                            byte_out_a=SNOP;
+                        end else begin
+                            byte_out_a = DATA_FROM_MEM; //not sure about timing w/ this
+                        end
+                        chip_state=SLAVE_OUTPUT[6:4];
+                        tx_free_bytes=SLAVE_OUTPUT[3:0];
+                        tx_state=3'b011;
+                    end
+                    else if ((tx_state>3'b001)&& (~TX_ENABLE)&&(~chip_rdy)) begin
                         mem_enable_a = 1'b0;
                         byte_out_a = SIDLE;
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
                     end
-                    else if ((~byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
-                        next_a = 1'b1;
-                        mem_enable_a = 1'b0;
-                        byte_out_a = TXFIFO;
-                        byte_tracker_a = 1'b1;
-                    end
-                    else if ((byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
-                        mem_enable_a = 1'b1;
-                        //next_a = 1'b0;
-                        start_a = 1'b1;
-                        byte_out_a = DATA_FROM_MEM; //not sure about timing w/ this
-                        next_a = 1'b0;
-                        byte_tracker_a = 1'b0;
+                    else begin
+                        tx_state=3'b111;
+                        byte_out_a = SNOP;
                     end
                // end
             end
@@ -815,7 +856,7 @@ module spi_mode_config2 (
             begin_pass_b <= 0;
             config_cntr_b <= 1;
             start_b <= 1'b0;
-            ss_counter=2'b00;
+            rx_ss_counter=2'b00;
 
         end
         else begin
@@ -830,16 +871,29 @@ module spi_mode_config2 (
                 start_b <= start_a;
                 byte_tracker_b <= byte_tracker_a;
             end
+            // Flips SS high when going into RX_MODE
             if (state_b ==RX_MODE) begin
-                if (ss_counter ==2'b11) begin
+                if (rx_ss_counter ==3'b111) begin
                     ss_b<=1'b0;
                 end else begin
                     ss_b<=1'b1;
-                    ss_counter=ss_counter+1;
+                    rx_ss_counter=rx_ss_counter+1;
                 end
             end else begin
-                ss_counter=2'b00;
+                rx_ss_counter=3'b000;
             end
+            //Flips ss high when going into TX_MODE
+            if (state_b ==TX_MODE) begin
+                if (tx_ss_counter ==3'b111) begin
+                    ss_b<=1'b0;
+                end else begin
+                    ss_b<=1'b1;
+                    tx_ss_counter=tx_ss_counter+1;
+                end
+            end else begin
+                tx_ss_counter=3'b000;
+            end
+            
             if (state_b == PWR_RST) begin
                 if (rst_cntr <= microsec) begin  
                     //ss_b <= 1'b0;

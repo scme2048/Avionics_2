@@ -313,7 +313,7 @@ TIME="1458335789"
 SIZE="838"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.adb,adb"
-STATE="ood"
+STATE="utd"
 TIME="1458431388"
 SIZE="988672"
 ENDFILE
@@ -323,9 +323,9 @@ TIME="1458431389"
 SIZE="1087"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.pdb,pdb"
-STATE="ood"
-TIME="1458433513"
-SIZE="1506340"
+STATE="utd"
+TIME="1459224591"
+SIZE="1506569"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_2.pdb,pdb"
 STATE="utd"
@@ -349,8 +349,8 @@ SIZE="951"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_compile_log.rpt,log"
 STATE="utd"
-TIME="1458431268"
-SIZE="10559"
+TIME="1459224480"
+SIZE="10783"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp\projectData\transceiver_integration.pdb,pdb"
 STATE="utd"
@@ -370,6 +370,16 @@ ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp_11\transceiver_integration.pro,pro"
 STATE="utd"
 TIME="1458431411"
+SIZE="2351"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_12\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459222978"
+SIZE="2141"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_13\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459224606"
 SIZE="2351"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp_1\projectData\transceiver_integration.pdb,pdb"
@@ -424,17 +434,17 @@ SIZE="2139"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1458431339"
+TIME="1459224544"
 SIZE="2663"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1458431389"
+TIME="1459224592"
 SIZE="894"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1458431345"
+TIME="1459224550"
 SIZE="1343"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
@@ -554,8 +564,8 @@ SIZE="40945"
 ENDFILE
 VALUE "<project>\hdl\spi_mode_config2.v,hdl"
 STATE="utd"
-TIME="1458510690"
-SIZE="38671"
+TIME="1459224263"
+SIZE="40832"
 ENDFILE
 VALUE "<project>\hdl\sram_interface.v,hdl"
 STATE="utd"
@@ -1053,7 +1063,7 @@ TIME="1458335791"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.edn,syn_edn"
-STATE="ood"
+STATE="utd"
 TIME="1458431244"
 SIZE="435451"
 ENDFILE
@@ -1068,7 +1078,7 @@ TIME="1458335791"
 SIZE="118654"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_sdc.sdc,syn_sdc"
-STATE="ood"
+STATE="utd"
 TIME="1458431244"
 SIZE="310"
 ENDFILE
@@ -1208,7 +1218,10 @@ VALUE "<project>\stimulus\tb_tranceiver_integration.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\transceiver_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1216,6 +1229,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\transceiver_integration_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\transceiver_integration_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -1301,8 +1318,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1399,7 +1416,10 @@ ENDLIST
 ENDLIST
 LIST "transceiver_integration::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\transceiver_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1421,12 +1441,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:transceiver_integration_prgdata_log.rpt
 SmartDesign;transceiver_integration;0
 HDL;hdl\spi_mode_config2.v;0
 HDL;hdl\SPI_Master.v;0
-HDL;stimulus\tb_tranceiver_integration.v;0
-StartPage;StartPage;0
-ACTIVEVIEW;hdl\spi_mode_config2.v
+ACTIVEVIEW;hdl\SPI_Master.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "buffer_data_out::work","","FALSE","FALSE"
@@ -1658,9 +1678,6 @@ SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
-LIST "transceiver_integration::work"
-ACTIVETESTBENCH "tb_tranceiver_integration::work","stimulus\tb_tranceiver_integration.v","FALSE"
-ENDLIST
 LIST "read_buffer::work"
 ACTIVETESTBENCH "tb_read_buffer::work","stimulus\tb_read_buffer.v","FALSE"
 ENDLIST
