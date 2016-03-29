@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="datasheet.xsl"?>
+<datasheet>
+  <header>I2C_integration</header>
+  <project-settings>
+    <fam>ProASIC3L</fam>
+    <die>M1A3P1000L</die>
+    <package>484 FBGA</package>
+    <speed-grade>STD</speed-grade>
+    <voltage>1.2</voltage>
+    <hdl-type>Verilog</hdl-type>
+    <project-description>
+    </project-description>
+    <location>F:/FPGA/Microsemi/First Try/I2C/component/work/I2C_integration</location>
+    <state>GENERATED ( Mon Mar 28 19:07:10 2016 )</state>
+    <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
+  </project-settings>
+  <site-map>
+  </site-map>
+  <fileset>
+    <name>HDL File(s)</name>
+    <file>F:\FPGA\Microsemi\First Try\I2C\component\work\I2C_integration\I2C_integration.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\clock_div_1MHZ_100KHZ.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\clock_div_1MHZ_10HZ.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\i2c_interface.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\i2c_interface2.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\reset_pulse.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\test_harness_geiger_stack.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\timestamp.v</file>
+    <file>F:\FPGA\Microsemi\First Try\I2C\smartgen\CLK_1MHZ\CLK_1MHZ.v</file>
+  </fileset>
+  <io>
+    <port-name>D2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D4</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D7</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>CLK_48MHZ</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D5</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D0</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>SDA</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>EXT_RESET</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D3</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>SCL</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>D6</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <core type="ComponentModule">
+    <core-type>ComponentModule</core-type>
+    <core-exttype>SmartGen</core-exttype>
+    <core-location>F:/FPGA/Microsemi/First Try/I2C/smartgen/CLK_1MHZ</core-location>
+    <core-name>CLK_1MHZ_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>clock_div_1MHZ_10HZ</core-exttype>
+    <core-location>hdl\clock_div_1MHZ_10HZ.v</core-location>
+    <core-name>clock_div_1MHZ_10HZ_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>clock_div_1MHZ_100KHZ</core-exttype>
+    <core-location>hdl\clock_div_1MHZ_100KHZ.v</core-location>
+    <core-name>clock_div_1MHZ_100KHZ_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>i2c_interface2</core-exttype>
+    <core-location>hdl\i2c_interface2.v</core-location>
+    <core-name>i2c_interface2_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>reset_pulse</core-exttype>
+    <core-location>hdl\reset_pulse.v</core-location>
+    <core-name>reset_pulse_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>test_harness_geiger_stack</core-exttype>
+    <core-location>hdl\test_harness_geiger_stack.v</core-location>
+    <core-name>test_harness_geiger_stack_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>timestamp</core-exttype>
+    <core-location>hdl\timestamp.v</core-location>
+    <core-name>timestamp_0</core-name>
+  </core>
+  <memorysystem>
+    <title>Memory Map for I2C_integration</title>
+    <description>The project does not contain any subsystems.</description>
+  </memorysystem>
+</datasheet>
