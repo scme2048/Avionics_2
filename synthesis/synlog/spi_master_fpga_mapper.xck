@@ -1,0 +1,2 @@
+CKID0001:@|S:un1_ctr_d13_inferred_clock_RNO@|E:chip_rdy@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:clk@|E:ctr_q[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

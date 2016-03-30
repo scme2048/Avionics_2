@@ -1,0 +1,37 @@
+----------------------------------------------------------------------
+Report for cell spi_master.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO1A         2       1.0        2.0
+                               AO1B         1       1.0        1.0
+                               AO1D         1       1.0        1.0
+                               BUFF         1       1.0        1.0
+                             CLKBUF         1       0.0        0.0
+                             CLKINT         1       0.0        0.0
+                             DFN1C0         4       1.0        4.0
+                           DFN1E0C0         8       1.0        8.0
+                           DFN1E1C0        12       1.0       12.0
+                             DFN1P0         1       1.0        1.0
+                               DLN1         1       1.0        1.0
+                           DLN1P1C1         1       2.0        2.0
+                                GND         1       0.0        0.0
+                              INBUF        11       0.0        0.0
+                                MX2         9       1.0        9.0
+                               NOR2         5       1.0        5.0
+                              NOR2A         2       1.0        2.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         4       1.0        4.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OR2A         1       1.0        1.0
+                               OR2B         2       1.0        2.0
+                               OR3A         1       1.0        1.0
+                               OR3B         1       1.0        1.0
+                             OUTBUF        13       0.0        0.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         1       1.0        1.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             95                 68.0

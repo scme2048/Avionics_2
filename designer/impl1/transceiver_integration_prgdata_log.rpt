@@ -9,17 +9,17 @@ Opened an existing Libero design
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/transceiv\
 er_integration.adb.
 
-The Export-map command succeeded ( 00:00:32 )
+The Export-map command succeeded ( 00:00:28 )
 Wrote to the file:
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
 er_integration.pdb
-CHECKSUM: BD62
+CHECKSUM: 388E
 
-The Generate programming file command succeeded ( 00:00:37 )
+The Generate programming file command succeeded ( 00:00:32 )
 Design saved to file
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/transceiv\
 er_integration.adb.
 
-The Execute Script command succeeded ( 00:00:40 )
+The Execute Script command succeeded ( 00:00:36 )
 Design closed.
 

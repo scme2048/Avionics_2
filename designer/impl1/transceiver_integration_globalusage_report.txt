@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
-Date: Mon Mar 28 22:09:02 2016
+Date: Tue Mar 29 21:22:24 2016
 Design Name: transceiver_integration  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
 Design State: Post-Layout
 
@@ -23,8 +23,8 @@ The following nets have been routed to a chip global resource:
                       Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7/U_GL
     8                 Net   : spi_mode_config_0_next_cmd
                       Driver: spi_mode_config_0/next_b_RNI28CE/U_GL
-    45                Net   : spi_master_0_busy
-                      Driver: spi_master_0/busy_enable_RNIKMP21_0/U_GL
+    38                Net   : spi_master_0_busy
+                      Driver: spi_master_0/busy_enable_RNI36PP_0/U_GL
 
 
 

@@ -1,0 +1,144 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:33:39 on Mar 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 18:33:39 on Mar 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:33:39 on Mar 29,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v 
+# -- Compiling module tb_spi_master
+# 
+# Top level modules:
+# 	tb_spi_master
+# End time: 18:33:39 on Mar 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_spi_master_presynth_simulation.log 
+# Start time: 18:33:42 on Mar 29,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_spi_master
+# Loading presynth.spi_master
+# ** Warning: (vsim-3015) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v(78): [PCDPC] - Port size (8) does not match connection size (1) for port 'data_out'. The port definition is at: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v(9).
+# 
+#         Region: /tb_spi_master/spi_master_0
+# ** Warning: (vsim-3015) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v(78): [PCDPC] - Port size (1) does not match connection size (8) for port 'new_data'. The port definition is at: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v(11).
+# 
+#         Region: /tb_spi_master/spi_master_0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftrq788h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftrq788h
+# 
+run -all
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:35:46 on Mar 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 18:35:46 on Mar 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:35:46 on Mar 29,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v 
+# -- Compiling module tb_spi_master
+# 
+# Top level modules:
+# 	tb_spi_master
+# End time: 18:35:46 on Mar 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:35:48 on Mar 29,2016
+# Loading presynth.tb_spi_master
+# Loading presynth.spi_master
+# ** Warning: (vsim-3015) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v(78): [PCDPC] - Port size (8) does not match connection size (1) for port 'data_out'. The port definition is at: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v(9).
+# 
+#         Region: /tb_spi_master/spi_master_0
+# ** Warning: (vsim-3015) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v(78): [PCDPC] - Port size (1) does not match connection size (8) for port 'new_data'. The port definition is at: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v(11).
+# 
+#         Region: /tb_spi_master/spi_master_0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftrft8wc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftrft8wc
+# 
+run -all
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:40:11 on Mar 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 18:40:11 on Mar 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:40:11 on Mar 29,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_spi_master.v 
+# -- Compiling module tb_spi_master
+# 
+# Top level modules:
+# 	tb_spi_master
+# End time: 18:40:11 on Mar 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:40:12 on Mar 29,2016
+# Loading presynth.tb_spi_master
+# Loading presynth.spi_master
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlft06v1cj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft06v1cj
+# 
+run -all
+# End time: 18:44:14 on Mar 29,2016, Elapsed time: 0:04:02
+# Errors: 0, Warnings: 2

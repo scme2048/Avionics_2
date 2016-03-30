@@ -27,7 +27,7 @@ Selecting top level module transceiver_integration
 @W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":97:4:97:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
 
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":846:4:846:9|Feedback mux created for signal tx_ss_counter[2:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":847:4:847:9|Feedback mux created for signal tx_ss_counter[2:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration

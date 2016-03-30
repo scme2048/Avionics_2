@@ -124,7 +124,7 @@ module spi_master #(parameter CLK_DIV = 2)(
         //if (start == 1'b1) begin
         case (state_q)
           IDLE: begin
-            busy_enable = 1'b0;
+            //busy_enable = 1'b0;
             sck_d = 4'b0;              // reset clock counter
             test = 0;
             ctr_d = 3'b0;              // reset bit counter

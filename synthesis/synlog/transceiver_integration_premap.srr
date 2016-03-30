@@ -9,15 +9,15 @@ Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\P
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
 @N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":66:0:66:5|Removing sequential instance read_cmd of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\spi_master.v":195:4:195:9|Removing sequential instance new_data_q of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 
 
@@ -48,9 +48,9 @@ Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Mar 28 22:07:42 2016
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar 29 21:21:16 2016
 
 ###########################################################]

@@ -1,14 +1,14 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe  -mp  1  -prjfile  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis   -part M1A3P1000L  -package FBGA484  -grade STD    -globalthreshold 5000 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\report\transceiver_integration_premap.xml  -top_level_module  transceiver_integration  -oedif  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.edn  -conchk_prepass  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration_cck_prepass.rpt   -freq 100.000   C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_prem.srd  -qsap  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.sap  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -ologparam  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\transceiver_integration.plg  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_prem.srd  -prjdir  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\  -prjname  transceiver_integration_syn  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_premap.srr 
 rc:1 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs|o|1458426790|2969
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.edn|o|1459221690|449719
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs|o|1459304542|2969
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.edn|o|1459305423|421194
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration_cck_prepass.rpt|o|0|0
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_mult.srs|i|1459224459|7686
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_prem.srd|o|1459224461|47629
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.sap|o|1459224462|17935
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_mult.srs|i|1459308076|7685
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_prem.srd|o|1459308076|47471
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\transceiver_integration.sap|o|1459308076|17935
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431619582|57101
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\transceiver_integration.plg|o|1459224459|0
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_prem.srd|o|1459224461|47629
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_premap.srr|o|1459224462|6068
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\transceiver_integration.plg|o|1459308076|0
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_prem.srd|o|1459308076|47471
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_premap.srr|o|1459308076|6068
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\m_proasic.exe|i|1433442986|9280512
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe|i|1433444758|11753984

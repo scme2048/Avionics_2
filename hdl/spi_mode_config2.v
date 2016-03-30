@@ -173,14 +173,14 @@ module spi_mode_config2 (
                 else if ((chip_state == chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
                     start_a = 1'b1;
-                    if (byte_out_a==8'hFB) begin
-                        rxbytes_numbytes = SLAVE_OUTPUT[6:0];
-                    end else if (byte_out_a==RXFIFO) begin
+                    if (read_tracker==1'b1) begin
                         read_data=SLAVE_OUTPUT;
+                    end else begin
+                        rxbytes_numbytes = SLAVE_OUTPUT[6:0];
                     end
                     if ((read_tracker==1'b0) && (rxbytes_numbytes>0)) begin
                         byte_out_a = RXFIFO;
-                        read_tracker=1'b1;
+                        read_tracker=1'b1; // This is linked to RXFIFO byte out.
                     end else begin
                         byte_out_a = 8'hFB;
                         read_tracker=1'b0;
@@ -197,7 +197,7 @@ module spi_mode_config2 (
                 else if ((chip_state == chip_RX)&&(byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     chip_state = SLAVE_OUTPUT[6:4];
                     mem_enable_a = 1'b0;
-                    byte_out_a = 8'b0;
+                    byte_out_a = 8'h00;
                     //if (SLAVE_OUTPUT == 8'b01010100) begin
                         //begin_pass_a = 1'b1;
                         ////start_a = 1'b0;
@@ -266,15 +266,22 @@ module spi_mode_config2 (
                         tx_free_bytes=SLAVE_OUTPUT[3:0];
                         tx_state=3'b011;
                     end
-                    else if ((tx_state>3'b001)&& (~TX_ENABLE)&&(~chip_rdy)) begin
+                    //else if ((tx_state>3'b001)&& (~TX_ENABLE)&&(~chip_rdy)) begin
+                        //mem_enable_a = 1'b0;
+                        //byte_out_a = SIDLE;
+                        //state_a = IDLE;
+                        //begin_pass_a = 1'b0;
+                    //end
+                    else begin
+                        tx_state=3'b111;
+                        byte_out_a = SNOP;
+                    end
+                    //NEW TEST THIS
+                    if ((tx_state>3'b001)&& (~TX_ENABLE)&&(~chip_rdy)) begin
                         mem_enable_a = 1'b0;
                         byte_out_a = SIDLE;
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
-                    end
-                    else begin
-                        tx_state=3'b111;
-                        byte_out_a = SNOP;
                     end
                // end
             end
@@ -598,7 +605,8 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 48)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h3C; // RX stays in RX after packet, TX-> IDLE after packet
+                    byte_out_a = 8'h3E; // RX stays in RX after packet, TX-> IDLE after packet: 0x3C
+                                        // RX stays in RX, TX-> TX:  0x3E
                     byte_tracker_a = 1'b0;
                 end
                   //Radio cntrl state config 0

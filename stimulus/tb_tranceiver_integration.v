@@ -58,11 +58,15 @@ always @(SYSCLK)
 
 wire ss,mosi,sclk;
 
-always @(SYSCLK)
-begin
-    miso=ss;
-end
+//always @(SYSCLK)
+//begin
+    //miso=ss;
+//end
 
+
+wire DS0,DS1,DS2,DS3,DS4,DS5,DS6,DS7;
+always @(SYSCLK)
+    #(SYSCLK_PERIOD *3.5) miso <= !miso;
 
 
 
@@ -78,8 +82,15 @@ transceiver_integration transceiver_integration_0 (
     // Outputs
     .SS(ss ),
     .MOSI( mosi),
-    .SCLK( sclk)
-
+    .SCLK( sclk),
+    .ds0(DS0),
+    .ds1(DS1),
+    .ds2(DS2),
+    .ds3(DS3),
+    .ds4(DS4),
+    .ds5(DS5),
+    .ds6(DS6),
+    .ds7(DS7)
     // Inouts
 
 );

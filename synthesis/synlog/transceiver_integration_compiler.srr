@@ -18,8 +18,8 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v"
 Verilog syntax check successful!
@@ -53,7 +53,7 @@ Selecting top level module transceiver_integration
 @W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":97:4:97:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
 
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":846:4:846:9|Feedback mux created for signal tx_ss_counter[2:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":847:4:847:9|Feedback mux created for signal tx_ss_counter[2:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
@@ -92,10 +92,10 @@ State machine has 3 reachable states with original encodings of:
 @W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":32:0:32:5|Pruning register bit 13 of cntr[13:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 80MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 84MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Mar 28 22:07:37 2016
+# Tue Mar 29 21:21:14 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -104,7 +104,7 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Mar 28 22:07:37 2016
+# Tue Mar 29 21:21:14 2016
 
 ###########################################################]
 @END
@@ -112,6 +112,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Mar 28 22:07:37 2016
+# Tue Mar 29 21:21:14 2016
 
 ###########################################################]

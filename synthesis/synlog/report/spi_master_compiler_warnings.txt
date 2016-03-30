@@ -1,0 +1,3 @@
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":97:4:97:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":97:4:97:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+

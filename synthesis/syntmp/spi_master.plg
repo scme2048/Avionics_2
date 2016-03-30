@@ -1,0 +1,25 @@
+@P:  Worst Slack : 2.243
+@P:  spi_master|clk - Estimated Frequency : 128.9 MHz
+@P:  spi_master|clk - Requested Frequency : 100.0 MHz
+@P:  spi_master|clk - Estimated Period : 7.758
+@P:  spi_master|clk - Requested Period : 10.000
+@P:  spi_master|clk - Slack : 2.243
+@P:  spi_master|un1_ctr_d13_inferred_clock - Estimated Frequency : NA
+@P:  spi_master|un1_ctr_d13_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  spi_master|un1_ctr_d13_inferred_clock - Estimated Period : NA
+@P:  spi_master|un1_ctr_d13_inferred_clock - Requested Period : 10.000
+@P:  spi_master|un1_ctr_d13_inferred_clock - Slack : NA
+@P:  Worst Slack(min analysis) : NA
+@P:  spi_master|clk - Estimated Frequency(min analysis) : 128.9 MHz
+@P:  spi_master|clk - Requested Frequency(min analysis) : 100.0 MHz
+@P:  spi_master|clk - Estimated Period(min analysis) : 7.758
+@P:  spi_master|clk - Requested Period(min analysis) : 10.000
+@P:  spi_master|clk - Slack(min analysis) : 2.243
+@P:  spi_master|un1_ctr_d13_inferred_clock - Estimated Frequency(min analysis) : NA
+@P:  spi_master|un1_ctr_d13_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
+@P:  spi_master|un1_ctr_d13_inferred_clock - Estimated Period(min analysis) : NA
+@P:  spi_master|un1_ctr_d13_inferred_clock - Requested Period(min analysis) : 10.000
+@P:  spi_master|un1_ctr_d13_inferred_clock - Slack(min analysis) : NA
+@P:  Total Area : 68.0
+@P:  Total Area : 68.0
+@P:  CPU Time : 0h:00m:00s
