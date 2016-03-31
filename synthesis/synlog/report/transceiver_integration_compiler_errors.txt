@@ -1,2 +1,2 @@
-@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v":23:0:23:5|Logic for counter[16:0] does not match a standard flip-flop
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":32:0:32:5|Logic for tx_enable_reg does not match a standard flip-flop
 

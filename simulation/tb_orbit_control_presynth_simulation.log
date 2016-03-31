@@ -1,0 +1,134 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:43:33 on Mar 30,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/orbit_control.v 
+# -- Compiling module orbit_control
+# 
+# Top level modules:
+# 	orbit_control
+# End time: 20:43:33 on Mar 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:43:33 on Mar 30,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_orbit_control.v 
+# -- Compiling module tb_orbit_control
+# 
+# Top level modules:
+# 	tb_orbit_control
+# End time: 20:43:33 on Mar 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_orbit_control_presynth_simulation.log 
+# Start time: 20:43:35 on Mar 30,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_orbit_control
+# Loading presynth.orbit_control
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftzzbx8f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzzbx8f
+# 
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:45:52 on Mar 30,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/orbit_control.v 
+# -- Compiling module orbit_control
+# 
+# Top level modules:
+# 	orbit_control
+# End time: 20:45:52 on Mar 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:45:52 on Mar 30,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_orbit_control.v 
+# -- Compiling module tb_orbit_control
+# 
+# Top level modules:
+# 	tb_orbit_control
+# End time: 20:45:52 on Mar 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 20:45:54 on Mar 30,2016
+# Loading presynth.tb_orbit_control
+# Loading presynth.orbit_control
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlft7a16vk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft7a16vk
+# 
+run -all
+add wave -r sim:/tb_orbit_control/orbit_control_0/*
+restart
+run -all
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:49:07 on Mar 30,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/orbit_control.v 
+# -- Compiling module orbit_control
+# 
+# Top level modules:
+# 	orbit_control
+# End time: 20:49:07 on Mar 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:49:07 on Mar 30,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_orbit_control.v 
+# -- Compiling module tb_orbit_control
+# 
+# Top level modules:
+# 	tb_orbit_control
+# End time: 20:49:07 on Mar 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 20:49:08 on Mar 30,2016
+# Loading presynth.tb_orbit_control
+# Loading presynth.orbit_control
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftvry8hb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftvry8hb
+# 
+run -all
+# End time: 20:50:00 on Mar 30,2016, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 2

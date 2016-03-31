@@ -90,7 +90,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   1046  Total:  24576   (4.26%)
+    CORE                       Used:   1015  Total:  24576   (4.13%)
     IO (W/ clocks)             Used:     14  Total:    300   (4.67%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -115,8 +115,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 855          | 855
-    SEQ     | 190          | 191
+    COMB    | 822          | 822
+    SEQ     | 192          | 193
 
 I/O Function:
 
@@ -148,31 +148,31 @@ Net information report:
 The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
     EffCnt  Type          Name
     --------------------------
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
-    7       SET/RESET_NET Net   : reset_pulse_0_RESET_3
+    13      SET/RESET_NET Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
 
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    83      CLK_NET       Net   : GLA
+    84      CLK_NET       Net   : GLA
                           Driver: CLK_26MHZ_0/Core
                           Source: ESSENTIAL
     38      CLK_NET       Net   : spi_master_0_busy
                           Driver: spi_master_0/busy_enable_RNI36PP_0
                           Source: NETLIST
-    28      CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
+    30      CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
     18      CLK_NET       Net   : clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out_RNIH497
                           Source: NETLIST
-    14      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+    13      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                           Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
                           Source: NETLIST
     8       CLK_NET       Net   : spi_mode_config_0_next_cmd
@@ -182,50 +182,50 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
-                          Driver: reset_pulse_0/RESET_0
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
-                          Driver: reset_pulse_0/RESET_1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
-                          Driver: reset_pulse_0/RESET_2
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_3
-                          Driver: reset_pulse_0/RESET_3
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_4
-                          Driver: reset_pulse_0/RESET_4
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
-                          Driver: reset_pulse_0/RESET_5
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
-                          Driver: reset_pulse_0/RESET_6
-    24      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
-                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
-    23      INT_NET       Net   : spi_mode_config_0/byte_tracker_b
-                          Driver: spi_mode_config_0/byte_tracker_b/U1
+    23      INT_NET       Net   : spi_mode_config_0/state_b[1]
+                          Driver: spi_mode_config_0/state_b[1]
+    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[3]
+                          Driver: spi_mode_config_0/config_cntr_b[3]/U1
     23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[4]
                           Driver: spi_mode_config_0/config_cntr_b[4]/U1
+    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[6]
+                          Driver: spi_mode_config_0/config_cntr_b[6]/U1
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+                          Driver: reset_pulse_0/RESET_0
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+                          Driver: reset_pulse_0/RESET_1
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+                          Driver: reset_pulse_0/RESET_2
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+                          Driver: reset_pulse_0/RESET_3
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_4
+                          Driver: reset_pulse_0/RESET_4
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_5
+                          Driver: reset_pulse_0/RESET_5
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
-                          Driver: reset_pulse_0/RESET_0
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
-                          Driver: reset_pulse_0/RESET_1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
-                          Driver: reset_pulse_0/RESET_2
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_3
-                          Driver: reset_pulse_0/RESET_3
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_4
-                          Driver: reset_pulse_0/RESET_4
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
-                          Driver: reset_pulse_0/RESET_5
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
-                          Driver: reset_pulse_0/RESET_6
-    24      INT_NET       Net   : spi_mode_config_0/config_cntr_b[1]
-                          Driver: spi_mode_config_0/config_cntr_b[1]/U1
-    23      INT_NET       Net   : spi_mode_config_0/byte_tracker_b
-                          Driver: spi_mode_config_0/byte_tracker_b/U1
+    23      INT_NET       Net   : spi_mode_config_0/state_b[1]
+                          Driver: spi_mode_config_0/state_b[1]
+    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[3]
+                          Driver: spi_mode_config_0/config_cntr_b[3]/U1
     23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[4]
                           Driver: spi_mode_config_0/config_cntr_b[4]/U1
+    23      INT_NET       Net   : spi_mode_config_0/config_cntr_b[6]
+                          Driver: spi_mode_config_0/config_cntr_b[6]/U1
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+                          Driver: reset_pulse_0/RESET_0
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+                          Driver: reset_pulse_0/RESET_1
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+                          Driver: reset_pulse_0/RESET_2
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+                          Driver: reset_pulse_0/RESET_3
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_4
+                          Driver: reset_pulse_0/RESET_4
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_5
+                          Driver: reset_pulse_0/RESET_5
 ====================
 Flash*Freeze report:
 ====================

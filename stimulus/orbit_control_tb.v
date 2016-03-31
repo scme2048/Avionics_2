@@ -65,6 +65,8 @@ always @(SYSCLK) begin
     #(SYSCLK_PERIOD *1000) START = 1'b0;
 
 end
+
+wire tx_en;
 //////////////////////////////////////////////////////////////////////
 // Instantiate Unit Under Test:  orbit_control
 //////////////////////////////////////////////////////////////////////
@@ -75,7 +77,7 @@ orbit_control orbit_control_0 (
     .reset(NSYSRESET),
 
     // Outputs
-    .tx_enable( )
+    .tx_enable( tx_en)
 
     // Inouts
 

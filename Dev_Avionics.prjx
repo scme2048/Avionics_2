@@ -112,13 +112,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1459299595"
+TIME="1459394053"
 SIZE="4540"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.v,hdl"
 STATE="utd"
-TIME="1459299594"
-SIZE="7862"
+TIME="1459394052"
+SIZE="7917"
 PARENT="<project>\component\work\transceiver_integration\transceiver_integration.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -214,7 +214,7 @@ SIZE="233"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_master.ide_des,ide_des"
 STATE="utd"
-TIME="1459298667"
+TIME="1459298698"
 SIZE="232"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.adb,adb"
@@ -319,18 +319,18 @@ SIZE="838"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.adb,adb"
 STATE="ood"
-TIME="1459224592"
-SIZE="1113088"
+TIME="1459308189"
+SIZE="1187328"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.ide_des,ide_des"
 STATE="utd"
-TIME="1459224592"
+TIME="1459308189"
 SIZE="1087"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.pdb,pdb"
 STATE="ood"
-TIME="1459308189"
-SIZE="1506582"
+TIME="1459394203"
+SIZE="1506547"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_2.pdb,pdb"
 STATE="utd"
@@ -339,8 +339,8 @@ SIZE="1506137"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_ba.sdf,ba_sdf"
 STATE="ood"
-TIME="1458427531"
-SIZE="415054"
+TIME="1459303870"
+SIZE="497158"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_ba.v,ba_hdl"
 STATE="ood"
@@ -354,8 +354,8 @@ SIZE="951"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_compile_log.rpt,log"
 STATE="utd"
-TIME="1459308094"
-SIZE="10660"
+TIME="1459394083"
+SIZE="10696"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp\projectData\transceiver_integration.pdb,pdb"
 STATE="utd"
@@ -402,6 +402,21 @@ STATE="utd"
 TIME="1459308203"
 SIZE="2351"
 ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_17\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459388385"
+SIZE="2141"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_18\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459389985"
+SIZE="2351"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_19\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459392757"
+SIZE="2351"
+ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp_1\projectData\transceiver_integration.pdb,pdb"
 STATE="utd"
 TIME="1458335789"
@@ -411,6 +426,16 @@ VALUE "<project>\designer\impl1\transceiver_integration_fp_1\transceiver_integra
 STATE="utd"
 TIME="1458335789"
 SIZE="0"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_20\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459394032"
+SIZE="2351"
+ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_fp_21\transceiver_integration.pro,pro"
+STATE="utd"
+TIME="1459394218"
+SIZE="2351"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp_2\transceiver_integration.pro,pro"
 STATE="utd"
@@ -454,17 +479,17 @@ SIZE="2139"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1459308146"
+TIME="1459394149"
 SIZE="2663"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1459308189"
+TIME="1459394203"
 SIZE="894"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1459308152"
+TIME="1459394156"
 SIZE="1343"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
@@ -529,8 +554,8 @@ SIZE="10053"
 ENDFILE
 VALUE "<project>\hdl\orbit_control.v,hdl"
 STATE="utd"
-TIME="1458335789"
-SIZE="1652"
+TIME="1459388101"
+SIZE="2148"
 ENDFILE
 VALUE "<project>\hdl\read_address_traversal.v,hdl"
 STATE="utd"
@@ -584,8 +609,8 @@ SIZE="40945"
 ENDFILE
 VALUE "<project>\hdl\spi_mode_config2.v,hdl"
 STATE="utd"
-TIME="1459310937"
-SIZE="41259"
+TIME="1459402095"
+SIZE="41469"
 ENDFILE
 VALUE "<project>\hdl\sram_interface.v,hdl"
 STATE="utd"
@@ -644,8 +669,8 @@ SIZE="4581"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1458430893"
-SIZE="1371"
+TIME="1459303873"
+SIZE="997"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -692,6 +717,11 @@ STATE="utd"
 TIME="1458335790"
 SIZE="5239"
 ENDFILE
+VALUE "<project>\simulation\tb_orbit_control_presynth_simulation.log,log"
+STATE="utd"
+TIME="1459392210"
+SIZE="126"
+ENDFILE
 VALUE "<project>\simulation\tb_read_address_traversal_presynth_simulation.log,log"
 STATE="utd"
 TIME="1458335790"
@@ -719,13 +749,13 @@ SIZE="2078"
 ENDFILE
 VALUE "<project>\simulation\tb_spi_master_postsynth_simulation.log,log"
 STATE="utd"
-TIME="1459298711"
-SIZE="1875"
+TIME="1459299486"
+SIZE="3321"
 ENDFILE
 VALUE "<project>\simulation\tb_spi_master_presynth_simulation.log,log"
 STATE="utd"
-TIME="1459298018"
-SIZE="781"
+TIME="1459298654"
+SIZE="7509"
 ENDFILE
 VALUE "<project>\simulation\tb_spi_test_postlayout_simulation.log,log"
 STATE="utd"
@@ -849,8 +879,8 @@ SIZE="2681"
 ENDFILE
 VALUE "<project>\stimulus\orbit_control_tb.v,tb_hdl"
 STATE="utd"
-TIME="1458335790"
-SIZE="2285"
+TIME="1459391890"
+SIZE="2305"
 ENDFILE
 VALUE "<project>\stimulus\spi_master_tb3.v,tb_hdl"
 STATE="utd"
@@ -896,6 +926,11 @@ VALUE "<project>\stimulus\tb_memory_test.v,tb_hdl"
 STATE="utd"
 TIME="1458335790"
 SIZE="2766"
+ENDFILE
+VALUE "<project>\stimulus\tb_orbit_control.v,tb_hdl"
+STATE="utd"
+TIME="1459392537"
+SIZE="2443"
 ENDFILE
 VALUE "<project>\stimulus\tb_read_address_traversal.v,tb_hdl"
 STATE="utd"
@@ -1124,27 +1159,27 @@ SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.edn,syn_edn"
 STATE="ood"
-TIME="1459224467"
-SIZE="449166"
+TIME="1459308080"
+SIZE="470872"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.so,so"
 STATE="utd"
-TIME="1459224467"
+TIME="1459308080"
 SIZE="286"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.v,syn_hdl"
 STATE="ood"
-TIME="1458335791"
-SIZE="118654"
+TIME="1459299760"
+SIZE="152281"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1459224467"
+TIME="1459308080"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_syn.prj,prj"
 STATE="utd"
-TIME="1459224467"
+TIME="1459308080"
 SIZE="2832"
 ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
@@ -1400,7 +1435,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_tranceiver_integration_postlayout_simulation.log "
+PARAM=" -l tb_orbit_control_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -1524,10 +1559,10 @@ LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Generate Programming Data:transceiver_integration_prgdata_log.rpt
+HDL;hdl\orbit_control.v;0
 SmartDesign;transceiver_integration;0
 HDL;hdl\spi_mode_config2.v;0
-HDL;hdl\SPI_Master.v;0
-HDL;stimulus\tb_tranceiver_integration.v;0
+HDL;stimulus\tb_orbit_control.v;0
 ACTIVEVIEW;hdl\spi_mode_config2.v
 ENDLIST
 LIST ModuleSubBlockList
@@ -1563,16 +1598,16 @@ SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
-SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -1591,8 +1626,8 @@ LIST "mag_i2c_interface::work","hdl\mag_i2c_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "master_mode::work","component\work\master_mode\master_mode.v","TRUE","FALSE"
 SUBBLOCK "dummy_mem::work","hdl\dummy_mem.v","FALSE","FALSE"
-SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 ENDLIST
 LIST "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
@@ -1641,10 +1676,10 @@ SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
-SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 ENDLIST
 LIST "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 ENDLIST
@@ -1681,8 +1716,8 @@ SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
-SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
@@ -1727,6 +1762,9 @@ SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_memory_test::work","stimulus\tb_memory_test.v","FALSE","TRUE"
 SUBBLOCK "memory_test::work","component\work\memory_test\memory_test.v","TRUE","FALSE"
+ENDLIST
+LIST "tb_orbit_control::work","stimulus\tb_orbit_control.v","FALSE","TRUE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_read_address_traversal::work","stimulus\tb_read_address_traversal.v","FALSE","TRUE"
 SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"

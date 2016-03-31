@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Mar 29 18:59:54 2016
+// Created by SmartDesign Wed Mar 30 21:14:12 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -159,6 +159,7 @@ orbit_control orbit_control_0(
         .cntr_enable ( spi_mode_config_0_begin_pass ),
         .clk         ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
         .reset       ( reset_pulse_0_RESET ),
+        .CLK_48MHZ   ( reset_pulse_0_CLK_OUT_48MHZ ),
         // Outputs
         .tx_enable   ( orbit_control_0_tx_enable ) 
         );

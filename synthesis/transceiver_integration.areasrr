@@ -9,75 +9,75 @@ Report for cell transceiver_integration.verilog
                                 VCC         1       0.0        0.0
                 clock_div_1MHZ_10HZ         1      78.0       78.0
                clock_div_26MHZ_1MHZ         1      75.0       75.0
-                      orbit_control         1      43.0       43.0
+                      orbit_control         1      46.0       46.0
                         read_buffer         1      99.0       99.0
-                        reset_pulse         1       9.0        9.0
-                         spi_master         1      71.0       71.0
-                   spi_mode_config2         1     626.0      626.0
+                        reset_pulse         1      10.0       10.0
+                         spi_master         1      68.0       68.0
+                   spi_mode_config2         1     594.0      594.0
                             
-                         TOTAL             24               1001.0
+                         TOTAL             24                970.0
 ----------------------------------------------------------------------
 Report for cell spi_mode_config2.netlist
      Instance path:  spi_mode_config_0
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2         9       1.0        9.0
-                                AO1        29       1.0       29.0
+                               AND2         5       1.0        5.0
+                                AO1        23       1.0       23.0
                                AO1A        17       1.0       17.0
-                               AO1B         2       1.0        2.0
                                AO1C         3       1.0        3.0
-                               AO1D         2       1.0        2.0
+                               AO1D         4       1.0        4.0
                                AOI1         3       1.0        3.0
-                              AOI1B         2       1.0        2.0
-                               AX1A         1       1.0        1.0
-                               AX1C         5       1.0        5.0
-                              AXOI7         1       1.0        1.0
+                                AX1         4       1.0        4.0
+                               AX1C         1       1.0        1.0
+                              AXOI5         2       1.0        2.0
                              CLKINT         1       0.0        0.0
-                             DFN0C0        20       1.0       20.0
+                             DFN0C0        18       1.0       18.0
+                           DFN0E0P0         3       1.0        3.0
                            DFN0E1C0         9       1.0        9.0
-                           DFN0E1P0         3       1.0        3.0
-                             DFN0P0         6       1.0        6.0
-                             DFN1C0         5       1.0        5.0
-                           DFN1E0C0        21       1.0       21.0
-                           DFN1E0P0         2       1.0        2.0
-                             DFN1E1         3       1.0        3.0
-                           DFN1E1C0        10       1.0       10.0
+                             DFN0P0         8       1.0        8.0
+                               DFN1         3       1.0        3.0
+                             DFN1C0         4       1.0        4.0
+                           DFN1E0C0        19       1.0       19.0
+                           DFN1E1C0        12       1.0       12.0
+                           DFN1E1P0         1       1.0        1.0
+                             DFN1P0         3       1.0        3.0
                                 GND         1       0.0        0.0
-                                MX2        11       1.0       11.0
-                               MX2A         1       1.0        1.0
-                               MX2C         1       1.0        1.0
-                               NOR2        34       1.0       34.0
-                              NOR2A        74       1.0       74.0
-                              NOR2B        64       1.0       64.0
-                               NOR3        16       1.0       16.0
+                                INV         1       1.0        1.0
+                                MX2        10       1.0       10.0
+                               MX2A         3       1.0        3.0
+                               NOR2        25       1.0       25.0
+                              NOR2A        81       1.0       81.0
+                              NOR2B        59       1.0       59.0
+                               NOR3         8       1.0        8.0
                               NOR3A        21       1.0       21.0
-                              NOR3B        31       1.0       31.0
-                              NOR3C        32       1.0       32.0
-                                OA1        23       1.0       23.0
-                               OA1A         7       1.0        7.0
-                               OA1B        11       1.0       11.0
-                               OA1C         5       1.0        5.0
-                               OAI1         1       1.0        1.0
-                                OR2        29       1.0       29.0
-                               OR2A        25       1.0       25.0
-                               OR2B         5       1.0        5.0
-                                OR3        50       1.0       50.0
-                               OR3A        13       1.0       13.0
-                               OR3B         1       1.0        1.0
+                              NOR3B        34       1.0       34.0
+                              NOR3C        22       1.0       22.0
+                                OA1        17       1.0       17.0
+                               OA1A         3       1.0        3.0
+                               OA1B         3       1.0        3.0
+                               OA1C         4       1.0        4.0
+                               OAI1         2       1.0        2.0
+                                OR2        39       1.0       39.0
+                               OR2A        20       1.0       20.0
+                               OR2B        10       1.0       10.0
+                                OR3        57       1.0       57.0
+                               OR3A        11       1.0       11.0
+                               OR3B         5       1.0        5.0
+                               OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                              XNOR2         3       1.0        3.0
-                               XOR2        15       1.0       15.0
+                                XA1         2       1.0        2.0
+                              XNOR2         5       1.0        5.0
+                               XOR2         9       1.0        9.0
                             
-                         TOTAL            629                626.0
+                         TOTAL            597                594.0
 ----------------------------------------------------------------------
 Report for cell spi_master.netlist
      Instance path:  spi_master_0
                                           Cell usage:
                                cell       count     area    count*area
-                               AO1A         1       1.0        1.0
+                               AO1A         2       1.0        2.0
                                AO1B         1       1.0        1.0
                                AO1D         1       1.0        1.0
-                               AX1E         1       1.0        1.0
                              CLKINT         1       0.0        0.0
                              DFN1C0         3       1.0        3.0
                            DFN1E0C0         8       1.0        8.0
@@ -87,21 +87,22 @@ Report for cell spi_master.netlist
                            DLN1P1C1         1       2.0        2.0
                                 GND         1       0.0        0.0
                                 MX2         9       1.0        9.0
-                               NOR2         6       1.0        6.0
-                              NOR2B         5       1.0        5.0
+                               NOR2         5       1.0        5.0
+                              NOR2A         2       1.0        2.0
+                              NOR2B         3       1.0        3.0
                                NOR3         1       1.0        1.0
-                              NOR3A         6       1.0        6.0
+                              NOR3A         4       1.0        4.0
                               NOR3B         4       1.0        4.0
-                              NOR3C         1       1.0        1.0
                                OR2A         2       1.0        2.0
-                                OR3         1       1.0        1.0
+                               OR2B         1       1.0        1.0
                                OR3A         1       1.0        1.0
                                OR3B         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                              XNOR2         1       1.0        1.0
+                                XA1         1       1.0        1.0
+                               XA1A         1       1.0        1.0
                                XOR2         1       1.0        1.0
                             
-                         TOTAL             73                 71.0
+                         TOTAL             70                 68.0
 ----------------------------------------------------------------------
 Report for cell reset_pulse.netlist
      Instance path:  reset_pulse_0
@@ -110,10 +111,10 @@ Report for cell reset_pulse.netlist
                              CLKINT         1       0.0        0.0
                                 GND         1       0.0        0.0
                               NOR2B         1       1.0        1.0
-                                OR2         8       1.0        8.0
+                                OR2         9       1.0        9.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL             12                  9.0
+                         TOTAL             13                 10.0
 ----------------------------------------------------------------------
 Report for cell read_buffer.netlist
      Instance path:  read_buffer_0
@@ -153,18 +154,21 @@ Report for cell orbit_control.netlist
      Instance path:  orbit_control_0
                                           Cell usage:
                                cell       count     area    count*area
+                               AO1A         1       1.0        1.0
                                AOI1         1       1.0        1.0
                                AX1C         1       1.0        1.0
-                             DFN1C0        14       1.0       14.0
+                             DFN1C0        13       1.0       13.0
+                           DFN1E1C0         1       1.0        1.0
+                             DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
                                NOR2         1       1.0        1.0
                               NOR2A         1       1.0        1.0
-                              NOR2B        12       1.0       12.0
+                              NOR2B        13       1.0       13.0
                                OA1A         2       1.0        2.0
                                 VCC         1       0.0        0.0
                                 XA1        11       1.0       11.0
                             
-                         TOTAL             45                 43.0
+                         TOTAL             48                 46.0
 ----------------------------------------------------------------------
 Report for cell clock_div_26MHZ_1MHZ.netlist
      Instance path:  clock_div_26MHZ_1MHZ_0

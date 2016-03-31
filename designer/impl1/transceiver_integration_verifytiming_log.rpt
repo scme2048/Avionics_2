@@ -21,7 +21,7 @@ The Report command succeeded ( 00:00:00 )
 Wrote timing_violations report to file:
 transceiver_integration_maxdelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote timing_violations report to file:
 transceiver_integration_mindelay_timingviolations_report.txt
 
@@ -30,6 +30,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
 er_integration.adb.
 
-The Execute Script command succeeded ( 00:00:04 )
+The Execute Script command succeeded ( 00:00:05 )
 Design closed.
 

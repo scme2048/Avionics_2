@@ -228,6 +228,12 @@ module spi_mode_config2 (
                         byte_out_a = SIDLE;
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
+                    end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)) begin
+                        mem_enable_a = 1'b0;
+                        byte_tracker_a=1'b0;
+                        byte_out_a = SIDLE;
+                        state_a = IDLE;
+                        begin_pass_a = 1'b0;
                     end else if ((~chip_rdy)&&(tx_state==3'b000)) begin
                         byte_out_a = STX;
                         start_a = 1'b1;
@@ -242,9 +248,11 @@ module spi_mode_config2 (
                         //end
                     //end
                     else if ((tx_state==3'b011)&&(~chip_rdy)) begin
-                        next_a = 1'b1;
+                        
                         mem_enable_a = 1'b0;
                         if ((byte_out_a==STX) || (tx_free_bytes>4'b0001)) begin
+                            next_a = 1'b1;
+                            // Can add counter to 49 here
                             byte_out_a = TXFIFO;
                         end else begin
                             byte_out_a=SNOP;
@@ -277,12 +285,7 @@ module spi_mode_config2 (
                         byte_out_a = SNOP;
                     end
                     //NEW TEST THIS
-                    if ((tx_state>3'b001)&& (~TX_ENABLE)&&(~chip_rdy)) begin
-                        mem_enable_a = 1'b0;
-                        byte_out_a = SIDLE;
-                        state_a = IDLE;
-                        begin_pass_a = 1'b0;
-                    end
+
                // end
             end
 
@@ -299,7 +302,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 2)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h2e; //High Impedance
+                    byte_out_a = 8'h2E; //High Impedance //GOOD: 2E
                     byte_tracker_a = 1'b0;
                 end
                 //GDO1 Config
@@ -312,7 +315,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 4)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h41; //chip_rdy pin ******* // I DONT THINK THIS IS RIGHT???
+                    byte_out_a = 8'h41; //chip_rdy pin ******* // I DONT THINK THIS IS RIGHT??? // GOOD: 41
                     byte_tracker_a = 1'b0;
                 end
                 //GDO0 Config
@@ -607,6 +610,7 @@ module spi_mode_config2 (
                     start_a = 1'b1;
                     byte_out_a = 8'h3E; // RX stays in RX after packet, TX-> IDLE after packet: 0x3C
                                         // RX stays in RX, TX-> TX:  0x3E
+                                        // Testing 0E, Good? 3E
                     byte_tracker_a = 1'b0;
                 end
                   //Radio cntrl state config 0
