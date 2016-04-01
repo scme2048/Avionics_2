@@ -89,6 +89,7 @@ module spi_mode_config2 (
     reg [2:0] tx_ss_counter;
     reg [3:0] tx_free_bytes;
     reg [5:0] tx_packet_counter;
+    reg [2:0] tx_exit_counter;
     reg [2:0] idle_ss_counter;
 
     // mem_pull high if in TX mode, low if in RX mode
@@ -121,6 +122,7 @@ module spi_mode_config2 (
         tx_state=3'b000;
         tx_free_bytes=4'b1111;
         tx_packet_counter=6'b000000;
+        tx_exit_counter = 3'b000;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
@@ -246,13 +248,15 @@ module spi_mode_config2 (
                     end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)&&(tx_packet_counter==0)) begin
                         chip_state=SLAVE_OUTPUT[6:4];
                         mem_enable_a = 1'b0;
-                        byte_tracker_a=1'b0;
-                        if (chip_state==chip_TXFIFO_UNDERFLOW) begin
-                            byte_out_a = SFTX;
+                        if (tx_exit_counter==7) begin
+                            byte_out_a = SIDLE;
                             state_a = IDLE;
                             begin_pass_a = 1'b0;
+                            tx_exit_counter=0;
+                            byte_tracker_a = 1'b0;
                         end else begin
                             byte_out_a = SNOP;
+                            tx_exit_counter=tx_exit_counter+1;
                         end
                         
                         

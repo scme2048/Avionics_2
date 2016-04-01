@@ -34,7 +34,7 @@ Selecting top level module transceiver_integration
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
 
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":106:4:106:9|Trying to extract state machine for register tx_state
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register tx_state
 Extracted state machine for register tx_state
 State machine has 5 reachable states with original encodings of:
    000
@@ -42,7 +42,7 @@ State machine has 5 reachable states with original encodings of:
    011
    100
    111
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":106:4:106:9|Trying to extract state machine for register chip_state
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register chip_state
 Extracted state machine for register chip_state
 State machine has 8 reachable states with original encodings of:
    000
