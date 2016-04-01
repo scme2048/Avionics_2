@@ -88,6 +88,7 @@ module spi_mode_config2 (
     reg [2:0] tx_state;
     reg [2:0] tx_ss_counter;
     reg [3:0] tx_free_bytes;
+    reg [5:0] tx_packet_counter;
 
     // mem_pull high if in TX mode, low if in RX mode
     assign mem_enable = mem_enable_b;
@@ -118,6 +119,7 @@ module spi_mode_config2 (
         read_tracker=1'b0;
         tx_state=3'b000;
         tx_free_bytes=4'b1111;
+        tx_packet_counter=6'b000000;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
@@ -190,6 +192,7 @@ module spi_mode_config2 (
                         byte_out_a=SIDLE;
                         state_a=TX_MODE;
                         begin_pass_a=1'b1;
+                        byte_tracker_a=1'b0;
                         tx_state=3'b000;
                     end
                     
@@ -228,31 +231,30 @@ module spi_mode_config2 (
                         byte_out_a = SIDLE;
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
+                        byte_tracker_a=1'b0;
                     end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)) begin
                         mem_enable_a = 1'b0;
                         byte_tracker_a=1'b0;
                         byte_out_a = SIDLE;
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
-                    end else if ((~chip_rdy)&&(tx_state==3'b000)) begin
+                    end 
+                    else if ((~chip_rdy)&&(tx_state==3'b000)) begin
+                        byte_out_a = SFRX;
+                        start_a = 1'b1;
+                        tx_state=3'b001;
+                    end
+                    // THIS IS NEW!!!
+                    else if ((~chip_rdy)&&(tx_state==3'b001)) begin
                         byte_out_a = STX;
                         start_a = 1'b1;
                         tx_state=3'b011;
                     end
-                    //else if ((~chip_rdy)&&(tx_state==3'b001)) begin
-                        //byte_out_a=SNOP;
-                        //chip_state=SLAVE_OUTPUT[6:4];
-                        //if ((chip_state== chip_TX)&&(TX_ENABLE)) begin
-                            //byte_out_a=TXFIFO;
-                            //tx_state=3'b100;
-                        //end
-                    //end
                     else if ((tx_state==3'b011)&&(~chip_rdy)) begin
                         
                         mem_enable_a = 1'b0;
                         if ((byte_out_a==STX) || (tx_free_bytes>4'b0001)) begin
                             next_a = 1'b1;
-                            // Can add counter to 49 here
                             byte_out_a = TXFIFO;
                         end else begin
                             byte_out_a=SNOP;
@@ -268,7 +270,16 @@ module spi_mode_config2 (
                         if (byte_out_a==SNOP) begin
                             byte_out_a=SNOP;
                         end else begin
-                            byte_out_a = DATA_FROM_MEM; //not sure about timing w/ this
+                            if (tx_packet_counter==0) begin
+                                byte_out_a=8'h32;
+                                tx_packet_counter=tx_packet_counter+1;
+                            end else if (tx_packet_counter==50) begin
+                                byte_out_a = DATA_FROM_MEM;
+                                tx_packet_counter=0;
+                            end else begin
+                                byte_out_a = DATA_FROM_MEM;
+                                tx_packet_counter=tx_packet_counter+1;
+                            end
                         end
                         chip_state=SLAVE_OUTPUT[6:4];
                         tx_free_bytes=SLAVE_OUTPUT[3:0];
@@ -382,7 +393,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 14)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h32; //50
+                    byte_out_a = 8'h33; //51
                     byte_tracker_a = 1'b0;
                 end
                 //Packet Automation Control 1 ***************

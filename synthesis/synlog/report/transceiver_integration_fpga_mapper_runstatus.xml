@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>33</data>
+<data>32</data>
 <report_link name="more">
 <data>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\report\transceiver_integration_fpga_mapper_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:03s</data>
 </info>
 <info name="Peak Memory">
-<data>128MB</data>
+<data>131MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1459394070</data>
+<data type="timestamp">1459473823</data>
 </info>
 </job_info>
 </job_run_status>

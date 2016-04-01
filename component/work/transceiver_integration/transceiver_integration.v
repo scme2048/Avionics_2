@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Mar 30 21:14:12 2016
+// Created by SmartDesign Thu Mar 31 19:23:13 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -208,15 +208,16 @@ spi_master spi_master_0(
         .clk      ( CLK_26MHZ_0_GLA ),
         .rst      ( reset_pulse_0_RESET ),
         .miso     ( MISO ),
+        .ss       ( SS_net_0 ),
         .start    ( spi_mode_config_0_start ),
         .data_in  ( spi_mode_config_0_byte_out ),
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SCLK_net_0 ),
+        .data_out ( spi_master_0_data_out ),
         .busy     ( spi_master_0_busy ),
         .chip_rdy ( spi_master_0_chip_rdy ),
-        .new_data (  ),
-        .data_out ( spi_master_0_data_out ) 
+        .new_data (  ) 
         );
 
 //--------spi_mode_config2

@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.6
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
-Date: Wed Mar 30 21:15:55 2016
+Date: Thu Mar 31 19:24:58 2016
 
 
 Design: transceiver_integration
@@ -24,18 +24,18 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               CLK_26MHZ_0/Core:GLA
-Period (ns):                8.741
-Frequency (MHz):            114.403
+Period (ns):                8.737
+Frequency (MHz):            114.456
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
-External Setup (ns):        13.147
-External Hold (ns):         -1.488
-Min Clock-To-Out (ns):      1.684
-Max Clock-To-Out (ns):      7.698
+External Setup (ns):        10.240
+External Hold (ns):         -1.741
+Min Clock-To-Out (ns):      1.793
+Max Clock-To-Out (ns):      8.323
 
 Clock Domain:               clock_div_1MHZ_10HZ_0/clk_out:Q
-Period (ns):                11.173
-Frequency (MHz):            89.501
+Period (ns):                9.394
+Frequency (MHz):            106.451
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -44,8 +44,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               clock_div_26MHZ_1MHZ_0/clk_out:Q
-Period (ns):                7.174
-Frequency (MHz):            139.392
+Period (ns):                7.082
+Frequency (MHz):            141.203
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -54,8 +54,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               spi_mode_config_0/next_b/U1:Q
-Period (ns):                4.544
-Frequency (MHz):            220.070
+Period (ns):                4.291
+Frequency (MHz):            233.046
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -75,55 +75,55 @@ Clock Domain CLK_26MHZ_0/Core:GLA
 SET Register to Register
 
 Path 1
-  From:                        clock_div_26MHZ_1MHZ_0/counter[12]:CLK
-  To:                          clock_div_26MHZ_1MHZ_0/counter[12]:D
-  Delay (ns):                  0.579
+  From:                        clock_div_26MHZ_1MHZ_0/counter[9]:CLK
+  To:                          clock_div_26MHZ_1MHZ_0/counter[9]:D
+  Delay (ns):                  0.580
   Slack (ns):
-  Arrival (ns):                0.944
+  Arrival (ns):                0.937
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        clock_div_26MHZ_1MHZ_0/counter[9]:CLK
-  To:                          clock_div_26MHZ_1MHZ_0/counter[9]:D
-  Delay (ns):                  0.579
+  From:                        clock_div_26MHZ_1MHZ_0/clk_out:CLK
+  To:                          clock_div_26MHZ_1MHZ_0/clk_out:D
+  Delay (ns):                  0.590
   Slack (ns):
-  Arrival (ns):                0.944
+  Arrival (ns):                0.936
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
   From:                        clock_div_26MHZ_1MHZ_0/counter[4]:CLK
   To:                          clock_div_26MHZ_1MHZ_0/counter[4]:D
-  Delay (ns):                  0.581
+  Delay (ns):                  0.606
   Slack (ns):
-  Arrival (ns):                0.946
+  Arrival (ns):                0.963
   Required (ns):
   Hold (ns):                   0.000
 
 Path 4
-  From:                        clock_div_26MHZ_1MHZ_0/clk_out:CLK
-  To:                          clock_div_26MHZ_1MHZ_0/clk_out:D
-  Delay (ns):                  0.594
+  From:                        clock_div_26MHZ_1MHZ_0/counter[12]:CLK
+  To:                          clock_div_26MHZ_1MHZ_0/counter[12]:D
+  Delay (ns):                  0.622
   Slack (ns):
-  Arrival (ns):                0.954
+  Arrival (ns):                0.975
   Required (ns):
   Hold (ns):                   0.000
 
 Path 5
-  From:                        spi_master_0/data_out_q[6]/U1:CLK
-  To:                          spi_master_0/data_out_q[6]/U1:D
+  From:                        spi_master_0/data_out_q[7]/U1:CLK
+  To:                          spi_master_0/data_out_q[7]/U1:D
   Delay (ns):                  0.635
   Slack (ns):
-  Arrival (ns):                0.995
+  Arrival (ns):                0.990
   Required (ns):
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: clock_div_26MHZ_1MHZ_0/counter[12]:CLK
-  To: clock_div_26MHZ_1MHZ_0/counter[12]:D
-  data arrival time                              0.944
+  From: clock_div_26MHZ_1MHZ_0/counter[9]:CLK
+  To: clock_div_26MHZ_1MHZ_0/counter[9]:D
+  data arrival time                              0.937
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -131,27 +131,27 @@ Expanded Path 1
   0.000                        CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   0.000                        CLK_26MHZ_0/Core:GLA (r)
-               +     0.365          net: GLA
-  0.365                        clock_div_26MHZ_1MHZ_0/counter[12]:CLK (r)
+               +     0.357          net: GLA
+  0.357                        clock_div_26MHZ_1MHZ_0/counter[9]:CLK (r)
                +     0.196          cell: ADLIB:DFN1C0
-  0.561                        clock_div_26MHZ_1MHZ_0/counter[12]:Q (r)
-               +     0.143          net: clock_div_26MHZ_1MHZ_0/counter[12]
-  0.704                        clock_div_26MHZ_1MHZ_0/un5_counter_I_35:C (r)
+  0.553                        clock_div_26MHZ_1MHZ_0/counter[9]:Q (r)
+               +     0.145          net: clock_div_26MHZ_1MHZ_0/counter[9]
+  0.698                        clock_div_26MHZ_1MHZ_0/un5_counter_I_26:C (r)
                +     0.116          cell: ADLIB:AX1C
-  0.820                        clock_div_26MHZ_1MHZ_0/un5_counter_I_35:Y (r)
-               +     0.124          net: clock_div_26MHZ_1MHZ_0/I_35_0
-  0.944                        clock_div_26MHZ_1MHZ_0/counter[12]:D (r)
+  0.814                        clock_div_26MHZ_1MHZ_0/un5_counter_I_26:Y (r)
+               +     0.123          net: clock_div_26MHZ_1MHZ_0/I_26_0
+  0.937                        clock_div_26MHZ_1MHZ_0/counter[9]:D (r)
                                     
-  0.944                        data arrival time
+  0.937                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   N/C                          CLK_26MHZ_0/Core:GLA (r)
-               +     0.383          net: GLA
-  N/C                          clock_div_26MHZ_1MHZ_0/counter[12]:CLK (r)
+               +     0.374          net: GLA
+  N/C                          clock_div_26MHZ_1MHZ_0/counter[9]:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1C0
-  N/C                          clock_div_26MHZ_1MHZ_0/counter[12]:D
+  N/C                          clock_div_26MHZ_1MHZ_0/counter[9]:D
 
 
 END SET Register to Register
@@ -163,58 +163,58 @@ SET External Hold
 Path 1
   From:                        MISO
   To:                          spi_master_0/data_q[0]/U1:D
-  Delay (ns):                  1.913
+  Delay (ns):                  2.186
   Slack (ns):
-  Arrival (ns):                1.913
+  Arrival (ns):                2.186
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -1.488
+  External Hold (ns):          -1.741
 
 Path 2
   From:                        CLK_48MHZ
-  To:                          spi_mode_config_0/tx_ss_counter[2]:D
-  Delay (ns):                  3.646
+  To:                          spi_mode_config_0/tx_ss_counter[0]:D
+  Delay (ns):                  3.038
   Slack (ns):
-  Arrival (ns):                3.646
+  Arrival (ns):                3.038
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -3.213
+  External Hold (ns):          -2.610
 
 Path 3
   From:                        CLK_48MHZ
-  To:                          spi_mode_config_0/tx_ss_counter[0]:D
-  Delay (ns):                  3.805
+  To:                          spi_mode_config_0/tx_ss_counter[1]:D
+  Delay (ns):                  3.229
   Slack (ns):
-  Arrival (ns):                3.805
+  Arrival (ns):                3.229
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -3.372
+  External Hold (ns):          -2.801
 
 Path 4
-  From:                        CLK_48MHZ
-  To:                          spi_mode_config_0/tx_ss_counter[1]:D
-  Delay (ns):                  3.828
-  Slack (ns):
-  Arrival (ns):                3.828
-  Required (ns):
-  Hold (ns):                   0.000
-  External Hold (ns):          -3.398
-
-Path 5
   From:                        BUF2_PBRST_T9
   To:                          spi_mode_config_0/tx_ss_counter[0]:D
-  Delay (ns):                  3.831
+  Delay (ns):                  3.308
   Slack (ns):
-  Arrival (ns):                3.831
+  Arrival (ns):                3.308
   Required (ns):
   Hold (ns):                   0.000
-  External Hold (ns):          -3.398
+  External Hold (ns):          -2.880
+
+Path 5
+  From:                        CLK_48MHZ
+  To:                          spi_mode_config_0/tx_ss_counter[2]:D
+  Delay (ns):                  3.402
+  Slack (ns):
+  Arrival (ns):                3.402
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -2.977
 
 
 Expanded Path 1
   From: MISO
   To: spi_master_0/data_q[0]/U1:D
-  data arrival time                              1.913
+  data arrival time                              2.186
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -228,24 +228,24 @@ Expanded Path 1
   0.209                        MISO_pad/U0/U1:YIN (f)
                +     0.014          cell: ADLIB:IOIN_IB
   0.223                        MISO_pad/U0/U1:Y (f)
-               +     1.035          net: MISO_c
-  1.258                        spi_master_0/data_q_RNO[0]:A (f)
+               +     1.303          net: MISO_c
+  1.526                        spi_master_0/data_q_RNO[0]:A (f)
                +     0.213          cell: ADLIB:MX2
-  1.471                        spi_master_0/data_q_RNO[0]:Y (f)
-               +     0.122          net: spi_master_0/data_d[0]
-  1.593                        spi_master_0/data_q[0]/U0:A (f)
-               +     0.199          cell: ADLIB:MX2
-  1.792                        spi_master_0/data_q[0]/U0:Y (f)
-               +     0.121          net: spi_master_0/data_q[0]/Y
-  1.913                        spi_master_0/data_q[0]/U1:D (f)
+  1.739                        spi_master_0/data_q_RNO[0]:Y (f)
+               +     0.125          net: spi_master_0/data_d[0]
+  1.864                        spi_master_0/data_q[0]/U0:B (f)
+               +     0.197          cell: ADLIB:MX2
+  2.061                        spi_master_0/data_q[0]/U0:Y (f)
+               +     0.125          net: spi_master_0/data_q[0]/Y
+  2.186                        spi_master_0/data_q[0]/U1:D (f)
                                     
-  1.913                        data arrival time
+  2.186                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   N/C                          CLK_26MHZ_0/Core:GLA (r)
-               +     0.425          net: GLA
+               +     0.445          net: GLA
   N/C                          spi_master_0/data_q[0]/U1:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1C0
   N/C                          spi_master_0/data_q[0]/U1:D
@@ -260,53 +260,53 @@ SET Clock to Output
 Path 1
   From:                        spi_master_0/data_out_q[3]/U1:CLK
   To:                          ds3
-  Delay (ns):                  1.331
+  Delay (ns):                  1.438
   Slack (ns):
-  Arrival (ns):                1.684
+  Arrival (ns):                1.793
   Required (ns):
-  Clock to Out (ns):           1.684
+  Clock to Out (ns):           1.793
 
 Path 2
-  From:                        spi_master_0/data_out_q[5]/U1:CLK
-  To:                          ds5
-  Delay (ns):                  1.610
-  Slack (ns):
-  Arrival (ns):                1.974
-  Required (ns):
-  Clock to Out (ns):           1.974
-
-Path 3
   From:                        spi_mode_config_0/ss_b/U1:CLK
   To:                          SS
-  Delay (ns):                  1.650
+  Delay (ns):                  1.470
   Slack (ns):
-  Arrival (ns):                1.996
+  Arrival (ns):                1.821
   Required (ns):
-  Clock to Out (ns):           1.996
+  Clock to Out (ns):           1.821
+
+Path 3
+  From:                        spi_master_0/data_out_q[5]/U1:CLK
+  To:                          ds5
+  Delay (ns):                  1.566
+  Slack (ns):
+  Arrival (ns):                1.915
+  Required (ns):
+  Clock to Out (ns):           1.915
 
 Path 4
-  From:                        spi_master_0/data_out_q[7]/U1:CLK
-  To:                          ds7
-  Delay (ns):                  1.657
+  From:                        spi_master_0/mosi_q/U1:CLK
+  To:                          MOSI
+  Delay (ns):                  1.622
   Slack (ns):
-  Arrival (ns):                2.010
+  Arrival (ns):                1.971
   Required (ns):
-  Clock to Out (ns):           2.010
+  Clock to Out (ns):           1.971
 
 Path 5
-  From:                        spi_master_0/data_out_q[1]/U1:CLK
-  To:                          ds1
-  Delay (ns):                  1.663
+  From:                        spi_master_0/data_out_q[0]/U1:CLK
+  To:                          ds0
+  Delay (ns):                  1.807
   Slack (ns):
-  Arrival (ns):                2.014
+  Arrival (ns):                2.169
   Required (ns):
-  Clock to Out (ns):           2.014
+  Clock to Out (ns):           2.169
 
 
 Expanded Path 1
   From: spi_master_0/data_out_q[3]/U1:CLK
   To: ds3
-  data arrival time                              1.684
+  data arrival time                              1.793
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -314,22 +314,22 @@ Expanded Path 1
   0.000                        CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   0.000                        CLK_26MHZ_0/Core:GLA (r)
-               +     0.353          net: GLA
-  0.353                        spi_master_0/data_out_q[3]/U1:CLK (r)
+               +     0.355          net: GLA
+  0.355                        spi_master_0/data_out_q[3]/U1:CLK (r)
                +     0.196          cell: ADLIB:DFN1C0
-  0.549                        spi_master_0/data_out_q[3]/U1:Q (r)
-               +     0.473          net: ds3_c
-  1.022                        ds3_pad/U0/U1:D (r)
+  0.551                        spi_master_0/data_out_q[3]/U1:Q (r)
+               +     0.580          net: ds3_c
+  1.131                        ds3_pad/U0/U1:D (r)
                +     0.220          cell: ADLIB:IOTRI_OB_EB
-  1.242                        ds3_pad/U0/U1:DOUT (r)
+  1.351                        ds3_pad/U0/U1:DOUT (r)
                +     0.000          net: ds3_pad/U0/NET1
-  1.242                        ds3_pad/U0/U0:D (r)
+  1.351                        ds3_pad/U0/U0:D (r)
                +     0.442          cell: ADLIB:IOPAD_TRI
-  1.684                        ds3_pad/U0/U0:PAD (r)
+  1.793                        ds3_pad/U0/U0:PAD (r)
                +     0.000          net: ds3
-  1.684                        ds3 (r)
+  1.793                        ds3 (r)
                                     
-  1.684                        data arrival time
+  1.793                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
@@ -355,59 +355,59 @@ SET External Removal
 
 Path 1
   From:                        CLK_48MHZ
-  To:                          clock_div_26MHZ_1MHZ_0/counter[3]:CLR
-  Delay (ns):                  2.272
+  To:                          clock_div_26MHZ_1MHZ_0/clk_out:PRE
+  Delay (ns):                  1.505
   Slack (ns):
-  Arrival (ns):                2.272
+  Arrival (ns):                1.505
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.827
+  External Removal (ns):       -1.083
 
 Path 2
   From:                        CLK_48MHZ
-  To:                          clock_div_26MHZ_1MHZ_0/counter[9]:CLR
-  Delay (ns):                  2.425
+  To:                          clock_div_26MHZ_1MHZ_0/counter[6]:CLR
+  Delay (ns):                  1.801
   Slack (ns):
-  Arrival (ns):                2.425
+  Arrival (ns):                1.801
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.980
+  External Removal (ns):       -1.365
 
 Path 3
   From:                        CLK_48MHZ
-  To:                          spi_mode_config_0/rst_cntr[0]:CLR
-  Delay (ns):                  2.500
+  To:                          clock_div_26MHZ_1MHZ_0/counter[9]:CLR
+  Delay (ns):                  1.839
   Slack (ns):
-  Arrival (ns):                2.500
+  Arrival (ns):                1.839
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -2.057
+  External Removal (ns):       -1.403
 
 Path 4
   From:                        CLK_48MHZ
-  To:                          clock_div_26MHZ_1MHZ_0/counter[0]:PRE
-  Delay (ns):                  2.496
+  To:                          clock_div_26MHZ_1MHZ_0/counter[7]:CLR
+  Delay (ns):                  1.930
   Slack (ns):
-  Arrival (ns):                2.496
+  Arrival (ns):                1.930
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -2.057
+  External Removal (ns):       -1.491
 
 Path 5
   From:                        BUF2_PBRST_T9
-  To:                          spi_mode_config_0/rst_cntr[0]:CLR
-  Delay (ns):                  2.526
+  To:                          clock_div_26MHZ_1MHZ_0/clk_out:PRE
+  Delay (ns):                  1.917
   Slack (ns):
-  Arrival (ns):                2.526
+  Arrival (ns):                1.917
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -2.083
+  External Removal (ns):       -1.495
 
 
 Expanded Path 1
   From: CLK_48MHZ
-  To: clock_div_26MHZ_1MHZ_0/counter[3]:CLR
-  data arrival time                              2.272
+  To: clock_div_26MHZ_1MHZ_0/clk_out:PRE
+  data arrival time                              1.505
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -421,23 +421,23 @@ Expanded Path 1
   0.291                        CLK_48MHZ_pad/U0/U1:YIN (r)
                +     0.014          cell: ADLIB:IOIN_IB
   0.305                        CLK_48MHZ_pad/U0/U1:Y (r)
-               +     1.112          net: CLK_48MHZ_c
-  1.417                        reset_pulse_0/RESET_5:B (r)
+               +     0.887          net: CLK_48MHZ_c
+  1.192                        reset_pulse_0/RESET_6:B (r)
                +     0.200          cell: ADLIB:OR2
-  1.617                        reset_pulse_0/RESET_5:Y (r)
-               +     0.655          net: reset_pulse_0_RESET_5
-  2.272                        clock_div_26MHZ_1MHZ_0/counter[3]:CLR (r)
+  1.392                        reset_pulse_0/RESET_6:Y (r)
+               +     0.113          net: reset_pulse_0_RESET_6
+  1.505                        clock_div_26MHZ_1MHZ_0/clk_out:PRE (r)
                                     
-  2.272                        data arrival time
+  1.505                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CLK_26MHZ_0/Core:GLA
                +     0.000          Clock source
   N/C                          CLK_26MHZ_0/Core:GLA (r)
-               +     0.445          net: GLA
-  N/C                          clock_div_26MHZ_1MHZ_0/counter[3]:CLK (r)
-               +     0.000          Library removal time: ADLIB:DFN1C0
-  N/C                          clock_div_26MHZ_1MHZ_0/counter[3]:CLR
+               +     0.422          net: GLA
+  N/C                          clock_div_26MHZ_1MHZ_0/clk_out:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1P0
+  N/C                          clock_div_26MHZ_1MHZ_0/clk_out:PRE
 
 
 END SET External Removal
@@ -459,45 +459,45 @@ SET Register to Register
 Path 1
   From:                        orbit_control_0/cntr[6]:CLK
   To:                          orbit_control_0/cntr[6]:D
-  Delay (ns):                  0.577
+  Delay (ns):                  0.576
   Slack (ns):
-  Arrival (ns):                2.525
+  Arrival (ns):                2.778
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        orbit_control_0/cntr[1]:CLK
-  To:                          orbit_control_0/cntr[1]:D
-  Delay (ns):                  0.579
+  From:                        orbit_control_0/cntr[7]:CLK
+  To:                          orbit_control_0/cntr[7]:D
+  Delay (ns):                  0.577
   Slack (ns):
-  Arrival (ns):                2.529
+  Arrival (ns):                2.779
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
-  From:                        orbit_control_0/cntr[5]:CLK
-  To:                          orbit_control_0/cntr[5]:D
-  Delay (ns):                  0.578
+  From:                        orbit_control_0/cntr[8]:CLK
+  To:                          orbit_control_0/cntr[8]:D
+  Delay (ns):                  0.684
   Slack (ns):
-  Arrival (ns):                2.510
+  Arrival (ns):                2.887
   Required (ns):
   Hold (ns):                   0.000
 
 Path 4
-  From:                        orbit_control_0/cntr[0]:CLK
-  To:                          orbit_control_0/cntr[0]:D
-  Delay (ns):                  0.599
+  From:                        orbit_control_0/cntr[11]:CLK
+  To:                          orbit_control_0/cntr[11]:D
+  Delay (ns):                  0.706
   Slack (ns):
-  Arrival (ns):                2.547
+  Arrival (ns):                2.894
   Required (ns):
   Hold (ns):                   0.000
 
 Path 5
-  From:                        orbit_control_0/cntr[7]:CLK
-  To:                          orbit_control_0/cntr[7]:D
-  Delay (ns):                  0.603
+  From:                        orbit_control_0/cntr[10]:CLK
+  To:                          orbit_control_0/cntr[10]:D
+  Delay (ns):                  0.713
   Slack (ns):
-  Arrival (ns):                2.551
+  Arrival (ns):                2.906
   Required (ns):
   Hold (ns):                   0.000
 
@@ -505,7 +505,7 @@ Path 5
 Expanded Path 1
   From: orbit_control_0/cntr[6]:CLK
   To: orbit_control_0/cntr[6]:D
-  data arrival time                              2.525
+  data arrival time                              2.778
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -513,32 +513,32 @@ Expanded Path 1
   0.000                        clock_div_1MHZ_10HZ_0/clk_out:Q
                +     0.000          Clock source
   0.000                        clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     1.327          net: clock_div_1MHZ_10HZ_0/clk_out_i
-  1.327                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
+               +     1.588          net: clock_div_1MHZ_10HZ_0/clk_out_i
+  1.588                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
                +     0.252          cell: ADLIB:CLKINT
-  1.579                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
-               +     0.369          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
-  1.948                        orbit_control_0/cntr[6]:CLK (r)
+  1.840                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
+               +     0.362          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  2.202                        orbit_control_0/cntr[6]:CLK (r)
                +     0.196          cell: ADLIB:DFN1C0
-  2.144                        orbit_control_0/cntr[6]:Q (r)
-               +     0.145          net: orbit_control_0/cntr[6]
-  2.289                        orbit_control_0/cntr_RNO[6]:A (r)
+  2.398                        orbit_control_0/cntr[6]:Q (r)
+               +     0.144          net: orbit_control_0/cntr[6]
+  2.542                        orbit_control_0/cntr_RNO[6]:A (r)
                +     0.117          cell: ADLIB:XA1
-  2.406                        orbit_control_0/cntr_RNO[6]:Y (r)
+  2.659                        orbit_control_0/cntr_RNO[6]:Y (r)
                +     0.119          net: orbit_control_0/cntr_n6
-  2.525                        orbit_control_0/cntr[6]:D (r)
+  2.778                        orbit_control_0/cntr[6]:D (r)
                                     
-  2.525                        data arrival time
+  2.778                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     1.327          net: clock_div_1MHZ_10HZ_0/clk_out_i
+               +     1.588          net: clock_div_1MHZ_10HZ_0/clk_out_i
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
                +     0.252          cell: ADLIB:CLKINT
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
-               +     0.388          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+               +     0.379          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
   N/C                          orbit_control_0/cntr[6]:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1C0
   N/C                          orbit_control_0/cntr[6]:D
@@ -576,59 +576,59 @@ SET External Removal
 
 Path 1
   From:                        CLK_48MHZ
-  To:                          orbit_control_0/cntr[5]:CLR
-  Delay (ns):                  2.563
+  To:                          orbit_control_0/cntr[8]:CLR
+  Delay (ns):                  1.902
   Slack (ns):
-  Arrival (ns):                2.563
+  Arrival (ns):                1.902
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.175
+  External Removal (ns):       0.822
 
 Path 2
   From:                        CLK_48MHZ
-  To:                          orbit_control_0/cntr[0]:CLR
-  Delay (ns):                  2.684
+  To:                          orbit_control_0/cntr[6]:CLR
+  Delay (ns):                  1.975
   Slack (ns):
-  Arrival (ns):                2.684
+  Arrival (ns):                1.975
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.276
+  External Removal (ns):       0.748
 
 Path 3
-  From:                        BUF2_PBRST_T9
-  To:                          orbit_control_0/cntr[10]:CLR
-  Delay (ns):                  2.777
+  From:                        CLK_48MHZ
+  To:                          orbit_control_0/cntr[7]:CLR
+  Delay (ns):                  2.010
   Slack (ns):
-  Arrival (ns):                2.777
+  Arrival (ns):                2.010
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.389
+  External Removal (ns):       0.713
 
 Path 4
-  From:                        CLK_48MHZ
-  To:                          orbit_control_0/cntr[9]:CLR
-  Delay (ns):                  2.807
+  From:                        BUF2_PBRST_T9
+  To:                          orbit_control_0/cntr[8]:CLR
+  Delay (ns):                  2.314
   Slack (ns):
-  Arrival (ns):                2.807
+  Arrival (ns):                2.314
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.399
+  External Removal (ns):       0.410
 
 Path 5
   From:                        BUF2_PBRST_T9
-  To:                          orbit_control_0/cntr[11]:CLR
-  Delay (ns):                  2.814
+  To:                          orbit_control_0/cntr[6]:CLR
+  Delay (ns):                  2.387
   Slack (ns):
-  Arrival (ns):                2.814
+  Arrival (ns):                2.387
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.426
+  External Removal (ns):       0.336
 
 
 Expanded Path 1
   From: CLK_48MHZ
-  To: orbit_control_0/cntr[5]:CLR
-  data arrival time                              2.563
+  To: orbit_control_0/cntr[8]:CLR
+  data arrival time                              1.902
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -642,27 +642,27 @@ Expanded Path 1
   0.291                        CLK_48MHZ_pad/U0/U1:YIN (r)
                +     0.014          cell: ADLIB:IOIN_IB
   0.305                        CLK_48MHZ_pad/U0/U1:Y (r)
-               +     1.485          net: CLK_48MHZ_c
-  1.790                        reset_pulse_0/RESET_6:B (r)
+               +     0.887          net: CLK_48MHZ_c
+  1.192                        reset_pulse_0/RESET_6:B (r)
                +     0.200          cell: ADLIB:OR2
-  1.990                        reset_pulse_0/RESET_6:Y (r)
-               +     0.573          net: reset_pulse_0_RESET_6
-  2.563                        orbit_control_0/cntr[5]:CLR (r)
+  1.392                        reset_pulse_0/RESET_6:Y (r)
+               +     0.510          net: reset_pulse_0_RESET_6
+  1.902                        orbit_control_0/cntr[8]:CLR (r)
                                     
-  2.563                        data arrival time
+  1.902                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     1.646          net: clock_div_1MHZ_10HZ_0/clk_out_i
+               +     1.970          net: clock_div_1MHZ_10HZ_0/clk_out_i
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
                +     0.313          cell: ADLIB:CLKINT
   N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
-               +     0.429          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
-  N/C                          orbit_control_0/cntr[5]:CLK (r)
+               +     0.441          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  N/C                          orbit_control_0/cntr[8]:CLK (r)
                +     0.000          Library removal time: ADLIB:DFN1C0
-  N/C                          orbit_control_0/cntr[5]:CLR
+  N/C                          orbit_control_0/cntr[8]:CLR
 
 
 END SET External Removal
@@ -682,55 +682,55 @@ Clock Domain clock_div_26MHZ_1MHZ_0/clk_out:Q
 SET Register to Register
 
 Path 1
-  From:                        clock_div_1MHZ_10HZ_0/clk_out:CLK
-  To:                          clock_div_1MHZ_10HZ_0/clk_out:D
-  Delay (ns):                  0.598
+  From:                        clock_div_1MHZ_10HZ_0/counter[12]:CLK
+  To:                          clock_div_1MHZ_10HZ_0/counter[12]:D
+  Delay (ns):                  0.555
   Slack (ns):
-  Arrival (ns):                2.056
+  Arrival (ns):                1.833
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        clock_div_1MHZ_10HZ_0/counter[12]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/counter[12]:D
-  Delay (ns):                  0.630
+  From:                        clock_div_1MHZ_10HZ_0/clk_out:CLK
+  To:                          clock_div_1MHZ_10HZ_0/clk_out:D
+  Delay (ns):                  0.586
   Slack (ns):
-  Arrival (ns):                2.088
+  Arrival (ns):                1.865
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
-  From:                        clock_div_1MHZ_10HZ_0/counter[0]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/counter[1]:D
-  Delay (ns):                  0.653
+  From:                        clock_div_1MHZ_10HZ_0/counter[2]:CLK
+  To:                          clock_div_1MHZ_10HZ_0/counter[2]:D
+  Delay (ns):                  0.586
   Slack (ns):
-  Arrival (ns):                2.114
+  Arrival (ns):                1.865
   Required (ns):
   Hold (ns):                   0.000
 
 Path 4
-  From:                        clock_div_1MHZ_10HZ_0/counter[7]:CLK
-  To:                          clock_div_1MHZ_10HZ_0/counter[7]:D
-  Delay (ns):                  0.657
+  From:                        clock_div_1MHZ_10HZ_0/counter[0]:CLK
+  To:                          clock_div_1MHZ_10HZ_0/counter[1]:D
+  Delay (ns):                  0.659
   Slack (ns):
-  Arrival (ns):                2.115
+  Arrival (ns):                1.936
   Required (ns):
   Hold (ns):                   0.000
 
 Path 5
   From:                        clock_div_1MHZ_10HZ_0/counter[0]:CLK
   To:                          clock_div_1MHZ_10HZ_0/counter[0]:D
-  Delay (ns):                  0.657
+  Delay (ns):                  0.659
   Slack (ns):
-  Arrival (ns):                2.118
+  Arrival (ns):                1.936
   Required (ns):
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: clock_div_1MHZ_10HZ_0/clk_out:CLK
-  To: clock_div_1MHZ_10HZ_0/clk_out:D
-  data arrival time                              2.056
+  From: clock_div_1MHZ_10HZ_0/counter[12]:CLK
+  To: clock_div_1MHZ_10HZ_0/counter[12]:D
+  data arrival time                              1.833
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -738,35 +738,35 @@ Expanded Path 1
   0.000                        clock_div_26MHZ_1MHZ_0/clk_out:Q
                +     0.000          Clock source
   0.000                        clock_div_26MHZ_1MHZ_0/clk_out:Q (r)
-               +     0.852          net: clock_div_26MHZ_1MHZ_0/clk_out_i
-  0.852                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
+               +     0.677          net: clock_div_26MHZ_1MHZ_0/clk_out_i
+  0.677                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
                +     0.252          cell: ADLIB:CLKINT
-  1.104                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
-               +     0.354          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
-  1.458                        clock_div_1MHZ_10HZ_0/clk_out:CLK (r)
-               +     0.196          cell: ADLIB:DFN1P0
-  1.654                        clock_div_1MHZ_10HZ_0/clk_out:Q (r)
-               +     0.125          net: clock_div_1MHZ_10HZ_0/clk_out_i
-  1.779                        clock_div_1MHZ_10HZ_0/clk_out_RNO:C (r)
-               +     0.156          cell: ADLIB:AX1C
-  1.935                        clock_div_1MHZ_10HZ_0/clk_out_RNO:Y (f)
-               +     0.121          net: clock_div_1MHZ_10HZ_0/clk_out_RNO
-  2.056                        clock_div_1MHZ_10HZ_0/clk_out:D (f)
+  0.929                        clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
+               +     0.349          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
+  1.278                        clock_div_1MHZ_10HZ_0/counter[12]:CLK (r)
+               +     0.196          cell: ADLIB:DFN1C0
+  1.474                        clock_div_1MHZ_10HZ_0/counter[12]:Q (r)
+               +     0.119          net: clock_div_1MHZ_10HZ_0/counter[12]
+  1.593                        clock_div_1MHZ_10HZ_0/un5_counter_I_35:C (r)
+               +     0.116          cell: ADLIB:AX1C
+  1.709                        clock_div_1MHZ_10HZ_0/un5_counter_I_35:Y (r)
+               +     0.124          net: clock_div_1MHZ_10HZ_0/I_35
+  1.833                        clock_div_1MHZ_10HZ_0/counter[12]:D (r)
                                     
-  2.056                        data arrival time
+  1.833                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q (r)
-               +     0.852          net: clock_div_26MHZ_1MHZ_0/clk_out_i
+               +     0.677          net: clock_div_26MHZ_1MHZ_0/clk_out_i
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
                +     0.252          cell: ADLIB:CLKINT
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
-               +     0.370          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
-  N/C                          clock_div_1MHZ_10HZ_0/clk_out:CLK (r)
-               +     0.000          Library hold time: ADLIB:DFN1P0
-  N/C                          clock_div_1MHZ_10HZ_0/clk_out:D
+               +     0.364          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
+  N/C                          clock_div_1MHZ_10HZ_0/counter[12]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C0
+  N/C                          clock_div_1MHZ_10HZ_0/counter[12]:D
 
 
 END SET Register to Register
@@ -801,59 +801,59 @@ SET External Removal
 
 Path 1
   From:                        CLK_48MHZ
-  To:                          clock_div_1MHZ_10HZ_0/counter[14]:CLR
-  Delay (ns):                  2.047
+  To:                          clock_div_1MHZ_10HZ_0/counter[1]:CLR
+  Delay (ns):                  2.067
   Slack (ns):
-  Arrival (ns):                2.047
+  Arrival (ns):                2.067
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.246
+  External Removal (ns):       -0.488
 
 Path 2
   From:                        CLK_48MHZ
-  To:                          clock_div_1MHZ_10HZ_0/counter[12]:CLR
-  Delay (ns):                  2.188
+  To:                          clock_div_1MHZ_10HZ_0/counter[7]:CLR
+  Delay (ns):                  2.170
   Slack (ns):
-  Arrival (ns):                2.188
+  Arrival (ns):                2.170
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.387
+  External Removal (ns):       -0.585
 
 Path 3
   From:                        CLK_48MHZ
-  To:                          clock_div_1MHZ_10HZ_0/counter[13]:CLR
-  Delay (ns):                  2.288
+  To:                          clock_div_1MHZ_10HZ_0/counter[2]:CLR
+  Delay (ns):                  2.276
   Slack (ns):
-  Arrival (ns):                2.288
+  Arrival (ns):                2.276
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.487
+  External Removal (ns):       -0.697
 
 Path 4
   From:                        CLK_48MHZ
-  To:                          clock_div_1MHZ_10HZ_0/counter[2]:CLR
-  Delay (ns):                  2.318
+  To:                          clock_div_1MHZ_10HZ_0/counter[0]:PRE
+  Delay (ns):                  2.275
   Slack (ns):
-  Arrival (ns):                2.318
+  Arrival (ns):                2.275
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.514
+  External Removal (ns):       -0.699
 
 Path 5
   From:                        CLK_48MHZ
-  To:                          clock_div_1MHZ_10HZ_0/counter[0]:PRE
+  To:                          clock_div_1MHZ_10HZ_0/counter[13]:CLR
   Delay (ns):                  2.318
   Slack (ns):
   Arrival (ns):                2.318
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -0.514
+  External Removal (ns):       -0.739
 
 
 Expanded Path 1
   From: CLK_48MHZ
-  To: clock_div_1MHZ_10HZ_0/counter[14]:CLR
-  data arrival time                              2.047
+  To: clock_div_1MHZ_10HZ_0/counter[1]:CLR
+  data arrival time                              2.067
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -867,27 +867,27 @@ Expanded Path 1
   0.291                        CLK_48MHZ_pad/U0/U1:YIN (r)
                +     0.014          cell: ADLIB:IOIN_IB
   0.305                        CLK_48MHZ_pad/U0/U1:Y (r)
-               +     1.119          net: CLK_48MHZ_c
-  1.424                        reset_pulse_0/RESET:B (r)
+               +     0.887          net: CLK_48MHZ_c
+  1.192                        reset_pulse_0/RESET_6:B (r)
                +     0.200          cell: ADLIB:OR2
-  1.624                        reset_pulse_0/RESET:Y (r)
-               +     0.423          net: reset_pulse_0_RESET
-  2.047                        clock_div_1MHZ_10HZ_0/counter[14]:CLR (r)
+  1.392                        reset_pulse_0/RESET_6:Y (r)
+               +     0.675          net: reset_pulse_0_RESET_6
+  2.067                        clock_div_1MHZ_10HZ_0/counter[1]:CLR (r)
                                     
-  2.047                        data arrival time
+  2.067                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q
                +     0.000          Clock source
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out:Q (r)
-               +     1.057          net: clock_div_26MHZ_1MHZ_0/clk_out_i
+               +     0.840          net: clock_div_26MHZ_1MHZ_0/clk_out_i
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:A (r)
                +     0.313          cell: ADLIB:CLKINT
   N/C                          clock_div_26MHZ_1MHZ_0/clk_out_RNIH497:Y (r)
-               +     0.431          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
-  N/C                          clock_div_1MHZ_10HZ_0/counter[14]:CLK (r)
+               +     0.426          net: clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
+  N/C                          clock_div_1MHZ_10HZ_0/counter[1]:CLK (r)
                +     0.000          Library removal time: ADLIB:DFN1C0
-  N/C                          clock_div_1MHZ_10HZ_0/counter[14]:CLR
+  N/C                          clock_div_1MHZ_10HZ_0/counter[1]:CLR
 
 
 END SET External Removal
@@ -909,45 +909,45 @@ SET Register to Register
 Path 1
   From:                        read_buffer_0/position[0]:CLK
   To:                          read_buffer_0/position[0]:D
-  Delay (ns):                  0.607
+  Delay (ns):                  0.634
   Slack (ns):
-  Arrival (ns):                2.848
+  Arrival (ns):                2.865
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        read_buffer_0/byte_out[2]/U1:CLK
-  To:                          read_buffer_0/byte_out[2]/U1:D
-  Delay (ns):                  0.635
-  Slack (ns):
-  Arrival (ns):                2.876
-  Required (ns):
-  Hold (ns):                   0.000
-
-Path 3
   From:                        read_buffer_0/byte_out[0]/U1:CLK
   To:                          read_buffer_0/byte_out[0]/U1:D
   Delay (ns):                  0.635
   Slack (ns):
-  Arrival (ns):                2.873
+  Arrival (ns):                2.850
   Required (ns):
   Hold (ns):                   0.000
 
-Path 4
+Path 3
   From:                        read_buffer_0/byte_out[6]/U1:CLK
   To:                          read_buffer_0/byte_out[6]/U1:D
   Delay (ns):                  0.635
   Slack (ns):
-  Arrival (ns):                2.876
+  Arrival (ns):                2.850
   Required (ns):
   Hold (ns):                   0.000
 
-Path 5
+Path 4
   From:                        read_buffer_0/byte_out[3]/U1:CLK
   To:                          read_buffer_0/byte_out[3]/U1:D
   Delay (ns):                  0.636
   Slack (ns):
-  Arrival (ns):                2.873
+  Arrival (ns):                2.851
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 5
+  From:                        read_buffer_0/byte_out[1]/U1:CLK
+  To:                          read_buffer_0/byte_out[1]/U1:D
+  Delay (ns):                  0.646
+  Slack (ns):
+  Arrival (ns):                2.877
   Required (ns):
   Hold (ns):                   0.000
 
@@ -955,7 +955,7 @@ Path 5
 Expanded Path 1
   From: read_buffer_0/position[0]:CLK
   To: read_buffer_0/position[0]:D
-  data arrival time                              2.848
+  data arrival time                              2.865
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -963,32 +963,32 @@ Expanded Path 1
   0.000                        spi_mode_config_0/next_b/U1:Q
                +     0.000          Clock source
   0.000                        spi_mode_config_0/next_b/U1:Q (r)
-               +     1.648          net: spi_mode_config_0/next_b_i
-  1.648                        spi_mode_config_0/next_b_RNI28CE:A (r)
+               +     1.625          net: spi_mode_config_0/next_b_i
+  1.625                        spi_mode_config_0/next_b_RNI28CE:A (r)
                +     0.243          cell: ADLIB:CLKINT
-  1.891                        spi_mode_config_0/next_b_RNI28CE:Y (r)
-               +     0.350          net: spi_mode_config_0_next_cmd
-  2.241                        read_buffer_0/position[0]:CLK (r)
+  1.868                        spi_mode_config_0/next_b_RNI28CE:Y (r)
+               +     0.363          net: spi_mode_config_0_next_cmd
+  2.231                        read_buffer_0/position[0]:CLK (r)
                +     0.196          cell: ADLIB:DFN1C0
-  2.437                        read_buffer_0/position[0]:Q (r)
-               +     0.172          net: read_buffer_0/position[0]
-  2.609                        read_buffer_0/un1_position_2_I_8:A (r)
+  2.427                        read_buffer_0/position[0]:Q (r)
+               +     0.188          net: read_buffer_0/position[0]
+  2.615                        read_buffer_0/un1_position_2_I_8:A (r)
                +     0.116          cell: ADLIB:XOR2
-  2.725                        read_buffer_0/un1_position_2_I_8:Y (r)
-               +     0.123          net: read_buffer_0/DWACT_ADD_CI_0_partial_sum[0]
-  2.848                        read_buffer_0/position[0]:D (r)
+  2.731                        read_buffer_0/un1_position_2_I_8:Y (r)
+               +     0.134          net: read_buffer_0/DWACT_ADD_CI_0_partial_sum[0]
+  2.865                        read_buffer_0/position[0]:D (r)
                                     
-  2.848                        data arrival time
+  2.865                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          spi_mode_config_0/next_b/U1:Q
                +     0.000          Clock source
   N/C                          spi_mode_config_0/next_b/U1:Q (r)
-               +     1.648          net: spi_mode_config_0/next_b_i
+               +     1.625          net: spi_mode_config_0/next_b_i
   N/C                          spi_mode_config_0/next_b_RNI28CE:A (r)
                +     0.243          cell: ADLIB:CLKINT
   N/C                          spi_mode_config_0/next_b_RNI28CE:Y (r)
-               +     0.365          net: spi_mode_config_0_next_cmd
+               +     0.381          net: spi_mode_config_0_next_cmd
   N/C                          read_buffer_0/position[0]:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1C0
   N/C                          read_buffer_0/position[0]:D
@@ -1027,58 +1027,58 @@ SET External Removal
 Path 1
   From:                        CLK_48MHZ
   To:                          read_buffer_0/position[0]:CLR
-  Delay (ns):                  2.492
+  Delay (ns):                  2.237
   Slack (ns):
-  Arrival (ns):                2.492
+  Arrival (ns):                2.237
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       0.280
+  External Removal (ns):       0.522
 
 Path 2
   From:                        CLK_48MHZ
-  To:                          read_buffer_0/byte_out[2]/U1:CLR
-  Delay (ns):                  2.506
+  To:                          read_buffer_0/position[1]:CLR
+  Delay (ns):                  2.313
   Slack (ns):
-  Arrival (ns):                2.506
+  Arrival (ns):                2.313
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       0.266
+  External Removal (ns):       0.433
 
 Path 3
   From:                        CLK_48MHZ
-  To:                          read_buffer_0/byte_out[1]/U1:CLR
-  Delay (ns):                  2.531
+  To:                          read_buffer_0/byte_out[2]/U1:CLR
+  Delay (ns):                  2.342
   Slack (ns):
-  Arrival (ns):                2.531
+  Arrival (ns):                2.342
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       0.248
+  External Removal (ns):       0.415
 
 Path 4
   From:                        CLK_48MHZ
-  To:                          read_buffer_0/byte_out[0]/U1:CLR
-  Delay (ns):                  2.548
+  To:                          read_buffer_0/byte_out[6]/U1:CLR
+  Delay (ns):                  2.351
   Slack (ns):
-  Arrival (ns):                2.548
+  Arrival (ns):                2.351
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       0.220
+  External Removal (ns):       0.390
 
 Path 5
   From:                        BUF2_PBRST_T9
   To:                          read_buffer_0/position[0]:CLR
-  Delay (ns):                  2.683
+  Delay (ns):                  2.507
   Slack (ns):
-  Arrival (ns):                2.683
+  Arrival (ns):                2.507
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       0.089
+  External Removal (ns):       0.252
 
 
 Expanded Path 1
   From: CLK_48MHZ
   To: read_buffer_0/position[0]:CLR
-  data arrival time                              2.492
+  data arrival time                              2.237
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -1092,24 +1092,24 @@ Expanded Path 1
   0.291                        CLK_48MHZ_pad/U0/U1:YIN (r)
                +     0.014          cell: ADLIB:IOIN_IB
   0.305                        CLK_48MHZ_pad/U0/U1:Y (r)
-               +     1.601          net: CLK_48MHZ_c
-  1.906                        reset_pulse_0/RESET_7:B (r)
+               +     1.012          net: CLK_48MHZ_c
+  1.317                        reset_pulse_0/RESET_7:B (r)
                +     0.200          cell: ADLIB:OR2
-  2.106                        reset_pulse_0/RESET_7:Y (r)
-               +     0.386          net: reset_pulse_0_RESET_7
-  2.492                        read_buffer_0/position[0]:CLR (r)
+  1.517                        reset_pulse_0/RESET_7:Y (r)
+               +     0.720          net: reset_pulse_0_RESET_7
+  2.237                        read_buffer_0/position[0]:CLR (r)
                                     
-  2.492                        data arrival time
+  2.237                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          spi_mode_config_0/next_b/U1:Q
                +     0.000          Clock source
   N/C                          spi_mode_config_0/next_b/U1:Q (r)
-               +     2.044          net: spi_mode_config_0/next_b_i
+               +     2.016          net: spi_mode_config_0/next_b_i
   N/C                          spi_mode_config_0/next_b_RNI28CE:A (r)
                +     0.301          cell: ADLIB:CLKINT
   N/C                          spi_mode_config_0/next_b_RNI28CE:Y (r)
-               +     0.427          net: spi_mode_config_0_next_cmd
+               +     0.442          net: spi_mode_config_0_next_cmd
   N/C                          read_buffer_0/position[0]:CLK (r)
                +     0.000          Library removal time: ADLIB:DFN1C0
   N/C                          read_buffer_0/position[0]:CLR

@@ -2,6 +2,7 @@ module spi_master #(parameter CLK_DIV = 2)(
     input clk,
     input rst,
     input miso,
+    input ss,
     output mosi,
     output sck,
     input start,
@@ -128,7 +129,7 @@ module spi_master #(parameter CLK_DIV = 2)(
             sck_d = 4'b0;              // reset clock counter
             test = 0;
             ctr_d = 3'b0;              // reset bit counter
-            if ((start == 1'b1)) begin   // if start command
+            if ((start == 1'b1)&&(ss==1'b0)) begin   // if start command
               test = 1;
               //data_d = data_in;        // copy data to send
               state_d = WAIT_HALF;     // change state
@@ -139,12 +140,15 @@ module spi_master #(parameter CLK_DIV = 2)(
             test = 2;
             sck_d = sck_q + 1'b1;                  // increment clock counter
             if (sck_q == {CLK_DIV-1{1'b1}}) begin  // if clock is half full (about to fall)
+                if (ss==1'b1) begin
+                    state_d=IDLE;
+                end else begin
               data_d = data_in;
               test = 3;
               sck_d = 1'b0;                        // reset to 0
               state_d = TRANSFER;                  // change state
               mosi_d = data_q[7];
-
+                end
             end
           end
           TRANSFER: begin
