@@ -19,7 +19,8 @@
 @W: MO160 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\read_buffer.v":43:0:43:5|Register bit byte_out[4] is always 0, optimizing ...
 @W: MT420 |Found inferred clock spi_mode_config2|next_b_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:spi_mode_config_0.next_b"
 @W: MT420 |Found inferred clock spi_master|busy_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:spi_master_0.busy"
-@W: MT420 |Found inferred clock spi_master|un1_ctr_d13_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:spi_master_0.un1_ctr_d13"
+@W: MT420 |Found inferred clock spi_master|un1_busy_enable_1_sqmuxa_1_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:spi_master_0.un1_busy_enable_1_sqmuxa_1"
+@W: MT420 |Found inferred clock spi_master|un1_rst_1_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:spi_master_0.un1_rst_1"
 @W: MT420 |Found inferred clock reset_pulse|CLK_OUT_48MHZ_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:reset_pulse_0.CLK_OUT_48MHZ"
 @W: MT420 |Found inferred clock clock_div_26MHZ_1MHZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_26MHZ_1MHZ_0.clk_out"
 @W: MT420 |Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_1MHZ_10HZ_0.clk_out"

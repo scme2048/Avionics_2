@@ -12,10 +12,10 @@
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\read_buffer.v":1458335789
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\reset_pulse.v":1458335789
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_data_out.v":1458335789
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\SPI_Master.v":1459473724
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_mode_config2.v":1459481537
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\SPI_Master.v":1459548351
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_mode_config2.v":1459545449
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\test_constants_spi.v":1458335789
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\component\\work\\transceiver_integration\\transceiver_integration.v":1459481543
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\component\\work\\transceiver_integration\\transceiver_integration.v":1459548411
 0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v" verilog
 1			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v" verilog
 2			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v" verilog

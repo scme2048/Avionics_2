@@ -1,0 +1,43 @@
+FlashPro
+Version: 11.6.0.34
+Release: v11.6
+
+Software Version: 11.6.0.34
+creating folder:
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
+er_integration_fp_34
+Driver : 3.0.0 build 1
+programmer '98291' : FlashPro3
+Created new project
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transcei\
+ver_integration_fp_34\transceiver_integration.pro'
+PDB file
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transcei\
+ver_integration.pdb' has been loaded successfully.
+DESIGN : transceiver_integration;  CHECKSUM : CB2B;  PDB_VERSION : 1.9
+Checking for software updates...
+programmer '98291' : Scan Chain...
+Error: Vjtag is disconnected or shorted. Please check the FPGA's Vjtag pin is properly
+       connected. Please check that the target board is powered.
+Error: programmer '98291' : Scan Chain FAILED.
+Error: Failed to run Action.
+programmer '98291' : Scan Chain...
+Warning: programmer '98291' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '98291' : Scan Chain PASSED.
+programmer '98291' : Executing action PROGRAM
+programmer '98291' : EXPORT FSN[48] = 01157d585450
+programmer '98291' : Data Authentication
+programmer '98291' : Erase ...
+programmer '98291' : Completed erase
+programmer '98291' : EXPORT CHECKSUM: [16] = cb2b
+programmer '98291' : Programming FPGA Array
+programmer '98291' : Verifying FPGA Array
+programmer '98291' :             Verifying FPGA Array -- PASS
+programmer '98291' : Finished: Fri Apr 01 16:11:36 2016 (Elapsed time 00:01:57)
+programmer '98291' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Warning: Project 'transceiver_integration' has been modified. Do you want to save it? [NO]
+Project closed.

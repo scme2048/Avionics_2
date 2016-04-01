@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>CLK_26MHZ|GLA_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>105.2 MHz</data>
-<data>0.496</data>
+<data>98.7 MHz</data>
+<data>-0.130</data>
 </row>
 <row>
 <data>clock_div_1MHZ_10HZ|clk_out_inferred_clock</data>
@@ -35,17 +35,23 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>reset_pulse|CLK_OUT_48MHZ_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>107.1 MHz</data>
-<data>0.659</data>
+<data>103.9 MHz</data>
+<data>0.372</data>
 </row>
 <row>
 <data>spi_master|busy_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>76.1 MHz</data>
-<data>-3.149</data>
+<data>73.9 MHz</data>
+<data>-3.528</data>
 </row>
 <row>
-<data>spi_master|un1_ctr_d13_inferred_clock</data>
+<data>spi_master|un1_busy_enable_1_sqmuxa_1_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>spi_master|un1_rst_1_inferred_clock</data>
 <data>100.0 MHz</data>
 <data>NA</data>
 <data>NA</data>

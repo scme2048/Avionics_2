@@ -23,6 +23,7 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v"
 Verilog syntax check successful!
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v changed - recompiling
 File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v changed - recompiling
 File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v changed - recompiling
 Selecting top level module transceiver_integration
@@ -52,6 +53,7 @@ Selecting top level module transceiver_integration
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
 
+@A: CL110 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Too many clocks (> 8) for set/reset analysis of busy_enable, try moving enabling expressions outside always block
 @W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
 @W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
@@ -79,7 +81,7 @@ State machine has 8 reachable states with original encodings of:
    101
    110
    111
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":199:4:199:9|Trying to extract state machine for register state_q
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":207:4:207:9|Trying to extract state machine for register state_q
 Extracted state machine for register state_q
 State machine has 3 reachable states with original encodings of:
    00
@@ -95,10 +97,10 @@ State machine has 3 reachable states with original encodings of:
 @W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":33:0:33:5|Pruning register bit 13 of cntr[13:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 100MB peak: 104MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 97MB peak: 100MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 31 21:32:36 2016
+# Fri Apr 01 16:06:59 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -107,7 +109,7 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 31 21:32:37 2016
+# Fri Apr 01 16:07:00 2016
 
 ###########################################################]
 @END
@@ -115,6 +117,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 31 21:32:37 2016
+# Fri Apr 01 16:07:00 2016
 
 ###########################################################]

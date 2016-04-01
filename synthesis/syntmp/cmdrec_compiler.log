@@ -1,7 +1,7 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs  -top  transceiver_integration  -hdllog  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\  -I C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib   -v2001  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -encrypt  -pro  -dmgen  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v 
 rc:0 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs|o|1459481557|37876
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr|o|1459481557|8232
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs|o|1459548420|38988
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr|o|1459548420|8573
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431619582|57101
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v|i|1458335790|2764
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v|i|1458335789|970
@@ -10,9 +10,9 @@ C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v|i|1458335789|3250
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v|i|1458335789|866
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v|i|1458335789|1025
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v|i|1459473724|7936
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v|i|1459481537|42482
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v|i|1459548351|8156
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v|i|1459545449|43796
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v|i|1458335789|865
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v|i|1459481543|7950
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v|i|1459548411|7950
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\c_hdl.exe|i|1431628566|1299456
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe|i|1431628756|1903104

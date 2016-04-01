@@ -13,7 +13,8 @@ Opened an existing Libero design transceiver_integration.adb.
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 While analyzing gated clock network, ambiguities have been found on gates
-spi_master_0/un1_ctr_d13_inferred_clock_RNO:Y.
+spi_master_0/un1_busy_enable_1_sqmuxa_1_inferred_clock_RNO:Y,
+spi_master_0/un1_rst_1_inferred_clock_RNO:Y.
 The timing models of these gates have been simplified for Static Timing Analysis.
 Wrote timing report to file: transceiver_integration_maxdelay_timing_report.txt
 

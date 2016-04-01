@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
 
-Date      :  Thu Mar 31 21:32:24 2016
+Date      :  Fri Apr 01 16:06:52 2016
 Project   :  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2
 Component :  transceiver_integration
 Family    :  ProASIC3L

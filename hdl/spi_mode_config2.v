@@ -136,6 +136,7 @@ module spi_mode_config2 (
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
+               
                 //start_a = 1'b0;
 
                     //if ((~byte_tracker_b)&&(~chip_rdy)) begin
@@ -143,16 +144,25 @@ module spi_mode_config2 (
                     //        byte_tracker_a = 1'b1;
                     //end
                     if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b==1'b0)) begin 
+                        chip_state = SLAVE_OUTPUT[6:4];
                         start_a=1'b1;
                         //ss_a=1'b1;
                         //state_a = RX_MODE; //If idle and slave is ready, go to receive mode
+                        if (chip_state==chip_IDLE) begin
                             byte_out_a = SRX;
                             byte_tracker_a = 1'b1;
+                        end else begin
+                            byte_out_a = SNOP;
+                        end
                     end else if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b==1'b1)) begin
+                        state_a = RX_MODE;
                         start_a=1'b1;
                         byte_out_a = 8'hFB; // Read RXBYTES Register
                         byte_tracker_a = 1'b1;
-                        state_a = RX_MODE;
+                        read_data=8'h00;
+                        read_tracker=1'b0;
+                        rxbytes_numbytes=7'b0000000;
+                        
                         
                     end else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
                             start_a=1'b1;
@@ -234,26 +244,46 @@ module spi_mode_config2 (
                         begin_pass_a = 1'b0;
                         byte_tracker_a=1'b0;
                     end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)&&(tx_packet_counter==0)) begin
+                        chip_state=SLAVE_OUTPUT[6:4];
                         mem_enable_a = 1'b0;
                         byte_tracker_a=1'b0;
-                        byte_out_a = SIDLE;
-                        state_a = IDLE;
-                        begin_pass_a = 1'b0;
+                        if (chip_state==chip_TXFIFO_UNDERFLOW) begin
+                            byte_out_a = SFTX;
+                            state_a = IDLE;
+                            begin_pass_a = 1'b0;
+                        end else begin
+                            byte_out_a = SNOP;
+                        end
+                        
+                        
                     end 
                     else if ((~chip_rdy)&&(tx_state==3'b000)) begin
-                        byte_out_a = SFRX;
+                        chip_state= SLAVE_OUTPUT[6:4];
+                        if (chip_state==chip_IDLE) begin
+                            byte_out_a = SFRX;
+                            tx_state=3'b001;
+                        end else begin
+                            byte_out_a = SNOP;
+                        end
                         start_a = 1'b1;
-                        tx_state=3'b001;
+                        
                     end
                     // THIS IS NEW!!!
                     else if ((~chip_rdy)&&(tx_state==3'b001)) begin
-                        byte_out_a = STX;
+                        chip_state=SLAVE_OUTPUT[6:4];
+                        if (chip_state==chip_IDLE) begin
+                            byte_out_a = STX;
+                            tx_state=3'b011;
+                        end else begin
+                            byte_out_a=SNOP;
+                        end
                         start_a = 1'b1;
-                        tx_state=3'b011;
+                        
                     end
                     else if ((tx_state==3'b011)&&(~chip_rdy)) begin
                         
                         mem_enable_a = 1'b0;
+                        // If exactly 51, use >4'b1101 (13 bytes)
                         if ((byte_out_a==STX) || (tx_free_bytes>4'b0001)) begin
                             next_a = 1'b1;
                             byte_out_a = TXFIFO;
