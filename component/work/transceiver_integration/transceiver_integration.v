@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Mar 31 19:23:13 2016
+// Created by SmartDesign Thu Mar 31 21:32:23 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -214,10 +214,10 @@ spi_master spi_master_0(
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SCLK_net_0 ),
-        .data_out ( spi_master_0_data_out ),
         .busy     ( spi_master_0_busy ),
         .chip_rdy ( spi_master_0_chip_rdy ),
-        .new_data (  ) 
+        .new_data (  ),
+        .data_out ( spi_master_0_data_out ) 
         );
 
 //--------spi_mode_config2

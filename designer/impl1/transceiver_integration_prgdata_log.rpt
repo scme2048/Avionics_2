@@ -13,13 +13,13 @@ The Export-map command succeeded ( 00:00:28 )
 Wrote to the file:
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
 er_integration.pdb
-CHECKSUM: 08FB
+CHECKSUM: 3D0F
 
-The Generate programming file command succeeded ( 00:00:32 )
+The Generate programming file command succeeded ( 00:00:33 )
 Design saved to file
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/transceiv\
 er_integration.adb.
 
-The Execute Script command succeeded ( 00:00:35 )
+The Execute Script command succeeded ( 00:00:37 )
 Design closed.
 

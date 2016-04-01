@@ -36,10 +36,10 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Mar 31 19:24:01 2016
+Timing-driven Placer Started: Thu Mar 31 21:33:01 2016
 
-Placer Finished: Thu Mar 31 19:24:13 2016
-Total Placer CPU Time:     00:00:12
+Placer Finished: Thu Mar 31 21:33:12 2016
+Total Placer CPU Time:     00:00:11
 
                         o - o - o - o - o - o
 
@@ -48,7 +48,7 @@ spi_master_0/un1_ctr_d13_inferred_clock_RNO:Y.
 The timing models of these gates have been simplified for Static Timing Analysis.
 
 Timing-driven Router 
-Design: transceiver_integration         Started: Thu Mar 31 19:24:16 2016
+Design: transceiver_integration         Started: Thu Mar 31 21:33:15 2016
 
 While analyzing gated clock network, ambiguities have been found on gates
 spi_master_0/un1_ctr_d13_inferred_clock_RNO:Y.
@@ -65,9 +65,9 @@ The timing models of these gates have been simplified for Static Timing Analysis
 Timing-driven Router completed successfully.
 
 Design: transceiver_integration         
-Finished: Thu Mar 31 19:24:47 2016
-Total CPU Time:     00:00:30            Total Elapsed Time: 00:00:31
-Total Memory Usage: 377.0 Mbytes
+Finished: Thu Mar 31 21:33:48 2016
+Total CPU Time:     00:00:33            Total Elapsed Time: 00:00:33
+Total Memory Usage: 376.5 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -76,7 +76,7 @@ spi_master_0/un1_ctr_d13_inferred_clock_RNO:Y.
 The timing models of these gates have been simplified for Static Timing Analysis.
 Finished loading the Timing data.
 
-The Layout command succeeded ( 00:00:53 )
+The Layout command succeeded ( 00:00:54 )
 Wrote status report to file: transceiver_integration_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -99,6 +99,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\transceiv\
 er_integration.adb.
 
-The Execute Script command succeeded ( 00:00:56 )
+The Execute Script command succeeded ( 00:00:57 )
 Design closed.
 

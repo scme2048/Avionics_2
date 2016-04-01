@@ -89,6 +89,7 @@ module spi_mode_config2 (
     reg [2:0] tx_ss_counter;
     reg [3:0] tx_free_bytes;
     reg [5:0] tx_packet_counter;
+    reg [2:0] idle_ss_counter;
 
     // mem_pull high if in TX mode, low if in RX mode
     assign mem_enable = mem_enable_b;
@@ -232,7 +233,7 @@ module spi_mode_config2 (
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
                         byte_tracker_a=1'b0;
-                    end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)) begin
+                    end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)&&(tx_packet_counter==0)) begin
                         mem_enable_a = 1'b0;
                         byte_tracker_a=1'b0;
                         byte_out_a = SIDLE;
@@ -879,7 +880,9 @@ module spi_mode_config2 (
             begin_pass_b <= 0;
             config_cntr_b <= 1;
             start_b <= 1'b0;
-            rx_ss_counter=2'b00;
+            rx_ss_counter=3'b000;
+            tx_ss_counter=3'b000;
+            idle_ss_counter=3'b000;
 
         end
         else begin
@@ -916,7 +919,18 @@ module spi_mode_config2 (
             end else begin
                 tx_ss_counter=3'b000;
             end
-            
+            //Flips ss high when going into IDLE mode
+            if (state_b ==IDLE) begin
+                if (idle_ss_counter ==3'b111) begin
+                    ss_b<=1'b0;
+                end else begin
+                    ss_b<=1'b1;
+                    idle_ss_counter=idle_ss_counter+1;
+                end
+            end else begin
+                idle_ss_counter=3'b000;
+            end            
+
             if (state_b == PWR_RST) begin
                 if (rst_cntr <= microsec) begin  
                     //ss_b <= 1'b0;
