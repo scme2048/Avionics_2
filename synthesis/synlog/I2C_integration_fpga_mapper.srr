@@ -1,0 +1,1202 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+@N: MF238 :"f:\avionics_2\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N: MF238 :"f:\avionics_2\hdl\clock_div_1mhz_100khz.v":30:19:30:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N:"f:\avionics_2\hdl\i2c_interface2.v":64:0:64:5|Found updn counter in view:work.i2c_interface2(verilog) inst data_cntr[3:0] 
+@N:"f:\avionics_2\hdl\i2c_interface2.v":64:0:64:5|Found updn counter in view:work.i2c_interface2(verilog) inst init_ctr_a[3:0] 
+@N: MO223 :"f:\avionics_2\hdl\i2c_interface2.v":64:0:64:5|In FSM state_a[15:0] (view:work.i2c_interface2(verilog)), reset input is driving data input. 
+Encoding state machine state_a[15:0] (view:work.i2c_interface2(verilog))
+original code -> new code
+   00000000 -> 0000000000000001
+   00000001 -> 0000000000000010
+   00000010 -> 0000000000000100
+   00000011 -> 0000000000001000
+   00000100 -> 0000000000010000
+   00000101 -> 0000000000100000
+   00000110 -> 0000000001000000
+   00000111 -> 0000000010000000
+   00001000 -> 0000000100000000
+   00001001 -> 0000001000000000
+   00001010 -> 0000010000000000
+   00001011 -> 0000100000000000
+   00001100 -> 0001000000000000
+   00001101 -> 0010000000000000
+   00001110 -> 0100000000000000
+   00001111 -> 1000000000000000
+@N: MF239 :"f:\avionics_2\hdl\i2c_interface2.v":127:37:127:44|Found 5-bit decrementor, 'un6_sda_a\.un6_sda_a[4:0]'
+@W: MO160 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[7] is always 0, optimizing ...
+@W: MO161 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[6] is always 1, optimizing ...
+@W: MO160 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[5] is always 0, optimizing ...
+@W: MO160 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[4] is always 0, optimizing ...
+@W: MO161 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[3] is always 1, optimizing ...
+@W: MO161 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[2] is always 1, optimizing ...
+@W: MO160 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[1] is always 0, optimizing ...
+@W: MO161 :"f:\avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Register bit data_prev[0] is always 1, optimizing ...
+@N:"f:\avionics_2\hdl\timestamp.v":19:0:19:5|Found counter in view:work.timestamp(verilog) inst TIMESTAMP[23:0]
+
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 117MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 117MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 117MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 117MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 117MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 117MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 117MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                        Fanout, notes                   
+----------------------------------------------------------------------------------
+reset_pulse_0.RESET / Y                           278 : 198 asynchronous set/reset
+test_harness_geiger_stack_0.un1_counter12 / Y     80                              
+test_harness_geiger_stack_0.set / Q               89                              
+i2c_interface2_0.un3_data_a.I_14 / Y              65                              
+i2c_interface2_0.state_a_1_sqmuxa_0_a4 / Y        48                              
+i2c_interface2_0.data_m2_i_a3 / Y                 54                              
+==================================================================================
+
+@N: FP130 |Promoting Net clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT on CLKINT  clock_div_1MHZ_100KHZ_0.clk_out_inferred_clock 
+@N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
+
+Replicating Combinational Instance i2c_interface2_0.data_m2_i_a3, fanout 54 segments 3
+Replicating Combinational Instance i2c_interface2_0.state_a_1_sqmuxa_0_a4, fanout 48 segments 2
+Replicating Combinational Instance i2c_interface2_0.un3_data_a.I_14, fanout 65 segments 3
+Replicating Sequential Instance test_harness_geiger_stack_0.set, fanout 89 segments 4
+Replicating Combinational Instance test_harness_geiger_stack_0.un1_counter12, fanout 80 segments 4
+Replicating Combinational Instance reset_pulse_0.RESET, fanout 284 segments 12
+
+Added 0 Buffers
+Added 22 Cells via replication
+	Added 3 Sequential Cells via replication
+	Added 19 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 357 clock pin(s) of sequential element(s)
+0 instances converted, 357 sequential instances remain driven by gated/generated clocks
+
+====================================================================================================================== Gated/Generated Clocks ======================================================================================================================
+Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                               Explanation                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_1MHZ_0.Core                     PLL                    200        test_harness_geiger_stack_0.data_prev[79]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       clock_div_1MHZ_100KHZ_0.clk_out     DFN1P0                 133        i2c_interface2_0.data_a[47]                   No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0003       clock_div_1MHZ_10HZ_0.clk_out       DFN1P0                 24         timestamp_0.TIMESTAMP[23]                     No generated or derived clock directive on output of sequential instance                                                      
+====================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 115MB peak: 118MB)
+
+Writing Analyst data base F:\Avionics_2\synthesis\synwork\I2C_integration_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 115MB peak: 118MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-3
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+
+@W: MT420 |Found inferred clock clock_div_1MHZ_100KHZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_1MHZ_100KHZ_0.clk_out"
+
+@W: MT420 |Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_1MHZ_10HZ_0.clk_out"
+
+@W: MT420 |Found inferred clock CLK_1MHZ|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_1MHZ_0.GLA"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Apr 02 17:00:36 2016
+#
+
+
+Top view:               I2C_integration
+Library name:           pa3l
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.14, P = 1.26, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        pa3l
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.316
+
+                                                 Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                                   Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                      100.0 MHz     88.4 MHz      10.000        11.316        -1.316     inferred     Inferred_clkgroup_2
+clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     93.0 MHz      10.000        10.749        -0.749     inferred     Inferred_clkgroup_0
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     89.1 MHz      10.000        11.229        -1.229     inferred     Inferred_clkgroup_1
+====================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                      |    rise  to  rise    |    fall  to  fall    |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                      Ending                                        |  constraint  slack   |  constraint  slack   |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock_div_1MHZ_10HZ|clk_out_inferred_clock    clock_div_1MHZ_10HZ|clk_out_inferred_clock    |  10.000      -0.749  |  No paths    -       |  No paths    -      |  No paths    -    
+clock_div_1MHZ_10HZ|clk_out_inferred_clock    CLK_1MHZ|GLA_inferred_clock                   |  Diff grp    -       |  No paths    -       |  No paths    -      |  No paths    -    
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock  clock_div_1MHZ_100KHZ|clk_out_inferred_clock  |  No paths    -       |  10.000      -1.229  |  No paths    -      |  No paths    -    
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock  CLK_1MHZ|GLA_inferred_clock                   |  No paths    -       |  No paths    -       |  No paths    -      |  Diff grp    -    
+CLK_1MHZ|GLA_inferred_clock                   CLK_1MHZ|GLA_inferred_clock                   |  10.000      -1.316  |  No paths    -       |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLK_1MHZ|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                              Starting                                                             Arrival           
+Instance                                      Reference                       Type       Pin     Net               Time        Slack 
+                                              Clock                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_prev[77]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[77]     0.797       -1.316
+test_harness_geiger_stack_0.data_prev[43]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[43]     0.797       -1.242
+test_harness_geiger_stack_0.data_prev[26]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[26]     0.797       -1.092
+test_harness_geiger_stack_0.data_prev[30]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[30]     0.797       -1.071
+test_harness_geiger_stack_0.data_prev[49]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[49]     0.797       -0.966
+test_harness_geiger_stack_0.data_prev[51]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[51]     0.797       -0.816
+test_harness_geiger_stack_0.data_prev[53]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[53]     0.797       -0.722
+test_harness_geiger_stack_0.data_prev[55]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[55]     0.797       -0.571
+test_harness_geiger_stack_0.data_prev[12]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[12]     0.797       -0.552
+test_harness_geiger_stack_0.data_prev[44]     CLK_1MHZ|GLA_inferred_clock     DFN1E1     Q       data_prev[44]     0.797       -0.547
+=====================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                                                 Required           
+Instance                                       Reference                       Type       Pin     Net                   Time         Slack 
+                                               Clock                                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_buffer[0]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[1]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[2]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[3]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[4]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[5]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[6]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[7]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[8]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+test_harness_geiger_stack_0.data_buffer[9]     CLK_1MHZ|GLA_inferred_clock     DFN1E0     E       set_0_RNI3KT941_2     9.530        -1.316
+===========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.846
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.316
+
+    Number of logic level(s):                8
+    Starting point:                          test_harness_geiger_stack_0.data_prev[77] / Q
+    Ending point:                            test_harness_geiger_stack_0.data_buffer[10] / E
+    The start point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_prev[77]              DFN1E1     Q        Out     0.797     0.797       -         
+data_prev[77]                                          Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       B        In      -         1.030       -         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       Y        Out     0.679     1.709       -         
+un1_TEST_DATA_77                                       Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        C        In      -         1.942       -         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        Y        Out     0.530     2.472       -         
+set_2_3                                                Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        C        In      -         2.705       -         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        Y        Out     0.812     3.517       -         
+set_2_37                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        C        In      -         3.750       -         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        Y        Out     0.812     4.562       -         
+set_2_54                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        B        In      -         4.795       -         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        Y        Out     0.773     5.568       -         
+set_2_67                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        C        In      -         5.801       -         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        Y        Out     0.812     6.613       -         
+set_2_70                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        A        In      -         6.846       -         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        Y        Out     0.549     7.395       -         
+set_2                                                  Net        -        -       1.188     -           8         
+test_harness_geiger_stack_0.set_0_RNI3KT941            OR2B       A        In      -         8.583       -         
+test_harness_geiger_stack_0.set_0_RNI3KT941            OR2B       Y        Out     0.556     9.140       -         
+un1_counter12_0                                        Net        -        -       1.706     -           20        
+test_harness_geiger_stack_0.data_buffer[10]            DFN1E0     E        In      -         10.846      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 11.316 is 6.790(60.0%) logic and 4.526(40.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.846
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.316
+
+    Number of logic level(s):                8
+    Starting point:                          test_harness_geiger_stack_0.data_prev[77] / Q
+    Ending point:                            test_harness_geiger_stack_0.data_buffer[0] / E
+    The start point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_prev[77]              DFN1E1     Q        Out     0.797     0.797       -         
+data_prev[77]                                          Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       B        In      -         1.030       -         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       Y        Out     0.679     1.709       -         
+un1_TEST_DATA_77                                       Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        C        In      -         1.942       -         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        Y        Out     0.530     2.472       -         
+set_2_3                                                Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        C        In      -         2.705       -         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        Y        Out     0.812     3.517       -         
+set_2_37                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        C        In      -         3.750       -         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        Y        Out     0.812     4.562       -         
+set_2_54                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        B        In      -         4.795       -         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        Y        Out     0.773     5.568       -         
+set_2_67                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        C        In      -         5.801       -         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        Y        Out     0.812     6.613       -         
+set_2_70                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        A        In      -         6.846       -         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        Y        Out     0.549     7.395       -         
+set_2                                                  Net        -        -       1.188     -           8         
+test_harness_geiger_stack_0.set_0_RNI3KT941_2          OR2B       A        In      -         8.583       -         
+test_harness_geiger_stack_0.set_0_RNI3KT941_2          OR2B       Y        Out     0.556     9.140       -         
+set_0_RNI3KT941_2                                      Net        -        -       1.706     -           20        
+test_harness_geiger_stack_0.data_buffer[0]             DFN1E0     E        In      -         10.846      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 11.316 is 6.790(60.0%) logic and 4.526(40.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.846
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.316
+
+    Number of logic level(s):                8
+    Starting point:                          test_harness_geiger_stack_0.data_prev[77] / Q
+    Ending point:                            test_harness_geiger_stack_0.data_buffer[30] / E
+    The start point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_prev[77]              DFN1E1     Q        Out     0.797     0.797       -         
+data_prev[77]                                          Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       B        In      -         1.030       -         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       Y        Out     0.679     1.709       -         
+un1_TEST_DATA_77                                       Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        C        In      -         1.942       -         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        Y        Out     0.530     2.472       -         
+set_2_3                                                Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        C        In      -         2.705       -         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        Y        Out     0.812     3.517       -         
+set_2_37                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        C        In      -         3.750       -         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        Y        Out     0.812     4.562       -         
+set_2_54                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        B        In      -         4.795       -         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        Y        Out     0.773     5.568       -         
+set_2_67                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        C        In      -         5.801       -         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        Y        Out     0.812     6.613       -         
+set_2_70                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        A        In      -         6.846       -         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        Y        Out     0.549     7.395       -         
+set_2                                                  Net        -        -       1.188     -           8         
+test_harness_geiger_stack_0.set_0_RNI3KT941_1          OR2B       A        In      -         8.583       -         
+test_harness_geiger_stack_0.set_0_RNI3KT941_1          OR2B       Y        Out     0.556     9.140       -         
+un1_counter12_1                                        Net        -        -       1.706     -           20        
+test_harness_geiger_stack_0.data_buffer[30]            DFN1E0     E        In      -         10.846      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 11.316 is 6.790(60.0%) logic and 4.526(40.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.846
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.316
+
+    Number of logic level(s):                8
+    Starting point:                          test_harness_geiger_stack_0.data_prev[77] / Q
+    Ending point:                            test_harness_geiger_stack_0.data_buffer[50] / E
+    The start point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_prev[77]              DFN1E1     Q        Out     0.797     0.797       -         
+data_prev[77]                                          Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       B        In      -         1.030       -         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       Y        Out     0.679     1.709       -         
+un1_TEST_DATA_77                                       Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        C        In      -         1.942       -         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        Y        Out     0.530     2.472       -         
+set_2_3                                                Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        C        In      -         2.705       -         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        Y        Out     0.812     3.517       -         
+set_2_37                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        C        In      -         3.750       -         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        Y        Out     0.812     4.562       -         
+set_2_54                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        B        In      -         4.795       -         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        Y        Out     0.773     5.568       -         
+set_2_67                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        C        In      -         5.801       -         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        Y        Out     0.812     6.613       -         
+set_2_70                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        A        In      -         6.846       -         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        Y        Out     0.549     7.395       -         
+set_2                                                  Net        -        -       1.188     -           8         
+test_harness_geiger_stack_0.set_0_RNI3KT941_0          OR2B       A        In      -         8.583       -         
+test_harness_geiger_stack_0.set_0_RNI3KT941_0          OR2B       Y        Out     0.556     9.140       -         
+un1_counter12_2                                        Net        -        -       1.706     -           20        
+test_harness_geiger_stack_0.data_buffer[50]            DFN1E0     E        In      -         10.846      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 11.316 is 6.790(60.0%) logic and 4.526(40.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.470
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.530
+
+    - Propagation time:                      10.846
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.316
+
+    Number of logic level(s):                8
+    Starting point:                          test_harness_geiger_stack_0.data_prev[77] / Q
+    Ending point:                            test_harness_geiger_stack_0.data_buffer[29] / E
+    The start point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+test_harness_geiger_stack_0.data_prev[77]              DFN1E1     Q        Out     0.797     0.797       -         
+data_prev[77]                                          Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       B        In      -         1.030       -         
+test_harness_geiger_stack_0.data_prev_RNI26MG[77]      XOR2       Y        Out     0.679     1.709       -         
+un1_TEST_DATA_77                                       Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        C        In      -         1.942       -         
+test_harness_geiger_stack_0.data_prev_RNIRP2M[12]      XO1        Y        Out     0.530     2.472       -         
+set_2_3                                                Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        C        In      -         2.705       -         
+test_harness_geiger_stack_0.data_prev_RNIVAKP1[12]     OR3        Y        Out     0.812     3.517       -         
+set_2_37                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        C        In      -         3.750       -         
+test_harness_geiger_stack_0.data_prev_RNI60BJ3[27]     OR3        Y        Out     0.812     4.562       -         
+set_2_54                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        B        In      -         4.795       -         
+test_harness_geiger_stack_0.data_prev_RNIDGLDB[27]     OR3        Y        Out     0.773     5.568       -         
+set_2_67                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        C        In      -         5.801       -         
+test_harness_geiger_stack_0.data_prev_RNIBKVGR[14]     OR3        Y        Out     0.812     6.613       -         
+set_2_70                                               Net        -        -       0.233     -           1         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        A        In      -         6.846       -         
+test_harness_geiger_stack_0.set_0_RNIKFCR31            OR2        Y        Out     0.549     7.395       -         
+set_2                                                  Net        -        -       1.188     -           8         
+test_harness_geiger_stack_0.set_0_RNI3KT941            OR2B       A        In      -         8.583       -         
+test_harness_geiger_stack_0.set_0_RNI3KT941            OR2B       Y        Out     0.556     9.140       -         
+un1_counter12_0                                        Net        -        -       1.706     -           20        
+test_harness_geiger_stack_0.data_buffer[29]            DFN1E0     E        In      -         10.846      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 11.316 is 6.790(60.0%) logic and 4.526(40.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: clock_div_1MHZ_10HZ|clk_out_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                                                        Arrival           
+Instance                      Reference                                      Type       Pin     Net                           Time        Slack 
+                              Clock                                                                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[8]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[8]      0.797       -0.749
+timestamp_0.TIMESTAMP[7]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[7]      0.797       -0.702
+timestamp_0.TIMESTAMP[12]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       i2c_interface2_0_data[20]     0.797       -0.642
+timestamp_0.TIMESTAMP[0]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       i2c_interface2_0_data[8]      0.797       -0.613
+timestamp_0.TIMESTAMP[2]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[2]      0.797       -0.576
+timestamp_0.TIMESTAMP[9]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[9]      0.797       -0.525
+timestamp_0.TIMESTAMP[13]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       i2c_interface2_0_data[21]     0.797       -0.500
+timestamp_0.TIMESTAMP[1]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       i2c_interface2_0_data[9]      0.797       -0.384
+timestamp_0.TIMESTAMP[5]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[5]      0.797       0.126 
+timestamp_0.TIMESTAMP[10]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       i2c_interface2_0_data[18]     0.797       0.322 
+================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                            Required           
+Instance                      Reference                                      Type       Pin     Net               Time         Slack 
+                              Clock                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[18]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n18     9.417        -0.749
+timestamp_0.TIMESTAMP[13]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n13     9.417        -0.613
+timestamp_0.TIMESTAMP[12]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n12     9.417        -0.245
+timestamp_0.TIMESTAMP[17]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n17     9.417        -0.229
+timestamp_0.TIMESTAMP[11]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n11     9.417        0.276 
+timestamp_0.TIMESTAMP[16]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n16     9.417        0.607 
+timestamp_0.TIMESTAMP[23]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n23     9.417        0.951 
+timestamp_0.TIMESTAMP[10]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n10     9.417        0.996 
+timestamp_0.TIMESTAMP[15]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n15     9.417        1.444 
+timestamp_0.TIMESTAMP[9]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n9      9.417        1.517 
+=====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.167
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.749
+
+    Number of logic level(s):                8
+    Starting point:                          timestamp_0.TIMESTAMP[8] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[18] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[8]              DFN1C0     Q        Out     0.797     0.797       -         
+timestamp_0_TIMESTAMP[8]              Net        -        -       1.032     -           6         
+timestamp_0.TIMESTAMP_m6_0_a2_7_2     NOR2B      B        In      -         1.829       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7_2     NOR2B      Y        Out     0.679     2.507       -         
+TIMESTAMP_m6_0_a2_7_2                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_m6_0_a2_7_5     NOR3C      C        In      -         2.741       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7_5     NOR3C      Y        Out     0.694     3.434       -         
+TIMESTAMP_m6_0_a2_7_5                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_m6_0_a2_7       NOR2B      B        In      -         3.667       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7       NOR2B      Y        Out     0.679     4.346       -         
+TIMESTAMP_m6_0_a2_7                   Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_m6_0_a2         NOR2B      A        In      -         4.931       -         
+timestamp_0.TIMESTAMP_m6_0_a2         NOR2B      Y        Out     0.556     5.487       -         
+TIMESTAMP_c13                         Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c14             NOR2B      A        In      -         6.072       -         
+timestamp_0.TIMESTAMP_c14             NOR2B      Y        Out     0.556     6.628       -         
+TIMESTAMP_c14                         Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c15             NOR2B      A        In      -         7.213       -         
+timestamp_0.TIMESTAMP_c15             NOR2B      Y        Out     0.556     7.769       -         
+TIMESTAMP_c15                         Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_c16             NOR2B      A        In      -         8.049       -         
+timestamp_0.TIMESTAMP_c16             NOR2B      Y        Out     0.556     8.605       -         
+TIMESTAMP_c16                         Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_n18             AX1C       B        In      -         8.885       -         
+timestamp_0.TIMESTAMP_n18             AX1C       Y        Out     1.049     9.934       -         
+TIMESTAMP_n18                         Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[18]             DFN1C0     D        In      -         10.167      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 10.749 is 6.705(62.4%) logic and 4.044(37.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.119
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.702
+
+    Number of logic level(s):                8
+    Starting point:                          timestamp_0.TIMESTAMP[7] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[18] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[7]              DFN1C0     Q        Out     0.797     0.797       -         
+timestamp_0_TIMESTAMP[7]              Net        -        -       1.106     -           7         
+timestamp_0.TIMESTAMP_m6_0_a2_7_2     NOR2B      A        In      -         1.903       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7_2     NOR2B      Y        Out     0.556     2.460       -         
+TIMESTAMP_m6_0_a2_7_2                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_m6_0_a2_7_5     NOR3C      C        In      -         2.693       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7_5     NOR3C      Y        Out     0.694     3.386       -         
+TIMESTAMP_m6_0_a2_7_5                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_m6_0_a2_7       NOR2B      B        In      -         3.619       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7       NOR2B      Y        Out     0.679     4.298       -         
+TIMESTAMP_m6_0_a2_7                   Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_m6_0_a2         NOR2B      A        In      -         4.883       -         
+timestamp_0.TIMESTAMP_m6_0_a2         NOR2B      Y        Out     0.556     5.439       -         
+TIMESTAMP_c13                         Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c14             NOR2B      A        In      -         6.024       -         
+timestamp_0.TIMESTAMP_c14             NOR2B      Y        Out     0.556     6.580       -         
+TIMESTAMP_c14                         Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c15             NOR2B      A        In      -         7.165       -         
+timestamp_0.TIMESTAMP_c15             NOR2B      Y        Out     0.556     7.721       -         
+TIMESTAMP_c15                         Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_c16             NOR2B      A        In      -         8.001       -         
+timestamp_0.TIMESTAMP_c16             NOR2B      Y        Out     0.556     8.557       -         
+TIMESTAMP_c16                         Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_n18             AX1C       B        In      -         8.837       -         
+timestamp_0.TIMESTAMP_n18             AX1C       Y        Out     1.049     9.886       -         
+TIMESTAMP_n18                         Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[18]             DFN1C0     D        In      -         10.119      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 10.702 is 6.583(61.5%) logic and 4.119(38.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.060
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.642
+
+    Number of logic level(s):                8
+    Starting point:                          timestamp_0.TIMESTAMP[12] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[18] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[12]             DFN1C0     Q        Out     0.797     0.797       -         
+i2c_interface2_0_data[20]             Net        -        -       1.032     -           6         
+timestamp_0.TIMESTAMP_m6_0_a2_7_4     NOR3C      C        In      -         1.829       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7_4     NOR3C      Y        Out     0.694     2.523       -         
+TIMESTAMP_m6_0_a2_7_4                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_m6_0_a2_7_6     NOR3C      C        In      -         2.756       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7_6     NOR3C      Y        Out     0.694     3.449       -         
+TIMESTAMP_m6_0_a2_7_6                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_m6_0_a2_7       NOR2B      A        In      -         3.682       -         
+timestamp_0.TIMESTAMP_m6_0_a2_7       NOR2B      Y        Out     0.556     4.239       -         
+TIMESTAMP_m6_0_a2_7                   Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_m6_0_a2         NOR2B      A        In      -         4.823       -         
+timestamp_0.TIMESTAMP_m6_0_a2         NOR2B      Y        Out     0.556     5.380       -         
+TIMESTAMP_c13                         Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c14             NOR2B      A        In      -         5.964       -         
+timestamp_0.TIMESTAMP_c14             NOR2B      Y        Out     0.556     6.521       -         
+TIMESTAMP_c14                         Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c15             NOR2B      A        In      -         7.105       -         
+timestamp_0.TIMESTAMP_c15             NOR2B      Y        Out     0.556     7.662       -         
+TIMESTAMP_c15                         Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_c16             NOR2B      A        In      -         7.941       -         
+timestamp_0.TIMESTAMP_c16             NOR2B      Y        Out     0.556     8.498       -         
+TIMESTAMP_c16                         Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_n18             AX1C       B        In      -         8.777       -         
+timestamp_0.TIMESTAMP_n18             AX1C       Y        Out     1.049     9.826       -         
+TIMESTAMP_n18                         Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[18]             DFN1C0     D        In      -         10.060      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 10.642 is 6.598(62.0%) logic and 4.044(38.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.030
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.613
+
+    Number of logic level(s):                7
+    Starting point:                          timestamp_0.TIMESTAMP[0] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[13] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                          Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[0]      DFN1C0     Q        Out     0.797     0.797       -         
+i2c_interface2_0_data[8]      Net        -        -       1.106     -           7         
+timestamp_0.TIMESTAMP_c2      NOR3C      B        In      -         1.903       -         
+timestamp_0.TIMESTAMP_c2      NOR3C      Y        Out     0.656     2.559       -         
+TIMESTAMP_c2                  Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c4      NOR3C      B        In      -         3.144       -         
+timestamp_0.TIMESTAMP_c4      NOR3C      Y        Out     0.656     3.800       -         
+TIMESTAMP_c4                  Net        -        -       0.858     -           4         
+timestamp_0.TIMESTAMP_c6      NOR3C      B        In      -         4.658       -         
+timestamp_0.TIMESTAMP_c6      NOR3C      Y        Out     0.656     5.314       -         
+TIMESTAMP_c6                  Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c8      NOR3C      B        In      -         5.899       -         
+timestamp_0.TIMESTAMP_c8      NOR3C      Y        Out     0.656     6.555       -         
+TIMESTAMP_c8                  Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c10     NOR3C      B        In      -         7.139       -         
+timestamp_0.TIMESTAMP_c10     NOR3C      Y        Out     0.656     7.795       -         
+TIMESTAMP_c10                 Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c12     NOR3C      B        In      -         8.380       -         
+timestamp_0.TIMESTAMP_c12     NOR3C      Y        Out     0.656     9.036       -         
+TIMESTAMP_c12                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_n13     XOR2       A        In      -         9.269       -         
+timestamp_0.TIMESTAMP_n13     XOR2       Y        Out     0.528     9.797       -         
+TIMESTAMP_n13                 Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[13]     DFN1C0     D        In      -         10.030      -         
+==========================================================================================
+Total path delay (propagation time + setup) of 10.613 is 5.844(55.1%) logic and 4.769(44.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.016
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.599
+
+    Number of logic level(s):                7
+    Starting point:                          timestamp_0.TIMESTAMP[0] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[18] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[0]          DFN1C0     Q        Out     0.797     0.797       -         
+i2c_interface2_0_data[8]          Net        -        -       1.106     -           7         
+timestamp_0.TIMESTAMP_c2          NOR3C      B        In      -         1.903       -         
+timestamp_0.TIMESTAMP_c2          NOR3C      Y        Out     0.656     2.559       -         
+TIMESTAMP_c2                      Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c4          NOR3C      B        In      -         3.144       -         
+timestamp_0.TIMESTAMP_c4          NOR3C      Y        Out     0.656     3.800       -         
+TIMESTAMP_c4                      Net        -        -       0.858     -           4         
+timestamp_0.TIMESTAMP_m6_0_a2     NOR2B      B        In      -         4.658       -         
+timestamp_0.TIMESTAMP_m6_0_a2     NOR2B      Y        Out     0.679     5.337       -         
+TIMESTAMP_c13                     Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c14         NOR2B      A        In      -         5.921       -         
+timestamp_0.TIMESTAMP_c14         NOR2B      Y        Out     0.556     6.478       -         
+TIMESTAMP_c14                     Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_c15         NOR2B      A        In      -         7.062       -         
+timestamp_0.TIMESTAMP_c15         NOR2B      Y        Out     0.556     7.619       -         
+TIMESTAMP_c15                     Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_c16         NOR2B      A        In      -         7.898       -         
+timestamp_0.TIMESTAMP_c16         NOR2B      Y        Out     0.556     8.455       -         
+TIMESTAMP_c16                     Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_n18         AX1C       B        In      -         8.734       -         
+timestamp_0.TIMESTAMP_n18         AX1C       Y        Out     1.049     9.783       -         
+TIMESTAMP_n18                     Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[18]         DFN1C0     D        In      -         10.016      -         
+==============================================================================================
+Total path delay (propagation time + setup) of 10.599 is 6.088(57.4%) logic and 4.511(42.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: clock_div_1MHZ_100KHZ|clk_out_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                   Starting                                                                                Arrival           
+Instance                           Reference                                        Type         Pin     Net               Time        Slack 
+                                   Clock                                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------------
+i2c_interface2_0.data_cntr[0]      clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0P0       Q       data_cntr[0]      0.707       -1.229
+i2c_interface2_0.ctr_a[1]          clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E0C0     Q       ctr_a[1]          0.707       -1.193
+i2c_interface2_0.ctr_a[3]          clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E0C0     Q       ctr_a[3]          0.707       -0.777
+i2c_interface2_0.ctr_a[2]          clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E0C0     Q       ctr_a[2]          0.707       -0.633
+i2c_interface2_0.ctr_a[0]          clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E0C0     Q       ctr_a[0]          0.707       -0.481
+i2c_interface2_0.data_cntr[1]      clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0C0       Q       data_cntr[1]      0.707       -0.311
+i2c_interface2_0.data_mode         clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     Q       data_mode         0.707       -0.227
+i2c_interface2_0.state_a[7]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0C0       Q       state_a[7]        0.707       -0.174
+i2c_interface2_0.state_a[4]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0C0       Q       state_a[4]        0.570       0.303 
+i2c_interface2_0.init_ctr_a[0]     clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0C0       Q       init_ctr_a[0]     0.570       0.405 
+=============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                   Starting                                                                                Required           
+Instance                           Reference                                        Type         Pin     Net               Time         Slack 
+                                   Clock                                                                                                      
+----------------------------------------------------------------------------------------------------------------------------------------------
+i2c_interface2_0.data_a[32]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_40              9.229        -1.229
+i2c_interface2_0.data_a[33]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_38              9.229        -1.229
+i2c_interface2_0.data_cntr[3]      clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0C0       D       data_cntr_n3      9.229        -1.193
+i2c_interface2_0.data_a[16]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_56              9.229        -1.082
+i2c_interface2_0.data_a[17]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_54              9.229        -1.082
+i2c_interface2_0.data_a[20]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_52              9.229        -1.082
+i2c_interface2_0.data_a[12]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_60              9.229        -1.013
+i2c_interface2_0.data_a[25]        clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0E1C0     D       N_44              9.229        -1.013
+i2c_interface2_0.init_ctr_a[2]     clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0P0       D       init_ctr_a_n2     9.229        -0.921
+i2c_interface2_0.data_cntr[2]      clock_div_1MHZ_100KHZ|clk_out_inferred_clock     DFN0P0       D       data_cntr_n2      9.229        -0.815
+==============================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      10.459
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.229
+
+    Number of logic level(s):                6
+    Starting point:                          i2c_interface2_0.data_cntr[0] / Q
+    Ending point:                            i2c_interface2_0.data_a[32] / D
+    The start point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+i2c_interface2_0.data_cntr[0]            DFN0P0       Q        Out     0.707     0.707       -         
+data_cntr[0]                             Net          -        -       1.188     -           8         
+i2c_interface2_0.un3_data_a.I_1          AND2         B        In      -         1.895       -         
+i2c_interface2_0.un3_data_a.I_1          AND2         Y        Out     0.679     2.574       -         
+DWACT_ADD_CI_0_TMP[0]                    Net          -        -       0.280     -           2         
+i2c_interface2_0.un3_data_a.I_15         NOR2B        A        In      -         2.853       -         
+i2c_interface2_0.un3_data_a.I_15         NOR2B        Y        Out     0.556     3.410       -         
+DWACT_ADD_CI_0_g_array_1[0]              Net          -        -       0.585     -           3         
+i2c_interface2_0.un3_data_a.I_14         XOR2         B        In      -         3.994       -         
+i2c_interface2_0.un3_data_a.I_14         XOR2         Y        Out     1.013     5.008       -         
+I_14_1                                   Net          -        -       1.726     -           21        
+i2c_interface2_0.data_a_2_i_o3_1[36]     OR2A         A        In      -         6.734       -         
+i2c_interface2_0.data_a_2_i_o3_1[36]     OR2A         Y        Out     0.581     7.314       -         
+N_763                                    Net          -        -       0.858     -           4         
+i2c_interface2_0.data_a_RNO_0[32]        OR3          C        In      -         8.173       -         
+i2c_interface2_0.data_a_RNO_0[32]        OR3          Y        Out     0.812     8.985       -         
+N_122                                    Net          -        -       0.233     -           1         
+i2c_interface2_0.data_a_RNO[32]          OA1C         A        In      -         9.218       -         
+i2c_interface2_0.data_a_RNO[32]          OA1C         Y        Out     1.008     10.225      -         
+N_40                                     Net          -        -       0.233     -           1         
+i2c_interface2_0.data_a[32]              DFN0E1C0     D        In      -         10.459      -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 11.229 is 6.126(54.6%) logic and 5.103(45.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      10.459
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.229
+
+    Number of logic level(s):                6
+    Starting point:                          i2c_interface2_0.data_cntr[0] / Q
+    Ending point:                            i2c_interface2_0.data_a[33] / D
+    The start point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+i2c_interface2_0.data_cntr[0]            DFN0P0       Q        Out     0.707     0.707       -         
+data_cntr[0]                             Net          -        -       1.188     -           8         
+i2c_interface2_0.un3_data_a.I_1          AND2         B        In      -         1.895       -         
+i2c_interface2_0.un3_data_a.I_1          AND2         Y        Out     0.679     2.574       -         
+DWACT_ADD_CI_0_TMP[0]                    Net          -        -       0.280     -           2         
+i2c_interface2_0.un3_data_a.I_15         NOR2B        A        In      -         2.853       -         
+i2c_interface2_0.un3_data_a.I_15         NOR2B        Y        Out     0.556     3.410       -         
+DWACT_ADD_CI_0_g_array_1[0]              Net          -        -       0.585     -           3         
+i2c_interface2_0.un3_data_a.I_14         XOR2         B        In      -         3.994       -         
+i2c_interface2_0.un3_data_a.I_14         XOR2         Y        Out     1.013     5.008       -         
+I_14_1                                   Net          -        -       1.726     -           21        
+i2c_interface2_0.data_a_2_i_o3_1[36]     OR2A         A        In      -         6.734       -         
+i2c_interface2_0.data_a_2_i_o3_1[36]     OR2A         Y        Out     0.581     7.314       -         
+N_763                                    Net          -        -       0.858     -           4         
+i2c_interface2_0.data_a_RNO_0[33]        OR3          C        In      -         8.173       -         
+i2c_interface2_0.data_a_RNO_0[33]        OR3          Y        Out     0.812     8.985       -         
+N_123                                    Net          -        -       0.233     -           1         
+i2c_interface2_0.data_a_RNO[33]          OA1C         A        In      -         9.218       -         
+i2c_interface2_0.data_a_RNO[33]          OA1C         Y        Out     1.008     10.225      -         
+N_38                                     Net          -        -       0.233     -           1         
+i2c_interface2_0.data_a[33]              DFN0E1C0     D        In      -         10.459      -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 11.229 is 6.126(54.6%) logic and 5.103(45.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      10.422
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.193
+
+    Number of logic level(s):                5
+    Starting point:                          i2c_interface2_0.ctr_a[1] / Q
+    Ending point:                            i2c_interface2_0.data_cntr[3] / D
+    The start point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+i2c_interface2_0.ctr_a[1]                      DFN0E0C0     Q        Out     0.707     0.707       -         
+ctr_a[1]                                       Net          -        -       1.706     -           20        
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_10     OR3          B        In      -         2.413       -         
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_10     OR3          Y        Out     0.773     3.185       -         
+DWACT_FDEC_E[0]                                Net          -        -       0.233     -           1         
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_11     NOR2         A        In      -         3.418       -         
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_11     NOR2         Y        Out     0.549     3.967       -         
+I_11                                           Net          -        -       1.706     -           20        
+i2c_interface2_0.data_cntr_RNI0LNT2_1[1]       NOR2B        B        In      -         5.673       -         
+i2c_interface2_0.data_cntr_RNI0LNT2_1[1]       NOR2B        Y        Out     0.558     6.232       -         
+data_N_7                                       Net          -        -       1.641     -           18        
+i2c_interface2_0.init_RNIMSUE4                 OR2          A        In      -         7.872       -         
+i2c_interface2_0.init_RNIMSUE4                 OR2          Y        Out     0.393     8.265       -         
+data_N_6                                       Net          -        -       0.858     -           4         
+i2c_interface2_0.data_cntr_RNO[3]              XNOR3        C        In      -         9.123       -         
+i2c_interface2_0.data_cntr_RNO[3]              XNOR3        Y        Out     1.066     10.189      -         
+data_cntr_n3                                   Net          -        -       0.233     -           1         
+i2c_interface2_0.data_cntr[3]                  DFN0C0       D        In      -         10.422      -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 11.193 is 4.816(43.0%) logic and 6.377(57.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      10.150
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.921
+
+    Number of logic level(s):                6
+    Starting point:                          i2c_interface2_0.ctr_a[1] / Q
+    Ending point:                            i2c_interface2_0.init_ctr_a[2] / D
+    The start point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+i2c_interface2_0.ctr_a[1]                      DFN0E0C0     Q        Out     0.707     0.707       -         
+ctr_a[1]                                       Net          -        -       1.706     -           20        
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_10     OR3          B        In      -         2.413       -         
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_10     OR3          Y        Out     0.773     3.185       -         
+DWACT_FDEC_E[0]                                Net          -        -       0.233     -           1         
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_11     NOR2         A        In      -         3.418       -         
+i2c_interface2_0.un6_sda_a\.un6_sda_a.I_11     NOR2         Y        Out     0.549     3.967       -         
+I_11                                           Net          -        -       1.706     -           20        
+i2c_interface2_0.state_a_RNIA9VH3[6]           AOI1         B        In      -         5.673       -         
+i2c_interface2_0.state_a_RNIA9VH3[6]           AOI1         Y        Out     0.688     6.361       -         
+N_362                                          Net          -        -       0.280     -           2         
+i2c_interface2_0.init_ctr_a_RNIBFBK3[0]        OR2          A        In      -         6.641       -         
+i2c_interface2_0.init_ctr_a_RNIBFBK3[0]        OR2          Y        Out     0.549     7.190       -         
+init_ctr_a_c0                                  Net          -        -       0.280     -           2         
+i2c_interface2_0.init_ctr_a_RNO_0[2]           AO13         A        In      -         7.470       -         
+i2c_interface2_0.init_ctr_a_RNO_0[2]           AO13         Y        Out     1.149     8.618       -         
+init_ctr_a_c1                                  Net          -        -       0.233     -           1         
+i2c_interface2_0.init_ctr_a_RNO[2]             XNOR3        C        In      -         8.851       -         
+i2c_interface2_0.init_ctr_a_RNO[2]             XNOR3        Y        Out     1.066     9.917       -         
+init_ctr_a_n2                                  Net          -        -       0.233     -           1         
+i2c_interface2_0.init_ctr_a[2]                 DFN0P0       D        In      -         10.150      -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 10.921 is 6.250(57.2%) logic and 4.671(42.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      10.111
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.881
+
+    Number of logic level(s):                6
+    Starting point:                          i2c_interface2_0.data_cntr[0] / Q
+    Ending point:                            i2c_interface2_0.data_a[16] / D
+    The start point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_100KHZ|clk_out_inferred_clock [falling] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+i2c_interface2_0.data_cntr[0]           DFN0P0       Q        Out     0.707     0.707       -         
+data_cntr[0]                            Net          -        -       1.188     -           8         
+i2c_interface2_0.un3_data_a.I_1         AND2         B        In      -         1.895       -         
+i2c_interface2_0.un3_data_a.I_1         AND2         Y        Out     0.679     2.574       -         
+DWACT_ADD_CI_0_TMP[0]                   Net          -        -       0.280     -           2         
+i2c_interface2_0.un3_data_a.I_15        NOR2B        A        In      -         2.853       -         
+i2c_interface2_0.un3_data_a.I_15        NOR2B        Y        Out     0.556     3.410       -         
+DWACT_ADD_CI_0_g_array_1[0]             Net          -        -       0.585     -           3         
+i2c_interface2_0.un3_data_a.I_14        XOR2         B        In      -         3.994       -         
+i2c_interface2_0.un3_data_a.I_14        XOR2         Y        Out     1.013     5.008       -         
+I_14_1                                  Net          -        -       1.726     -           21        
+i2c_interface2_0.data_a_2_i_o3_2[5]     OR2          B        In      -         6.734       -         
+i2c_interface2_0.data_a_2_i_o3_2[5]     OR2          Y        Out     0.556     7.290       -         
+N_756                                   Net          -        -       0.927     -           5         
+i2c_interface2_0.data_a_RNO_0[16]       OR3          C        In      -         8.217       -         
+i2c_interface2_0.data_a_RNO_0[16]       OR3          Y        Out     0.739     8.956       -         
+N_119                                   Net          -        -       0.233     -           1         
+i2c_interface2_0.data_a_RNO[16]         OA1C         A        In      -         9.189       -         
+i2c_interface2_0.data_a_RNO[16]         OA1C         Y        Out     0.688     9.877       -         
+N_56                                    Net          -        -       0.233     -           1         
+i2c_interface2_0.data_a[16]             DFN0E1C0     D        In      -         10.111      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 10.881 is 5.709(52.5%) logic and 5.172(47.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+
+--------------------------------------------------------------------------------
+Target Part: M1A3P1000L_FBGA484_STD
+Report for cell I2C_integration.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     9      1.0        9.0
+              AND3    36      1.0       36.0
+               AO1     8      1.0        8.0
+              AO13     1      1.0        1.0
+              AO1A     4      1.0        4.0
+              AO1B     1      1.0        1.0
+              AO1D     2      1.0        2.0
+              AOI1     2      1.0        2.0
+             AOI1B    12      1.0       12.0
+               AX1     4      1.0        4.0
+              AX1B     1      1.0        1.0
+              AX1C    12      1.0       12.0
+              AX1D     1      1.0        1.0
+            CLKINT     2      0.0        0.0
+               GND     8      0.0        0.0
+               INV     3      1.0        3.0
+               MX2    82      1.0       82.0
+              MX2B     1      1.0        1.0
+              NOR2    24      1.0       24.0
+             NOR2A    27      1.0       27.0
+             NOR2B    40      1.0       40.0
+              NOR3     4      1.0        4.0
+             NOR3A    36      1.0       36.0
+             NOR3B    20      1.0       20.0
+             NOR3C    32      1.0       32.0
+               OA1     4      1.0        4.0
+              OA1A     1      1.0        1.0
+              OA1B     3      1.0        3.0
+              OA1C    32      1.0       32.0
+               OR2    36      1.0       36.0
+              OR2A    14      1.0       14.0
+              OR2B     7      1.0        7.0
+               OR3    54      1.0       54.0
+              OR3A    17      1.0       17.0
+              OR3B     5      1.0        5.0
+              OR3C     1      1.0        1.0
+               PLL     1      0.0        0.0
+            PLLINT     1      0.0        0.0
+               VCC     8      0.0        0.0
+               XA1     1      1.0        1.0
+              XA1B     1      1.0        1.0
+             XNOR2     7      1.0        7.0
+             XNOR3     4      1.0        4.0
+               XO1    26      1.0       26.0
+              XOR2    97      1.0       97.0
+
+
+            DFN0C0    21      1.0       21.0
+          DFN0E0C0     5      1.0        5.0
+          DFN0E0P0     1      1.0        1.0
+            DFN0E1     4      1.0        4.0
+          DFN0E1C0    98      1.0       98.0
+            DFN0P0     4      1.0        4.0
+            DFN1C0    60      1.0       60.0
+            DFN1E0    80      1.0       80.0
+            DFN1E1    72      1.0       72.0
+          DFN1E1C0     8      1.0        8.0
+            DFN1P0     4      1.0        4.0
+                   -----          ----------
+             TOTAL  1049              1029.0
+
+
+  IO Cell usage:
+              cell count
+             BIBUF     1
+             INBUF     2
+            OUTBUF     9
+                   -----
+             TOTAL    12
+
+
+Core Cells         : 1029 of 24576 (4%)
+IO Cells           : 12
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 32 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 50MB peak: 118MB)
+
+Process took 0h:00m:09s realtime, 0h:00m:02s cputime
+# Sat Apr 02 17:00:36 2016
+
+###########################################################]

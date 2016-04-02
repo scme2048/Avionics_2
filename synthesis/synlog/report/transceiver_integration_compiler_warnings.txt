@@ -1,6 +1,6 @@
-@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":49:0:49:5|Pruning bit 1 of enable_buffer[1:0] -- not in use ...
-@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":33:0:33:5|Optimizing register bit cntr[13] to a constant 0
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":33:0:33:5|Pruning register bit 13 of cntr[13:0] 
+@W: CL265 :"F:\Avionics_2\hdl\orbit_control.v":49:0:49:5|Pruning bit 1 of enable_buffer[1:0] -- not in use ...
+@W: CL118 :"F:\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
+@W: CL118 :"F:\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+@W: CL190 :"F:\Avionics_2\hdl\orbit_control.v":33:0:33:5|Optimizing register bit cntr[13] to a constant 0
+@W: CL260 :"F:\Avionics_2\hdl\orbit_control.v":33:0:33:5|Pruning register bit 13 of cntr[13:0] 
 

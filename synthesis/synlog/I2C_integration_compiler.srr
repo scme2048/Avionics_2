@@ -1,0 +1,112 @@
+Synopsys HDL Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
+@I::"F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v"
+@I::"F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v"
+@I::"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v"
+@I::"F:\Avionics_2\hdl\i2c_interface2.v"
+@I::"F:\Avionics_2\hdl\reset_pulse.v"
+@I::"F:\Avionics_2\hdl\test_harness_geiger_stack.v"
+@I::"F:\Avionics_2\hdl\timestamp.v"
+@I::"F:\Avionics_2\component\work\I2C_integration\I2C_integration.v"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module I2C_integration
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":260:7:260:12|Synthesizing module PLLINT
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":1229:7:1229:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
+
+@N: CG364 :"F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v":5:7:5:14|Synthesizing module CLK_1MHZ
+
+@N: CG364 :"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+
+@N: CG364 :"F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
+
+@N: CG364 :"F:\Avionics_2\hdl\i2c_interface2.v":21:7:21:20|Synthesizing module i2c_interface2
+
+@W: CL169 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register begin_data 
+
+@W: CL169 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register test[7:0] 
+
+@W: CL169 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register test_sda 
+
+@A: CL282 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Feedback mux created for signal state_hold[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Feedback mux created for signal scl_enable -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[4] is always 0, optimizing ...
+@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[5] is always 0, optimizing ...
+@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[6] is always 0, optimizing ...
+@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[7] is always 0, optimizing ...
+@W: CL279 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register bits 7 to 4 of state_hold[7:0] 
+
+@N: CG364 :"F:\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+
+@N: CG364 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":16:7:16:31|Synthesizing module test_harness_geiger_stack
+
+@W: CL169 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
+
+@A: CL282 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_prev[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CG364 :"F:\Avionics_2\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
+
+@W: CS142 :"F:\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
+@N: CG364 :"F:\Avionics_2\component\work\I2C_integration\I2C_integration.v":9:7:9:21|Synthesizing module I2C_integration
+
+@N: CL201 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Trying to extract state machine for register state_a
+Extracted state machine for register state_a
+State machine has 16 reachable states with original encodings of:
+   00000000
+   00000001
+   00000010
+   00000011
+   00000100
+   00000101
+   00000110
+   00000111
+   00001000
+   00001001
+   00001010
+   00001011
+   00001100
+   00001101
+   00001110
+   00001111
+@W: CL260 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register bit 2 of state_hold[3:0] 
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 165MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 02 17:00:20 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 02 17:00:21 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sat Apr 02 17:00:21 2016
+
+###########################################################]

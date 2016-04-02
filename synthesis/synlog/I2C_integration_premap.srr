@@ -1,0 +1,46 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@L: F:\Avionics_2\synthesis\I2C_integration_scck.rpt 
+Printing clock  summary report in "F:\Avionics_2\synthesis\I2C_integration_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                            Requested     Requested     Clock        Clock              
+Clock                                            Frequency     Period        Type         Group              
+-------------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                      100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+=============================================================================================================
+
+@W: MT530 :"f:\avionics_2\hdl\timestamp.v":19:0:19:5|Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock which controls 24 sequential elements including timestamp_0.TIMESTAMP[23:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"f:\avionics_2\hdl\i2c_interface2.v":64:0:64:5|Found inferred clock clock_div_1MHZ_100KHZ|clk_out_inferred_clock which controls 133 sequential elements including i2c_interface2_0.sda_a. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"f:\avionics_2\hdl\clock_div_1mhz_10hz.v":22:0:22:5|Found inferred clock CLK_1MHZ|GLA_inferred_clock which controls 205 sequential elements including clock_div_1MHZ_10HZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file F:\Avionics_2\synthesis\I2C_integration.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 110MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 02 17:00:25 2016
+
+###########################################################]

@@ -8,9 +8,9 @@
  			
 <table style="border:none;" width="100%" ><tr> <td class="outline">
 <table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
- <tr> <td class="optionTitle" align="left"> Project Name</td> <td> transceiver_integration_syn</td> <td class="optionTitle" align="left"> Implementation Name</td> <td> synthesis</td> </tr>
+ <tr> <td class="optionTitle" align="left"> Project Name</td> <td> I2C_integration_syn</td> <td class="optionTitle" align="left"> Implementation Name</td> <td> synthesis</td> </tr>
  		 </thead> 
-		 <tbody> <tr> <td class="optionTitle" align="left"> Top Module</td> <td> transceiver_integration</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
+		 <tbody> <tr> <td class="optionTitle" align="left"> Top Module</td> <td> I2C_integration</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
 <tr> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 24</td> </tr>
 <tr> <td class="optionTitle" align="left"> Disable I/O Insertion</td> <td> 0</td> <td class="optionTitle" align="left"> FSM Compiler</td> <td> 1</td> </tr>
  
@@ -31,40 +31,40 @@
          </tr>
   <tr>
   <td class="optionTitle"> (compiler)</td><td>Complete</td>
- <td>22</td>
- <td>5</td>
+ <td>16</td>
+ <td>11</td>
 <td>0</td>
 <td>-</td>
-<td>0m:01s</td>
+<td>0m:02s</td>
 <td>-</td>
-<td><font size="-1">4/1/2016</font><br/><font size="-2">4:51:18 PM</font></td>
+<td><font size="-1">4/2/2016</font><br/><font size="-2">5:00:22 PM</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (premap)</td><td>Complete</td>
- <td>5</td>
- <td>8</td>
+ <td>3</td>
+ <td>3</td>
 <td>0</td>
 <td>0m:00s</td>
-<td>0m:00s</td>
-<td>111MB</td>
-<td><font size="-1">4/1/2016</font><br/><font size="-2">4:51:20 PM</font></td>
+<td>0m:01s</td>
+<td>110MB</td>
+<td><font size="-1">4/2/2016</font><br/><font size="-2">5:00:25 PM</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
- <td>32</td>
- <td>27</td>
+ <td>12</td>
+ <td>11</td>
 <td>0</td>
-<td>0m:03s</td>
-<td>0m:03s</td>
-<td>141MB</td>
-<td><font size="-1">4/1/2016</font><br/><font size="-2">4:51:25 PM</font></td>
+<td>0m:02s</td>
+<td>0m:09s</td>
+<td>118MB</td>
+<td><font size="-1">4/2/2016</font><br/><font size="-2">5:00:36 PM</font></td>
 </tr> 
 
 <tr>
   <td class="optionTitle">Multi-srs Generator</td>
-  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>0m:01s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">4/1/2016</font><br/><font size="-2">4:51:20 PM</font></td> 		</tbody>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>0m:01s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">4/2/2016</font><br/><font size="-2">5:00:24 PM</font></td> 		</tbody>
      </table>
  <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0">
@@ -72,8 +72,8 @@
 <tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
  </tfoot> 
  <tbody> <tr> 
-<td title ="Total Core Cells used" class="optionTitle" align="left">Core Cells</td> <td>1081</td>
-<td title ="Total IO Cells used" class="optionTitle" align="left">IO Cells</td> <td>14</td>
+<td title ="Total Core Cells used" class="optionTitle" align="left">Core Cells</td> <td>1029</td>
+<td title ="Total IO Cells used" class="optionTitle" align="left">IO Cells</td> <td>12</td>
 </tr>
 <tr> 
 <td title ="Total Block RAMs used" class="optionTitle" align="left">Block RAMs
@@ -87,21 +87,16 @@
  </tfoot> 
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
-<tr> <td  align="left">CLK_26MHZ|GLA_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">94.3 MHz</td><td  align="left">-0.609</td></tr> 
-<tr> <td  align="left">clock_div_1MHZ_10HZ|clk_out_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">88.3 MHz</td><td  align="left">-1.329</td></tr> 
-<tr> <td  align="left">clock_div_26MHZ_1MHZ|clk_out_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">128.8 MHz</td><td  align="left">2.237</td></tr> 
-<tr> <td  align="left">reset_pulse|CLK_OUT_48MHZ_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">107.1 MHz</td><td  align="left">0.659</td></tr> 
-<tr> <td  align="left">spi_master|busy_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">65.5 MHz</td><td  align="left">-5.277</td></tr> 
-<tr> <td  align="left">spi_master|un1_busy_enable_1_sqmuxa_1_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
-<tr> <td  align="left">spi_master|un1_rst_1_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
-<tr> <td  align="left">spi_mode_config2|next_b_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">216.2 MHz</td><td  align="left">5.375</td></tr> 
+<tr> <td  align="left">CLK_1MHZ|GLA_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">88.4 MHz</td><td  align="left">-1.316</td></tr> 
+<tr> <td  align="left">clock_div_1MHZ_10HZ|clk_out_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">93.0 MHz</td><td  align="left">-0.749</td></tr> 
+<tr> <td  align="left">clock_div_1MHZ_100KHZ|clk_out_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">89.1 MHz</td><td  align="left">-1.229</td></tr> 
 </tbody> 
  </table>
 <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0">
  				   <thead class="tablehead"><tr><th colspan="4">Optimizations Summary</th></tr></thead>
  <tbody> <tr> 
-<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>0 / 8</td>
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>0 / 3</td>
 <td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br> 

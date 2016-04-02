@@ -11,20 +11,19 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
 @I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
 @I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v"
+@I::"F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v"
+@I::"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v"
+@I::"F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v"
+@I::"F:\Avionics_2\hdl\orbit_control.v"
+@I::"F:\Avionics_2\hdl\read_buffer.v"
+@I::"F:\Avionics_2\hdl\reset_pulse.v"
+@I::"F:\Avionics_2\hdl\spi_data_out.v"
+@I::"F:\Avionics_2\hdl\SPI_Master.v"
+@I::"F:\Avionics_2\hdl\spi_mode_config2.v"
+@I::"F:\Avionics_2\hdl\test_constants_spi.v"
+@I::"F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v"
 Verilog syntax check successful!
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v changed - recompiling
+Options changed - recompiling
 Selecting top level module transceiver_integration
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -34,34 +33,34 @@ Selecting top level module transceiver_integration
 
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
+@N: CG364 :"F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+@N: CG364 :"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v":13:7:13:26|Synthesizing module clock_div_26MHZ_1MHZ
+@N: CG364 :"F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v":13:7:13:26|Synthesizing module clock_div_26MHZ_1MHZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
+@N: CG364 :"F:\Avionics_2\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
 
-@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":49:0:49:5|Pruning bit 1 of enable_buffer[1:0] -- not in use ...
+@W: CL265 :"F:\Avionics_2\hdl\orbit_control.v":49:0:49:5|Pruning bit 1 of enable_buffer[1:0] -- not in use ...
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+@N: CG364 :"F:\Avionics_2\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+@N: CG364 :"F:\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v":21:7:21:18|Synthesizing module spi_data_out
+@N: CG364 :"F:\Avionics_2\hdl\spi_data_out.v":21:7:21:18|Synthesizing module spi_data_out
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
+@N: CG364 :"F:\Avionics_2\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
 
-@A: CL110 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Too many clocks (> 8) for set/reset analysis of busy_enable, try moving enabling expressions outside always block
-@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
+@A: CL110 :"F:\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Too many clocks (> 8) for set/reset analysis of busy_enable, try moving enabling expressions outside always block
+@W: CL118 :"F:\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
+@W: CL118 :"F:\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+@N: CG364 :"F:\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
+@N: CG364 :"F:\Avionics_2\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
+@N: CG364 :"F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
 
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register tx_state
+@N: CL201 :"F:\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register tx_state
 Extracted state machine for register tx_state
 State machine has 5 reachable states with original encodings of:
    000
@@ -69,7 +68,7 @@ State machine has 5 reachable states with original encodings of:
    011
    100
    111
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register chip_state
+@N: CL201 :"F:\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register chip_state
 Extracted state machine for register chip_state
 State machine has 8 reachable states with original encodings of:
    000
@@ -80,26 +79,26 @@ State machine has 8 reachable states with original encodings of:
    101
    110
    111
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":207:4:207:9|Trying to extract state machine for register state_q
+@N: CL201 :"F:\Avionics_2\hdl\SPI_Master.v":207:4:207:9|Trying to extract state machine for register state_q
 Extracted state machine for register state_q
 State machine has 3 reachable states with original encodings of:
    00
    01
    10
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+@N: CL201 :"F:\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
 Extracted state machine for register init_stage
 State machine has 3 reachable states with original encodings of:
    00
    01
    10
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":33:0:33:5|Optimizing register bit cntr[13] to a constant 0
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":33:0:33:5|Pruning register bit 13 of cntr[13:0] 
+@W: CL190 :"F:\Avionics_2\hdl\orbit_control.v":33:0:33:5|Optimizing register bit cntr[13] to a constant 0
+@W: CL260 :"F:\Avionics_2\hdl\orbit_control.v":33:0:33:5|Pruning register bit 13 of cntr[13:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 95MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 95MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 01 16:51:18 2016
+# Sat Apr 02 16:59:35 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -108,14 +107,14 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 01 16:51:18 2016
+# Sat Apr 02 16:59:36 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 01 16:51:18 2016
+# Sat Apr 02 16:59:36 2016
 
 ###########################################################]

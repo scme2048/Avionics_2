@@ -1,0 +1,243 @@
+***************************************************************************
+                               Status Report
+                          Sat Apr 02 17:01:28 2016 ***************************************************************************
+
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+File Name: F:\Avionics_2\designer\impl1\I2C_integration.adb
+Design Name: I2C_integration  Design State: compile
+Last Saved: Sat Apr 02 17:01:10 2016
+
+***** Device Data **************************************************
+
+Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Sat Apr 02 17:01:01 2016:
+        F:\Avionics_2\synthesis\I2C_integration.edn
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: OFF
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3L
+Device      : M1A3P1000L
+Package     : 484 FBGA
+Source      : F:\Avionics_2\synthesis\I2C_integration.edn
+Format      : EDIF
+Topcell     : I2C_integration
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Info: BLK007: No CoreConsole Database file imported for an M1 device.
+Warning: CMP201: Net CLK_1MHZ_0/Core_GLB drives no load.
+Warning: CMP201: Net CLK_1MHZ_0/Core_GLC drives no load.
+Warning: CMP201: Net CLK_1MHZ_0/LOCK drives no load.
+Warning: CMP201: Net CLK_1MHZ_0/Core_YB drives no load.
+Warning: CMP201: Net CLK_1MHZ_0/Core_YC drives no load.
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        12
+
+    Total macros optimized  12
+
+Warning: CMP503: Remapped 112 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+         pin on the enable flip-flop is not being driven by a global net.
+
+There were 0 error(s) and 6 warning(s) in this design.
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:   1130  Total:  24576   (4.60%)
+    IO (W/ clocks)             Used:     12  Total:    300   (4.00%)
+    Differential IO            Used:      0  Total:     74   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      3  Total:     18   (16.67%)
+    PLL                        Used:      1  Total:      1   (100.00%)
+    RAM/FIFO                   Used:      0  Total:     32   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 3      | 6  (50.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 773          | 773
+    SEQ     | 357          | 357
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 2             | 0            | 0
+    Output I/O                            | 9             | 0            | 0
+    Bidirectional I/O                     | 1             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVCMOS33                        | 3.30v | N/A   | 2     | 9      | 1
+
+I/O Placement:
+
+    Locked  :   0
+    Placed  :   0
+    UnPlaced:  12 ( 100.00% )
+
+Net information report:
+=======================
+
+The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
+    EffCnt  Type          Name
+    --------------------------
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+                          Driver: reset_pulse_0/RESET_1
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+                          Driver: reset_pulse_0/RESET_2
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+                          Driver: reset_pulse_0/RESET_3
+    22      SET/RESET_NET Net   : reset_pulse_0_RESET_4
+                          Driver: reset_pulse_0/RESET_4
+    18      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+                          Driver: reset_pulse_0/RESET_0
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    200     CLK_NET       Net   : GLA
+                          Driver: CLK_1MHZ_0/Core
+                          Source: ESSENTIAL
+    134     CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
+                          Driver: clock_div_1MHZ_100KHZ_0/clk_out_RNIOQD8
+                          Source: NETLIST
+    24      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+                          Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    24      INT_NET       Net   : SDA_in
+                          Driver: SDA_pad
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+                          Driver: reset_pulse_0/RESET_0
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+                          Driver: reset_pulse_0/RESET_1
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+                          Driver: reset_pulse_0/RESET_2
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+                          Driver: reset_pulse_0/RESET_3
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_4
+                          Driver: reset_pulse_0/RESET_4
+    24      INT_NET       Net   : reset_pulse_0_RESET_5
+                          Driver: reset_pulse_0/RESET_5
+    24      INT_NET       Net   : reset_pulse_0_RESET_6
+                          Driver: reset_pulse_0/RESET_6
+    24      INT_NET       Net   : reset_pulse_0_RESET_7
+                          Driver: reset_pulse_0/RESET_7
+    24      INT_NET       Net   : reset_pulse_0_RESET_8
+                          Driver: reset_pulse_0/RESET_8
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    24      INT_NET       Net   : SDA_in
+                          Driver: SDA_pad
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+                          Driver: reset_pulse_0/RESET_0
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+                          Driver: reset_pulse_0/RESET_1
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+                          Driver: reset_pulse_0/RESET_2
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+                          Driver: reset_pulse_0/RESET_3
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_4
+                          Driver: reset_pulse_0/RESET_4
+    24      INT_NET       Net   : reset_pulse_0_RESET_5
+                          Driver: reset_pulse_0/RESET_5
+    24      INT_NET       Net   : reset_pulse_0_RESET_6
+                          Driver: reset_pulse_0/RESET_6
+    24      INT_NET       Net   : reset_pulse_0_RESET_7
+                          Driver: reset_pulse_0/RESET_7
+    24      INT_NET       Net   : reset_pulse_0_RESET_8
+                          Driver: reset_pulse_0/RESET_8
+====================
+Flash*Freeze report:
+====================
+
+The design does not use the Flash*Freeze feature.
+
+====================
+
+

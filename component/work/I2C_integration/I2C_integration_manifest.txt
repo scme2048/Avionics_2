@@ -1,11 +1,11 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
 
-Date      :  Sat Apr 02 16:25:59 2016
-Project   :  F:\FPGA\Microsemi\First Try\I2C
+Date      :  Sat Apr 02 16:58:50 2016
+Project   :  F:\Avionics_2
 Component :  I2C_integration
 Family    :  ProASIC3L
 
 
 HDL source files for all Synthesis and Simulation tools:
-    F:/FPGA/Microsemi/First Try/I2C/component/work/I2C_integration/I2C_integration.v
+    F:/Avionics_2/component/work/I2C_integration/I2C_integration.v
 

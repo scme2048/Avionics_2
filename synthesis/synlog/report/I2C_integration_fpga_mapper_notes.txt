@@ -1,0 +1,12 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: MF238 :"f:\avionics_2\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N: MF238 :"f:\avionics_2\hdl\clock_div_1mhz_100khz.v":30:19:30:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N: MO223 :"f:\avionics_2\hdl\i2c_interface2.v":64:0:64:5|In FSM state_a[15:0] (view:work.i2c_interface2(verilog)), reset input is driving data input. 
+@N: MF239 :"f:\avionics_2\hdl\i2c_interface2.v":127:37:127:44|Found 5-bit decrementor, 'un6_sda_a\.un6_sda_a[4:0]'
+@N: FP130 |Promoting Net clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT on CLKINT  clock_div_1MHZ_100KHZ_0.clk_out_inferred_clock 
+@N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

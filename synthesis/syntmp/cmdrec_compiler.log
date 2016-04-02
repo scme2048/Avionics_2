@@ -1,18 +1,15 @@
-C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs  -top  transceiver_integration  -hdllog  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\  -I C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib   -v2001  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -encrypt  -pro  -dmgen  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v -lib work C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v 
+C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe  -osyn  F:\Avionics_2\synthesis\synwork\I2C_integration_comp.srs  -top  I2C_integration  -hdllog  F:\Avionics_2\synthesis\synlog\I2C_integration_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I F:\Avionics_2\synthesis\  -I C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib   -v2001  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -encrypt  -pro  -dmgen  F:\Avionics_2\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v -lib work F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v -lib work F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v -lib work F:\Avionics_2\hdl\i2c_interface2.v -lib work F:\Avionics_2\hdl\reset_pulse.v -lib work F:\Avionics_2\hdl\test_harness_geiger_stack.v -lib work F:\Avionics_2\hdl\timestamp.v -lib work F:\Avionics_2\component\work\I2C_integration\I2C_integration.v 
 rc:0 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\transceiver_integration_comp.srs|o|1459551078|39132
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\transceiver_integration_compiler.srr|o|1459551078|8456
+F:\Avionics_2\synthesis\synwork\I2C_integration_comp.srs|o|1459638022|22254
+F:\Avionics_2\synthesis\synlog\I2C_integration_compiler.srr|o|1459638022|6534
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431619582|57101
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v|i|1458335790|2764
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v|i|1458335789|970
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v|i|1458335789|967
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v|i|1459388101|2148
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v|i|1458335789|3250
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v|i|1458335789|866
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v|i|1458335789|1025
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v|i|1459548351|8156
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v|i|1459551053|43967
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\test_constants_spi.v|i|1458335789|865
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\transceiver_integration\transceiver_integration.v|i|1459551067|7950
+F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v|i|1458094914|2760
+F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v|i|1459637666|1024
+F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v|i|1459637666|970
+F:\Avionics_2\hdl\i2c_interface2.v|i|1459637666|11689
+F:\Avionics_2\hdl\reset_pulse.v|i|1459637666|866
+F:\Avionics_2\hdl\test_harness_geiger_stack.v|i|1459637666|1742
+F:\Avionics_2\hdl\timestamp.v|i|1459637666|712
+F:\Avionics_2\component\work\I2C_integration\I2C_integration.v|i|1459637930|5689
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\c_hdl.exe|i|1431628566|1299456
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\c_hdl.exe|i|1431628756|1903104

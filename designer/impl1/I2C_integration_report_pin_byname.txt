@@ -1,0 +1,31 @@
+*****************************************************************
+Pin Report - Date: Sat Apr 02 17:05:49 2016 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: I2C_integration
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port      |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+CLK_48MHZ  E4   Yes    GAB2/IO224PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+D0         D5   Yes    GAA0/IO00RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+D1         D6   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+D2         D10  Yes    IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D3         G10  Yes    IO29RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D4         G11  Yes    IO33RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D5         E11  Yes    IO34RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D6         D11  Yes    IO35RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+D7         F11  Yes    IO36RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+EXT_RESET  T9   Yes    GEA2/IO187RSB2  LVCMOS33  ---                ---   None           ---   ---               No           No
+SCL        J4   Yes    IO217NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SDA        J6   Yes    IO216PDB3       LVCMOS33  12                 High  None           No    5                 No           No
