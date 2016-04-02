@@ -12,13 +12,14 @@
     <project-description>
     </project-description>
     <location>F:/FPGA/Microsemi/First Try/I2C/component/work/I2C_integration</location>
-    <state>GENERATED ( Mon Mar 28 19:07:10 2016 )</state>
+    <state>GENERATED ( Sat Apr 02 16:25:57 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
+    <file>F:\FPGA\Microsemi\First Try\I2C\component\work\i2c_ins\i2c_ins.v</file>
     <file>F:\FPGA\Microsemi\First Try\I2C\component\work\I2C_integration\I2C_integration.v</file>
     <file>F:\FPGA\Microsemi\First Try\I2C\hdl\clock_div_1MHZ_100KHZ.v</file>
     <file>F:\FPGA\Microsemi\First Try\I2C\hdl\clock_div_1MHZ_10HZ.v</file>

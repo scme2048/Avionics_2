@@ -28,8 +28,10 @@
 `timescale 1ns/100ps
 
 module i2c_interface2_tb(
-input [7:0] STATE,
-inout SDA);
+input STATE,
+inout SDA
+//output SDA
+);
 
 localparam IDLE = 4'h0,
            START = 4'h1,
@@ -47,7 +49,8 @@ reg SYSCLK;
 reg NSYSRESET;
 reg [23:0] TIMESTAMP;
 
-assign SDA = ((STATE == ACK_IN)||(STATE == DATA)) ? 1'b0 : 1'bz;
+//wire SDA;
+assign SDA = STATE ? 1'b0 : 1'bz;
 
 initial
 begin
@@ -73,7 +76,7 @@ end
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-always @(SYSCLK)
+always @(posedge SYSCLK)
     TIMESTAMP = TIMESTAMP + 1;
 
 

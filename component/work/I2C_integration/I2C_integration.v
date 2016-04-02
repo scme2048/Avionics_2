@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Mar 28 19:07:08 2016
+// Created by SmartDesign Sat Apr 02 16:25:57 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -144,8 +144,8 @@ i2c_interface2 i2c_interface2_0(
         .timestamp ( timestamp_0_TIMESTAMP ),
         // Outputs
         .scl       ( SCL_net_0 ),
-        .data      ( i2c_interface2_0_data ),
         .state     (  ),
+        .data      ( i2c_interface2_0_data ),
         // Inouts
         .sda       ( SDA ) 
         );
