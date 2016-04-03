@@ -1,15 +1,15 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  F:\Avionics_2\synthesis   -part M1A3P1000L  -package FBGA484  -grade STD    -globalthreshold 5000 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile F:\Avionics_2\synthesis\synlog\report\I2C_integration_fpga_mapper.xml  -top_level_module  I2C_integration  -licensetype  synplifypro_actel  -flow mapping  -mp  1  -prjfile  F:\Avionics_2\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  F:\Avionics_2\synthesis\I2C_integration.edn   -freq 100.000   F:\Avionics_2\synthesis\synwork\I2C_integration_prem.srd  -sap  F:\Avionics_2\synthesis\I2C_integration.sap  -otap  F:\Avionics_2\synthesis\I2C_integration.tap  -omap  F:\Avionics_2\synthesis\I2C_integration.map  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -sap  F:\Avionics_2\synthesis\I2C_integration.sap  -ologparam  F:\Avionics_2\synthesis\syntmp\I2C_integration.plg  -osyn  F:\Avionics_2\synthesis\I2C_integration.srm  -prjdir  F:\Avionics_2\synthesis\  -prjname  I2C_integration_syn  -log  F:\Avionics_2\synthesis\synlog\I2C_integration_fpga_mapper.srr 
 rc:1 success:1
-F:\Avionics_2\synthesis\scratchproject.prs|o|1459638020|1980
-F:\Avionics_2\synthesis\I2C_integration.edn|o|1459638038|506831
-F:\Avionics_2\synthesis\synwork\I2C_integration_prem.srd|i|1459638026|29847
-F:\Avionics_2\synthesis\I2C_integration.sap|o|1459638026|10127
+F:\Avionics_2\synthesis\scratchproject.prs|o|1459640972|1980
+F:\Avionics_2\synthesis\I2C_integration.edn|o|1459640992|507087
+F:\Avionics_2\synthesis\synwork\I2C_integration_prem.srd|i|1459640980|28268
+F:\Avionics_2\synthesis\I2C_integration.sap|o|1459640980|10127
 F:\Avionics_2\synthesis\I2C_integration.tap|o|0|0
-F:\Avionics_2\synthesis\I2C_integration.map|o|1459638038|28
+F:\Avionics_2\synthesis\I2C_integration.map|o|1459640992|28
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431619582|57101
-F:\Avionics_2\synthesis\I2C_integration.sap|o|1459638026|10127
-F:\Avionics_2\synthesis\syntmp\I2C_integration.plg|o|1459638038|2703
-F:\Avionics_2\synthesis\I2C_integration.srm|o|1459638034|72104
-F:\Avionics_2\synthesis\synlog\I2C_integration_fpga_mapper.srr|o|1459638038|93732
+F:\Avionics_2\synthesis\I2C_integration.sap|o|1459640980|10127
+F:\Avionics_2\synthesis\syntmp\I2C_integration.plg|o|1459640992|2703
+F:\Avionics_2\synthesis\I2C_integration.srm|o|1459640988|72238
+F:\Avionics_2\synthesis\synlog\I2C_integration_fpga_mapper.srr|o|1459640992|95011
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\m_proasic.exe|i|1433442986|9280512
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe|i|1433444758|11753984

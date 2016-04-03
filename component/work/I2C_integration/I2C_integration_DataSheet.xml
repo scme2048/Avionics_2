@@ -7,28 +7,58 @@
     <die>M1A3P1000L</die>
     <package>484 FBGA</package>
     <speed-grade>STD</speed-grade>
-    <voltage>1.2</voltage>
+    <voltage>1.5</voltage>
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>F:/FPGA/Microsemi/First Try/I2C/component/work/I2C_integration</location>
-    <state>GENERATED ( Sat Apr 02 16:25:57 2016 )</state>
+    <location>F:/Avionics_2/component/work/I2C_integration</location>
+    <state>GENERATED ( Sat Apr 02 17:58:37 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>F:\FPGA\Microsemi\First Try\I2C\component\work\i2c_ins\i2c_ins.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\component\work\I2C_integration\I2C_integration.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\clock_div_1MHZ_100KHZ.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\clock_div_1MHZ_10HZ.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\i2c_interface.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\i2c_interface2.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\reset_pulse.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\test_harness_geiger_stack.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\hdl\timestamp.v</file>
-    <file>F:\FPGA\Microsemi\First Try\I2C\smartgen\CLK_1MHZ\CLK_1MHZ.v</file>
+    <file>F:\Avionics_2\component\work\full_sys\full_sys.v</file>
+    <file>F:\Avionics_2\component\work\geiger_integration\geiger_integration.v</file>
+    <file>F:\Avionics_2\component\work\I2C_integration\I2C_integration.v</file>
+    <file>F:\Avionics_2\component\work\master_mode\master_mode.v</file>
+    <file>F:\Avionics_2\component\work\memory_test\memory_test.v</file>
+    <file>F:\Avionics_2\component\work\sram_test\sram_test.v</file>
+    <file>F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v</file>
+    <file>F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v</file>
+    <file>F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v</file>
+    <file>F:\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v</file>
+    <file>F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v</file>
+    <file>F:\Avionics_2\hdl\dummy_mem.v</file>
+    <file>F:\Avionics_2\hdl\geig_data_handling.v</file>
+    <file>F:\Avionics_2\hdl\i2c_interface2.v</file>
+    <file>F:\Avionics_2\hdl\mag_data_handling.v</file>
+    <file>F:\Avionics_2\hdl\mag_i2c_interface.v</file>
+    <file>F:\Avionics_2\hdl\memory_controller.v</file>
+    <file>F:\Avionics_2\hdl\nor_flash_interface.v</file>
+    <file>F:\Avionics_2\hdl\orbit_control.v</file>
+    <file>F:\Avionics_2\hdl\read_address_traversal.v</file>
+    <file>F:\Avionics_2\hdl\read_buffer.v</file>
+    <file>F:\Avionics_2\hdl\reset_pulse.v</file>
+    <file>F:\Avionics_2\hdl\sdram_interface.v</file>
+    <file>F:\Avionics_2\hdl\sdram_memory_controller.v</file>
+    <file>F:\Avionics_2\hdl\sdram_read_address_traversal.v</file>
+    <file>F:\Avionics_2\hdl\sdram_write_address_traversal.v</file>
+    <file>F:\Avionics_2\hdl\spi_data_out.v</file>
+    <file>F:\Avionics_2\hdl\SPI_Master.v</file>
+    <file>F:\Avionics_2\hdl\spi_mode_config.v</file>
+    <file>F:\Avionics_2\hdl\spi_mode_config2.v</file>
+    <file>F:\Avionics_2\hdl\sram_interface.v</file>
+    <file>F:\Avionics_2\hdl\sram_test_sim.v</file>
+    <file>F:\Avionics_2\hdl\test_constants_spi.v</file>
+    <file>F:\Avionics_2\hdl\test_harness.v</file>
+    <file>F:\Avionics_2\hdl\test_harness_geiger_stack.v</file>
+    <file>F:\Avionics_2\hdl\timestamp.v</file>
+    <file>F:\Avionics_2\hdl\write_address_traversal.v</file>
+    <file>F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v</file>
+    <file>F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v</file>
+    <file>F:\Avionics_2\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v</file>
   </fileset>
   <io>
     <port-name>D2</port-name>
@@ -79,6 +109,12 @@
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
+    <port-name>STATE</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
     <port-name>EXT_RESET</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
@@ -105,7 +141,7 @@
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>SmartGen</core-exttype>
-    <core-location>F:/FPGA/Microsemi/First Try/I2C/smartgen/CLK_1MHZ</core-location>
+    <core-location>F:/Avionics_2/smartgen/CLK_1MHZ</core-location>
     <core-name>CLK_1MHZ_0</core-name>
   </core>
   <core type="HdlModule">

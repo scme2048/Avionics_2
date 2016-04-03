@@ -4,14 +4,14 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 357 clock pin(s) of sequential element(s)
-0 instances converted, 357 sequential instances remain driven by gated/generated clocks
+3 gated/generated clock tree(s) driving 359 clock pin(s) of sequential element(s)
+0 instances converted, 359 sequential instances remain driven by gated/generated clocks
 
 ====================================================================================================================== Gated/Generated Clocks ======================================================================================================================
 Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                               Explanation                                                                                                                   
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @K:CKID0001       CLK_1MHZ_0.Core                     PLL                    200        test_harness_geiger_stack_0.data_prev[79]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0002       clock_div_1MHZ_100KHZ_0.clk_out     DFN1P0                 133        i2c_interface2_0.data_a[47]                   No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0002       clock_div_1MHZ_100KHZ_0.clk_out     DFN1P0                 135        i2c_interface2_0.data_a[47]                   No generated or derived clock directive on output of sequential instance                                                      
 @K:CKID0003       clock_div_1MHZ_10HZ_0.clk_out       DFN1P0                 24         timestamp_0.TIMESTAMP[23]                     No generated or derived clock directive on output of sequential instance                                                      
 ====================================================================================================================================================================================================================================================================
 

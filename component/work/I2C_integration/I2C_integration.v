@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sat Apr 02 16:58:49 2016
+// Created by SmartDesign Sat Apr 02 17:58:36 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -20,6 +20,7 @@ module I2C_integration(
     D6,
     D7,
     SCL,
+    STATE,
     // Inouts
     SDA
 );
@@ -41,6 +42,7 @@ output D5;
 output D6;
 output D7;
 output SCL;
+output STATE;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
@@ -66,6 +68,7 @@ wire          reset_pulse_0_CLK_OUT_48MHZ;
 wire          reset_pulse_0_RESET;
 wire          SCL_net_0;
 wire          SDA;
+wire          STATE_net_0;
 wire   [23:0] timestamp_0_TIMESTAMP;
 wire          SCL_net_1;
 wire          D0_net_1;
@@ -76,6 +79,7 @@ wire          D4_net_1;
 wire          D5_net_1;
 wire          D6_net_1;
 wire          D7_net_1;
+wire          STATE_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -87,24 +91,26 @@ assign VCC_net = 1'b1;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign SCL_net_1 = SCL_net_0;
-assign SCL       = SCL_net_1;
-assign D0_net_1  = D0_net_0;
-assign D0        = D0_net_1;
-assign D1_net_1  = D1_net_0;
-assign D1        = D1_net_1;
-assign D2_net_1  = D2_net_0;
-assign D2        = D2_net_1;
-assign D3_net_1  = D3_net_0;
-assign D3        = D3_net_1;
-assign D4_net_1  = D4_net_0;
-assign D4        = D4_net_1;
-assign D5_net_1  = D5_net_0;
-assign D5        = D5_net_1;
-assign D6_net_1  = D6_net_0;
-assign D6        = D6_net_1;
-assign D7_net_1  = D7_net_0;
-assign D7        = D7_net_1;
+assign SCL_net_1   = SCL_net_0;
+assign SCL         = SCL_net_1;
+assign D0_net_1    = D0_net_0;
+assign D0          = D0_net_1;
+assign D1_net_1    = D1_net_0;
+assign D1          = D1_net_1;
+assign D2_net_1    = D2_net_0;
+assign D2          = D2_net_1;
+assign D3_net_1    = D3_net_0;
+assign D3          = D3_net_1;
+assign D4_net_1    = D4_net_0;
+assign D4          = D4_net_1;
+assign D5_net_1    = D5_net_0;
+assign D5          = D5_net_1;
+assign D6_net_1    = D6_net_0;
+assign D6          = D6_net_1;
+assign D7_net_1    = D7_net_0;
+assign D7          = D7_net_1;
+assign STATE_net_1 = STATE_net_0;
+assign STATE       = STATE_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -144,7 +150,7 @@ i2c_interface2 i2c_interface2_0(
         .timestamp ( timestamp_0_TIMESTAMP ),
         // Outputs
         .scl       ( SCL_net_0 ),
-        .state     (  ),
+        .state     ( STATE_net_0 ),
         .data      ( i2c_interface2_0_data ),
         // Inouts
         .sda       ( SDA ) 

@@ -13,7 +13,7 @@ Opened an existing Libero design I2C_integration.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: I2C_integration_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:02 )
+The Report command succeeded ( 00:00:03 )
 Wrote timing report to file: I2C_integration_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -25,6 +25,6 @@ Wrote timing_violations report to file: I2C_integration_mindelay_timingviolation
 The Report command succeeded ( 00:00:00 )
 Design saved to file F:\Avionics_2\designer\impl1\I2C_integration.adb.
 
-The Execute Script command succeeded ( 00:00:05 )
+The Execute Script command succeeded ( 00:00:08 )
 Design closed.
 

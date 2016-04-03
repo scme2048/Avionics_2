@@ -1,6 +1,6 @@
 <project name="I2C_integration" version="1.1">
     <ProjectDirectory>
-        F:\Avionics_2\designer\impl1\I2C_integration_fp
+        F:\Avionics_2\designer\impl1\I2C_integration
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        F:\Avionics_2\designer\impl1\I2C_integration_fp\I2C_integration.log
+        F:\Avionics_2\designer\impl1\I2C_integration\I2C_integration.log
     </LogFile>
     <SerializationOption>
         Skip

@@ -4,7 +4,7 @@ sourcing C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\message_overri
 Starting:    C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
 Hostname:    AES-ELAB-D-003
-Date:        Sat Apr 02 17:00:18 2016
+Date:        Sat Apr 02 17:49:31 2016
 Version:     J-2015.03M-3
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log I2C_integration_syn.tcl
@@ -18,9 +18,7 @@ License Option: actel_oem
 Running in Vendor Mode
 
 
-"clock_globalthreshold" is unrecognized option for current device
-"low_power_ram_decomp" is unrecognized option for current device
-Implementation not found: synthesis
+auto_infer_blackbox is not supported in current product.
 
 log file: "F:\Avionics_2\synthesis\I2C_integration.srr"
 
@@ -44,7 +42,7 @@ Copied F:\Avionics_2\synthesis\synwork\I2C_integration_comp.srs to F:\Avionics_2
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:03s
+Run Time:0h:00m:05s
 
 
 Running: multi_srs_gen (Multi-srs Generator) on I2C_integration_syn|synthesis
@@ -65,10 +63,12 @@ Running: premap (Pre-mapping) on I2C_integration_syn|synthesis
 
 Copied F:\Avionics_2\synthesis\I2C_integration.sap to F:\Avionics_2\synthesis\synwork\I2C_integration_s.sap
 
+Copied F:\Avionics_2\synthesis\I2C_integration.fse to F:\Avionics_2\synthesis\synwork\I2C_integration_s.fse
+
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:03s
+Run Time:0h:00m:02s
 
 Complete: Compile on I2C_integration_syn|synthesis
 
@@ -88,8 +88,6 @@ Run Time:0h:00m:12s
 Complete: Map on I2C_integration_syn|synthesis
 
 Complete: Logic Synthesis on I2C_integration_syn|synthesis
-
-Copied F:\Avionics_2\synthesis\I2C_integration.srr to F:\Avionics_2\synthesis\backup\I2C_integration.srr
 
 TCL script complete: "I2C_integration_syn.tcl"
 

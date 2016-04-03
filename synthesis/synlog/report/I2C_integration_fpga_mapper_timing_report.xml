@@ -17,19 +17,19 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>CLK_1MHZ|GLA_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>88.4 MHz</data>
-<data>-1.316</data>
+<data>89.9 MHz</data>
+<data>-1.118</data>
 </row>
 <row>
 <data>clock_div_1MHZ_10HZ|clk_out_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>93.0 MHz</data>
-<data>-0.749</data>
+<data>93.7 MHz</data>
+<data>-0.677</data>
 </row>
 <row>
 <data>clock_div_1MHZ_100KHZ|clk_out_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>89.1 MHz</data>
-<data>-1.229</data>
+<data>93.2 MHz</data>
+<data>-0.732</data>
 </row>
 </report_table>

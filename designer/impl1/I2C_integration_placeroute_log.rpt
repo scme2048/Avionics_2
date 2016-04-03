@@ -32,16 +32,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sat Apr 02 17:04:54 2016
+Timing-driven Placer Started: Sat Apr 02 17:50:50 2016
 
-Placer Finished: Sat Apr 02 17:05:02 2016
-Total Placer CPU Time:     00:00:08
+Placer Finished: Sat Apr 02 17:50:59 2016
+Total Placer CPU Time:     00:00:09
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: I2C_integration                 Started: Sat Apr 02 17:05:15 2016
+Design: I2C_integration                 Started: Sat Apr 02 17:51:12 2016
 
  
 Iterative improvement...
@@ -49,15 +49,15 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: I2C_integration                 
-Finished: Sat Apr 02 17:05:40 2016
-Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:25
-Total Memory Usage: 382.7 Mbytes
+Finished: Sat Apr 02 17:51:40 2016
+Total CPU Time:     00:00:25            Total Elapsed Time: 00:00:28
+Total Memory Usage: 382.8 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
 Finished loading the Timing data.
 
-The Layout command succeeded ( 00:01:00 )
+The Layout command succeeded ( 00:01:05 )
 Wrote status report to file: I2C_integration_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -75,9 +75,9 @@ Wrote pin report to file: I2C_integration_report_pin_byname.txt
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: I2C_integration_report_pin_bynumber.txt
 
-The Report command succeeded ( 00:00:02 )
+The Report command succeeded ( 00:00:01 )
 Design saved to file F:\Avionics_2\designer\impl1\I2C_integration.adb.
 
-The Execute Script command succeeded ( 00:01:10 )
+The Execute Script command succeeded ( 00:01:13 )
 Design closed.
 

@@ -20,7 +20,11 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"F:\Avionics_2\hdl\timestamp.v"
 @I::"F:\Avionics_2\component\work\I2C_integration\I2C_integration.v"
 Verilog syntax check successful!
-Options changed - recompiling
+File F:\Avionics_2\hdl\reset_pulse.v changed - recompiling
+File F:\Avionics_2\hdl\test_harness_geiger_stack.v changed - recompiling
+File F:\Avionics_2\hdl\timestamp.v changed - recompiling
+File F:\Avionics_2\hdl\i2c_interface2.v changed - recompiling
+File F:\Avionics_2\component\work\I2C_integration\I2C_integration.v changed - recompiling
 Selecting top level module I2C_integration
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -90,7 +94,7 @@ State machine has 16 reachable states with original encodings of:
 At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 165MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 02 17:00:20 2016
+# Sat Apr 02 17:49:33 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -99,7 +103,7 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 02 17:00:21 2016
+# Sat Apr 02 17:49:34 2016
 
 ###########################################################]
 @END
@@ -107,6 +111,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sat Apr 02 17:00:21 2016
+# Sat Apr 02 17:49:34 2016
 
 ###########################################################]

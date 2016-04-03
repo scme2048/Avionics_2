@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Apr 02 17:00:36 2016
+# Timing Report written on Sat Apr 02 17:49:50 2016
 #
 
 
@@ -27,9 +27,9 @@ Worst slack in design: NA
                                                  Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                   Frequency     Frequency     Period        Period        Slack      Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-CLK_1MHZ|GLA_inferred_clock                      100.0 MHz     88.4 MHz      10.000        11.316        -1.316     inferred     Inferred_clkgroup_2
-clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     93.0 MHz      10.000        10.749        -0.749     inferred     Inferred_clkgroup_0
-clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     89.1 MHz      10.000        11.229        -1.229     inferred     Inferred_clkgroup_1
+CLK_1MHZ|GLA_inferred_clock                      100.0 MHz     89.9 MHz      10.000        11.118        -1.118     inferred     Inferred_clkgroup_2
+clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     93.7 MHz      10.000        10.677        -0.677     inferred     Inferred_clkgroup_0
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     93.2 MHz      10.000        10.732        -0.732     inferred     Inferred_clkgroup_1
 ====================================================================================================================================================
 
 

@@ -1,0 +1,129 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:02 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/smartgen/CLK_1MHZ/CLK_1MHZ.v 
+# -- Compiling module CLK_1MHZ
+# 
+# Top level modules:
+# 	CLK_1MHZ
+# End time: 18:09:07 on Apr 02,2016, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:08 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v 
+# -- Compiling module clock_div_1MHZ_100KHZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_100KHZ
+# End time: 18:09:08 on Apr 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:08 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/hdl/clock_div_1MHZ_10HZ.v 
+# -- Compiling module clock_div_1MHZ_10HZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_10HZ
+# End time: 18:09:08 on Apr 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:08 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 18:09:20 on Apr 02,2016, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:20 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/hdl/test_harness_geiger_stack.v 
+# -- Compiling module test_harness_geiger_stack
+# 
+# Top level modules:
+# 	test_harness_geiger_stack
+# End time: 18:09:21 on Apr 02,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:21 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/hdl/timestamp.v 
+# -- Compiling module timestamp
+# 
+# Top level modules:
+# 	timestamp
+# End time: 18:09:21 on Apr 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:21 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/hdl/i2c_interface2.v 
+# -- Compiling module i2c_interface2
+# 
+# Top level modules:
+# 	i2c_interface2
+# End time: 18:09:22 on Apr 02,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:22 on Apr 02,2016
+# vlog -reportprogress 300 -work presynth F:/Avionics_2/component/work/I2C_integration/I2C_integration.v 
+# -- Compiling module I2C_integration
+# 
+# Top level modules:
+# 	I2C_integration
+# End time: 18:09:23 on Apr 02,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:09:23 on Apr 02,2016
+# vlog -reportprogress 300 "+incdir+F:/Avionics_2/stimulus" -work presynth F:/Avionics_2/stimulus/I2C_integration_tb.v 
+# -- Compiling module I2C_integration_tb
+# 
+# Top level modules:
+# 	I2C_integration_tb
+# End time: 18:09:24 on Apr 02,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l I2C_integration_tb_presynth_simulation.log 
+# Start time: 18:09:24 on Apr 02,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.I2C_integration_tb
+# Loading presynth.I2C_integration
+# Loading presynth.CLK_1MHZ
+# Loading proasic3l.PLL
+# Loading proasic3l.PLLPRIM
+# Loading proasic3l.PLLINT
+# Loading proasic3l.GND
+# Loading proasic3l.VCC
+# Loading presynth.clock_div_1MHZ_10HZ
+# Loading presynth.clock_div_1MHZ_100KHZ
+# Loading presynth.i2c_interface2
+# Loading presynth.reset_pulse
+# Loading presynth.test_harness_geiger_stack
+# Loading presynth.timestamp
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftwaacqk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftwaacqk
+# 
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: I2C_integration_tb.I2C_integration_0.CLK_1MHZ_0.Core.P1 
+run -all
+# End time: 18:12:42 on Apr 02,2016, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 2

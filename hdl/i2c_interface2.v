@@ -164,9 +164,9 @@ always @(negedge clk or negedge rst) begin
                             state_a = WAIT;
                         end
                         else if (~init && (init_ctr_a == 0)) begin
-                            state_hold = STOP;
+                            state_hold = START;
                             state_a = WAIT;
-                            sda_a = 1'b0;
+                            sda_a = 1'b1;
      
                         end                        
                         else if (init) begin
@@ -178,7 +178,7 @@ always @(negedge clk or negedge rst) begin
                     else begin // If there's a NACK, stop and go back
                         state_a = WAIT;
                         state_hold = STOP;
-                        //sda_a = 1'b0;
+                        sda_a = 1'b0;
                         if (init) data_cntr = data_cntr + 1;
                         else init_ctr_a = init_ctr_a + 1;
                     end
@@ -277,14 +277,15 @@ always @(negedge clk or negedge rst) begin
                     end
                 end
                 STOP: begin //initiate stop condition
-                    scl_enable = 1'b0;
+                    
                     stop_enable = 1'b0;
                     //if (sda_a == 1'b0) begin
-                    sda_a = 1'b1;
-                    state_a = IDLE;
+                        sda_a = 1'b1;
+                        state_a = IDLE;
+                        scl_enable = 1'b0;
                     //end
                     //else 
-                        //sda_a = 1'b0;
+                    //    sda_a = 1'b0;
                 end
                 WAIT: begin //waits clk period for next cycle
                     //sda_a = 1'b0;

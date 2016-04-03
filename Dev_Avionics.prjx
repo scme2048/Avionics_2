@@ -30,7 +30,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "transceiver_integration::work"
+KEY ActiveRoot "I2C_integration::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -72,13 +72,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\I2C_integration\I2C_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1459637932"
-SIZE="3890"
+TIME="1459641520"
+SIZE="4043"
 ENDFILE
 VALUE "<project>\component\work\I2C_integration\I2C_integration.v,hdl"
 STATE="utd"
-TIME="1459637930"
-SIZE="5689"
+TIME="1459641518"
+SIZE="5889"
 PARENT="<project>\component\work\I2C_integration\I2C_integration.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -214,6 +214,56 @@ STATE="utd"
 TIME="1458094886"
 SIZE="945"
 ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration.adb,adb"
+STATE="ood"
+TIME="1459638092"
+SIZE="426496"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration.ide_des,ide_des"
+STATE="utd"
+TIME="1459638016"
+SIZE="180"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration.pdb,pdb"
+STATE="ood"
+TIME="1459638404"
+SIZE="1506167"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration\projectData\I2C_integration.pdb,pdb"
+STATE="utd"
+TIME="1459641384"
+SIZE="1506151"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration_compile_log.rpt,log"
+STATE="utd"
+TIME="1459641038"
+SIZE="9706"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration_fp\I2C_integration.pro,pro"
+STATE="utd"
+TIME="1459638428"
+SIZE="2199"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration_fp\projectData\I2C_integration.pdb,pdb"
+STATE="utd"
+TIME="1459638610"
+SIZE="1351680"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1459641114"
+SIZE="2464"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1459641176"
+SIZE="613"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_integration_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1459641124"
+SIZE="1158"
+ENDFILE
 VALUE "<project>\designer\impl1\master_mode.ide_des,ide_des"
 STATE="utd"
 TIME="1458094886"
@@ -330,7 +380,7 @@ TIME="1458094896"
 SIZE="838"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.adb,adb"
-STATE="utd"
+STATE="ood"
 TIME="1459627862"
 SIZE="1656320"
 ENDFILE
@@ -340,7 +390,7 @@ TIME="1458316974"
 SIZE="1087"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.pdb,pdb"
-STATE="utd"
+STATE="ood"
 TIME="1459627868"
 SIZE="1506284"
 ENDFILE
@@ -616,8 +666,8 @@ SIZE="2439"
 ENDFILE
 VALUE "<project>\hdl\i2c_interface2.v,hdl"
 STATE="utd"
-TIME="1459637666"
-SIZE="11689"
+TIME="1459642104"
+SIZE="11722"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -748,6 +798,11 @@ VALUE "<project>\simulation\dummy_test_presynth_simulation.log,log"
 STATE="utd"
 TIME="1458094900"
 SIZE="2012"
+ENDFILE
+VALUE "<project>\simulation\I2C_integration_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1459642122"
+SIZE="5364"
 ENDFILE
 VALUE "<project>\simulation\master_mode_tb_presynth_simulation.log,log"
 STATE="utd"
@@ -959,6 +1014,21 @@ STATE="utd"
 TIME="1458094914"
 SIZE="2025"
 ENDFILE
+VALUE "<project>\stimulus\i2c_ins_tb.v,tb_hdl"
+STATE="utd"
+TIME="1459637648"
+SIZE="1575"
+ENDFILE
+VALUE "<project>\stimulus\I2C_integration_tb.v,tb_hdl"
+STATE="utd"
+TIME="1459640088"
+SIZE="2004"
+ENDFILE
+VALUE "<project>\stimulus\i2c_interface2_tb.v,tb_hdl"
+STATE="utd"
+TIME="1459637648"
+SIZE="2621"
+ENDFILE
 VALUE "<project>\stimulus\master_mode_tb.v,tb_hdl"
 STATE="utd"
 TIME="1458094914"
@@ -1138,6 +1208,26 @@ VALUE "<project>\synthesis\geiger_integration_syn.prj,prj"
 STATE="utd"
 TIME="1458500336"
 SIZE="0"
+ENDFILE
+VALUE "<project>\synthesis\I2C_integration.edn,syn_edn"
+STATE="ood"
+TIME="1459638038"
+SIZE="506831"
+ENDFILE
+VALUE "<project>\synthesis\I2C_integration.so,so"
+STATE="utd"
+TIME="1459638038"
+SIZE="213"
+ENDFILE
+VALUE "<project>\synthesis\I2C_integration_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1459638036"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\I2C_integration_syn.prj,prj"
+STATE="utd"
+TIME="1459638040"
+SIZE="1949"
 ENDFILE
 VALUE "<project>\synthesis\read_buffer.edn,syn_edn"
 STATE="utd"
@@ -1333,6 +1423,23 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
+LIST "I2C_integration::work"
+FILE "<project>\component\work\I2C_integration\I2C_integration.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_integration_tb.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 LIST "read_buffer::work"
 FILE "<project>\hdl\read_buffer.v,hdl"
 LIST AssociatedStimulus
@@ -1417,10 +1524,9 @@ VALUE "<project>\stimulus\tb_tranceiver_integration.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Layout
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
 ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\transceiver_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1450,6 +1556,9 @@ ENDLIST
 LIST spi_test
 VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
 ENDLIST
+LIST I2C_integration
+VALUE "<project>\stimulus\I2C_integration_tb.v,tb_hdl"
+ENDLIST
 LIST geiger_integration
 VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
 ENDLIST
@@ -1463,7 +1572,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_tranceiver_integration
+EntityName=I2C_integration_tb
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -1516,8 +1625,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1525,7 +1634,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l I2C_integration_tb_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -1566,6 +1675,17 @@ LIST Impl1
 LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
 ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "I2C_integration::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1625,10 +1745,9 @@ ENDLIST
 ENDLIST
 LIST "transceiver_integration::work"
 LIST Impl1
-LiberoState=Post_Layout
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
 ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\transceiver_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1651,15 +1770,15 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:transceiver_integration_prgdata_log.rpt
+ReportsCurrentItem;Generate Programming Data:I2C_integration_prgdata_log.rpt
+SmartDesign;I2C_integration;0
+HDL;stimulus\I2C_integration_tb.v;0
+HDL;hdl\i2c_interface2.v;0
 StartPage;StartPage;0
-HDL;hdl\SPI_Master.v;0
-HDL;hdl\orbit_control.v;0
 SmartDesign;transceiver_integration;0
 HDL;hdl\spi_mode_config2.v;0
 HDL;stimulus\tb_orbit_control.v;0
-SmartDesign;I2C_integration;0
-ACTIVEVIEW;I2C_integration
+ACTIVEVIEW;hdl\i2c_interface2.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "buffer_data_out::work","","FALSE","FALSE"
@@ -1720,10 +1839,10 @@ LIST "I2C_integration::work","component\work\I2C_integration\I2C_integration.v",
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
-SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
+SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 ENDLIST
 LIST "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 ENDLIST
@@ -1837,6 +1956,17 @@ ENDLIST
 LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
 SUBBLOCK "dummy_state::work","","FALSE","FALSE"
 ENDLIST
+LIST "i2c_ins::work","","FALSE","FALSE"
+ENDLIST
+LIST "i2c_ins_tb::work","stimulus\i2c_ins_tb.v","FALSE","TRUE"
+SUBBLOCK "i2c_ins::work","","FALSE","FALSE"
+ENDLIST
+LIST "I2C_integration_tb::work","stimulus\I2C_integration_tb.v","FALSE","TRUE"
+SUBBLOCK "I2C_integration::work","component\work\I2C_integration\I2C_integration.v","TRUE","FALSE"
+ENDLIST
+LIST "i2c_interface2_tb::work","stimulus\i2c_interface2_tb.v","FALSE","TRUE"
+SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
+ENDLIST
 LIST "master_mode_tb::work","stimulus\master_mode_tb.v","FALSE","TRUE"
 SUBBLOCK "master_mode::work","component\work\master_mode\master_mode.v","TRUE","FALSE"
 ENDLIST
@@ -1934,6 +2064,9 @@ ACTIVETESTBENCH "tb_read_buffer::work","stimulus\tb_read_buffer.v","FALSE"
 ENDLIST
 LIST "spi_master::work"
 ACTIVETESTBENCH "tb_spi_master::work","stimulus\tb_spi_master.v","FALSE"
+ENDLIST
+LIST "I2C_integration::work"
+ACTIVETESTBENCH "I2C_integration_tb::work","stimulus\I2C_integration_tb.v","FALSE"
 ENDLIST
 LIST "geiger_integration::work"
 ACTIVETESTBENCH "tb_geiger_integration::work","stimulus\tb_geiger_integration.v","FALSE"

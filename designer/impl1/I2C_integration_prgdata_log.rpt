@@ -6,13 +6,13 @@ Info: The design F:/Avionics_2/designer/impl1/I2C_integration.adb was last modif
       version 11.6.0.34.
 Opened an existing Libero design F:/Avionics_2/designer/impl1/I2C_integration.adb.
 
-The Export-map command succeeded ( 00:00:31 )
+The Export-map command succeeded ( 00:00:36 )
 Wrote to the file: F:\Avionics_2\designer\impl1\I2C_integration.pdb
-CHECKSUM: B551
+CHECKSUM: E6A0
 
-The Generate programming file command succeeded ( 00:00:36 )
+The Generate programming file command succeeded ( 00:00:39 )
 Design saved to file F:/Avionics_2/designer/impl1/I2C_integration.adb.
 
-The Execute Script command succeeded ( 00:00:42 )
+The Execute Script command succeeded ( 00:00:49 )
 Design closed.
 
