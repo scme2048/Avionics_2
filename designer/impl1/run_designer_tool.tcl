@@ -1,8 +1,4 @@
-# (OPEN DESIGN)
-
-open_design "F:/Avionics_2/designer/impl1/I2C_integration.adb"
-export -format "PDB" \
-    -feature "prog_fpga"  \
-    {F:/Avionics_2/designer/impl1/I2C_integration.pdb}
-save_design "F:/Avionics_2/designer/impl1/I2C_integration.adb"
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer}
+open_design full_system.adb
+open_tool mvn_ioedit
 

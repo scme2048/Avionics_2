@@ -1,0 +1,83 @@
+*****************************************************************
+Pin Report - Date: Mon Apr 04 19:54:04 2016 UNCOMPLETED LAYOUT
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: full_system
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port        |Pin        |Fixed      |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|-----------|-----------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+CLK_48MHZ    E4          Yes         GAB2/IO224PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+G_STREAM_IN  Unassigned  Unassigned                  LVCMOS33  ---                ---   None           ---   ---               No           No
+MISO         D5          Yes         GAA0/IO00RSB0   LVCMOS33  ---                ---   None           ---   ---               No           No
+MOSI         D6          Yes         GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+RESET_IN_L8  T9          Yes         GEA2/IO187RSB2  LVCMOS33  ---                ---   None           ---   ---               No           No
+SPI_SCK      G10         Yes         IO29RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A0      T6          Yes         GEC1/IO190PPB3  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A1      R7          Yes         GEC0/IO190NPB3  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A2      F8          Yes         GAC0/IO04RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A3      F9          Yes         GAC1/IO05RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A4      E7          Yes         GAB1/IO03RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A5      D7          Yes         GAB0/IO02RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A6      F5          Yes         IO225NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A7      F4          Yes         IO224NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A8      G7          Yes         IO223NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A9      G5          Yes         IO222PDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A10     G4          Yes         IO222NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A11     H7          Yes         IO221PDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A12     H6          Yes         IO221NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A13     H5          Yes         IO218PDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A14     J5          Yes         IO218NDB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A15     N4          Yes         GFC2/IO204PDB3  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A16     K7          Yes         GFC1/IO209PPB3  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_A17     L8          Yes         GFC0/IO209NPB3  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_CE      T14         Yes         IO124RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D0      W11         Yes         IO153RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D1      U11         Yes         IO151RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D2      V11         Yes         IO149RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D3      V10         Yes         IO157RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D4      W10         Yes         IO158RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D5      U10         Yes         IO159RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D6      T11         Yes         IO155RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D7      W9          Yes         IO164RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D8      V9          Yes         IO163RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D9      U9          Yes         IO165RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D10     T10         Yes         IO161RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D11     W8          Yes         IO170RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D12     V8          Yes         IO168RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D13     E8          Yes         IO17RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D14     W7          Yes         IO172RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D15     E9          Yes         IO21RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D16     T13         Yes         IO129RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D17     W14         Yes         IO130RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D18     V14         Yes         IO131RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D19     U13         Yes         IO134RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D20     W13         Yes         IO135RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D21     R12         Yes         IO136RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D22     U12         Yes         IO137RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D23     V13         Yes         IO138RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D24     T12         Yes         IO141RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D25     W12         Yes         IO142RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D26     V12         Yes         IO143RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D27     R11         Yes         IO147RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D28     D8          Yes         IO16RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D29     F7          Yes         IO11RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D30     P6          Yes         IO196PPB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_D31     R4          Yes         IO197NPB3       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_OE      U14         Yes         IO128RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_SRBS0   W17         Yes         GDA2/IO114RSB2  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_SRBS1   V16         Yes         GDB2/IO115RSB2  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_SRBS2   W15         Yes         GDC2/IO116RSB2  LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_SRBS3   W16         Yes         IO120RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SRAM_WE      V15         Yes         IO125RSB2       LVCMOS33  12                 High  None           No    5                 No           No
+SS           D10         Yes         IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No

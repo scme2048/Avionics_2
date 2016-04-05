@@ -1,4 +1,4 @@
-Selecting top level module I2C_integration
+Selecting top level module full_system
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":260:7:260:12|Synthesizing module PLLINT
@@ -7,59 +7,163 @@ Selecting top level module I2C_integration
 
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
 
-@N: CG364 :"F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v":5:7:5:14|Synthesizing module CLK_1MHZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
 
-@N: CG364 :"F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_1KHZ
 
-@N: CG364 :"F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
 
-@N: CG364 :"F:\Avionics_2\hdl\i2c_interface2.v":21:7:21:20|Synthesizing module i2c_interface2
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
 
-@W: CL169 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register begin_data 
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v":13:7:13:26|Synthesizing module clock_div_26MHZ_1MHZ
 
-@W: CL169 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register test[7:0] 
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":13:7:13:24|Synthesizing module geig_data_handling
 
-@W: CL169 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register test_sda 
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":47:0:47:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
 
-@A: CL282 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Feedback mux created for signal state_hold[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Feedback mux created for signal scl_enable -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[4] is always 0, optimizing ...
-@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[5] is always 0, optimizing ...
-@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[6] is always 0, optimizing ...
-@W: CL189 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Register bit state_hold[7] is always 0, optimizing ...
-@W: CL279 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register bits 7 to 4 of state_hold[7:0] 
+@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Feedback mux created for signal ID_GEIG[7:0].
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[6] assign 1, register removed by optimization
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[5:3] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[2:0] assign 1, register removed by optimization
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[48] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[50] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[52] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[54] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[56] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[58] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[60] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[62] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[64] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[66] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[68] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[70] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[72] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[74] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[76] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[78] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 78 of G_DATA_STACK[79:0] 
 
-@N: CG364 :"F:\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 76 of G_DATA_STACK[79:0] 
 
-@N: CG364 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":16:7:16:31|Synthesizing module test_harness_geiger_stack
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 74 of G_DATA_STACK[79:0] 
 
-@W: CL169 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 72 of G_DATA_STACK[79:0] 
 
-@A: CL282 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_prev[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"F:\Avionics_2\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@N: CG364 :"F:\Avionics_2\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 70 of G_DATA_STACK[79:0] 
 
-@W: CS142 :"F:\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
-@N: CG364 :"F:\Avionics_2\component\work\I2C_integration\I2C_integration.v":9:7:9:21|Synthesizing module I2C_integration
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 68 of G_DATA_STACK[79:0] 
 
-@N: CL201 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Trying to extract state machine for register state_a
-Extracted state machine for register state_a
-State machine has 16 reachable states with original encodings of:
-   00000000
-   00000001
-   00000010
-   00000011
-   00000100
-   00000101
-   00000110
-   00000111
-   00001000
-   00001001
-   00001010
-   00001011
-   00001100
-   00001101
-   00001110
-   00001111
-@W: CL260 :"F:\Avionics_2\hdl\i2c_interface2.v":64:0:64:5|Pruning register bit 2 of state_hold[3:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 66 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 64 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 62 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 60 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 58 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 56 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 54 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 52 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 50 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 48 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 7 of G_DATA_STACK[79:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 5 to 3 of G_DATA_STACK[79:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":22:7:22:23|Synthesizing module memory_controller
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":87:0:87:5|Optimizing register bit num_cycles[1] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":87:0:87:5|Pruning register bit 1 of num_cycles[2:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":56:0:56:5|Pruning register full_read_address[18:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":56:0:56:5|Pruning register full_write_address[18:0] 
+
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":56:0:56:5|Pruning bit 1 of enable_buffer[1:0] -- not in use ...
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_address_traversal.v":27:7:27:28|Synthesizing module read_address_traversal
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
+
+@A: CL110 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Too many clocks (> 8) for set/reset analysis of busy_enable, try moving enabling expressions outside always block
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":21:7:21:20|Synthesizing module sram_interface
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit ce to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register ce 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
+
+@W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v":22:7:22:29|Synthesizing module write_address_traversal
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":9:7:9:17|Synthesizing module full_system
+
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":360:20:360:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[1] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[2] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[3] to a constant 0
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register bits 3 to 1 of write_counter[3:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register bits 3 to 2 of read_counter[3:0] 
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register tx_state
+Extracted state machine for register tx_state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   011
+   100
+   111
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":107:4:107:9|Trying to extract state machine for register chip_state
+Extracted state machine for register chip_state
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":207:4:207:9|Trying to extract state machine for register state_q
+Extracted state machine for register state_q
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+Extracted state machine for register init_stage
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":40:0:40:5|Optimizing register bit cntr[13] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":40:0:40:5|Pruning register bit 13 of cntr[13:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 

@@ -18,15 +18,22 @@
 
 //`timescale <time_units> / <precision>
 
-module orbit_control(cntr_enable,clk,reset,CLK_48MHZ,tx_enable
+module orbit_control(cntr_enable,clk,reset,CLK_48MHZ,write_address,read_address,w_chip_select,r_chip_select,tx_enable
 
 );
 input cntr_enable,clk,reset,CLK_48MHZ; //10 Hz clk --> 4800 cycles in 8 min
+input [17:0] write_address;
+input [17:0] read_address;
+input w_chip_select;
+input r_chip_select;
 output tx_enable;
 
 reg [13:0] cntr;
 reg tx_enable_reg;
 reg [1:0] enable_buffer;
+
+reg [18:0] full_write_address;
+reg [18:0] full_read_address;
 
 assign tx_enable = tx_enable_reg;
 
@@ -54,9 +61,12 @@ always @(posedge CLK_48MHZ or negedge reset) begin
         enable_buffer[1]=enable_buffer[0];
         enable_buffer[0]=cntr_enable;
 
+        full_read_address={r_chip_select,read_address};
+        full_write_address={w_chip_select,write_address};
+
         if (enable_buffer==2'b01) begin
             tx_enable_reg=1'b1;
-        end else if (cntr>=4800) begin
+        end else if ((cntr>=4800)||(full_read_address==full_write_address-1)) begin
             tx_enable_reg=1'b0;
         end
 

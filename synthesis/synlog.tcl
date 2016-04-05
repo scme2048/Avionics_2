@@ -1,1 +1,1 @@
-run_tcl -fg I2C_integration_syn.tcl
+run_tcl -fg full_system_syn.tcl

@@ -3,11 +3,11 @@ sourcing C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\message_overri
 
 Starting:    C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
-Hostname:    AES-ELAB-D-003
-Date:        Sat Apr 02 17:49:31 2016
+Hostname:    SCOTT-PC
+Date:        Mon Apr 04 19:26:06 2016
 Version:     J-2015.03M-3
 
-Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log I2C_integration_syn.tcl
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log full_system_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -18,78 +18,80 @@ License Option: actel_oem
 Running in Vendor Mode
 
 
-auto_infer_blackbox is not supported in current product.
+"clock_globalthreshold" is unrecognized option for current device
+"low_power_ram_decomp" is unrecognized option for current device
+Implementation not found: synthesis
 
-log file: "F:\Avionics_2\synthesis\I2C_integration.srr"
+log file: "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.srr"
 
 Running: synthesis in foreground
 
 
 
-Running I2C_integration_syn|synthesis
+Running full_system_syn|synthesis
 
 
-Running: compile (Compile) on I2C_integration_syn|synthesis
+Running: compile (Compile) on full_system_syn|synthesis
 
 
-Running: compile_flow (Compile Process) on I2C_integration_syn|synthesis
+Running: compile_flow (Compile Process) on full_system_syn|synthesis
 
 
-Running: compiler (Compile Input) on I2C_integration_syn|synthesis
+Running: compiler (Compile Input) on full_system_syn|synthesis
 
-Copied F:\Avionics_2\synthesis\synwork\I2C_integration_comp.srs to F:\Avionics_2\synthesis\I2C_integration.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.srs
 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:05s
+Run Time:0h:00m:08s
 
 
-Running: multi_srs_gen (Multi-srs Generator) on I2C_integration_syn|synthesis
+Running: multi_srs_gen (Multi-srs Generator) on full_system_syn|synthesis
 
-Copied F:\Avionics_2\synthesis\synwork\I2C_integration_comp.srs to F:\Avionics_2\synthesis\synwork\I2C_integration_s.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_s.srs
 
 
 multi_srs_gen Completed
 Return Code: 0
-Run Time:0h:00m:01s
+Run Time:0h:00m:00s
 
-Copied F:\Avionics_2\synthesis\synwork\I2C_integration_mult.srs to F:\Avionics_2\synthesis\I2C_integration.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.srs
 
-Complete: Compile Process on I2C_integration_syn|synthesis
+Complete: Compile Process on full_system_syn|synthesis
 
 
-Running: premap (Pre-mapping) on I2C_integration_syn|synthesis
+Running: premap (Pre-mapping) on full_system_syn|synthesis
 
-Copied F:\Avionics_2\synthesis\I2C_integration.sap to F:\Avionics_2\synthesis\synwork\I2C_integration_s.sap
-
-Copied F:\Avionics_2\synthesis\I2C_integration.fse to F:\Avionics_2\synthesis\synwork\I2C_integration_s.fse
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.sap to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_s.sap
 
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:02s
+Run Time:0h:00m:03s
 
-Complete: Compile on I2C_integration_syn|synthesis
-
-
-Running: map (Map) on I2C_integration_syn|synthesis
+Complete: Compile on full_system_syn|synthesis
 
 
-Running: fpga_mapper (Map & Optimize) on I2C_integration_syn|synthesis
+Running: map (Map) on full_system_syn|synthesis
 
-Copied F:\Avionics_2\synthesis\synwork\I2C_integration_m.srm to F:\Avionics_2\synthesis\I2C_integration.srm
+
+Running: fpga_mapper (Map & Optimize) on full_system_syn|synthesis
+
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_m.srm to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.srm
 
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:12s
+Run Time:0h:00m:19s
 
-Complete: Map on I2C_integration_syn|synthesis
+Complete: Map on full_system_syn|synthesis
 
-Complete: Logic Synthesis on I2C_integration_syn|synthesis
+Complete: Logic Synthesis on full_system_syn|synthesis
 
-TCL script complete: "I2C_integration_syn.tcl"
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.srr to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\backup\full_system.srr
+
+TCL script complete: "full_system_syn.tcl"
 
 exit status=0
 
