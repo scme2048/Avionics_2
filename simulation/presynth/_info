@@ -74,7 +74,7 @@ r1
 R5
 n@c@l@k_1@m@h@z
 vCLK_26MHZ
-Z7 !s110 1460081778
+Z7 !s110 1460147721
 !i10b 1
 !s100 @cTHA:JZe?Xdfz>Wg0IJU0
 INnETmV@6`ocL^GQoiI31f0
@@ -88,7 +88,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.160000
+!s108 1460147721.187000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s101 -O0
@@ -155,7 +155,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.253000
+!s108 1460147721.420000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_100KHZ.v|
 !s101 -O0
@@ -177,7 +177,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.347000
+!s108 1460147721.522000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_10HZ.v|
 !s101 -O0
@@ -199,7 +199,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.457000
+!s108 1460147721.620000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_1MHZ_1KHZ.v|
 !s101 -O0
@@ -221,7 +221,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.566000
+!s108 1460147721.765000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/clock_div_26MHZ_1MHZ.v|
 !s101 -O0
@@ -314,7 +314,7 @@ r1
 R5
 R10
 vfull_system
-Z15 !s110 1460081780
+Z15 !s110 1460147723
 !i10b 1
 !s100 KbDe_aFJiTDgaW7kMCbYN2
 I5RbGZ^ine>e9BzKiXBDfe0
@@ -328,7 +328,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081780.410000
+!s108 1460147723.848000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_system/full_system.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_system/full_system.v|
 !s101 -O0
@@ -349,7 +349,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.691000
+!s108 1460147721.877000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/geig_data_handling.v|
 !s101 -O0
@@ -443,7 +443,7 @@ r1
 !i113 1
 R5
 vmag_test_data
-R7
+Z18 !s110 1460147722
 !i10b 1
 !s100 aQ;4zMW9Ylm>[6k5]5;YX2
 IV4=LOecSD09RL5_PATnG11
@@ -457,7 +457,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081778.800000
+!s108 1460147721.989000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/mag_test_data.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/mag_test_data.v|
 !s101 -O0
@@ -507,7 +507,7 @@ r1
 R5
 R17
 vmemory_controller
-R7
+R18
 !i10b 1
 !s100 9Yojf304BmRmMM;IVa[=U1
 InI]_cTzkPlRZZG3ebZX6@3
@@ -516,19 +516,19 @@ R8
 R11
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v
-Z18 L0 22
+Z19 L0 22
 R4
 r1
 !s85 0
 31
-!s108 1460081778.957000
+!s108 1460147722.655000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/memory_controller.v|
 !s101 -O0
 !i113 1
 R5
 vmemory_test
-Z19 !s110 1457046021
+Z20 !s110 1457046021
 !i10b 1
 !s100 JzKLjN0I=X_=AJC5IbM_f3
 ICYQaI[WUSKRTKW0jHSZ6k1
@@ -549,7 +549,7 @@ r1
 !i113 1
 R5
 vorbit_control
-Z20 !s110 1460081779
+R18
 !i10b 1
 !s100 3zb6Ynhd@bLW8MzbPjWIz3
 ImNgjoRLiXk:=J9^gd4=IB3
@@ -563,14 +563,14 @@ R4
 r1
 !s85 0
 31
-!s108 1460081779.082000
+!s108 1460147722.758000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/orbit_control.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/orbit_control.v|
 !s101 -O0
 !i113 1
 R5
 vread_address_traversal
-R20
+R18
 !i10b 1
 !s100 QCCZ9m>7V8UGQzizET7943
 IbS`GWV@8T3;Y7V^FVd6@N1
@@ -584,14 +584,14 @@ R4
 r1
 !s85 0
 31
-!s108 1460081779.191000
+!s108 1460147722.862000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_address_traversal.v|
 !s101 -O0
 !i113 1
 R5
 vread_buffer
-R20
+R18
 !i10b 1
 !s100 j`9bSb:JE5oZ8cSbOQb?h2
 IUlbXdkOOmQ@eAZ=Yl6hQ73
@@ -605,14 +605,14 @@ R4
 r1
 !s85 0
 31
-!s108 1460081779.300000
+!s108 1460147722.967000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/read_buffer.v|
 !s101 -O0
 !i113 1
 R5
 vreset_pulse
-R20
+R15
 !i10b 1
 !s100 6ZRE7<mk_3D2o@7DL?BS>3
 Im@1@8Yd80GW<Zz90C5_B@0
@@ -626,14 +626,14 @@ R4
 r1
 !s85 0
 31
-!s108 1460081779.441000
+!s108 1460147723.068000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/reset_pulse.v|
 !s101 -O0
 !i113 1
 R5
 vsdram_interface
-R19
+R20
 !i10b 1
 !s100 X]bl><[lY@CBnfU:AKWoZ1
 IAoP:z2SOO7c7MMM[;aF900
@@ -654,7 +654,7 @@ r1
 !i113 1
 R5
 vspi_data_out
-R20
+R15
 !i10b 1
 !s100 h;B;F]FzRDI2C_4la`JeL1
 IRDP?D1e@4z33U@zK6eLhZ2
@@ -668,20 +668,20 @@ R4
 r1
 !s85 0
 31
-!s108 1460081779.566000
+!s108 1460147723.168000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_data_out.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_data_out.v|
 !s101 -O0
 !i113 1
 R5
 vspi_master
-R20
+R15
 !i10b 1
-!s100 V22=YO;5nW<OE5k^AzLIg3
-I57@i;;[XAHP^<o:jR6Wk^3
+!s100 RV[@ZUPPLj0hoLf_g`12?0
+IzA92i2S@]K@E9a?L=fiJX1
 R2
 R8
-w1460081696
+w1460082945
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v
 L0 1
@@ -689,7 +689,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081779.675000
+!s108 1460147723.267000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/SPI_Master.v|
 !s101 -O0
@@ -727,7 +727,7 @@ R0
 w1456709788
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v
-R18
+R19
 R4
 r1
 !s85 0
@@ -739,21 +739,21 @@ r1
 !i113 1
 R5
 vspi_mode_config2
-R20
+R15
 !i10b 1
-!s100 3TLC8^_njI`HN<ETgMJYV2
-IoPQ_K<=Z6iAG@h9CNVbz=1
+!s100 M7fD9T?R4dn_9OJe;D>jB0
+IO183Lb8Dl7V98SjLWzMfM0
 R2
 R8
-w1459990425
+w1460147599
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v
-R18
+R19
 R4
 r1
 !s85 0
 31
-!s108 1460081779.800000
+!s108 1460147723.693000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/spi_mode_config2.v|
 !s101 -O0
@@ -817,7 +817,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081780.035000
+!s108 1460147723.369000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/sram_interface.v|
 !s101 -O0
@@ -912,7 +912,7 @@ R5
 R10
 ntb_clock_div_1@m@h@z_100@k@h@z
 vtb_full_system
-R15
+!s110 1460147724
 !i10b 1
 !s100 TLRjBf?[M3WLHN5IF^D`O0
 IcbL4Bg:j_ZAYMO]zV9mAK0
@@ -926,7 +926,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081780.535000
+!s108 1460147724.013000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_full_system.v|
 !s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/stimulus/tb_full_system.v|
 !s101 -O0
@@ -1000,7 +1000,7 @@ r1
 R5
 R22
 vtb_memory_test
-R19
+R20
 !i10b 1
 !s100 mD_CQ?=X4bFImBJ6G;5;81
 I7@a3>efj57HdkR8c;giN]2
@@ -1320,7 +1320,7 @@ R4
 r1
 !s85 0
 31
-!s108 1460081780.207000
+!s108 1460147723.479000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/timestamp.v|
 !s101 -O0
@@ -1379,12 +1379,12 @@ R8
 R11
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v
-R18
+R19
 R4
 r1
 !s85 0
 31
-!s108 1460081780.316000
+!s108 1460147723.585000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/hdl/write_address_traversal.v|
 !s101 -O0

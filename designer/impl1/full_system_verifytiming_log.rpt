@@ -14,7 +14,7 @@ Opened an existing Libero design full_system.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: full_system_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:06 )
+The Report command succeeded ( 00:00:05 )
 Wrote timing report to file: full_system_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:01 )
@@ -28,6 +28,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:00:09 )
+The Execute Script command succeeded ( 00:00:08 )
 Design closed.
 

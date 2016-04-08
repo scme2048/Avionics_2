@@ -69,11 +69,11 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        67
+  - Logic combining:        75
 
-    Total macros optimized  68
+    Total macros optimized  76
 
-Warning: CMP503: Remapped 484 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 510 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
@@ -88,7 +88,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   3541  Total:  24576   (14.41%)
+    CORE                       Used:   3615  Total:  24576   (14.71%)
     IO (W/ clocks)             Used:     72  Total:    300   (24.00%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -113,8 +113,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 2573         | 2573
-    SEQ     | 967          | 968
+    COMB    | 2638         | 2638
+    SEQ     | 976          | 977
 
 I/O Function:
 
@@ -176,14 +176,14 @@ The following nets have been assigned to a chip global resource:
     209     CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                           Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
                           Source: NETLIST
-    89      CLK_NET       Net   : GLA
+    93      CLK_NET       Net   : GLA
                           Driver: CLK_26MHZ_0/Core
                           Source: ESSENTIAL
+    55      CLK_NET       Net   : spi_master_0_busy
+                          Driver: spi_master_0/busy_enable_RNIL01R_0
+                          Source: NETLIST
     53      INT_NET       Net   : SS_c
                           Driver: spi_mode_config2_0/ss_b_RNIRM7C
-                          Source: NETLIST
-    51      CLK_NET       Net   : spi_master_0_busy
-                          Driver: spi_master_0/busy_enable_RNI6H141_0
                           Source: NETLIST
     36      CLK_NET       Net   : clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out_RNIH497
@@ -192,8 +192,8 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : spi_master_0_chip_rdy
-                          Driver: spi_master_0/chip_rdy
+    25      INT_NET       Net   : spi_mode_config2_0/config_cntr_b[3]
+                          Driver: spi_mode_config2_0/config_cntr_b[3]/U1
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -220,8 +220,8 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: CLK_48MHZ_pad
     42      INT_NET       Net   : RESET_IN_L8_c
                           Driver: RESET_IN_L8_pad
-    24      INT_NET       Net   : spi_master_0_chip_rdy
-                          Driver: spi_master_0/chip_rdy
+    25      INT_NET       Net   : spi_mode_config2_0/config_cntr_b[3]
+                          Driver: spi_mode_config2_0/config_cntr_b[3]/U1
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -253,11 +253,11 @@ Wrote pin report to file: full_system_report_pin_byname.txt
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: full_system_report_pin_bynumber.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:00:10 )
+The Execute Script command succeeded ( 00:00:12 )
 Design closed.
 

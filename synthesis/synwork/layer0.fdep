@@ -18,11 +18,11 @@
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\read_buffer.v":1458335789
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\reset_pulse.v":1458335789
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_data_out.v":1458335789
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_mode_config2.v":1459990425
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\SPI_Master.v":1460082945
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\sram_interface.v":1458335789
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\timestamp.v":1458335789
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\write_address_traversal.v":1458335789
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\SPI_Master.v":1460082945
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\hdl\\spi_mode_config2.v":1460147599
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Avionics_2\\component\\work\\full_system\\full_system.v":1460081767
 #numinternalfiles:5
 #defaultlanguage:verilog
@@ -39,11 +39,11 @@
 10			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v" verilog
 11			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v" verilog
 12			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v" verilog
-13			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v" verilog
+13			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v" verilog
 14			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v" verilog
 15			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v" verilog
 16			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v" verilog
-17			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v" verilog
+17			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v" verilog
 18			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v" verilog
 #Dependency Lists(Uses List)
 0 -1
@@ -64,7 +64,7 @@
 15 -1
 16 -1
 17 -1
-18 0 3 2 1 4 5 6 7 8 9 10 11 12 17 13 14 15 16
+18 0 3 2 1 4 5 6 7 8 9 10 11 12 13 17 14 15 16
 #Dependency Lists(Users Of)
 0 18
 1 18
@@ -99,9 +99,9 @@ module work read_address_traversal 9
 module work read_buffer 10
 module work reset_pulse 11
 module work spi_data_out 12
-module work spi_mode_config2 13
+module work spi_master 13
 module work sram_interface 14
 module work timestamp 15
 module work write_address_traversal 16
-module work spi_master 17
+module work spi_mode_config2 17
 module work full_system 18

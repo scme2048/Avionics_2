@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
-Date: Thu Apr 07 20:40:46 2016
+Date: Fri Apr 08 14:56:36 2016
 Design Name: full_system  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
 Design State: Post-Layout
 
@@ -15,14 +15,14 @@ The following nets have been routed to a chip global resource:
     ----------------------
     492               Net   : reset_pulse_0_CLK_OUT_48MHZ
                       Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock/U_GL
-    89                Net   : GLA
+    93                Net   : GLA
                       Driver: CLK_26MHZ_0/Core/U_PLL
     36                Net   : clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
                       Driver: clock_div_26MHZ_1MHZ_0/clk_out_RNIH497/U_GL
     209               Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                       Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7/U_GL
-    51                Net   : spi_master_0_busy
-                      Driver: spi_master_0/busy_enable_RNI6H141_0/U_GL
+    55                Net   : spi_master_0_busy
+                      Driver: spi_master_0/busy_enable_RNIL01R_0/U_GL
     53                Net   : SS_c
                       Driver: spi_mode_config2_0/ss_b_RNIRM7C/U_GL
 

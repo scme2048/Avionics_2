@@ -9,17 +9,17 @@ Opened an existing Libero design
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/full_syst\
 em.adb.
 
-The Export-map command succeeded ( 00:00:29 )
+The Export-map command succeeded ( 00:00:31 )
 Wrote to the file:
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.pdb
-CHECKSUM: BB05
+CHECKSUM: F7F9
 
-The Generate programming file command succeeded ( 00:00:34 )
+The Generate programming file command succeeded ( 00:00:35 )
 Design saved to file
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1/full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:00:39 )
+The Execute Script command succeeded ( 00:00:40 )
 Design closed.
 

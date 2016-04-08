@@ -85,6 +85,9 @@ module spi_mode_config2 (
     reg [6:0] rxbytes_numbytes;
     reg [7:0] read_data;
     reg read_tracker;
+    reg [3:0] poll_interupt_counter;
+    reg [3:0] poll_ss_counter;
+    reg poll_interupt;
     reg [2:0] tx_state;
     reg [2:0] tx_ss_counter;
     reg [3:0] tx_free_bytes;
@@ -125,6 +128,8 @@ module spi_mode_config2 (
         tx_packet_counter=6'b000000;
         tx_exit_counter = 3'b000;
         tx_init_next_hold=1'b1;
+        poll_interupt_counter= 4'b0;
+        poll_interupt=1'b0;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
@@ -191,6 +196,13 @@ module spi_mode_config2 (
                 else if ((chip_state == chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
                     start_a = 1'b1;
+                    if(poll_interupt_counter==4'b1111) begin
+                        poll_interupt=1'b1;
+                        poll_interupt_counter=0;
+                    end else begin
+                        poll_interupt=1'b0;
+                        poll_interupt_counter=poll_interupt_counter+1;
+                    end
                     if (read_tracker==1'b1) begin
                         read_data=SLAVE_OUTPUT;
                     end else begin
@@ -210,6 +222,8 @@ module spi_mode_config2 (
                         begin_pass_a=1'b1;
                         byte_tracker_a=1'b0;
                         tx_state=3'b000;
+                        poll_interupt=1'b0;
+                        poll_interupt_counter=0;
                     end
                     
                 end
@@ -928,7 +942,7 @@ module spi_mode_config2 (
             rx_ss_counter=4'b0000;
             tx_ss_counter=3'b000;
             idle_ss_counter=3'b000;
-
+            poll_ss_counter=4'b0000;
         end
         else begin
             if (/*ss_b == 1'b0 &&*/ state_b != PWR_RST) begin
@@ -952,6 +966,17 @@ module spi_mode_config2 (
                 end
             end else begin
                 rx_ss_counter=4'b0000;
+            end
+            // Flips ss high every 10 polling cycles in RX mode
+            if (poll_interupt ==1'b1) begin
+                if (poll_ss_counter ==4'b1111) begin
+                    ss_b<=1'b0;
+                end else begin
+                    ss_b<=1'b1;
+                    poll_ss_counter=poll_ss_counter+1;
+                end
+            end else begin
+                poll_ss_counter=4'b000;
             end
             //Flips ss high when going into TX_MODE
             if (state_b ==TX_MODE) begin

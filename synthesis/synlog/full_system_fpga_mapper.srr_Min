@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Apr 07 20:36:29 2016
+# Timing Report written on Fri Apr 08 14:53:41 2016
 #
 
 
@@ -27,16 +27,16 @@ Worst slack in design: NA
                                                  Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                   Frequency     Frequency     Period        Period        Slack      Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-CLK_26MHZ|GLA_inferred_clock                     100.0 MHz     99.9 MHz      10.000        10.009        -0.009     inferred     Inferred_clkgroup_9
+CLK_26MHZ|GLA_inferred_clock                     100.0 MHz     105.2 MHz     10.000        9.505         0.496      inferred     Inferred_clkgroup_9
 clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     82.0 MHz      10.000        12.190        -2.190     inferred     Inferred_clkgroup_1
-clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     89.8 MHz      10.000        11.130        -1.130     inferred     Inferred_clkgroup_5
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     86.2 MHz      10.000        11.607        -1.607     inferred     Inferred_clkgroup_5
 clock_div_26MHZ_1MHZ|clk_out_inferred_clock      100.0 MHz     128.8 MHz     10.000        7.763         2.237      inferred     Inferred_clkgroup_6
-memory_controller|next_read_inferred_clock       100.0 MHz     93.6 MHz      10.000        10.685        -0.685     inferred     Inferred_clkgroup_4
-memory_controller|next_write_inferred_clock      100.0 MHz     108.7 MHz     10.000        9.198         0.802      inferred     Inferred_clkgroup_0
-reset_pulse|CLK_OUT_48MHZ_inferred_clock         100.0 MHz     50.5 MHz      10.000        19.820        -9.820     inferred     Inferred_clkgroup_7
-spi_master|busy_inferred_clock                   100.0 MHz     80.2 MHz      10.000        12.475        -2.475     inferred     Inferred_clkgroup_8
+memory_controller|next_read_inferred_clock       100.0 MHz     93.2 MHz      10.000        10.729        -0.729     inferred     Inferred_clkgroup_4
+memory_controller|next_write_inferred_clock      100.0 MHz     90.9 MHz      10.000        11.002        -1.002     inferred     Inferred_clkgroup_0
+reset_pulse|CLK_OUT_48MHZ_inferred_clock         100.0 MHz     51.7 MHz      10.000        19.331        -8.591     inferred     Inferred_clkgroup_7
+spi_master|busy_inferred_clock                   100.0 MHz     75.6 MHz      10.000        13.221        -3.221     inferred     Inferred_clkgroup_8
 spi_mode_config2|next_b_inferred_clock           100.0 MHz     204.4 MHz     10.000        4.892         5.108      inferred     Inferred_clkgroup_3
-spi_mode_config2|ss_b_inferred_clock             100.0 MHz     139.7 MHz     10.000        7.156         2.844      inferred     Inferred_clkgroup_2
+spi_mode_config2|ss_b_inferred_clock             100.0 MHz     145.4 MHz     10.000        6.878         3.122      inferred     Inferred_clkgroup_2
 ====================================================================================================================================================
 
 

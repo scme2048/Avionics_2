@@ -4,24 +4,24 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-11 gated/generated clock tree(s) driving 966 clock pin(s) of sequential element(s)
-0 instances converted, 966 sequential instances remain driven by gated/generated clocks
+11 gated/generated clock tree(s) driving 975 clock pin(s) of sequential element(s)
+0 instances converted, 975 sequential instances remain driven by gated/generated clocks
 
-===================================================================================================================== Gated/Generated Clocks =====================================================================================================================
-Clock Tree ID     Driving Element                       Drive Element Type     Fanout     Sample Instance                           Explanation                                                                                                                   
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       spi_master_0.chip_rdy_RNO             AO1C                   1          spi_master_0.chip_rdy                     Clock conversion disabled                                                                                                     
-@K:CKID0002       clock_div_1MHZ_10HZ_0.clk_out         DFN1P0                 209        timestamp_0.TIMESTAMP[23]                 No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0003       CLK_26MHZ_0.Core                      PLL                    89         spi_mode_config2_0.state_b[2]             Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0004       clock_div_26MHZ_1MHZ_0.clk_out        DFN1P0                 36         clock_div_1MHZ_100KHZ_0.counter[16]       No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0005       spi_mode_config2_0.ss_b               DFN1E0C0               24         spi_master_0.data_out_d[7]                No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0006       memory_controller_0.next_read         DFN1E1C0               19         read_address_traversal_0.chip_select      No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0007       memory_controller_0.next_write        DFN1E1C0               19         write_address_traversal_0.chip_select     No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0008       clock_div_1MHZ_100KHZ_0.clk_out       DFN1P0                 17         geig_data_handling_0.geig_counts[15]      No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0009       spi_mode_config2_0.next_b             DFN1E0C0               10         read_buffer_0.position[1]                 No generated or derived clock directive on output of sequential instance                                                      
-@K:CKID0010       reset_pulse_0.CLK_OUT_48MHZ           NOR2B                  491        sram_interface_0.read_counter[1]          No clocks found on inputs                                                                                                     
-@K:CKID0011       spi_master_0.busy_enable_RNI6H141     NOR3A                  51         spi_mode_config2_0.config_cntr_a[6]       No clocks found on inputs                                                                                                     
-==================================================================================================================================================================================================================================================================
+===================================================================================================================== Gated/Generated Clocks ======================================================================================================================
+Clock Tree ID     Driving Element                      Drive Element Type     Fanout     Sample Instance                             Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       spi_master_0.ctr_q_RNIBTOP2[1]       AO1C                   2          spi_master_0.chip_rdy_0                     Clock conversion disabled                                                                                                     
+@K:CKID0002       clock_div_1MHZ_10HZ_0.clk_out        DFN1P0                 209        timestamp_0.TIMESTAMP[23]                   No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0003       CLK_26MHZ_0.Core                     PLL                    93         spi_mode_config2_0.state_b[2]               Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0004       clock_div_26MHZ_1MHZ_0.clk_out       DFN1P0                 36         clock_div_1MHZ_100KHZ_0.counter[16]         No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0005       spi_mode_config2_0.ss_b              DFN1E0C0               24         spi_master_0.data_out_d[7]                  No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0006       memory_controller_0.next_read        DFN1E1C0               19         read_address_traversal_0.chip_select        No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0007       memory_controller_0.next_write       DFN1E1C0               19         write_address_traversal_0.chip_select       No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0008       clock_div_1MHZ_100KHZ_0.clk_out      DFN1P0                 17         geig_data_handling_0.geig_counts[15]        No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0009       spi_mode_config2_0.next_b            DFN1E1C0               10         read_buffer_0.position[1]                   No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0010       reset_pulse_0.CLK_OUT_48MHZ          NOR2B                  491        sram_interface_0.read_counter[1]            No clocks found on inputs                                                                                                     
+@K:CKID0011       spi_master_0.busy_enable_RNIL01R     NOR3A                  55         spi_mode_config2_0.tx_packet_counter[5]     No clocks found on inputs                                                                                                     
+===================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
