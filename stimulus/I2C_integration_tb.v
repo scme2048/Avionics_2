@@ -46,8 +46,6 @@ initial
 begin
     #(SYSCLK_PERIOD * 80 )
         NSYSRESET = 1'b1;
-    #(SYSCLK_PERIOD *70000)
-        sda_out = 1'b1;
 end
 
 

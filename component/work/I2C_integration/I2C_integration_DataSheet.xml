@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>F:/Avionics_2/component/work/I2C_integration</location>
-    <state>GENERATED ( Sat Apr 02 17:58:37 2016 )</state>
+    <state>GENERATED ( Fri Apr 08 12:35:32 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -22,14 +22,17 @@
     <file>F:\Avionics_2\component\work\full_sys\full_sys.v</file>
     <file>F:\Avionics_2\component\work\geiger_integration\geiger_integration.v</file>
     <file>F:\Avionics_2\component\work\I2C_integration\I2C_integration.v</file>
+    <file>F:\Avionics_2\component\work\i2c_interface_test\i2c_interface_test.v</file>
     <file>F:\Avionics_2\component\work\master_mode\master_mode.v</file>
     <file>F:\Avionics_2\component\work\memory_test\memory_test.v</file>
     <file>F:\Avionics_2\component\work\sram_test\sram_test.v</file>
     <file>F:\Avionics_2\component\work\transceiver_integration\transceiver_integration.v</file>
+    <file>F:\Avionics_2\hdl\buffer_data_out.v</file>
     <file>F:\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v</file>
     <file>F:\Avionics_2\hdl\clock_div_1MHZ_10HZ.v</file>
     <file>F:\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v</file>
     <file>F:\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v</file>
+    <file>F:\Avionics_2\hdl\constant_sensor_data.v</file>
     <file>F:\Avionics_2\hdl\dummy_mem.v</file>
     <file>F:\Avionics_2\hdl\geig_data_handling.v</file>
     <file>F:\Avionics_2\hdl\i2c_interface2.v</file>
@@ -57,6 +60,7 @@
     <file>F:\Avionics_2\hdl\timestamp.v</file>
     <file>F:\Avionics_2\hdl\write_address_traversal.v</file>
     <file>F:\Avionics_2\smartgen\CLK_1MHZ\CLK_1MHZ.v</file>
+    <file>F:\Avionics_2\smartgen\CLK_1MHZ_test\CLK_1MHZ_test.v</file>
     <file>F:\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v</file>
     <file>F:\Avionics_2\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v</file>
   </fileset>
@@ -104,12 +108,6 @@
   </io>
   <io>
     <port-name>D1</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVCMOS33</io-standard>
-  </io>
-  <io>
-    <port-name>STATE</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>

@@ -1,0 +1,24 @@
+*****************************************************************
+Pin Report - Date: Sun Apr 03 18:34:38 2016 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: i2c_interface_test
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port  |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+CLK_1  L5   No     GFA0/IO207NDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+RESET  M4   No     GFA2/IO206PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+SCL    L8   No     GFC0/IO209NPB3  LVCMOS33  12                 High  None           No    5                 No           No
+SDA    K7   No     GFC1/IO209PPB3  LVCMOS33  12                 High  None           No    5                 No           No
+STATE  K4   No     IO210PPB3       LVCMOS33  12                 High  None           No    5                 No           No

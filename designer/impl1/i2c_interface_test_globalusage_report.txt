@@ -1,0 +1,23 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Date: Sun Apr 03 18:34:38 2016
+Design Name: i2c_interface_test  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    40                Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
+                      Driver: clock_div_1MHZ_100KHZ_0/clk_out_RNIOQD8/U_GL
+    18                Net   : CLK_1_c
+                      Driver: CLK_1_pad/U0/U1/U_GL
+
+
+
+

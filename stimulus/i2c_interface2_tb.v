@@ -48,15 +48,17 @@ parameter SYSCLK_PERIOD = 10000;// 100kHZ
 reg SYSCLK;
 reg NSYSRESET;
 reg [23:0] TIMESTAMP;
+reg sda_out;
 
 //wire SDA;
-assign SDA = STATE ? 1'b0 : 1'bz;
+assign SDA = STATE ? sda_out : 1'bz;
 
 initial
 begin
     SYSCLK = 1'b0;
     NSYSRESET = 1'b1;
     TIMESTAMP = 24'd0;
+    sda_out = 1'b0;
 end
 
 //////////////////////////////////////////////////////////////////////
@@ -70,7 +72,11 @@ begin
         NSYSRESET = 1'b1;
 end
 
-
+initial
+begin
+    #(1852389999) sda_out = 1'b1;
+    #(520000) sda_out = 1'b0;
+end
 //////////////////////////////////////////////////////////////////////
 // Clock Driver
 //////////////////////////////////////////////////////////////////////
