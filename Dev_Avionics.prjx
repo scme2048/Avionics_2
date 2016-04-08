@@ -188,23 +188,23 @@ SIZE="176"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.adb,adb"
 STATE="utd"
-TIME="1459991103"
-SIZE="3184640"
+TIME="1460083402"
+SIZE="3360768"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.ide_des,ide_des"
 STATE="utd"
-TIME="1459991104"
-SIZE="1051"
+TIME="1460083403"
+SIZE="1050"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.pdb,pdb"
 STATE="utd"
-TIME="1460083401"
+TIME="1460083914"
 SIZE="1506728"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_ba.sdf,ba_sdf"
 STATE="utd"
-TIME="1460051849"
-SIZE="1964955"
+TIME="1460083256"
+SIZE="1942166"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_ba.v,ba_hdl"
 STATE="utd"
@@ -873,8 +873,8 @@ SIZE="4581"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1459816472"
-SIZE="1106"
+TIME="1460083261"
+SIZE="928"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -903,13 +903,13 @@ SIZE="2132"
 ENDFILE
 VALUE "<project>\simulation\tb_full_system_postlayout_simulation.log,log"
 STATE="utd"
-TIME="1460083276"
-SIZE="5576"
+TIME="1460083323"
+SIZE="5902"
 ENDFILE
 VALUE "<project>\simulation\tb_full_system_postsynth_simulation.log,log"
 STATE="utd"
-TIME="1460083004"
-SIZE="2512"
+TIME="1460083034"
+SIZE="5919"
 ENDFILE
 VALUE "<project>\simulation\tb_geiger_integration_presynth_simulation.log,log"
 STATE="utd"
@@ -993,8 +993,8 @@ SIZE="15335"
 ENDFILE
 VALUE "<project>\simulation\tb_tranceiver_integration_presynth_simulation.log,log"
 STATE="utd"
-TIME="1460050740"
-SIZE="2633"
+TIME="1460051035"
+SIZE="24676"
 ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
@@ -1258,27 +1258,27 @@ SIZE="259"
 ENDFILE
 VALUE "<project>\synthesis\full_system.edn,syn_edn"
 STATE="utd"
-TIME="1459990834"
-SIZE="1609926"
+TIME="1460082988"
+SIZE="1606050"
 ENDFILE
 VALUE "<project>\synthesis\full_system.so,so"
 STATE="utd"
-TIME="1459990834"
+TIME="1460082988"
 SIZE="262"
 ENDFILE
 VALUE "<project>\synthesis\full_system.v,syn_hdl"
 STATE="utd"
-TIME="1460066549"
-SIZE="611463"
+TIME="1460082998"
+SIZE="611573"
 ENDFILE
 VALUE "<project>\synthesis\full_system_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1459990834"
+TIME="1460082988"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\full_system_syn.prj,prj"
 STATE="utd"
-TIME="1459990835"
+TIME="1460082989"
 SIZE="3702"
 ENDFILE
 VALUE "<project>\synthesis\full_sys_sdc.sdc,syn_sdc"
@@ -1755,8 +1755,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1764,7 +1764,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_full_system_postlayout_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -1909,14 +1909,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Post-Layout Simulate:tb_full_system_postlayout_simulation.log
+StartPage;StartPage;0
+HDL;hdl\spi_mode_config2.v;0
+HDL;stimulus\tb_tranceiver_integration.v;0
 HDL;stimulus\tb_full_system.v;0
 HDL;hdl\SPI_Master.v;0
 SmartDesign;full_system;0
 HDL;hdl\read_buffer.v;0
-HDL;hdl\spi_mode_config2.v;0
-HDL;stimulus\tb_tranceiver_integration.v;0
 ACTIVEVIEW;hdl\spi_mode_config2.v
 ENDLIST
 LIST ModuleSubBlockList
@@ -1956,12 +1955,12 @@ SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "full_system::work","component\work\full_system\full_system.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
@@ -1977,11 +1976,11 @@ SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -2014,8 +2013,8 @@ ENDLIST
 LIST "master_mode::work","component\work\master_mode\master_mode.v","TRUE","FALSE"
 SUBBLOCK "dummy_mem::work","hdl\dummy_mem.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
-SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 ENDLIST
 LIST "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 ENDLIST
@@ -2064,9 +2063,9 @@ SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 ENDLIST
@@ -2103,9 +2102,9 @@ SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
