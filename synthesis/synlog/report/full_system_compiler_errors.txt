@@ -1,0 +1,2 @@
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Logic for mag_dat[70:0] does not match a standard flip-flop
+

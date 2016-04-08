@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 04 19:26:59 2016 ***************************************************************************
+                          Thu Apr 07 20:37:29 2016 ***************************************************************************
 
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
 File Name: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_system.adb
 Design Name: full_system  Design State: compile
-Last Saved: Mon Apr 04 19:26:55 2016
+Last Saved: Thu Apr 07 20:21:05 2016
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 04 19:26:54 2016:
+Source File(s) Imported on Thu Apr 07 20:37:22 2016:
         C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.edn
 
 
@@ -34,7 +34,7 @@ Back Annotation File: N/A
 ***** Bitstream Variables ******************************************
 
 Bitstream File: N/A
-     Lock Mode: OFF
+     Lock Mode: off
 
 
 ***** Compile Variables ********************************************
@@ -57,7 +57,7 @@ Speed grade : STD
 Temp        : 0:25:70
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : No
+Keep Existing Physical Constraints : Yes
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -92,20 +92,27 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        61
+  - Logic combining:        67
 
-    Total macros optimized  62
+    Total macros optimized  68
 
-Warning: CMP503: Remapped 402 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 484 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
 =====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
 Compile report:
 ===============
 
-    CORE                       Used:   2994  Total:  24576   (12.18%)
-    IO (W/ clocks)             Used:     64  Total:    300   (21.33%)
+    CORE                       Used:   3541  Total:  24576   (14.41%)
+    IO (W/ clocks)             Used:     72  Total:    300   (24.00%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
     PLL                        Used:      1  Total:      1   (100.00%)
@@ -129,15 +136,15 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 2238         | 2238
-    SEQ     | 756          | 756
+    COMB    | 2573         | 2573
+    SEQ     | 967          | 968
 
 I/O Function:
 
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 4             | 0            | 0
-    Output I/O                            | 28            | 0            | 0
+    Output I/O                            | 36            | 0            | 0
     Bidirectional I/O                     | 32            | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -148,13 +155,13 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVCMOS33                        | 3.30v | N/A   | 4     | 28     | 32
+    LVCMOS33                        | 3.30v | N/A   | 4     | 36     | 32
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :  72 ( 100.00% )
     Placed  :   0
-    UnPlaced:  64 ( 100.00% )
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -186,28 +193,30 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    427     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
+    492     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
-    89      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+    209     CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                           Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
                           Source: NETLIST
-    87      CLK_NET       Net   : GLA
+    89      CLK_NET       Net   : GLA
                           Driver: CLK_26MHZ_0/Core
                           Source: ESSENTIAL
-    50      CLK_NET       Net   : spi_master_0_busy
-                          Driver: spi_master_0/busy_enable_RNIL01R_0
+    53      INT_NET       Net   : SS_c
+                          Driver: spi_mode_config2_0/ss_b_RNIRM7C
+                          Source: NETLIST
+    51      CLK_NET       Net   : spi_master_0_busy
+                          Driver: spi_master_0/busy_enable_RNI6H141_0
                           Source: NETLIST
     36      CLK_NET       Net   : clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out_RNIH497
-                          Source: NETLIST
-    19      CLK_NET       Net   : memory_controller_0_NEXT_WRITE
-                          Driver: memory_controller_0/next_write_RNI2G2D
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    24      INT_NET       Net   : spi_master_0_chip_rdy
+                          Driver: spi_master_0/chip_rdy
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -226,16 +235,16 @@ High fanout nets in the post compile netlist:
                           Driver: reset_pulse_0/RESET_7
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_8
                           Driver: reset_pulse_0/RESET_8
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_9
-                          Driver: reset_pulse_0/RESET_9
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    33      INT_NET       Net   : CLK_48MHZ_c
+    42      INT_NET       Net   : CLK_48MHZ_c
                           Driver: CLK_48MHZ_pad
-    33      INT_NET       Net   : RESET_IN_L8_c
+    42      INT_NET       Net   : RESET_IN_L8_c
                           Driver: RESET_IN_L8_pad
+    24      INT_NET       Net   : spi_master_0_chip_rdy
+                          Driver: spi_master_0/chip_rdy
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -250,8 +259,6 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: reset_pulse_0/RESET_5
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
                           Driver: reset_pulse_0/RESET_6
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_7
-                          Driver: reset_pulse_0/RESET_7
 ====================
 Flash*Freeze report:
 ====================

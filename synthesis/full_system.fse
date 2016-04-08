@@ -1,54 +1,44 @@
 
-fsm_encoding {14660664} sequential
+fsm_encoding {15660663} sequential
 
-fsm_state_encoding {14660664} 00 {00}
+fsm_state_encoding {15660663} 00 {00}
 
-fsm_state_encoding {14660664} 01 {01}
+fsm_state_encoding {15660663} 01 {01}
 
-fsm_state_encoding {14660664} 10 {10}
+fsm_state_encoding {15660663} 10 {10}
 
-fsm_registers {14660664} {init_stage[1]}  {init_stage[0]} 
+fsm_registers {15660663} {init_stage[1]}  {init_stage[0]} 
 
-fsm_encoding {1620742073} sequential
+fsm_encoding {1810841081} onehot
 
-fsm_state_encoding {1620742073} IDLE {00}
+fsm_state_encoding {1810841081} 000 {00001}
 
-fsm_state_encoding {1620742073} WAIT_HALF {01}
+fsm_state_encoding {1810841081} 001 {00010}
 
-fsm_state_encoding {1620742073} TRANSFER {10}
+fsm_state_encoding {1810841081} 011 {00100}
 
-fsm_registers {1620742073} {state_q[1]}  {state_q[0]} 
+fsm_state_encoding {1810841081} 100 {01000}
 
-fsm_encoding {1710741071} onehot
+fsm_state_encoding {1810841081} 111 {10000}
 
-fsm_state_encoding {1710741071} 000 {00001}
+fsm_registers {1810841081} {tx_state[4]}  {tx_state[3]}  {tx_state[2]}  {tx_state[1]}  {tx_state[0]} 
 
-fsm_state_encoding {1710741071} 001 {00010}
+fsm_encoding {1810841082} onehot
 
-fsm_state_encoding {1710741071} 011 {00100}
+fsm_state_encoding {1810841082} 000 {00000001}
 
-fsm_state_encoding {1710741071} 100 {01000}
+fsm_state_encoding {1810841082} 001 {00000010}
 
-fsm_state_encoding {1710741071} 111 {10000}
+fsm_state_encoding {1810841082} 010 {00000100}
 
-fsm_registers {1710741071} {tx_state[4]}  {tx_state[3]}  {tx_state[2]}  {tx_state[1]}  {tx_state[0]} 
+fsm_state_encoding {1810841082} 011 {00001000}
 
-fsm_encoding {1710741072} onehot
+fsm_state_encoding {1810841082} 100 {00010000}
 
-fsm_state_encoding {1710741072} 000 {00000001}
+fsm_state_encoding {1810841082} 101 {00100000}
 
-fsm_state_encoding {1710741072} 001 {00000010}
+fsm_state_encoding {1810841082} 110 {01000000}
 
-fsm_state_encoding {1710741072} 010 {00000100}
+fsm_state_encoding {1810841082} 111 {10000000}
 
-fsm_state_encoding {1710741072} 011 {00001000}
-
-fsm_state_encoding {1710741072} 100 {00010000}
-
-fsm_state_encoding {1710741072} 101 {00100000}
-
-fsm_state_encoding {1710741072} 110 {01000000}
-
-fsm_state_encoding {1710741072} 111 {10000000}
-
-fsm_registers {1710741072} {chip_state[7]}  {chip_state[6]}  {chip_state[5]}  {chip_state[4]}  {chip_state[3]}  {chip_state[2]}  {chip_state[1]}  {chip_state[0]} 
+fsm_registers {1810841082} {chip_state[7]}  {chip_state[6]}  {chip_state[5]}  {chip_state[4]}  {chip_state[3]}  {chip_state[2]}  {chip_state[1]}  {chip_state[0]} 

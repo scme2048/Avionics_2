@@ -1,12 +1,9 @@
 # Created by Microsemi Libero Software 11.6.0.34
-# Mon Apr 04 19:26:43 2016
+# Thu Apr 07 20:42:33 2016
 
-# (NEW DESIGN)
+# (OPEN DESIGN)
 
-# create a new design
-new_design -name "full_system" -family "ProASIC3L"
-set_device -die {M1A3P1000L} -package {484 FBGA} -speed {STD} -voltage {1.5} -IO_DEFT_STD {LVCMOS 3.3V} -RESTRICTPROBEPINS {1} -RESTRICTSPIPINS {0} -TEMPR {COM} -UNUSED_MSS_IO_RESISTOR_PULL {None} -VCCI_1.5_VOLTR {COM} -VCCI_1.8_VOLTR {COM} -VCCI_2.5_VOLTR {COM} -VCCI_3.3_VOLTR {COM} -VOLTR {COM}
-
+open_design "full_system.adb"
 
 # set default back-annotation base-name
 set_defvar "BA_NAME" "full_system_ba"
@@ -17,42 +14,9 @@ set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
 set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
-# set working directory
-set_defvar "DESDIR" "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1"
-
-# set back-annotation output directory
-set_defvar "BA_DIR" "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/designer/impl1"
-
-# enable the export back-annotation netlist
-set_defvar "BA_NETLIST_ALSO" "1"
-
-# set EDIF options
-set_defvar "EDNINFLAVOR" "GENERIC"
-
-# set HDL options
-set_defvar "NETLIST_NAMING_STYLE" "VERILOG"
-
-# setup status report options
-set_defvar "EXPORT_STATUS_REPORT" "1"
-set_defvar "EXPORT_STATUS_REPORT_FILENAME" "full_system.rpt"
-
-# legacy audit-mode flags (left here for historical reasons)
-set_defvar "AUDIT_NETLIST_FILE" "1"
-set_defvar "AUDIT_DCF_FILE" "1"
-set_defvar "AUDIT_PIN_FILE" "1"
-set_defvar "AUDIT_ADL_FILE" "1"
-
-# import of input files
-import_source  \
--format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/full_system.edn}
-
-# save the design database
-save_design {full_system.adb}
-
-
-compile
-report -type "status" {full_system_compile_report.txt}
-report -type "pin" -listby "name" {full_system_report_pin_byname.txt}
-report -type "pin" -listby "number" {full_system_report_pin_bynumber.txt}
+report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {full_system_maxdelay_timing_report.txt}
+report -type "timing" -format "TEXT" -analysis "min" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {full_system_mindelay_timing_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "max" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {full_system_maxdelay_timingviolations_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "min" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {full_system_mindelay_timingviolations_report.txt}
 
 save_design

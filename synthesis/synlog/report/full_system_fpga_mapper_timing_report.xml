@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>CLK_26MHZ|GLA_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>100.4 MHz</data>
-<data>0.044</data>
+<data>99.9 MHz</data>
+<data>-0.009</data>
 </row>
 <row>
 <data>clock_div_1MHZ_10HZ|clk_out_inferred_clock</data>
@@ -29,8 +29,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>clock_div_1MHZ_100KHZ|clk_out_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>87.8 MHz</data>
-<data>-1.385</data>
+<data>89.8 MHz</data>
+<data>-1.130</data>
 </row>
 <row>
 <data>clock_div_26MHZ_1MHZ|clk_out_inferred_clock</data>
@@ -41,43 +41,37 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>memory_controller|next_read_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>92.9 MHz</data>
-<data>-0.759</data>
+<data>93.6 MHz</data>
+<data>-0.685</data>
 </row>
 <row>
 <data>memory_controller|next_write_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>90.9 MHz</data>
-<data>-1.002</data>
+<data>108.7 MHz</data>
+<data>0.802</data>
 </row>
 <row>
 <data>reset_pulse|CLK_OUT_48MHZ_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>48.8 MHz</data>
-<data>-9.392</data>
+<data>50.5 MHz</data>
+<data>-9.820</data>
 </row>
 <row>
 <data>spi_master|busy_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>74.7 MHz</data>
-<data>-3.385</data>
-</row>
-<row>
-<data>spi_master|un1_busy_enable_1_sqmuxa_1_inferred_clock</data>
-<data>100.0 MHz</data>
-<data>NA</data>
-<data>NA</data>
-</row>
-<row>
-<data>spi_master|un1_rst_1_inferred_clock</data>
-<data>100.0 MHz</data>
-<data>NA</data>
-<data>NA</data>
+<data>80.2 MHz</data>
+<data>-2.475</data>
 </row>
 <row>
 <data>spi_mode_config2|next_b_inferred_clock</data>
 <data>100.0 MHz</data>
 <data>204.4 MHz</data>
 <data>5.108</data>
+</row>
+<row>
+<data>spi_mode_config2|ss_b_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>139.7 MHz</data>
+<data>2.844</data>
 </row>
 </report_table>

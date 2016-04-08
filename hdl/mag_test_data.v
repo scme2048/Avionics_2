@@ -27,7 +27,7 @@ output [79:0] MAG_DATA;
 reg [15:0] x_data;
 reg [15:0] y_data;
 reg [15:0] z_data;
-reg [70:0] mag_dat;
+reg [79:0] mag_dat;
 parameter id_byte=8'h4D;
 
 assign MAG_DATA=mag_dat;
@@ -42,8 +42,9 @@ end else begin
     x_data=x_data+1;
     y_data=y_data+1;
     z_data=z_data+1;
+    mag_dat = {z_data,y_data,x_data,TIMESTAMP,id_byte};
 end
-mag_dat = {z_data,y_data,x_data,TIMESTAMP,id_byte};
+
 
 
 

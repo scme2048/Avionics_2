@@ -47,12 +47,20 @@
 @W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":56:0:56:5|Pruning register full_read_address[18:0] 
 @W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":56:0:56:5|Pruning register full_write_address[18:0] 
 @W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":56:0:56:5|Pruning bit 1 of enable_buffer[1:0] -- not in use ...
-@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":98:4:98:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal mosi_d; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal state_d[1:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal new_data_d; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal ctr_d[2:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal sck_d[1:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal data_out_d[7:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal data_d[7:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal busy_enable; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":108:4:108:9|Pruning register tx_init_next_hold 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit ce to a constant 0
 @W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register ce 
 @W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":360:20:360:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":407:20:407:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit write_counter[1] to a constant 0
@@ -62,5 +70,14 @@
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register bits 3 to 2 of read_counter[3:0] 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":40:0:40:5|Optimizing register bit cntr[13] to a constant 0
 @W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":40:0:40:5|Pruning register bit 13 of cntr[13:0] 
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[0] is always 1, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[1] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[2] is always 1, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[3] is always 1, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[4] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[5] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[6] is always 1, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[7] is always 0, optimizing ...
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 7 to 0 of mag_dat[79:0] 
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 

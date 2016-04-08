@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Apr 04 23:56:45 2016
+// Created by SmartDesign Thu Apr 07 20:16:07 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -13,6 +13,14 @@ module full_system(
     MISO,
     RESET_IN_L8,
     // Outputs
+    DS0,
+    DS1,
+    DS2,
+    DS3,
+    DS4,
+    DS5,
+    DS6,
+    DS7,
     MOSI,
     SPI_SCK,
     SRAM_A0,
@@ -86,6 +94,14 @@ input  RESET_IN_L8;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output DS0;
+output DS1;
+output DS2;
+output DS3;
+output DS4;
+output DS5;
+output DS6;
+output DS7;
 output MOSI;
 output SPI_SCK;
 output SRAM_A0;
@@ -157,6 +173,14 @@ wire          CLK_48MHZ;
 wire          clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT;
 wire          clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT;
 wire          clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT;
+wire          DS0_net_0;
+wire          DS1_net_0;
+wire          DS2_net_0;
+wire          DS3_net_0;
+wire          DS4_net_0;
+wire          DS5_net_0;
+wire          DS6_net_0;
+wire          DS7_net_0;
 wire          G_STREAM_IN;
 wire   [79:0] geig_data_handling_0_G_DATA_STACK_1;
 wire   [79:0] mag_test_data_0_MAG_DATA;
@@ -275,6 +299,14 @@ wire          SRAM_OE_net_1;
 wire          SS_net_1;
 wire          MOSI_net_1;
 wire          SPI_SCK_net_1;
+wire          DS0_net_1;
+wire          DS1_net_1;
+wire          DS2_net_1;
+wire          DS3_net_1;
+wire          DS4_net_1;
+wire          DS5_net_1;
+wire          DS6_net_1;
+wire          DS7_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -342,6 +374,22 @@ assign MOSI_net_1       = MOSI_net_0;
 assign MOSI             = MOSI_net_1;
 assign SPI_SCK_net_1    = SPI_SCK_net_0;
 assign SPI_SCK          = SPI_SCK_net_1;
+assign DS0_net_1        = DS0_net_0;
+assign DS0              = DS0_net_1;
+assign DS1_net_1        = DS1_net_0;
+assign DS1              = DS1_net_1;
+assign DS2_net_1        = DS2_net_0;
+assign DS2              = DS2_net_1;
+assign DS3_net_1        = DS3_net_0;
+assign DS3              = DS3_net_1;
+assign DS4_net_1        = DS4_net_0;
+assign DS4              = DS4_net_1;
+assign DS5_net_1        = DS5_net_0;
+assign DS5              = DS5_net_1;
+assign DS6_net_1        = DS6_net_0;
+assign DS6              = DS6_net_1;
+assign DS7_net_1        = DS7_net_0;
+assign DS7              = DS7_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -483,6 +531,21 @@ reset_pulse reset_pulse_0(
         .CLK_OUT_48MHZ ( reset_pulse_0_CLK_OUT_48MHZ ) 
         );
 
+//--------spi_data_out
+spi_data_out spi_data_out_0(
+        // Inputs
+        .data_from_spi ( read_buffer_0_BYTE_OUT ),
+        // Outputs
+        .ds0           ( DS0_net_0 ),
+        .ds1           ( DS1_net_0 ),
+        .ds2           ( DS2_net_0 ),
+        .ds3           ( DS3_net_0 ),
+        .ds4           ( DS4_net_0 ),
+        .ds5           ( DS5_net_0 ),
+        .ds6           ( DS6_net_0 ),
+        .ds7           ( DS7_net_0 ) 
+        );
+
 //--------spi_master
 spi_master spi_master_0(
         // Inputs
@@ -495,10 +558,10 @@ spi_master spi_master_0(
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SPI_SCK_net_0 ),
+        .data_out ( spi_master_0_data_out ),
         .busy     ( spi_master_0_busy ),
         .chip_rdy ( spi_master_0_chip_rdy ),
-        .new_data (  ),
-        .data_out ( spi_master_0_data_out ) 
+        .new_data (  ) 
         );
 
 //--------spi_mode_config2

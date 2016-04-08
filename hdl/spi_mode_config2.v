@@ -81,7 +81,7 @@ module spi_mode_config2 (
     reg [2:0] state_b;
     reg byte_tracker_b, next_b; // if 0, then send address, if 1, send data, chip_rdy-->CC1101 ready
     reg start_a,start_b;
-    reg [2:0] rx_ss_counter;
+    reg [3:0] rx_ss_counter;
     reg [6:0] rxbytes_numbytes;
     reg [7:0] read_data;
     reg read_tracker;
@@ -90,6 +90,7 @@ module spi_mode_config2 (
     reg [3:0] tx_free_bytes;
     reg [5:0] tx_packet_counter;
     reg [2:0] tx_exit_counter;
+    reg tx_init_next_hold;
     reg [2:0] idle_ss_counter;
 
     // mem_pull high if in TX mode, low if in RX mode
@@ -123,6 +124,7 @@ module spi_mode_config2 (
         tx_free_bytes=4'b1111;
         tx_packet_counter=6'b000000;
         tx_exit_counter = 3'b000;
+        tx_init_next_hold=1'b1;
     end else if (~busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
@@ -157,13 +159,14 @@ module spi_mode_config2 (
                             byte_out_a = SNOP;
                         end
                     end else if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b==1'b1)) begin
-                        state_a = RX_MODE;
+                        
                         start_a=1'b1;
                         byte_out_a = 8'hFB; // Read RXBYTES Register
                         byte_tracker_a = 1'b1;
                         read_data=8'h00;
                         read_tracker=1'b0;
                         rxbytes_numbytes=7'b0000000;
+                        state_a = RX_MODE;
                         
                         
                     end else if ((~chip_rdy)&&(TX_ENABLE)/*&&(byte_tracker_b)*/) begin
@@ -289,8 +292,16 @@ module spi_mode_config2 (
                         mem_enable_a = 1'b0;
                         // If exactly 51, use >4'b1101 (13 bytes)
                         if ((byte_out_a==STX) || (tx_free_bytes>4'b0001)) begin
-                            next_a = 1'b1;
+                            
                             byte_out_a = TXFIFO;
+                            // Trying tx_packet_counter==1... but don't think it will work
+                            //if ((tx_init_next_hold==1'b1) && (tx_packet_counter==1)) begin
+                                //tx_init_next_hold=1'b0;
+                                //next_a=1'b1;
+                            //end
+                            if (tx_packet_counter>0) begin
+                                next_a=1'b1;
+                            end
                         end else begin
                             byte_out_a=SNOP;
 
@@ -914,7 +925,7 @@ module spi_mode_config2 (
             begin_pass_b <= 0;
             config_cntr_b <= 1;
             start_b <= 1'b0;
-            rx_ss_counter=3'b000;
+            rx_ss_counter=4'b0000;
             tx_ss_counter=3'b000;
             idle_ss_counter=3'b000;
 
@@ -933,14 +944,14 @@ module spi_mode_config2 (
             end
             // Flips SS high when going into RX_MODE
             if (state_b ==RX_MODE) begin
-                if (rx_ss_counter ==3'b111) begin
+                if (rx_ss_counter ==4'b1111) begin
                     ss_b<=1'b0;
                 end else begin
                     ss_b<=1'b1;
                     rx_ss_counter=rx_ss_counter+1;
                 end
             end else begin
-                rx_ss_counter=3'b000;
+                rx_ss_counter=4'b0000;
             end
             //Flips ss high when going into TX_MODE
             if (state_b ==TX_MODE) begin

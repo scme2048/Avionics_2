@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Mon Apr 04 19:54:05 2016 UNCOMPLETED LAYOUT
+Pin Report - Date: Thu Apr 07 20:40:48 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -22,18 +22,18 @@ A2                   GND                Reserved
 A3                   VCCIB0             Reserved
 A4                   IO07RSB0           Unassigned
 A5                   IO09RSB0           Unassigned
-A6                   IO13RSB0           Unassigned
-A7                   IO18RSB0           Unassigned
+A6      DS1          IO13RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+A7      DS3          IO18RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 A8                   IO20RSB0           Unassigned
 A9                   IO26RSB0           Unassigned
-A10                  IO32RSB0           Unassigned
-A11                  IO40RSB0           Unassigned
-A12                  IO41RSB0           Unassigned
-A13                  IO53RSB0           Unassigned
+A10     DS5          IO32RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+A11     DS7          IO40RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+A12     DS0          IO41RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+A13     DS2          IO53RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 A14                  IO59RSB0           Unassigned
 A15                  IO64RSB0           Unassigned
-A16                  IO65RSB0           Unassigned
-A17                  IO67RSB0           Unassigned
+A16     DS4          IO65RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+A17     DS6          IO67RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 A18                  IO69RSB0           Unassigned
 A19                  Not Bonded         Unconnected
 A20                  VCCIB0             Reserved
@@ -161,7 +161,7 @@ E9      SRAM_D15     IO21RSB0           Fixed        LVCMOS33  12               
 E10                  IO27RSB0           Unassigned
 E11                  IO34RSB0           Unassigned
 E12                  IO44RSB0           Unassigned
-E13                  IO51RSB0           Unassigned
+E13     G_STREAM_IN  IO51RSB0           Fixed        LVCMOS33  ---                ---   None           ---   ---               No           No
 E14                  IO57RSB0           Unassigned
 E15                  GBC1/IO73RSB0      Special
 E16                  GBB0/IO74RSB0      Special

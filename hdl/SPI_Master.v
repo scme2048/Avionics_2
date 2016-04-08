@@ -27,6 +27,7 @@ module spi_master #(parameter CLK_DIV = 2)(
   //reg count;
   reg [3:0] test;
   reg chip_rdy_a, busy_enable/*, wait_q, wait_d*/;
+  //reg chip_rdy_q;
    
   assign mosi = mosi_q;
   //assign sck = (~sck_q) & (state_q == TRANSFER);
@@ -109,7 +110,7 @@ module spi_master #(parameter CLK_DIV = 2)(
       //wait_d = 1'b1;
     end
 
-    else begin
+    else if (ss==1'b0) begin
         sck_d = sck_q;
         data_d = data_q;
         mosi_d = mosi_q;
@@ -126,11 +127,13 @@ module spi_master #(parameter CLK_DIV = 2)(
         case (state_q)
           IDLE: begin
             //busy_enable = 1'b0;
-            sck_d = 4'b0;              // reset clock counter
+            sck_d = 2'b0;              // reset clock counter
             test = 0;
             ctr_d = 3'b0;              // reset bit counter
             mosi_d=1'b0;
-            if ((start == 1'b1)&&(ss==1'b0)) begin   // if start command
+            data_d=0;   // maybe get rid of this??
+ 
+            if (start == 1'b1) begin   // if start command
               test = 1;
               //data_d = data_in;        // copy data to send
               state_d = WAIT_HALF;     // change state
@@ -140,52 +143,48 @@ module spi_master #(parameter CLK_DIV = 2)(
           WAIT_HALF: begin
             busy_enable = 1'b0;
             test = 2;
-            sck_d = sck_q + 1'b1;                  // increment clock counter
+            sck_d = sck_q +1;// 1'b1;                  // increment clock counter
             if (sck_q == {CLK_DIV-1{1'b1}}) begin  // if clock is half full (about to fall)
-                if (ss==1'b1) begin
-                    state_d=IDLE;
-                    mosi_d=1'b0;
-                end else begin
+
               data_d = data_in;
               test = 3;
-              sck_d = 1'b0;                        // reset to 0
+              sck_d = 2'b00;                        // reset to 0
               state_d = TRANSFER;                  // change state
               mosi_d = data_q[7];  // scott changes
-                end
+              
             end
           end
           TRANSFER: begin
             test = 4;
             //if (ctr_q == 3'b0)
                 //chip_rdy_a = miso;
-            if (ss==1'b1) begin
-                state_d=IDLE;
-                mosi_d=1'b0;
-            end else begin
             if (sck_q == 2'b11) begin
                 test = 5;
-                sck_d = 2'b0;
+                sck_d = 2'b00;
                 mosi_d = data_q[7];
             end
-            else
-                test = 6;
-                sck_d = sck_q + 1'b1;                       // increment clock counter
-            if (sck_q == 4'b0000) begin                     // if clock counter is 0
+            else begin
+                sck_d = sck_q + 1;//1'b1;                       // increment clock counter
+            end
+            if (sck_q == 2'b00) begin                     // if clock counter is 0
                 test = 7;
                 if (ctr_q == 3'b0)
-                    chip_rdy_a = miso;
-                //if (miso == 1'b0)
-                mosi_d = data_q[7];                           // output the MSB of data
-                //else begin
-                    //state_d = IDLE;
-                //    mosi_d = 1'b0;
+                    chip_rdy_a = miso; //Check this more
+                if (chip_rdy == 1'b0)
+                    mosi_d = data_q[7];                           // output the MSB of data
+                else begin
+                    state_d = IDLE;
+                    mosi_d = 1'b0;
+                end
             end else if (sck_q == {CLK_DIV-1{1'b1}}) begin  // else if it's half full (about to fall)
-              if (ctr_q == 3'b0)
-                  busy_enable = 1'b1;
+              //if ((ctr_q == 3'b0) && (chip_rdy==1'b0)) begin
+                  //busy_enable = 1'b1;
+              //end
               test = 8;
               data_d = {data_q[6:0], miso};                 // read in data (shift in)
             end else if (sck_q == {CLK_DIV{1'b1}}) begin    // else if it's full (about to rise)
               test = 9;
+              busy_enable=1'b1;
               ctr_d = ctr_q + 1'b1;                         // increment bit counter
               if (ctr_q == 3'b111) begin                    // if we are on the last bit
                 test = 9;
@@ -196,7 +195,7 @@ module spi_master #(parameter CLK_DIV = 2)(
                 //wait_d = wait_q;
               end
             end
-            end
+            
           end
         endcase
     end
@@ -213,9 +212,10 @@ module spi_master #(parameter CLK_DIV = 2)(
           state_q <= IDLE;
           data_out_q <= 8'b0;
           new_data_q <= 1'b0;
+         // chip_rdy_q <=1'b0;
           //wait_q <= 1'b1;
-      end else begin
-        if (~chip_rdy_a) begin
+      end else if (ss==1'b0) begin
+        if (~chip_rdy_a) begin // was chip_rdy_a
             ctr_q <= ctr_d;
             data_q <= data_d;
             sck_q <= sck_d;
@@ -223,6 +223,7 @@ module spi_master #(parameter CLK_DIV = 2)(
             state_q <= state_d;
             data_out_q <= data_out_d;
             new_data_q <= new_data_d;
+           // chip_rdy_q <= chip_rdy_a;
             //wait_q <= 1'b0;
         end
         else begin
@@ -233,6 +234,7 @@ module spi_master #(parameter CLK_DIV = 2)(
             state_q <= state_d;
             data_out_q <= data_out_d;
             new_data_q <= new_data_d;
+           // chip_rdy_q <= chip_rdy_a;
             //wait_q <= 1'b1;
         end
       end

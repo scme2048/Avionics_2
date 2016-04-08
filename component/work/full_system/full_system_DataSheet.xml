@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_system</location>
-    <state>GENERATED ( Mon Apr 04 23:56:46 2016 )</state>
+    <state>GENERATED ( Thu Apr 07 20:16:08 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -147,6 +147,12 @@
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
+    <port-name>DS5</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
     <port-name>SRAM_D23</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
@@ -167,6 +173,12 @@
   <io>
     <port-name>SRAM_D20</port-name>
     <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>DS2</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
@@ -220,6 +232,18 @@
   </io>
   <io>
     <port-name>SRAM_A14</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>DS0</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>DS1</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
@@ -315,6 +339,12 @@
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
+    <port-name>DS7</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
     <port-name>SRAM_D26</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
@@ -335,6 +365,12 @@
   <io>
     <port-name>SRAM_D18</port-name>
     <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>DS4</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
@@ -365,6 +401,12 @@
   <io>
     <port-name>SRAM_D16</port-name>
     <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>DS6</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
@@ -431,6 +473,12 @@
   <io>
     <port-name>SRAM_D4</port-name>
     <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>DS3</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
@@ -517,6 +565,12 @@
     <core-exttype>reset_pulse</core-exttype>
     <core-location>hdl\reset_pulse.v</core-location>
     <core-name>reset_pulse_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>spi_data_out</core-exttype>
+    <core-location>hdl\spi_data_out.v</core-location>
+    <core-name>spi_data_out_0</core-name>
   </core>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>

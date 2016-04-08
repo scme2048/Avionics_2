@@ -1,0 +1,48 @@
+********************************************************************
+                            I/O Bank Report
+********************************************************************
+  
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Date: Thu Apr 07 20:40:46 2016
+Design Name: full_system  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 4             | 0            | 0
+    Output I/O                            | 36            | 0            | 0
+    Bidirectional I/O                     | 32            | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVCMOS33                        | 3.30v | N/A   | 4     | 36     | 32
+
+I/O Bank Resource Usage:
+
+          |   Voltages    | Single I/Os  | Diff I/O Pairs |        Vref I/Os
+          |-------|-------|------|-------|-------|--------|------|-------|----------
+          | Vcci  | Vref  | Used | Total | Used  | Total  | Used | Total | Vref Pins
+    ------|-------|-------|------|-------|-------|--------|------|-------|----------
+    Bank0 | 3.30v | N/A   | 21   | 78    | 0     | 0      | N/A  | N/A   | N/A
+    Bank1 | 3.30v | N/A   | 0    | 72    | 0     | 36     | N/A  | N/A   | N/A
+    Bank2 | 3.30v | N/A   | 34   | 74    | 0     | 0      | N/A  | N/A   | N/A
+    Bank3 | 3.30v | N/A   | 17   | 76    | 0     | 38     | N/A  | N/A   | N/A
+
+I/O Voltage Usage:
+
+       Voltages    |     I/Os
+    -------|-------|------|-------
+     Vcci  | Vref  | Used | Total
+    -------|-------|------|-------
+     3.30v | N/A   | 72   | 300
+

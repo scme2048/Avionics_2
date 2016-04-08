@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 01 16:51:07 2016
+// Created by SmartDesign Thu Apr 07 11:38:35 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -93,10 +93,16 @@ wire          ds7_net_1;
 // TiedOff Nets
 //--------------------------------------------------------------------
 wire          VCC_net;
+wire   [17:0] write_address_const_net_0;
+wire   [17:0] read_address_const_net_0;
+wire          GND_net;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
-assign VCC_net = 1'b1;
+assign VCC_net                   = 1'b1;
+assign write_address_const_net_0 = 18'h00003;
+assign read_address_const_net_0  = 18'h00000;
+assign GND_net                   = 1'b0;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
@@ -156,12 +162,16 @@ clock_div_26MHZ_1MHZ clock_div_26MHZ_1MHZ_0(
 //--------orbit_control
 orbit_control orbit_control_0(
         // Inputs
-        .cntr_enable ( spi_mode_config_0_begin_pass ),
-        .clk         ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
-        .reset       ( reset_pulse_0_RESET ),
-        .CLK_48MHZ   ( reset_pulse_0_CLK_OUT_48MHZ ),
+        .cntr_enable   ( spi_mode_config_0_begin_pass ),
+        .clk           ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
+        .reset         ( reset_pulse_0_RESET ),
+        .CLK_48MHZ     ( reset_pulse_0_CLK_OUT_48MHZ ),
+        .write_address ( write_address_const_net_0 ),
+        .read_address  ( read_address_const_net_0 ),
+        .w_chip_select ( GND_net ),
+        .r_chip_select ( GND_net ),
         // Outputs
-        .tx_enable   ( orbit_control_0_tx_enable ) 
+        .tx_enable     ( orbit_control_0_tx_enable ) 
         );
 
 //--------read_buffer
