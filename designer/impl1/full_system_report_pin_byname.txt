@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Apr 08 14:56:38 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Sun Apr 10 14:36:40 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -27,6 +27,8 @@ DS5          A10  Yes    IO32RSB0        LVCMOS33  12                 High  None
 DS6          A17  Yes    IO67RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 DS7          A11  Yes    IO40RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 G_STREAM_IN  E13  Yes    IO51RSB0        LVCMOS33  ---                ---   None           ---   ---               No           No
+I2C_SCL      J4   Yes    IO217NDB3       LVCMOS33  12                 High  Up             No    5                 No           No
+I2C_SDA      J6   Yes    IO216PDB3       LVCMOS33  12                 High  Up             No    5                 No           No
 MISO         D5   Yes    GAA0/IO00RSB0   LVCMOS33  ---                ---   None           ---   ---               No           No
 MOSI         D6   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    5                 No           No
 RESET_IN_L8  T9   Yes    GEA2/IO187RSB2  LVCMOS33  ---                ---   None           ---   ---               No           No

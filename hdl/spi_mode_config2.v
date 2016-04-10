@@ -23,7 +23,7 @@ module spi_mode_config2 (
     input [7:0] SLAVE_OUTPUT,   // byte from miso  
     input [7:0] DATA_FROM_MEM,  // data byte from memory
     input TX_ENABLE,            // 1 if TX mode
-    input rst, clk, busy, chip_rdy,   
+    input rst, clk, busy, chip_rdy, miso,
     output [7:0] byte_out,   // byte to send to slave
     output mem_enable,            // 1 to enable pulling data from mem
     output begin_pass,          // enable when switched to TX mode
@@ -95,6 +95,8 @@ module spi_mode_config2 (
     reg [2:0] tx_exit_counter;
     reg tx_init_next_hold;
     reg [2:0] idle_ss_counter;
+    reg [18:0] miso_high_counter;
+    reg [3:0] miso_ss_counter;
 
     // mem_pull high if in TX mode, low if in RX mode
     assign mem_enable = mem_enable_b;
@@ -196,7 +198,7 @@ module spi_mode_config2 (
                 else if ((chip_state == chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
                     start_a = 1'b1;
-                    if(poll_interupt_counter==4'b1111) begin
+                    if(poll_interupt_counter==10) begin
                         poll_interupt=1'b1;
                         poll_interupt_counter=0;
                     end else begin
@@ -943,6 +945,8 @@ module spi_mode_config2 (
             tx_ss_counter=3'b000;
             idle_ss_counter=3'b000;
             poll_ss_counter=4'b0000;
+            miso_high_counter=0;
+            miso_ss_counter=0;
         end
         else begin
             if (/*ss_b == 1'b0 &&*/ state_b != PWR_RST) begin
@@ -999,7 +1003,24 @@ module spi_mode_config2 (
                 end
             end else begin
                 idle_ss_counter=3'b000;
-            end            
+            end   
+         
+            if (miso==1'b1) begin
+                
+                if ((miso_high_counter==524287) && (state_b!=CONFIG_MODE)) begin
+                    if (miso_ss_counter ==4'b1111) begin
+                        ss_b<=1'b0;
+                    end else begin
+                        ss_b<=1'b1;
+                        miso_ss_counter=miso_ss_counter+1;
+                    end
+                end else begin
+                    miso_high_counter=miso_high_counter+1;
+                end
+            end else begin
+                miso_high_counter=0;
+                miso_ss_counter=0;
+            end
 
             if (state_b == PWR_RST) begin
                 if (rst_cntr <= microsec) begin  

@@ -17,6 +17,7 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_26MHZ_1MHZ.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v"
@@ -25,14 +26,13 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\reset_pulse.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\timestamp.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v"
-@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v"
 Verilog syntax check successful!
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v changed - recompiling
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v changed - recompiling
+Options changed - recompiling
 Selecting top level module full_system
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -117,6 +117,26 @@ Selecting top level module full_system
 
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 5 to 3 of G_DATA_STACK[79:0] 
 
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":16:7:16:20|Synthesizing module i2c_interface2
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register begin_data 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register stop_enable 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register test[7:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register test_sda 
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[1] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[7] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register bit 7 of data_out[79:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register bits 5 to 4 of data_out[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register bit 1 of data_out[79:0] 
+
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":21:7:21:19|Synthesizing module mag_test_data
 
 @A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Feedback mux created for signal mag_dat[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
@@ -154,7 +174,7 @@ Selecting top level module full_system
 @W: CL118 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\SPI_Master.v":99:4:99:5|Latch generated from always block for signal chip_rdy_a; possible missing assignment in an if or case statement.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":22:7:22:22|Synthesizing module spi_mode_config2
 
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":111:4:111:9|Pruning register tx_init_next_hold 
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":113:4:113:9|Pruning register tx_init_next_hold 
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":21:7:21:20|Synthesizing module sram_interface
 
@@ -168,7 +188,9 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":9:7:9:17|Synthesizing module full_system
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":407:20:407:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":479:14:479:28|Pruning instance mag_test_data_0 -- not in use ...
+
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":417:20:417:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
@@ -179,7 +201,7 @@ Selecting top level module full_system
 
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Pruning register bits 3 to 2 of read_counter[3:0] 
 
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":111:4:111:9|Trying to extract state machine for register tx_state
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":113:4:113:9|Trying to extract state machine for register tx_state
 Extracted state machine for register tx_state
 State machine has 5 reachable states with original encodings of:
    000
@@ -187,7 +209,7 @@ State machine has 5 reachable states with original encodings of:
    011
    100
    111
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":111:4:111:9|Trying to extract state machine for register chip_state
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_mode_config2.v":113:4:113:9|Trying to extract state machine for register chip_state
 Extracted state machine for register chip_state
 State machine has 8 reachable states with original encodings of:
    000
@@ -217,29 +239,40 @@ State machine has 3 reachable states with original encodings of:
 @W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[7] is always 0, optimizing ...
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 7 to 0 of mag_dat[79:0] 
 
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit ctr_a[3] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register bit 3 of ctr_a[3:0] 
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Trying to extract state machine for register state_a
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Trying to extract state machine for register data_mode
+Extracted state machine for register data_mode
+State machine has 2 reachable states with original encodings of:
+   00
+   01
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register bit 3 of data_out[3:2] 
+
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 85MB peak: 175MB)
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 88MB peak: 175MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Fri Apr 08 14:53:21 2016
+# Sun Apr 10 14:29:52 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 08 14:53:22 2016
+# Sun Apr 10 14:29:53 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:03s cputime
-# Fri Apr 08 14:53:22 2016
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Sun Apr 10 14:29:53 2016
 
 ###########################################################]

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Apr 07 20:16:07 2016
+// Created by SmartDesign Sun Apr 10 14:29:39 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -21,6 +21,7 @@ module full_system(
     DS5,
     DS6,
     DS7,
+    I2C_SCL,
     MOSI,
     SPI_SCK,
     SRAM_A0,
@@ -50,6 +51,7 @@ module full_system(
     SRAM_WE,
     SS,
     // Inouts
+    I2C_SDA,
     SRAM_D0,
     SRAM_D1,
     SRAM_D10,
@@ -102,6 +104,7 @@ output DS4;
 output DS5;
 output DS6;
 output DS7;
+output I2C_SCL;
 output MOSI;
 output SPI_SCK;
 output SRAM_A0;
@@ -133,6 +136,7 @@ output SS;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
+inout  I2C_SDA;
 inout  SRAM_D0;
 inout  SRAM_D1;
 inout  SRAM_D10;
@@ -183,6 +187,9 @@ wire          DS6_net_0;
 wire          DS7_net_0;
 wire          G_STREAM_IN;
 wire   [79:0] geig_data_handling_0_G_DATA_STACK_1;
+wire   [79:0] i2c_interface2_0_data;
+wire          I2C_SCL_net_0;
+wire          I2C_SDA;
 wire   [79:0] mag_test_data_0_MAG_DATA;
 wire   [17:0] memory_controller_0_ADDRESS_OUT;
 wire          memory_controller_0_CHIP_SELECT;
@@ -307,6 +314,7 @@ wire          DS4_net_1;
 wire          DS5_net_1;
 wire          DS6_net_1;
 wire          DS7_net_1;
+wire          I2C_SCL_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -390,6 +398,8 @@ assign DS6_net_1        = DS6_net_0;
 assign DS6              = DS6_net_1;
 assign DS7_net_1        = DS7_net_0;
 assign DS7              = DS7_net_1;
+assign I2C_SCL_net_1    = I2C_SCL_net_0;
+assign I2C_SCL          = I2C_SCL_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -451,6 +461,20 @@ geig_data_handling geig_data_handling_0(
         .G_DATA_STACK ( geig_data_handling_0_G_DATA_STACK_1 ) 
         );
 
+//--------i2c_interface2
+i2c_interface2 i2c_interface2_0(
+        // Inputs
+        .clk       ( clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT ),
+        .rst       ( reset_pulse_0_RESET ),
+        .timestamp ( timestamp_0_TIMESTAMP ),
+        // Outputs
+        .scl       ( I2C_SCL_net_0 ),
+        .data      ( i2c_interface2_0_data ),
+        .state     (  ),
+        // Inouts
+        .sda       ( I2C_SDA ) 
+        );
+
 //--------mag_test_data
 mag_test_data mag_test_data_0(
         // Inputs
@@ -471,7 +495,7 @@ memory_controller memory_controller_0(
         .READ_CHIP_SELECT  ( read_address_traversal_0_R_CHIP_SELECT ),
         .WRITE_CHIP_SELECT ( write_address_traversal_0_W_CHIP_SELECT ),
         .GEIG_DATA         ( geig_data_handling_0_G_DATA_STACK_1 ),
-        .MAG_DATA          ( mag_test_data_0_MAG_DATA ),
+        .MAG_DATA          ( i2c_interface2_0_data ),
         .READ_ADDRESS      ( read_address_traversal_0_R_ADDRESS_OUT ),
         .WRITE_ADDRESS     ( write_address_traversal_0_W_ADDRESS_OUT ),
         // Outputs
@@ -558,29 +582,30 @@ spi_master spi_master_0(
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SPI_SCK_net_0 ),
-        .data_out ( spi_master_0_data_out ),
         .busy     ( spi_master_0_busy ),
         .chip_rdy ( spi_master_0_chip_rdy ),
-        .new_data (  ) 
+        .new_data (  ),
+        .data_out ( spi_master_0_data_out ) 
         );
 
 //--------spi_mode_config2
 spi_mode_config2 spi_mode_config2_0(
         // Inputs
+        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
+        .DATA_FROM_MEM ( read_buffer_0_BYTE_OUT ),
         .TX_ENABLE     ( orbit_control_0_tx_enable ),
         .rst           ( reset_pulse_0_RESET ),
         .clk           ( CLK_26MHZ_0_GLA ),
         .busy          ( spi_master_0_busy ),
         .chip_rdy      ( spi_master_0_chip_rdy ),
-        .SLAVE_OUTPUT  ( spi_master_0_data_out ),
-        .DATA_FROM_MEM ( read_buffer_0_BYTE_OUT ),
+        .miso          ( MISO ),
         // Outputs
+        .byte_out      ( spi_mode_config2_0_byte_out ),
         .mem_enable    (  ),
         .begin_pass    ( spi_mode_config2_0_begin_pass ),
         .ss            ( SS_net_0 ),
         .next_cmd      ( spi_mode_config2_0_next_cmd ),
-        .start         ( spi_mode_config2_0_start ),
-        .byte_out      ( spi_mode_config2_0_byte_out ) 
+        .start         ( spi_mode_config2_0_start ) 
         );
 
 //--------sram_interface

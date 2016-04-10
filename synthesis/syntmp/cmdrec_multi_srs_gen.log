@@ -1,7 +1,7 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe  -link  -top  full_system  -multisrs  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_comp.srs  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\full_system_multi_srs_gen.srr 
 rc:0 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_comp.srs|i|1460148802|66706
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs|o|1460148804|16263
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\full_system_multi_srs_gen.srr|o|1460148804|512
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_comp.srs|i|1460320193|77477
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs|o|1460320194|16543
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\full_system_multi_srs_gen.srr|o|1460320194|512
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\syn_nfilter.exe|i|1431628658|3001344
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe|i|1431628846|3968000

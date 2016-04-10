@@ -48,13 +48,13 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\full_system\full_system.cxf,actgen_cxf"
 STATE="utd"
-TIME="1460081769"
-SIZE="14480"
+TIME="1460320180"
+SIZE="14988"
 ENDFILE
 VALUE "<project>\component\work\full_system\full_system.v,hdl"
 STATE="utd"
-TIME="1460081767"
-SIZE="21726"
+TIME="1460320179"
+SIZE="22458"
 PARENT="<project>\component\work\full_system\full_system.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -187,7 +187,7 @@ TIME="1458335789"
 SIZE="176"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.adb,adb"
-STATE="ood"
+STATE="utd"
 TIME="1460149050"
 SIZE="3412992"
 ENDFILE
@@ -197,9 +197,9 @@ TIME="1460149051"
 SIZE="1051"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.pdb,pdb"
-STATE="ood"
-TIME="1460152719"
-SIZE="1506657"
+STATE="utd"
+TIME="1460320653"
+SIZE="1506616"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_ba.sdf,ba_sdf"
 STATE="ood"
@@ -218,27 +218,32 @@ SIZE="879"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_compile_log.rpt,log"
 STATE="utd"
-TIME="1460148847"
-SIZE="11066"
+TIME="1460320236"
+SIZE="10945"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_fp\full_system.pro,pro"
 STATE="utd"
 TIME="1459909072"
 SIZE="2297"
 ENDFILE
+VALUE "<project>\designer\impl1\full_system_fp\projectData\full_system.pdb,pdb"
+STATE="utd"
+TIME="1460316999"
+SIZE="1506596"
+ENDFILE
 VALUE "<project>\designer\impl1\full_system_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1460148999"
+TIME="1460320601"
 SIZE="2543"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1460149051"
+TIME="1460320655"
 SIZE="846"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1460149009"
+TIME="1460320613"
 SIZE="1245"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration.adb,adb"
@@ -823,8 +828,8 @@ SIZE="40945"
 ENDFILE
 VALUE "<project>\hdl\spi_mode_config2.v,hdl"
 STATE="utd"
-TIME="1460154359"
-SIZE="45562"
+TIME="1460319728"
+SIZE="46315"
 ENDFILE
 VALUE "<project>\hdl\sram_interface.v,hdl"
 STATE="utd"
@@ -1262,7 +1267,7 @@ TIME="1458335790"
 SIZE="259"
 ENDFILE
 VALUE "<project>\synthesis\full_system.edn,syn_edn"
-STATE="ood"
+STATE="utd"
 TIME="1460148820"
 SIZE="1627900"
 ENDFILE
@@ -1277,7 +1282,7 @@ TIME="1460082998"
 SIZE="611573"
 ENDFILE
 VALUE "<project>\synthesis\full_system_sdc.sdc,syn_sdc"
-STATE="ood"
+STATE="utd"
 TIME="1460148820"
 SIZE="310"
 ENDFILE
@@ -1523,7 +1528,10 @@ VALUE "<project>\stimulus\tb_full_system.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\full_system.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\full_system.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1531,6 +1539,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\full_system_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\full_system_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "geiger_integration::work"
@@ -1753,8 +1765,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1800,7 +1812,10 @@ ENDLIST
 ENDLIST
 LIST "full_system::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\full_system.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\full_system.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1904,15 +1919,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;full_system;0
 Reports;Reports;0
 ReportsCurrentItem;Generate Programming Data:full_system_prgdata_log.rpt
-HDL;hdl\read_buffer.v;0
-StartPage;StartPage;0
-HDL;hdl\spi_mode_config2.v;0
-HDL;stimulus\tb_tranceiver_integration.v;0
 HDL;stimulus\tb_full_system.v;0
-ACTIVEVIEW;hdl\spi_mode_config2.v
+SmartDesign;full_system;0
+HDL;hdl\spi_mode_config2.v;0
+ACTIVEVIEW;full_system
 ENDLIST
 LIST ModuleSubBlockList
 LIST "buffer_data_out::work","","FALSE","FALSE"
@@ -1965,6 +1977,7 @@ SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 SUBBLOCK "mag_test_data::work","hdl\mag_test_data.v","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
@@ -1973,10 +1986,10 @@ SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST

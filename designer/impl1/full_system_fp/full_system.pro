@@ -72,13 +72,16 @@
                 </ProgrammingMode>
             </FlashPro5>
         </Hardware>
-        <Algo type="unknown">
-            <irlength>
-                0
-            </irlength>
-            <MaxTCK>
-                4000000
-            </MaxTCK>
+        <Algo type="PDB">
+            <filename>
+                C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_system.pdb
+            </filename>
+            <local>
+                projectData\full_system.pdb
+            </local>
+            <SelectedAction>
+                PROGRAM
+            </SelectedAction>
         </Algo>
     </configuration>
 </project>

@@ -1,14 +1,14 @@
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe  -mp  1  -prjfile  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis   -part M1A3P1000L  -package FBGA484  -grade STD    -globalthreshold 5000 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\report\full_system_premap.xml  -top_level_module  full_system  -oedif  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.edn  -conchk_prepass  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system_cck_prepass.rpt   -freq 100.000   C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_prem.srd  -qsap  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.sap  -devicelib  C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v  -ologparam  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\full_system.plg  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_prem.srd  -prjdir  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\  -prjname  full_system_syn  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\full_system_premap.srr 
 rc:1 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs|o|1460148797|3851
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.edn|o|1460082988|1606050
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\scratchproject.prs|o|1460320188|3964
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.edn|o|1460316443|1695502
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system_cck_prepass.rpt|o|0|0
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs|i|1460148804|16263
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_prem.srd|o|1460148806|96571
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.sap|o|1460148806|47949
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_mult.srs|i|1460320194|16543
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_prem.srd|o|1460320195|110613
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.sap|o|1460320195|54480
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v|i|1431619582|57101
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\full_system.plg|o|1460148805|0
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_prem.srd|o|1460148806|96571
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\full_system_premap.srr|o|1460148806|7525
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\syntmp\full_system.plg|o|1460320194|0
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synwork\full_system_prem.srd|o|1460320195|110613
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\full_system_premap.srr|o|1460320195|7527
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\m_proasic.exe|i|1433442986|9280512
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\m_proasic.exe|i|1433444758|11753984

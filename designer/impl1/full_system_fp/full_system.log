@@ -3,16 +3,16 @@ Version: 11.6.0.34
 Release: v11.6
 
 Software Version: 11.6.0.34
+PDB file
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_sys\
+tem.pdb' has been loaded successfully.
+DESIGN : full_system;  CHECKSUM : 14D3;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '98291' : FlashPro3
 Opened
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_sys\
 tem_fp\full_system.pro'
 Checking for software updates...
-PDB file
-'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_sys\
-tem.pdb' has been loaded successfully.
-DESIGN : full_system;  CHECKSUM : F7F9;  PDB_VERSION : 1.9
 programmer '98291' : Scan Chain...
 Warning: programmer '98291' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
@@ -22,14 +22,13 @@ programmer '98291' : EXPORT FSN[48] = 01157d585450
 programmer '98291' : Data Authentication
 programmer '98291' : Erase ...
 programmer '98291' : Completed erase
-programmer '98291' : EXPORT CHECKSUM: [16] = f7f9
+programmer '98291' : EXPORT CHECKSUM: [16] = 14d3
 programmer '98291' : Programming FPGA Array
 programmer '98291' : Verifying FPGA Array
 programmer '98291' :             Verifying FPGA Array -- PASS
-programmer '98291' : Finished: Fri Apr 08 15:00:35 2016 (Elapsed time 00:01:57)
+programmer '98291' : Finished: Sun Apr 10 14:40:17 2016 (Elapsed time 00:01:57)
 programmer '98291' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 
-Warning: Project 'full_system' has been modified. Do you want to save it? [NO]
 Project closed.

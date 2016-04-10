@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_system</location>
-    <state>GENERATED ( Thu Apr 07 20:16:08 2016 )</state>
+    <state>GENERATED ( Sun Apr 10 14:29:40 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -207,6 +207,12 @@
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
+    <port-name>I2C_SDA</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
     <port-name>SRAM_D28</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
@@ -304,6 +310,12 @@
   </io>
   <io>
     <port-name>SRAM_SRBS1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>I2C_SCL</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
@@ -529,6 +541,12 @@
     <core-exttype>geig_data_handling</core-exttype>
     <core-location>hdl\geig_data_handling.v</core-location>
     <core-name>geig_data_handling_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>i2c_interface2</core-exttype>
+    <core-location>hdl\i2c_interface2.v</core-location>
+    <core-name>i2c_interface2_0</core-name>
   </core>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>

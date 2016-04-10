@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Apr 08 14:56:38 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Sun Apr 10 14:36:40 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -240,9 +240,9 @@ H22                  Not Bonded         Unconnected
 J1                   IO212NDB3          Unassigned
 J2                   IO212PDB3          Unassigned
 J3                   Not Bonded         Unconnected
-J4                   IO217NDB3          Unassigned
+J4      I2C_SCL      IO217NDB3          Fixed        LVCMOS33  12                 High  Up             No    5                 No           No
 J5      SRAM_A14     IO218NDB3          Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-J6                   IO216PDB3          Unassigned
+J6      I2C_SDA      IO216PDB3          Fixed        LVCMOS33  12                 High  Up             No    5                 No           No
 J7                   IO216NDB3          Unassigned
 J8                   VCCIB3             Reserved
 J9                   GND                Reserved
