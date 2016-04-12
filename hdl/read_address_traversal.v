@@ -47,7 +47,7 @@ end else begin
 
     // Counter equal to 16777216
     if (address == 18'b111111111111111111) begin
-        address = 18'b0;
+        address = 0;
         chip_select=!chip_select;
     end else begin
         address = address+1;

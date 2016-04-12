@@ -65,7 +65,7 @@ assign state = !((state_a != ACK_IN)&(state_a != DATA));
 
 always @(negedge clk or negedge rst) begin //Ensures clock is low when sda changes
     
-        if ((rst == 1'b0)|| force_reset) begin
+        if ((rst == 1'b0)|| (force_reset)) begin
             state_a = STARTUP;
             sda_a = 1'b1;
             ctr_a = 4'd0;
@@ -112,9 +112,9 @@ always @(negedge clk or negedge rst) begin //Ensures clock is low when sda chang
                     end
                     else wait_ctr = wait_ctr + 1;
 
-                    if ((wait_ctr >= 2) && (sda == 1'b0)) begin
-                        force_reset = 1'b1;
-                    end
+                    //if ((wait_ctr >= 2) && (sda == 1'b0)) begin
+                        //force_reset = 1'b1;
+                    //end
                 end
 
                 START: begin
