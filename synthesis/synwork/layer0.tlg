@@ -92,6 +92,7 @@ Selecting top level module full_system
 
 @W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register test_sda 
 
+@W: CL207 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|All reachable assignments to force_reset assign 0, register removed by optimization.
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[1] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[4] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[5] to a constant 0
@@ -153,9 +154,9 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":9:7:9:17|Synthesizing module full_system
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":479:14:479:28|Pruning instance mag_test_data_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":478:14:478:28|Pruning instance mag_test_data_0 -- not in use ...
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":417:20:417:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":416:20:416:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
@@ -185,6 +186,10 @@ State machine has 8 reachable states with original encodings of:
    101
    110
    111
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v":22:13:22:25|Input port bits 79 to 16 of data_from_spi[79:0] are unused
+
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v":22:13:22:25|Input port bits 7 to 0 of data_from_spi[79:0] are unused
+
 @N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
 Extracted state machine for register init_stage
 State machine has 3 reachable states with original encodings of:

@@ -13,12 +13,12 @@ Opened an existing Libero design full_system.adb.
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the file:
 
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.edn
 
-The Import command succeeded ( 00:00:04 )
+The Import command succeeded ( 00:00:05 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -69,11 +69,11 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        86
+  - Logic combining:        102
 
-    Total macros optimized  87
+    Total macros optimized  103
 
-Warning: CMP503: Remapped 670 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 656 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
@@ -88,7 +88,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   4531  Total:  24576   (18.44%)
+    CORE                       Used:   4403  Total:  24576   (17.92%)
     IO (W/ clocks)             Used:     74  Total:    300   (24.67%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -113,8 +113,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 3471         | 3471
-    SEQ     | 1059         | 1060
+    COMB    | 3351         | 3351
+    SEQ     | 1051         | 1052
 
 I/O Function:
 
@@ -136,11 +136,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :  72 ( 97.30% )
+    Locked  :  74 ( 100.00% )
     Placed  :   0
-    UnPlaced:   2 (  2.70% )
-
-Warning: Only some I/Os are locked
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -172,13 +170,13 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    493     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
+    492     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
-    188     CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
+    183     CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
                           Driver: clock_div_1MHZ_100KHZ_0/clk_out_RNIOQD8
                           Source: NETLIST
-    120     CLK_NET       Net   : GLA
+    118     CLK_NET       Net   : GLA
                           Driver: CLK_26MHZ_0/Core
                           Source: ESSENTIAL
     89      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
@@ -194,14 +192,10 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    44      INT_NET       Net   : I2C_SDA_in
-                          Driver: I2C_SDA_pad
     37      CLK_NET       Net   : clk_out
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out
-    24      INT_NET       Net   : CLK_48MHZ_c
-                          Driver: CLK_48MHZ_pad
-    24      INT_NET       Net   : RESET_IN_L8_c
-                          Driver: RESET_IN_L8_pad
+    25      INT_NET       Net   : I2C_SDA_in
+                          Driver: I2C_SDA_pad
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -214,6 +208,10 @@ High fanout nets in the post compile netlist:
                           Driver: reset_pulse_0/RESET_4
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
+                          Driver: reset_pulse_0/RESET_6
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_7
+                          Driver: reset_pulse_0/RESET_7
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
@@ -222,12 +220,10 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: CLK_48MHZ_pad
     46      INT_NET       Net   : RESET_IN_L8_c
                           Driver: RESET_IN_L8_pad
-    44      INT_NET       Net   : I2C_SDA_in
-                          Driver: I2C_SDA_pad
     37      CLK_NET       Net   : clk_out
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out
-    25      INT_NET       Net   : MISO_c
-                          Driver: MISO_pad
+    25      INT_NET       Net   : I2C_SDA_in
+                          Driver: I2C_SDA_pad
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -238,6 +234,8 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: reset_pulse_0/RESET_3
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_4
                           Driver: reset_pulse_0/RESET_4
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
+                          Driver: reset_pulse_0/RESET_5
 ====================
 Flash*Freeze report:
 ====================
@@ -260,6 +258,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:00:11 )
+The Execute Script command succeeded ( 00:00:19 )
 Design closed.
 

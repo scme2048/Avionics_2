@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Apr 10 14:33:27 2016
+Timing-driven Placer Started: Mon Apr 11 21:32:23 2016
 
-Placer Finished: Sun Apr 10 14:34:42 2016
+Placer Finished: Mon Apr 11 21:33:38 2016
 Total Placer CPU Time:     00:01:15
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: full_system                     Started: Sun Apr 10 14:34:49 2016
+Design: full_system                     Started: Mon Apr 11 21:33:57 2016
 
  
 Iterative improvement...
@@ -50,15 +50,15 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: full_system                     
-Finished: Sun Apr 10 14:36:30 2016
-Total CPU Time:     00:01:39            Total Elapsed Time: 00:01:41
-Total Memory Usage: 426.3 Mbytes
+Finished: Mon Apr 11 21:35:34 2016
+Total CPU Time:     00:01:34            Total Elapsed Time: 00:01:37
+Total Memory Usage: 436.2 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
 Finished loading the Timing data.
 
-The Layout command succeeded ( 00:03:15 )
+The Layout command succeeded ( 00:03:33 )
 Wrote status report to file: full_system_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -81,6 +81,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:03:22 )
+The Execute Script command succeeded ( 00:03:44 )
 Design closed.
 

@@ -32,7 +32,11 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v"
 Verilog syntax check successful!
-Options changed - recompiling
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v changed - recompiling
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_address_traversal.v changed - recompiling
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v changed - recompiling
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\write_address_traversal.v changed - recompiling
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v changed - recompiling
 Selecting top level module full_system
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -127,6 +131,7 @@ Selecting top level module full_system
 
 @W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register test_sda 
 
+@W: CL207 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|All reachable assignments to force_reset assign 0, register removed by optimization.
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[1] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[4] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit data_out[5] to a constant 0
@@ -188,9 +193,9 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":9:7:9:17|Synthesizing module full_system
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":479:14:479:28|Pruning instance mag_test_data_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":478:14:478:28|Pruning instance mag_test_data_0 -- not in use ...
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":417:20:417:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":416:20:416:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
@@ -220,6 +225,10 @@ State machine has 8 reachable states with original encodings of:
    101
    110
    111
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v":22:13:22:25|Input port bits 79 to 16 of data_from_spi[79:0] are unused
+
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\spi_data_out.v":22:13:22:25|Input port bits 7 to 0 of data_from_spi[79:0] are unused
+
 @N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
 Extracted state machine for register init_stage
 State machine has 3 reachable states with original encodings of:
@@ -256,7 +265,7 @@ State machine has 2 reachable states with original encodings of:
 At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 88MB peak: 175MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sun Apr 10 14:29:52 2016
+# Mon Apr 11 21:30:57 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -265,14 +274,14 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Apr 10 14:29:53 2016
+# Mon Apr 11 21:31:00 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:03s cputime
-# Sun Apr 10 14:29:53 2016
+Process took 0h:00m:07s realtime, 0h:00m:03s cputime
+# Mon Apr 11 21:31:00 2016
 
 ###########################################################]

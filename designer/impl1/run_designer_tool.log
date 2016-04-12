@@ -7,22 +7,7 @@ Release: v11.6
 Info: The design full_system.adb was last modified by software version 11.6.0.34.
 Opened an existing Libero design full_system.adb.
 
-The Execute Script command succeeded ( 00:00:32 )
+The Execute Script command succeeded ( 00:00:38 )
 Checking for software updates...
-Design saved to file
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
-em.adb.
-Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
-em_report_pin_byname.txt
-
-The Report command succeeded ( 00:00:01 )
-Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
-em_report_pin_bynumber.txt
-
-The Report command succeeded ( 00:00:01 )
-
-The Execute Script command succeeded ( 00:00:02 )
 Design closed.
 

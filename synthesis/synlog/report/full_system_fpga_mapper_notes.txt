@@ -10,7 +10,6 @@
 @N: MO225 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\i2c_interface2.v":66:0:66:5|No possible illegal states for state machine data_mode[1:0],safe FSM implementation is disabled
 @N: MF176 |Default generator successful 
 @N: MF239 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\i2c_interface2.v":140:37:140:44|Found 4-bit decrementor, 'un5_sda_a\.un5_sda_a[3:0]'
-@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\i2c_interface2.v":100:32:100:44|Found 18-bit incrementor, 'un5_wait_ctr[17:0]'
 @N: MF179 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\memory_controller.v":176:8:176:30|Found 3 bit by 3 bit '<' comparator, 'cmd_out12'
 @N: MF176 |Default generator successful 
 @N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\avionics_2\hdl\spi_mode_config2.v":113:4:113:9|Removing sequential instance tx_free_bytes[0] of view:PrimLib.dffs(prim) in hierarchy view:work.spi_mode_config2(verilog) because there are no references to its outputs 

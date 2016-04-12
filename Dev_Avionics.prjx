@@ -48,8 +48,15 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\full_system\full_system.cxf,actgen_cxf"
 STATE="utd"
-TIME="1460428342"
-SIZE="14695"
+TIME="1460431822"
+SIZE="14898"
+ENDFILE
+VALUE "<project>\component\work\full_system\full_system.v,hdl"
+STATE="utd"
+TIME="1460431820"
+SIZE="22392"
+PARENT="<project>\component\work\full_system\full_system.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
@@ -191,8 +198,8 @@ SIZE="1051"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.pdb,pdb"
 STATE="ood"
-TIME="1460322751"
-SIZE="1506616"
+TIME="1460432230"
+SIZE="1506700"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_ba.sdf,ba_sdf"
 STATE="ood"
@@ -211,8 +218,8 @@ SIZE="879"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_compile_log.rpt,log"
 STATE="utd"
-TIME="1460320236"
-SIZE="10945"
+TIME="1460431928"
+SIZE="10959"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_fp\full_system.pro,pro"
 STATE="utd"
@@ -226,17 +233,17 @@ SIZE="1506596"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1460320601"
+TIME="1460432153"
 SIZE="2543"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1460320655"
+TIME="1460432232"
 SIZE="846"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1460320613"
+TIME="1460432184"
 SIZE="1245"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration.adb,adb"
@@ -736,8 +743,8 @@ SIZE="2439"
 ENDFILE
 VALUE "<project>\hdl\i2c_interface2.v,hdl"
 STATE="utd"
-TIME="1460430892"
-SIZE="13388"
+TIME="1460434020"
+SIZE="13391"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -806,8 +813,8 @@ SIZE="1367"
 ENDFILE
 VALUE "<project>\hdl\spi_data_out.v,hdl"
 STATE="utd"
-TIME="1458335789"
-SIZE="1025"
+TIME="1460431664"
+SIZE="1032"
 ENDFILE
 VALUE "<project>\hdl\SPI_Master.v,hdl"
 STATE="utd"
@@ -1515,7 +1522,7 @@ VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_bynumber.txt,log
 ENDLIST
 ENDLIST
 LIST "full_system::work"
-FILE "<project>\component\work\full_system\full_system.cxf,actgen_cxf"
+FILE "<project>\component\work\full_system\full_system.v,hdl"
 LIST AssociatedStimulus
 VALUE "<project>\stimulus\tb_full_system.v,tb_hdl"
 ENDLIST
@@ -1748,8 +1755,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1898,6 +1905,7 @@ LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Generate Programming Data:full_system_prgdata_log.rpt
+HDL;hdl\spi_data_out.v;0
 HDL;stimulus\tb_full_system.v;0
 SmartDesign;full_system;0
 HDL;hdl\spi_mode_config2.v;0
@@ -1949,7 +1957,7 @@ SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FA
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
-LIST "full_system::work","component\work\full_system\full_system.cxf","TRUE","FALSE"
+LIST "full_system::work","component\work\full_system\full_system.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
@@ -2089,10 +2097,10 @@ SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALS
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
-SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
+SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
@@ -2134,7 +2142,7 @@ LIST "tb_clock_div_1MHZ_100KHZ::work","stimulus\tb_clock_div_1MHZ_100KHZ.v","FAL
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_full_system::work","stimulus\tb_full_system.v","FALSE","TRUE"
-SUBBLOCK "full_system::work","component\work\full_system\full_system.cxf","TRUE","FALSE"
+SUBBLOCK "full_system::work","component\work\full_system\full_system.v","TRUE","FALSE"
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"

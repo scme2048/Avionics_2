@@ -102,7 +102,7 @@ always @(negedge clk or negedge rst) begin //Ensures clock is low when sda chang
                 end
                 IDLE: begin
                     scl_enable = 1'b0;
-                    ctr_a = 7;
+                    ctr_a = 7'd0;
                     sda_a = 1'b1;
                     start_ctr = 1'b0;
                     test = 1;
