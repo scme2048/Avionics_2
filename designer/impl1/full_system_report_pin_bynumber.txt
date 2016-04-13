@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Tue Apr 12 20:54:46 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Wed Apr 13 00:04:12 2016 UNCOMPLETED LAYOUT
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -161,7 +161,7 @@ E9      SRAM_D15     IO21RSB0           Fixed        LVCMOS33  12               
 E10                  IO27RSB0           Unassigned
 E11                  IO34RSB0           Unassigned
 E12                  IO44RSB0           Unassigned
-E13     G_STREAM_IN  IO51RSB0           Fixed        LVCMOS33  ---                ---   None           ---   ---               No           No
+E13                  IO51RSB0           Unassigned
 E14                  IO57RSB0           Unassigned
 E15                  GBC1/IO73RSB0      Special
 E16                  GBB0/IO74RSB0      Special
@@ -204,7 +204,7 @@ G8                   GNDQ               Reserved
 G9                   IO23RSB0           Unassigned
 G10     SPI_SCK      IO29RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 G11                  IO33RSB0           Unassigned
-G12                  IO46RSB0           Unassigned
+G12     G_STREAM_IN  IO46RSB0           Fixed        LVCMOS33  ---                ---   None           ---   ---               No           No
 G13                  IO52RSB0           Unassigned
 G14                  IO60RSB0           Unassigned
 G15                  GNDQ               Reserved

@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Tue Apr 12 20:51:34 2016 ***************************************************************************
+                          Tue Apr 12 23:11:25 2016 ***************************************************************************
 
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
 File Name: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_system.adb
 Design Name: full_system  Design State: compile
-Last Saved: Tue Apr 12 19:58:16 2016
+Last Saved: Tue Apr 12 21:32:02 2016
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Tue Apr 12 20:51:25 2016:
+Source File(s) Imported on Tue Apr 12 23:11:16 2016:
         C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\full_system.edn
 
 
@@ -92,11 +92,11 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        98
+  - Logic combining:        83
 
-    Total macros optimized  99
+    Total macros optimized  84
 
-Warning: CMP503: Remapped 541 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 656 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
@@ -111,7 +111,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   4208  Total:  24576   (17.12%)
+    CORE                       Used:   4505  Total:  24576   (18.33%)
     IO (W/ clocks)             Used:     74  Total:    300   (24.67%)
     Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -136,8 +136,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 3176         | 3176
-    SEQ     | 1031         | 1032
+    COMB    | 3432         | 3432
+    SEQ     | 1072         | 1073
 
 I/O Function:
 
@@ -196,16 +196,16 @@ The following nets have been assigned to a chip global resource:
     492     CLK_NET       Net   : reset_pulse_0_CLK_OUT_48MHZ
                           Driver: reset_pulse_0/CLK_OUT_48MHZ_inferred_clock
                           Source: NETLIST
-    168     CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
-                          Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
-                          Source: NETLIST
-    135     CLK_NET       Net   : GLA
-                          Driver: CLK_26MHZ_0/Core
-                          Source: ESSENTIAL
-    71      CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
+    182     CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
                           Driver: clock_div_1MHZ_100KHZ_0/clk_out_RNIOQD8
                           Source: NETLIST
-    56      CLK_NET       Net   : spi_master_0_busy
+    143     CLK_NET       Net   : GLA
+                          Driver: CLK_26MHZ_0/Core
+                          Source: ESSENTIAL
+    89      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+                          Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
+                          Source: NETLIST
+    57      CLK_NET       Net   : spi_master_0_busy
                           Driver: spi_master_0/busy_enable_RNIL01R_0
                           Source: NETLIST
     53      INT_NET       Net   : SS_c
@@ -217,10 +217,12 @@ High fanout nets in the post compile netlist:
     --------------------------
     37      CLK_NET       Net   : clk_out
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out
-    25      INT_NET       Net   : spi_mode_config2_0/config_cntr_b[1]
-                          Driver: spi_mode_config2_0/config_cntr_b[1]/U1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET
-                          Driver: reset_pulse_0/RESET
+    24      INT_NET       Net   : CLK_48MHZ_c
+                          Driver: CLK_48MHZ_pad
+    24      INT_NET       Net   : MISO_c
+                          Driver: MISO_pad
+    24      INT_NET       Net   : RESET_IN_L8_c
+                          Driver: RESET_IN_L8_pad
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -233,24 +235,18 @@ High fanout nets in the post compile netlist:
                           Driver: reset_pulse_0/RESET_4
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
-                          Driver: reset_pulse_0/RESET_6
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    44      INT_NET       Net   : CLK_48MHZ_c
+    47      INT_NET       Net   : CLK_48MHZ_c
                           Driver: CLK_48MHZ_pad
-    44      INT_NET       Net   : RESET_IN_L8_c
+    47      INT_NET       Net   : RESET_IN_L8_c
                           Driver: RESET_IN_L8_pad
     37      CLK_NET       Net   : clk_out
                           Driver: clock_div_26MHZ_1MHZ_0/clk_out
-    26      INT_NET       Net   : MISO_c
+    24      INT_NET       Net   : MISO_c
                           Driver: MISO_pad
-    25      INT_NET       Net   : spi_mode_config2_0/config_cntr_b[1]
-                          Driver: spi_mode_config2_0/config_cntr_b[1]/U1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET
-                          Driver: reset_pulse_0/RESET
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
@@ -259,6 +255,10 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: reset_pulse_0/RESET_2
     24      SET/RESET_NET Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_4
+                          Driver: reset_pulse_0/RESET_4
+    24      SET/RESET_NET Net   : reset_pulse_0_RESET_5
+                          Driver: reset_pulse_0/RESET_5
 ====================
 Flash*Freeze report:
 ====================

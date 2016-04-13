@@ -9,8 +9,6 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
 
-@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_1KHZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_1KHZ
-
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
@@ -172,7 +170,7 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":9:7:9:17|Synthesizing module full_system
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":417:20:417:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":469:14:469:28|Pruning instance mag_test_data_0 -- not in use ...
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0

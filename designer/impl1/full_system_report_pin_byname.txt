@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Tue Apr 12 20:54:46 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Wed Apr 13 00:04:12 2016 UNCOMPLETED LAYOUT
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -26,7 +26,7 @@ DS4          A16  Yes    IO65RSB0        LVCMOS33  12                 High  None
 DS5          A10  Yes    IO32RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 DS6          A17  Yes    IO67RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 DS7          A11  Yes    IO40RSB0        LVCMOS33  12                 High  None           No    5                 No           No
-G_STREAM_IN  E13  Yes    IO51RSB0        LVCMOS33  ---                ---   None           ---   ---               No           No
+G_STREAM_IN  G12  Yes    IO46RSB0        LVCMOS33  ---                ---   None           ---   ---               No           No
 I2C_SCL      J4   Yes    IO217NDB3       LVCMOS33  12                 High  Up             No    5                 No           No
 I2C_SDA      J6   Yes    IO216PDB3       LVCMOS33  12                 High  Up             No    5                 No           No
 MISO         D5   Yes    GAA0/IO00RSB0   LVCMOS33  ---                ---   None           ---   ---               No           No

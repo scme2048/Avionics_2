@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
+
+Date      :  Tue Apr 12 23:10:02 2016
+Project   :  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2
+Component :  full_system
+Family    :  ProASIC3L
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_system/full_system.v
+

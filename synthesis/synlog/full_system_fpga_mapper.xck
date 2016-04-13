@@ -1,7 +1,7 @@
 CKID0001:@|S:spi_master_0.ctr_q_RNIBTOP2[1]@|E:spi_master_0.chip_rdy_0@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:clock_div_1MHZ_10HZ_0.clk_out@|E:timestamp_0.TIMESTAMP[23]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0002:@|S:clock_div_1MHZ_100KHZ_0.clk_out@|E:i2c_interface2_0.data_cntr[3]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
 CKID0003:@|S:CLK_26MHZ_0.Core@|E:spi_mode_config2_0.state_b[2]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
-CKID0004:@|S:clock_div_1MHZ_100KHZ_0.clk_out@|E:i2c_interface2_0.data_cntr[3]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0004:@|S:clock_div_1MHZ_10HZ_0.clk_out@|E:timestamp_0.TIMESTAMP[23]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
 CKID0005:@|S:clock_div_26MHZ_1MHZ_0.clk_out@|E:clock_div_1MHZ_100KHZ_0.counter[16]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 
 CKID0006:@|S:spi_mode_config2_0.ss_b@|E:spi_master_0.data_out_d[7]@|F:@syn_sample_clock_path1==CKID0006@|M:ClockId0006 
 CKID0007:@|S:memory_controller_0.next_read@|E:read_address_traversal_0.chip_select@|F:@syn_sample_clock_path==CKID0007@|M:ClockId0007 

@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/component/work/full_system</location>
-    <state>GENERATED ( Tue Apr 12 20:50:46 2016 )</state>
+    <state>GENERATED ( Tue Apr 12 23:10:02 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -511,12 +511,6 @@
     <core-exttype>SmartGen</core-exttype>
     <core-location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Avionics_2/smartgen/CLK_26MHZ</core-location>
     <core-name>CLK_26MHZ_0</core-name>
-  </core>
-  <core type="HdlModule">
-    <core-type>HdlModule</core-type>
-    <core-exttype>clock_div_1MHZ_1KHZ</core-exttype>
-    <core-location>hdl\clock_div_1MHZ_1KHZ.v</core-location>
-    <core-name>clock_div_1MHZ_1KHZ_0</core-name>
   </core>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>

@@ -268,7 +268,7 @@ module spi_mode_config2 (
                         state_a = IDLE;
                         begin_pass_a = 1'b0;
                         byte_tracker_a=1'b0;
-                    end else if ((tx_state==3'b100)&& (~TX_ENABLE)&&(~chip_rdy)&&(tx_packet_counter==0)) begin
+                    end else if ((tx_state==3'b011)&& (~TX_ENABLE)&&(~chip_rdy)&&(tx_packet_counter==0)) begin
                         chip_state=SLAVE_OUTPUT[6:4];
                         mem_enable_a = 1'b0;
                         if (tx_exit_counter==7) begin
@@ -311,7 +311,7 @@ module spi_mode_config2 (
                         
                         mem_enable_a = 1'b0;
                         // If exactly 51, use >4'b1101 (13 bytes)
-                        if ((byte_out_a==STX) || (tx_free_bytes>4'b0001)) begin
+                        if ((byte_out_a==STX) || (tx_free_bytes>4'b0010)) begin
                             
                             byte_out_a = TXFIFO;
                             // Trying tx_packet_counter==1... but don't think it will work
@@ -485,7 +485,7 @@ module spi_mode_config2 (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 18)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h4; //*****
+                    byte_out_a = 8'h05; //***** 04 is fixed packet len
                     byte_tracker_a = 1'b0;
                 end
                 //Device Address

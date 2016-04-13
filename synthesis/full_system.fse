@@ -1,52 +1,52 @@
 
-fsm_encoding {11660664} sequential
+fsm_encoding {10660664} sequential
 
-fsm_state_encoding {11660664} 00 {0}
+fsm_state_encoding {10660664} 00 {0}
 
-fsm_state_encoding {11660664} 01 {1}
+fsm_state_encoding {10660664} 01 {1}
 
-fsm_registers {11660664} {data_mode[0]} 
+fsm_registers {10660664} {data_mode[0]} 
 
-fsm_encoding {16660663} sequential
+fsm_encoding {15660663} sequential
 
-fsm_state_encoding {16660663} 00 {00}
+fsm_state_encoding {15660663} 00 {00}
 
-fsm_state_encoding {16660663} 01 {01}
+fsm_state_encoding {15660663} 01 {01}
 
-fsm_state_encoding {16660663} 10 {10}
+fsm_state_encoding {15660663} 10 {10}
 
-fsm_registers {16660663} {init_stage[1]}  {init_stage[0]} 
+fsm_registers {15660663} {init_stage[1]}  {init_stage[0]} 
 
-fsm_encoding {2011341131} onehot
+fsm_encoding {2211341132} onehot
 
-fsm_state_encoding {2011341131} 000 {00001}
+fsm_state_encoding {2211341132} 000 {00000001}
 
-fsm_state_encoding {2011341131} 001 {00010}
+fsm_state_encoding {2211341132} 001 {00000010}
 
-fsm_state_encoding {2011341131} 011 {00100}
+fsm_state_encoding {2211341132} 010 {00000100}
 
-fsm_state_encoding {2011341131} 100 {01000}
+fsm_state_encoding {2211341132} 011 {00001000}
 
-fsm_state_encoding {2011341131} 111 {10000}
+fsm_state_encoding {2211341132} 100 {00010000}
 
-fsm_registers {2011341131} {tx_state[4]}  {tx_state[3]}  {tx_state[2]}  {tx_state[1]}  {tx_state[0]} 
+fsm_state_encoding {2211341132} 101 {00100000}
 
-fsm_encoding {2011341132} onehot
+fsm_state_encoding {2211341132} chip_RXFIFO_OVERFLOW {01000000}
 
-fsm_state_encoding {2011341132} 000 {00000001}
+fsm_state_encoding {2211341132} 111 {10000000}
 
-fsm_state_encoding {2011341132} 001 {00000010}
+fsm_registers {2211341132} {chip_state[7]}  {chip_state[6]}  {chip_state[5]}  {chip_state[4]}  {chip_state[3]}  {chip_state[2]}  {chip_state[1]}  {chip_state[0]} 
 
-fsm_state_encoding {2011341132} 010 {00000100}
+fsm_encoding {2211341131} onehot
 
-fsm_state_encoding {2011341132} 011 {00001000}
+fsm_state_encoding {2211341131} 000 {00001}
 
-fsm_state_encoding {2011341132} 100 {00010000}
+fsm_state_encoding {2211341131} 001 {00010}
 
-fsm_state_encoding {2011341132} 101 {00100000}
+fsm_state_encoding {2211341131} 011 {00100}
 
-fsm_state_encoding {2011341132} chip_RXFIFO_OVERFLOW {01000000}
+fsm_state_encoding {2211341131} 100 {01000}
 
-fsm_state_encoding {2011341132} 111 {10000000}
+fsm_state_encoding {2211341131} 111 {10000}
 
-fsm_registers {2011341132} {chip_state[7]}  {chip_state[6]}  {chip_state[5]}  {chip_state[4]}  {chip_state[3]}  {chip_state[2]}  {chip_state[1]}  {chip_state[0]} 
+fsm_registers {2211341131} {tx_state[4]}  {tx_state[3]}  {tx_state[2]}  {tx_state[1]}  {tx_state[0]} 
