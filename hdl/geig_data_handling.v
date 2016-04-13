@@ -20,18 +20,18 @@ reg [7:0] ID_GEIG;
 // Output data stack every 60 seconds, 600 deciseconds.
 parameter [31:0] filler_data = 32'b10101010101010101010101010101010;
 reg [15:0] geig_counts;
-reg [9:0] min_counter; //Count to 600
+reg [9:0] min_counter; //Count to 50
 always @(posedge CLK_10HZ or negedge RESET)
 begin
     if (RESET==1'b0) begin
         ID_GEIG = 8'h47;
         min_counter = 10'b0000000000;
         G_DATA_STACK=80'b0;
-    end else if (min_counter==599) begin
+    end else if (min_counter==49) begin
         //Output G_Data_Stack
         G_DATA_STACK={filler_data,geig_counts,TIMESTAMP,ID_GEIG};
         min_counter=min_counter+1;
-    end else if (min_counter==600) begin
+    end else if (min_counter==50) begin
         min_counter=1;
     end else begin
         min_counter=min_counter+1;
@@ -59,7 +59,7 @@ if (RESET==1'b0) begin
 end else if (shift_reg == 2'b01) begin
     geig_counts=geig_counts+1; // THIS IS WRONG! WILL NOT SYNTHESIZE
 end
-if (min_counter ==600) begin
+if (min_counter ==50) begin
     geig_counts=0;
 end
 

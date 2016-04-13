@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Apr 11 21:32:23 2016
+Timing-driven Placer Started: Tue Apr 12 20:51:44 2016
 
-Placer Finished: Mon Apr 11 21:33:38 2016
-Total Placer CPU Time:     00:01:15
+Placer Finished: Tue Apr 12 20:53:03 2016
+Total Placer CPU Time:     00:01:19
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: full_system                     Started: Mon Apr 11 21:33:57 2016
+Design: full_system                     Started: Tue Apr 12 20:53:13 2016
 
  
 Iterative improvement...
@@ -50,15 +50,15 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: full_system                     
-Finished: Mon Apr 11 21:35:34 2016
-Total CPU Time:     00:01:34            Total Elapsed Time: 00:01:37
-Total Memory Usage: 436.2 Mbytes
+Finished: Tue Apr 12 20:54:37 2016
+Total CPU Time:     00:01:22            Total Elapsed Time: 00:01:24
+Total Memory Usage: 421.3 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
 Finished loading the Timing data.
 
-The Layout command succeeded ( 00:03:33 )
+The Layout command succeeded ( 00:03:04 )
 Wrote status report to file: full_system_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -70,10 +70,10 @@ Wrote globalusage report to file: full_system_globalusage_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote iobank report to file: full_system_iobank_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: full_system_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:02 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: full_system_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -81,6 +81,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:03:44 )
+The Execute Script command succeeded ( 00:03:10 )
 Design closed.
 

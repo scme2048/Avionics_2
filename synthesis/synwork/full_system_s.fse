@@ -45,7 +45,7 @@ fsm_state_encoding {2011341132} 100 {00010000}
 
 fsm_state_encoding {2011341132} 101 {00100000}
 
-fsm_state_encoding {2011341132} 110 {01000000}
+fsm_state_encoding {2011341132} chip_RXFIFO_OVERFLOW {01000000}
 
 fsm_state_encoding {2011341132} 111 {10000000}
 

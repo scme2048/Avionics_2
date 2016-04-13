@@ -17,7 +17,7 @@ Wrote timing report to file: full_system_maxdelay_timing_report.txt
 The Report command succeeded ( 00:00:07 )
 Wrote timing report to file: full_system_mindelay_timing_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:02 )
 Wrote timing_violations report to file: full_system_maxdelay_timingviolations_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -28,6 +28,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
 em.adb.
 
-The Execute Script command succeeded ( 00:00:10 )
+The Execute Script command succeeded ( 00:00:11 )
 Design closed.
 

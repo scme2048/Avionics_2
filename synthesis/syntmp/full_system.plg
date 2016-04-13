@@ -1,121 +1,122 @@
-@P:  Worst Slack : -9.777
-@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Frequency : 73.9 MHz
+@P:  Worst Slack : -9.982
+@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Frequency : 81.5 MHz
 @P:  CLK_26MHZ|GLA_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Period : 13.541
+@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Period : 12.268
 @P:  CLK_26MHZ|GLA_inferred_clock - Requested Period : 10.000
-@P:  CLK_26MHZ|GLA_inferred_clock - Slack : -3.541
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency : 88.3 MHz
+@P:  CLK_26MHZ|GLA_inferred_clock - Slack : -2.268
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency : 83.3 MHz
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period : 11.329
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period : 12.008
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Period : 10.000
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack : -1.329
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency : 64.2 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack : -2.008
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency : 77.9 MHz
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period : 15.583
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period : 12.829
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Period : 10.000
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack : -4.165
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack : -2.829
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Estimated Frequency : 128.8 MHz
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Estimated Period : 7.763
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Requested Period : 10.000
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Slack : 2.237
-@P:  memory_controller|next_read_inferred_clock - Estimated Frequency : 93.2 MHz
+@P:  memory_controller|next_read_inferred_clock - Estimated Frequency : 93.6 MHz
 @P:  memory_controller|next_read_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  memory_controller|next_read_inferred_clock - Estimated Period : 10.729
+@P:  memory_controller|next_read_inferred_clock - Estimated Period : 10.685
 @P:  memory_controller|next_read_inferred_clock - Requested Period : 10.000
-@P:  memory_controller|next_read_inferred_clock - Slack : -0.729
-@P:  memory_controller|next_write_inferred_clock - Estimated Frequency : 90.9 MHz
+@P:  memory_controller|next_read_inferred_clock - Slack : -0.685
+@P:  memory_controller|next_write_inferred_clock - Estimated Frequency : 104.7 MHz
 @P:  memory_controller|next_write_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  memory_controller|next_write_inferred_clock - Estimated Period : 11.002
+@P:  memory_controller|next_write_inferred_clock - Estimated Period : 9.553
 @P:  memory_controller|next_write_inferred_clock - Requested Period : 10.000
-@P:  memory_controller|next_write_inferred_clock - Slack : -1.002
-@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Frequency : 41.4 MHz
+@P:  memory_controller|next_write_inferred_clock - Slack : 0.447
+@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Frequency : 42.4 MHz
 @P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Period : 24.149
+@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Period : 23.589
 @P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Requested Period : 10.000
-@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Slack : -9.777
-@P:  spi_master|busy_inferred_clock - Estimated Frequency : 68.5 MHz
+@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Slack : -9.982
+@P:  spi_master|busy_inferred_clock - Estimated Frequency : 76.8 MHz
 @P:  spi_master|busy_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  spi_master|busy_inferred_clock - Estimated Period : 14.589
+@P:  spi_master|busy_inferred_clock - Estimated Period : 13.024
 @P:  spi_master|busy_inferred_clock - Requested Period : 10.000
-@P:  spi_master|busy_inferred_clock - Slack : -4.589
+@P:  spi_master|busy_inferred_clock - Slack : -3.023
 @P:  spi_mode_config2|next_b_inferred_clock - Estimated Frequency : 204.4 MHz
 @P:  spi_mode_config2|next_b_inferred_clock - Requested Frequency : 100.0 MHz
 @P:  spi_mode_config2|next_b_inferred_clock - Estimated Period : 4.892
 @P:  spi_mode_config2|next_b_inferred_clock - Requested Period : 10.000
 @P:  spi_mode_config2|next_b_inferred_clock - Slack : 5.108
-@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Frequency : 140.6 MHz
+@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Frequency : 145.4 MHz
 @P:  spi_mode_config2|ss_b_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Period : 7.115
+@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Period : 6.878
 @P:  spi_mode_config2|ss_b_inferred_clock - Requested Period : 10.000
-@P:  spi_mode_config2|ss_b_inferred_clock - Slack : 2.885
+@P:  spi_mode_config2|ss_b_inferred_clock - Slack : 3.122
 @P:  Worst Slack(min analysis) : NA
-@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Frequency(min analysis) : 73.9 MHz
+@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Frequency(min analysis) : 81.5 MHz
 @P:  CLK_26MHZ|GLA_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Period(min analysis) : 13.541
+@P:  CLK_26MHZ|GLA_inferred_clock - Estimated Period(min analysis) : 12.268
 @P:  CLK_26MHZ|GLA_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  CLK_26MHZ|GLA_inferred_clock - Slack(min analysis) : -3.541
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 88.3 MHz
+@P:  CLK_26MHZ|GLA_inferred_clock - Slack(min analysis) : -2.268
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 83.3 MHz
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period(min analysis) : 11.329
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period(min analysis) : 12.008
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack(min analysis) : -1.329
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 64.2 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack(min analysis) : -2.008
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 77.9 MHz
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period(min analysis) : 15.583
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period(min analysis) : 12.829
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack(min analysis) : -4.165
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack(min analysis) : -2.829
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 128.8 MHz
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Estimated Period(min analysis) : 7.763
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
 @P:  clock_div_26MHZ_1MHZ|clk_out_inferred_clock - Slack(min analysis) : 2.237
-@P:  memory_controller|next_read_inferred_clock - Estimated Frequency(min analysis) : 93.2 MHz
+@P:  memory_controller|next_read_inferred_clock - Estimated Frequency(min analysis) : 93.6 MHz
 @P:  memory_controller|next_read_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  memory_controller|next_read_inferred_clock - Estimated Period(min analysis) : 10.729
+@P:  memory_controller|next_read_inferred_clock - Estimated Period(min analysis) : 10.685
 @P:  memory_controller|next_read_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  memory_controller|next_read_inferred_clock - Slack(min analysis) : -0.729
-@P:  memory_controller|next_write_inferred_clock - Estimated Frequency(min analysis) : 90.9 MHz
+@P:  memory_controller|next_read_inferred_clock - Slack(min analysis) : -0.685
+@P:  memory_controller|next_write_inferred_clock - Estimated Frequency(min analysis) : 104.7 MHz
 @P:  memory_controller|next_write_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  memory_controller|next_write_inferred_clock - Estimated Period(min analysis) : 11.002
+@P:  memory_controller|next_write_inferred_clock - Estimated Period(min analysis) : 9.553
 @P:  memory_controller|next_write_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  memory_controller|next_write_inferred_clock - Slack(min analysis) : -1.002
-@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Frequency(min analysis) : 41.4 MHz
+@P:  memory_controller|next_write_inferred_clock - Slack(min analysis) : 0.447
+@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Frequency(min analysis) : 42.4 MHz
 @P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Period(min analysis) : 24.149
+@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Estimated Period(min analysis) : 23.589
 @P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Slack(min analysis) : -9.777
-@P:  spi_master|busy_inferred_clock - Estimated Frequency(min analysis) : 68.5 MHz
+@P:  reset_pulse|CLK_OUT_48MHZ_inferred_clock - Slack(min analysis) : -9.982
+@P:  spi_master|busy_inferred_clock - Estimated Frequency(min analysis) : 76.8 MHz
 @P:  spi_master|busy_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  spi_master|busy_inferred_clock - Estimated Period(min analysis) : 14.589
+@P:  spi_master|busy_inferred_clock - Estimated Period(min analysis) : 13.024
 @P:  spi_master|busy_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  spi_master|busy_inferred_clock - Slack(min analysis) : -4.589
+@P:  spi_master|busy_inferred_clock - Slack(min analysis) : -3.023
 @P:  spi_mode_config2|next_b_inferred_clock - Estimated Frequency(min analysis) : 204.4 MHz
 @P:  spi_mode_config2|next_b_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
 @P:  spi_mode_config2|next_b_inferred_clock - Estimated Period(min analysis) : 4.892
 @P:  spi_mode_config2|next_b_inferred_clock - Requested Period(min analysis) : 10.000
 @P:  spi_mode_config2|next_b_inferred_clock - Slack(min analysis) : 5.108
-@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Frequency(min analysis) : 140.6 MHz
+@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Frequency(min analysis) : 145.4 MHz
 @P:  spi_mode_config2|ss_b_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Period(min analysis) : 7.115
+@P:  spi_mode_config2|ss_b_inferred_clock - Estimated Period(min analysis) : 6.878
 @P:  spi_mode_config2|ss_b_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  spi_mode_config2|ss_b_inferred_clock - Slack(min analysis) : 2.885
-@P:  Total Area : 3849.0
+@P:  spi_mode_config2|ss_b_inferred_clock - Slack(min analysis) : 3.122
+@P:  Total Area : 3765.0
+@P:  Total Area : 59.0
+@P:  Total Area : 74.0
+@P:  Total Area : 103.0
+@P:  Total Area : 1020.0
+@P:  Total Area : 145.0
+@P:  Total Area : 44.0
+@P:  Total Area : 162.0
 @P:  Total Area : 61.0
-@P:  Total Area : 81.0
-@P:  Total Area : 101.0
-@P:  Total Area : 1038.0
-@P:  Total Area : 146.0
-@P:  Total Area : 46.0
-@P:  Total Area : 161.0
-@P:  Total Area : 61.0
-@P:  Total Area : 100.0
-@P:  Total Area : 1121.0
-@P:  Total Area : 562.0
-@P:  Total Area : 142.0
+@P:  Total Area : 95.0
+@P:  Total Area : 1125.0
+@P:  Total Area : 199.0
+@P:  Total Area : 310.0
+@P:  Total Area : 138.0
 @P:  Total Area : 75.0
 @P:  Total Area : 74.0
 @P:  Total Area : 78.0
 @P:  Total Area : 0.0
-@P:  Total Area : 3849.0
-@P:  CPU Time : 0h:00m:22s
+@P:  Total Area : 3765.0
+@P:  CPU Time : 0h:00m:17s

@@ -105,7 +105,25 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":21:7:21:19|Synthesizing module mag_test_data
 
-@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Feedback mux created for signal mag_dat[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|All reachable assignments to bit 1 of mag_dat[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|All reachable assignments to bit 4 of mag_dat[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|All reachable assignments to bit 5 of mag_dat[79:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|All reachable assignments to bit 7 of mag_dat[79:0] assign 0, register removed by optimization.
+@N: CL177 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Sharing sequential element x_data.
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 7 to 5 of mag_dat[79:4] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 15 to 6 of y_data[15:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 3 to 2 of y_data[15:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bit 0 of y_data[15:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 15 to 7 of z_data[15:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 4 to 3 of z_data[15:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 1 to 0 of z_data[15:0] 
+
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":22:7:22:23|Synthesizing module memory_controller
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\memory_controller.v":87:0:87:5|Optimizing register bit num_cycles[1] to a constant 0
@@ -154,9 +172,7 @@ Selecting top level module full_system
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":9:7:9:17|Synthesizing module full_system
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":478:14:478:28|Pruning instance mag_test_data_0 -- not in use ...
-
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":416:20:416:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\component\work\full_system\full_system.v":417:20:417:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[2] to a constant 0
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\sram_interface.v":161:0:161:5|Optimizing register bit read_counter[3] to a constant 0
@@ -198,16 +214,6 @@ State machine has 3 reachable states with original encodings of:
    10
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":40:0:40:5|Optimizing register bit cntr[13] to a constant 0
 @W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\orbit_control.v":40:0:40:5|Pruning register bit 13 of cntr[13:0] 
-
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[0] is always 1, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[1] is always 0, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[2] is always 1, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[3] is always 1, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[4] is always 0, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[5] is always 0, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[6] is always 1, optimizing ...
-@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Register bit mag_dat[7] is always 0, optimizing ...
-@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\mag_test_data.v":35:0:35:5|Pruning register bits 7 to 0 of mag_dat[79:0] 
 
 @W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Optimizing register bit ctr_a[3] to a constant 0
 @W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\hdl\i2c_interface2.v":66:0:66:5|Pruning register bit 3 of ctr_a[3:0] 

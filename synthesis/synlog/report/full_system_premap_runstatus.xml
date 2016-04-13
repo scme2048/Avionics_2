@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>5</data>
+<data>8</data>
 <report_link name="more">
 <data>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\synthesis\synlog\report\full_system_premap_notes.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>114MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1460431863</data>
+<data type="timestamp">1460515859</data>
 </info>
 </job_info>
 </job_run_status>

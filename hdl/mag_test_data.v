@@ -38,6 +38,7 @@ if (RESET ==1'b0) begin
     x_data=0;
     y_data=50;
     z_data=100;
+    mag_dat=0;
 end else begin
     x_data=x_data+1;
     y_data=y_data+1;

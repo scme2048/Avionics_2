@@ -89,7 +89,7 @@ module spi_mode_config2 (
     reg [3:0] poll_ss_counter;
     reg poll_interupt;
     reg [2:0] tx_state;
-    reg [2:0] tx_ss_counter;
+    reg [24:0] tx_ss_counter;
     reg [3:0] tx_free_bytes;
     reg [5:0] tx_packet_counter;
     reg [2:0] tx_exit_counter;
@@ -247,6 +247,10 @@ module spi_mode_config2 (
                     start_a = 1'b1;
                     byte_out_a = 8'hFB;
                     byte_tracker_a=1'b1;
+                    if (chip_state==chip_RXFIFO_OVERFLOW) begin
+                        byte_out_a=SFRX;
+                        state_a=IDLE;
+                    end
                end else if ((chip_state != chip_RX)&&(byte_tracker_b)&&(~chip_rdy)&&(~begin_pass_b)) begin
                     chip_state = SLAVE_OUTPUT[6:4];
                     mem_enable_a=1'b0;
@@ -942,7 +946,7 @@ module spi_mode_config2 (
             config_cntr_b <= 1;
             start_b <= 1'b0;
             rx_ss_counter=4'b0000;
-            tx_ss_counter=3'b000;
+            tx_ss_counter=25'b0000000000000000000000000;
             idle_ss_counter=3'b000;
             poll_ss_counter=4'b0000;
             miso_high_counter=0;
@@ -984,14 +988,14 @@ module spi_mode_config2 (
             end
             //Flips ss high when going into TX_MODE
             if (state_b ==TX_MODE) begin
-                if (tx_ss_counter ==3'b111) begin
+                if (tx_ss_counter ==25'b1111111111111111111111111) begin
                     ss_b<=1'b0;
                 end else begin
                     ss_b<=1'b1;
                     tx_ss_counter=tx_ss_counter+1;
                 end
             end else begin
-                tx_ss_counter=3'b000;
+                tx_ss_counter=25'b0000000000000000000000000;
             end
             //Flips ss high when going into IDLE mode
             if (state_b ==IDLE) begin

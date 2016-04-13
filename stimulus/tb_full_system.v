@@ -24,14 +24,11 @@ parameter SYSCLK_PERIOD = 20.8333;// 48.0001MHZ
 
 reg SYSCLK;
 reg NSYSRESET;
-reg miso;
-
 
 initial
 begin
     SYSCLK = 1'b0;
     NSYSRESET = 1'b0;
-    miso = 1'b0;
 end
 
 //////////////////////////////////////////////////////////////////////
@@ -44,30 +41,12 @@ begin
 end
 
 
-initial begin
-    #(SYSCLK_PERIOD * 2078.2) miso = 1'b1;
-    #(SYSCLK_PERIOD * 244.5) miso = 1'b0;
-end
-    
-
+wire i2c_scl;
 //////////////////////////////////////////////////////////////////////
 // Clock Driver
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-
-wire ss,mosi,sclk;
-
-//always @(SYSCLK)
-//begin
-    //miso=ss;
-//end
-
-
-//wire DS0,DS1,DS2,DS3,DS4,DS5,DS6,DS7;
-//always @(SYSCLK)
-    //#(SYSCLK_PERIOD *3.5) miso <=!miso;
-
 
 
 //////////////////////////////////////////////////////////////////////
@@ -78,7 +57,7 @@ full_system full_system_0 (
     .CLK_48MHZ(SYSCLK),
     .RESET_IN_L8(NSYSRESET),
     .G_STREAM_IN({1{1'b0}}),
-    .MISO(miso),
+    .MISO({1{1'b0}}),
 
     // Outputs
     .SRAM_A0( ),
@@ -106,9 +85,9 @@ full_system full_system_0 (
     .SRAM_CE( ),
     .SRAM_WE( ),
     .SRAM_OE( ),
-    .SS( ss),
-    .MOSI( mosi),
-    .SPI_SCK( sclk),
+    .SS( ),
+    .MOSI( ),
+    .SPI_SCK( ),
     .DS0( ),
     .DS1( ),
     .DS2( ),
@@ -117,6 +96,7 @@ full_system full_system_0 (
     .DS5( ),
     .DS6( ),
     .DS7( ),
+    .I2C_SCL( i2c_scl),
 
     // Inouts
     .SRAM_D0( ),
@@ -150,7 +130,8 @@ full_system full_system_0 (
     .SRAM_D30( ),
     .SRAM_D31( ),
     .SRAM_D22( ),
-    .SRAM_D24( )
+    .SRAM_D24( ),
+    .I2C_SDA( )
 
 );
 

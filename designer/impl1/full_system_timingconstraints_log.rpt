@@ -1,0 +1,107 @@
+Microsemi Libero Software
+Version: 11.6.0.34
+Release: v11.6
+
+Info: The design full_system.adb was last modified by software version 11.6.0.34.
+Opened an existing Libero design full_system.adb.
+Warning: in Constraint checker: Incomplete generated clock constraint - master pin
+         "CLK_26MHZ_0/Core:CLKA" does not have a valid clock.
+         Constraint origin: auto-generated
+
+The Execute Script command succeeded ( 00:00:06 )
+Checking for software updates...
+Warning: in Constraint checker: Incomplete generated clock constraint - master pin
+         "CLK_26MHZ_0/Core:CLKA" does not have a valid clock.
+         Constraint origin: auto-generated
+Warning: in Constraint checker: Incomplete generated clock constraint - master pin
+         "CLK_26MHZ_0/Core:CLKA" does not have a valid clock.
+         Constraint origin: auto-generated
+Starting constraints checker...
+Warning: in Constraint checker: Incomplete generated clock constraint - master pin
+         "CLK_26MHZ_0/Core:CLKA" does not have a valid clock.
+         Constraint origin: auto-generated
+Completed constraints checker.
+Warning: some constraints may not be completely valid.  Constraints needing attention are
+identified in the Constraint Editor View.
+Warning: in Constraint checker: Incomplete generated clock constraint - master pin
+         "CLK_26MHZ_0/Core:CLKA" does not have a valid clock.
+         Constraint origin: auto-generated
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Mon Apr 11 23:59:22 2016
+
+Placer Finished: Tue Apr 12 00:00:36 2016
+Total Placer CPU Time:     00:01:14
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: full_system                     Started: Tue Apr 12 00:00:44 2016
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: full_system                     
+Finished: Tue Apr 12 00:02:52 2016
+Total CPU Time:     00:02:06            Total Elapsed Time: 00:02:08
+Total Memory Usage: 425.4 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+
+The Layout command succeeded ( 00:03:47 )
+  - Reading netlist
+  - Initializing power engine...
+Info: Derived clock created at pin: reset_pulse_0/CLK_OUT_48MHZ:Y.
+Potential clocks are:
+         CLK_48MHZ.
+         RESET_IN_L8.
+Info: Derived clock created at pin: CLK_26MHZ_0/Core:GLA.
+Info: Derived clock created at pin: spi_master_0/busy_enable_RNIL01R:Y.
+Potential clocks are:
+         spi_mode_config2_0/start_b/U1:Q.
+         spi_master_0/chip_rdy_0:Q.
+         spi_master_0/busy_enable:Q.
+Warning: No driver found for clock pin: spi_master_0/busy_enable:G.
+Info: Derived clock created at pin: spi_master_0/ctr_q_RNIBTOP2[1]:Y.
+Potential clocks are:
+         spi_mode_config2_0/ss_b/U1:Q.
+         RESET_IN_L8.
+         CLK_48MHZ.
+         spi_master_0/ctr_q[2]/U1:Q.
+         spi_master_0/ctr_q[0]/U1:Q.
+         spi_master_0/ctr_q[1]/U1:Q.
+         spi_master_0/sck_q[0]/U1:Q.
+         spi_master_0/sck_q[1]/U1:Q.
+         spi_master_0/state_q[1]/U1:Q.
+         spi_master_0/state_q[0]/U1:Q.
+  - Restoring saved options...
+  - Power analysis done!
+Design saved to file
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_syst\
+em.adb.
+Design closed.
+

@@ -48,15 +48,8 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\full_system\full_system.cxf,actgen_cxf"
 STATE="utd"
-TIME="1460431822"
-SIZE="14898"
-ENDFILE
-VALUE "<project>\component\work\full_system\full_system.v,hdl"
-STATE="utd"
-TIME="1460431820"
-SIZE="22392"
-PARENT="<project>\component\work\full_system\full_system.cxf"
-IS_READONLY="TRUE"
+TIME="1460516749"
+SIZE="14489"
 ENDFILE
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
@@ -187,19 +180,19 @@ TIME="1458335789"
 SIZE="176"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.adb,adb"
-STATE="ood"
-TIME="1460320653"
-SIZE="4195840"
+STATE="utd"
+TIME="1460441032"
+SIZE="4459008"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.ide_des,ide_des"
 STATE="utd"
-TIME="1460320654"
+TIME="1460441033"
 SIZE="1051"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system.pdb,pdb"
-STATE="ood"
-TIME="1460432230"
-SIZE="1506700"
+STATE="utd"
+TIME="1460516143"
+SIZE="1506684"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_ba.sdf,ba_sdf"
 STATE="ood"
@@ -218,8 +211,8 @@ SIZE="879"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_compile_log.rpt,log"
 STATE="utd"
-TIME="1460431928"
-SIZE="10959"
+TIME="1460515896"
+SIZE="11025"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_fp\full_system.pro,pro"
 STATE="utd"
@@ -233,17 +226,22 @@ SIZE="1506596"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1460432153"
+TIME="1460516088"
 SIZE="2543"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1460432232"
+TIME="1460516144"
 SIZE="846"
+ENDFILE
+VALUE "<project>\designer\impl1\full_system_timingconstraints_log.rpt,log"
+STATE="utd"
+TIME="1460441033"
+SIZE="3762"
 ENDFILE
 VALUE "<project>\designer\impl1\full_system_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1460432184"
+TIME="1460516100"
 SIZE="1245"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration.adb,adb"
@@ -738,8 +736,8 @@ SIZE="1206"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
-TIME="1458335789"
-SIZE="2439"
+TIME="1460490118"
+SIZE="2435"
 ENDFILE
 VALUE "<project>\hdl\i2c_interface2.v,hdl"
 STATE="utd"
@@ -758,8 +756,8 @@ SIZE="758"
 ENDFILE
 VALUE "<project>\hdl\mag_test_data.v,hdl"
 STATE="utd"
-TIME="1459912135"
-SIZE="1181"
+TIME="1460438668"
+SIZE="1197"
 ENDFILE
 VALUE "<project>\hdl\memory_controller.v,hdl"
 STATE="utd"
@@ -778,8 +776,8 @@ SIZE="2532"
 ENDFILE
 VALUE "<project>\hdl\read_address_traversal.v,hdl"
 STATE="utd"
-TIME="1460428535"
-SIZE="1579"
+TIME="1460513630"
+SIZE="1617"
 ENDFILE
 VALUE "<project>\hdl\read_buffer.v,hdl"
 STATE="utd"
@@ -828,8 +826,8 @@ SIZE="40945"
 ENDFILE
 VALUE "<project>\hdl\spi_mode_config2.v,hdl"
 STATE="utd"
-TIME="1460319728"
-SIZE="46315"
+TIME="1460514007"
+SIZE="46556"
 ENDFILE
 VALUE "<project>\hdl\sram_interface.v,hdl"
 STATE="utd"
@@ -858,13 +856,13 @@ SIZE="1742"
 ENDFILE
 VALUE "<project>\hdl\timestamp.v,hdl"
 STATE="utd"
-TIME="1458335789"
-SIZE="712"
+TIME="1460438953"
+SIZE="685"
 ENDFILE
 VALUE "<project>\hdl\write_address_traversal.v,hdl"
 STATE="utd"
-TIME="1460428461"
-SIZE="1311"
+TIME="1460513612"
+SIZE="1349"
 ENDFILE
 VALUE "<project>\simulation\CLK_div_test_presynth_simulation.log,log"
 STATE="utd"
@@ -883,8 +881,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\I2C_integration_tb_presynth_simulation.log,log"
 STATE="utd"
-TIME="1459816472"
-SIZE="5364"
+TIME="1460441364"
+SIZE="6280"
 ENDFILE
 VALUE "<project>\simulation\master_mode_tb_presynth_simulation.log,log"
 STATE="utd"
@@ -893,8 +891,8 @@ SIZE="4581"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1460147708"
-SIZE="1820"
+TIME="1460441326"
+SIZE="1163"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -1148,8 +1146,8 @@ SIZE="2250"
 ENDFILE
 VALUE "<project>\stimulus\tb_full_system.v,tb_hdl"
 STATE="utd"
-TIME="1460066030"
-SIZE="3198"
+TIME="1460441046"
+SIZE="2919"
 ENDFILE
 VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
 STATE="utd"
@@ -1267,13 +1265,13 @@ TIME="1458335790"
 SIZE="259"
 ENDFILE
 VALUE "<project>\synthesis\full_system.edn,syn_edn"
-STATE="ood"
-TIME="1460320215"
-SIZE="1951885"
+STATE="utd"
+TIME="1460439320"
+SIZE="1898713"
 ENDFILE
 VALUE "<project>\synthesis\full_system.so,so"
 STATE="utd"
-TIME="1460320215"
+TIME="1460439320"
 SIZE="262"
 ENDFILE
 VALUE "<project>\synthesis\full_system.v,syn_hdl"
@@ -1282,13 +1280,13 @@ TIME="1460082998"
 SIZE="611573"
 ENDFILE
 VALUE "<project>\synthesis\full_system_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1460320215"
+STATE="utd"
+TIME="1460439320"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\full_system_syn.prj,prj"
 STATE="utd"
-TIME="1460320216"
+TIME="1460439321"
 SIZE="3815"
 ENDFILE
 VALUE "<project>\synthesis\full_sys_sdc.sdc,syn_sdc"
@@ -1302,7 +1300,7 @@ TIME="1459816500"
 SIZE="0"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration.edn,syn_edn"
-STATE="utd"
+STATE="ood"
 TIME="1458335790"
 SIZE="351842"
 ENDFILE
@@ -1317,7 +1315,7 @@ TIME="1458335790"
 SIZE="136804"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration_sdc.sdc,syn_sdc"
-STATE="utd"
+STATE="ood"
 TIME="1458335790"
 SIZE="310"
 ENDFILE
@@ -1522,13 +1520,16 @@ VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_bynumber.txt,log
 ENDLIST
 ENDLIST
 LIST "full_system::work"
-FILE "<project>\component\work\full_system\full_system.v,hdl"
+FILE "<project>\component\work\full_system\full_system.cxf,actgen_cxf"
 LIST AssociatedStimulus
 VALUE "<project>\stimulus\tb_full_system.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\full_system.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\full_system.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1545,9 +1546,7 @@ VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1702,7 +1701,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_full_system
+EntityName=I2C_integration_tb
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -1802,7 +1801,10 @@ ENDLIST
 ENDLIST
 LIST "full_system::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\full_system.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\full_system.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1813,9 +1815,7 @@ ENDLIST
 ENDLIST
 LIST "geiger_integration::work"
 LIST Impl1
-LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1903,15 +1903,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+HDL;hdl\write_address_traversal.v;0
 Reports;Reports;0
 ReportsCurrentItem;Generate Programming Data:full_system_prgdata_log.rpt
-HDL;hdl\spi_data_out.v;0
-HDL;stimulus\tb_full_system.v;0
 SmartDesign;full_system;0
 HDL;hdl\spi_mode_config2.v;0
-HDL;hdl\i2c_interface2.v;0
-StartPage;StartPage;0
-ACTIVEVIEW;hdl\i2c_interface2.v
+HDL;hdl\memory_controller.v;0
+HDL;hdl\read_buffer.v;0
+ACTIVEVIEW;hdl\spi_mode_config2.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "buffer_data_out::work","","FALSE","FALSE"
@@ -1947,7 +1946,6 @@ SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
-SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
@@ -1956,14 +1954,15 @@ SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 ENDLIST
-LIST "full_system::work","component\work\full_system\full_system.v","TRUE","FALSE"
+LIST "full_system::work","component\work\full_system\full_system.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 SUBBLOCK "mag_test_data::work","hdl\mag_test_data.v","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
@@ -1976,7 +1975,6 @@ SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
-SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -1993,10 +1991,10 @@ LIST "I2C_integration::work","component\work\I2C_integration\I2C_integration.v",
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
-SUBBLOCK "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 ENDLIST
 LIST "i2c_interface2::work","hdl\i2c_interface2.v","FALSE","FALSE"
 ENDLIST
@@ -2020,12 +2018,12 @@ SUBBLOCK "buffer_data_out::work","","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "constant_sensor_data::work","","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
-SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 ENDLIST
 LIST "nor_flash_interface::work","hdl\nor_flash_interface.v","FALSE","FALSE"
 ENDLIST
@@ -2072,13 +2070,13 @@ SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
-SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "sram_interface::work","hdl\sram_interface.v","FALSE","FALSE"
 SUBBLOCK "sram_test_sim::work","hdl\sram_test_sim.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
 ENDLIST
 LIST "sram_test_sim::work","hdl\sram_test_sim.v","FALSE","FALSE"
 ENDLIST
@@ -2097,10 +2095,10 @@ SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALS
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
-SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
-SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 SUBBLOCK "spi_data_out::work","hdl\spi_data_out.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
+SUBBLOCK "spi_mode_config2::work","hdl\spi_mode_config2.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
@@ -2142,7 +2140,7 @@ LIST "tb_clock_div_1MHZ_100KHZ::work","stimulus\tb_clock_div_1MHZ_100KHZ.v","FAL
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_full_system::work","stimulus\tb_full_system.v","FALSE","TRUE"
-SUBBLOCK "full_system::work","component\work\full_system\full_system.v","TRUE","FALSE"
+SUBBLOCK "full_system::work","component\work\full_system\full_system.cxf","TRUE","FALSE"
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
@@ -2223,6 +2221,9 @@ ACTIVETESTBENCH "tb_read_buffer::work","stimulus\tb_read_buffer.v","FALSE"
 ENDLIST
 LIST "spi_master::work"
 ACTIVETESTBENCH "tb_spi_master::work","stimulus\tb_spi_master.v","FALSE"
+ENDLIST
+LIST "I2C_integration::work"
+ACTIVETESTBENCH "I2C_integration_tb::work","stimulus\I2C_integration_tb.v","FALSE"
 ENDLIST
 LIST "geiger_integration::work"
 ACTIVETESTBENCH "tb_geiger_integration::work","stimulus\tb_geiger_integration.v","FALSE"

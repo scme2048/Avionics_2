@@ -19,7 +19,7 @@ reg [23:0] TIMESTAMP;
 always @(posedge CLK_10HZ or negedge RESET)
 begin
     if (RESET==1'b0) begin
-        TIMESTAMP<=24'b000000000000000000000000;
+        TIMESTAMP<=0;
     end else begin
     TIMESTAMP<=TIMESTAMP+1;
     end
