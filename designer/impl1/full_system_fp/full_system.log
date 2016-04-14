@@ -6,7 +6,7 @@ Software Version: 11.6.0.34
 PDB file
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Avionics_2\designer\impl1\full_sys\
 tem.pdb' has been loaded successfully.
-DESIGN : full_system;  CHECKSUM : EE6C;  PDB_VERSION : 1.9
+DESIGN : full_system;  CHECKSUM : 66CD;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '98291' : FlashPro3
 Opened
@@ -22,11 +22,11 @@ programmer '98291' : EXPORT FSN[48] = 01157d585450
 programmer '98291' : Data Authentication
 programmer '98291' : Erase ...
 programmer '98291' : Completed erase
-programmer '98291' : EXPORT CHECKSUM: [16] = ee6c
+programmer '98291' : EXPORT CHECKSUM: [16] = 66cd
 programmer '98291' : Programming FPGA Array
 programmer '98291' : Verifying FPGA Array
 programmer '98291' :             Verifying FPGA Array -- PASS
-programmer '98291' : Finished: Tue Apr 12 23:17:43 2016 (Elapsed time 00:01:58)
+programmer '98291' : Finished: Wed Apr 13 18:14:46 2016 (Elapsed time 00:01:56)
 programmer '98291' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
